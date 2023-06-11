@@ -9,13 +9,13 @@
 | AWS CloudSearch Query Syntax | AWS CloudSearch Query Syntax |
 | AWS DynamoDB Query Syntax | AWS DynamoDB Query Syntax |
 | Azure Cosmos DB SQL Query Syntax | Azure Cosmos DB SQL Query Syntax |
-| Couchbase N1QL | Couchbase Query Language |
 | CouchDB Mango Query Language | CouchDB Mango Query Language |
 | CQL | Cassandra Query Language |
 | Criteria API | Java Persistence API |
+| Crul Queries | [Crul Queries](https://www.crul.com/docs/features/queries/) |
 | Cypher | Graph Query Language |
-| Cypher | Used for querying graph databases |
 | DAX | Data Analysis Expressions |
+| Datalog | [Declarative Logic Programming Language](https://en.m.wikipedia.org/wiki/Datalog) |
 | EQL | Enterprise Query Language |
 | ESQL | Elasticsearch Query Syntax |
 | Firebase Cloud Firestore Query Language | Firebase Cloud Firestore Query Language |
@@ -24,10 +24,9 @@
 | FQL | Facebook Query Language |
 | GraphQL | Graph Query Language |
 | Gremlin | Graph Traversal Language |
-| Gremlin | Graph database query language |
 | HQL | Hibernate Query Language |
 | JPQL | Java Persistence Query Language |
-| KQL | Kusto Query Language |
+| KQL | [Kusto Query Language](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) |
 | LINQ | Language Integrated Query |
 | Lucene Query Syntax | Lucene Query Syntax |
 | MDX | Multidimensional Expressions |
@@ -35,11 +34,13 @@
 | Neo4j Cypher Query Language | Neo4j Cypher Query Language |
 | NRQL | New Relic Query Language |
 | OQL | Object Query Language |
-| OQL | Object Query Language |
 | PromQL | Prometheus Query Language |
 | Solr Query Syntax | Solr Query Syntax |
 | SOQL | Salesforce Object Query Language |
 | SPARQL | Simple Protocol and RDF Query Language |
-| SQL | Structured Query Language |
+| SPL | Splunk Search Processing Language |
+| SQL | [Structured Query Language](https://docs.splunk.com/Splexicon:SPL) |
+| SQL++ | [Couchbase Query Language](https://www.couchbase.com/sqlplusplus/) |
 | XQL | XML Query Language |
+| XPath | XML Path Language |
 | XQuery | XML Query Language |

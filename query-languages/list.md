@@ -37,7 +37,7 @@
 | Solr Query Syntax | [Solr Query Syntax](https://solr.apache.org/guide/6_6/the-standard-query-parser.html) |
 | SOQL | [Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm) |
 | SPARQL | [Simple Protocol and RDF Query Language](https://www.w3.org/TR/rdf-sparql-protocol/) |
-| SPL | [Splunk Search Processing Language](Splunk Search Processing Language) |
+| SPL | [Splunk Search Processing Language](https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction) |
 | SQL | [Structured Query Language](https://en.wikipedia.org/wiki/SQL) |
 | SQL++ | [Couchbase Query Language](https://www.couchbase.com/sqlplusplus/) |
 | TaxiQL | [Data and API contract language](https://github.com/taxilang/taxilang) |

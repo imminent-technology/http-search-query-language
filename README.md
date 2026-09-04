@@ -54,6 +54,17 @@ The idea behind `QUERY` predates its final name by roughly a decade:
 
 Scores are descriptive snapshots meant as raw research material for a future comparison article, not a ranking of "best" query language — the right choice for a given `QUERY`-based API still depends heavily on its own data model, transport constraints, and audience.
 
+## Contributing a new query language
+
+Want to add a query language that isn't in the catalog yet? This repository ships a [GitHub Copilot skill](.github/skills/add-query-language/SKILL.md), `add-query-language`, that automates the whole process: cataloging the language in `list.csv`/`list.md`, researching and scoring it against the [rubric](query-languages/evaluations/rubric.md), creating its evaluation folder, and updating the aggregate `summary.json`/`summary.md` (including the Media types table and the Observations section).
+
+To use it in VS Code with GitHub Copilot:
+
+1. Open this repository in VS Code with the Copilot Chat extension enabled (the skill lives in `.github/skills/` and is picked up automatically).
+2. Open the chat view and either type `/add-query-language` followed by the language name, or just ask in plain language, e.g. *"Add JMESPath to the query languages portfolio."*
+3. Copilot will ask any follow-up questions it needs (e.g. the official documentation URL, a short description) before cataloging, researching, scoring, and evaluating the new language, and updating every affected file.
+4. Review the changes (new/updated rows in `list.csv`/`list.md`, the new `query-languages/evaluations/<slug>/` folder, and the updated `summary.json`/`summary.md`) before opening a pull request.
+
 ## License
 
 This work is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE.md).

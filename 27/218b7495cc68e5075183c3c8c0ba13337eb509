@@ -1,0 +1,24 @@
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.json
+  h_e2c7967ec6cbec 1-25
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  h_e2c7967ec6cbec 1-33
+query-languages/evaluations/summary.json
+  h_e2c7967ec6cbec 462-481
+query-languages/evaluations/summary.md
+  h_e2c7967ec6cbec 5,69,110,155
+query-languages/list.csv
+  h_e2c7967ec6cbec 25
+query-languages/list.md
+  h_e2c7967ec6cbec 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "27218b7495cc68e5075183c3c8c0ba13337eb509",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

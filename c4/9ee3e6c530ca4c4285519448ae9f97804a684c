@@ -1,0 +1,96 @@
+.github/skills/add-query-language/SKILL.md
+  h_e2c7967ec6cbec 69-70,92
+query-languages/evaluations/aql/aql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/cql/cql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/criteria-api/criteria-api.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/crul-queries/crul-queries.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/cypher/cypher.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/datalog/datalog.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/dax/dax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/dql/dql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/esql/esql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/flux/flux.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/fql/fql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/graphql/graphql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/gremlin/gremlin.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/hql/hql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/jpql/jpql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/json-query-language/json-query-language.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/kql/kql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/linq/linq.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/mdx/mdx.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/nrql/nrql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/oql/oql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/promql/promql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/soql/soql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/sparql/sparql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/spl/spl.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/sql/sql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/taxiql/taxiql.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/xpath/xpath.md
+  h_e2c7967ec6cbec 3-4
+query-languages/evaluations/xquery/xquery.md
+  h_e2c7967ec6cbec 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c49ee3e6c530ca4c4285519448ae9f97804a684c",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query-languages/evaluation.md
+  h_e2c7967ec6cbec 8-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "81929366914af47f57d8c0362b6d3c010c2e5245",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

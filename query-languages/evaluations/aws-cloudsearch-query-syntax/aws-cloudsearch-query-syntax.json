@@ -1,0 +1,25 @@
+{
+  "title": "AWS CloudSearch Query Syntax",
+  "slug": "aws-cloudsearch-query-syntax",
+  "officialDocUrl": "https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html",
+  "mediaType": "None known — queries are passed as URL query-string parameters (`q`, `q.parser`) on the CloudSearch search endpoint; no dedicated media type.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "Searching Your Data with Amazon CloudSearch", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 3, "rationale": "Offers four distinct query parsers (simple, structured, lucene, dismax) covering phrase/prefix search, Boolean compound queries, term boosting, and proximity search, but each parser exposes a different, narrower feature subset than a single unified grammar." },
+    "simplicity": { "score": 3, "rationale": "The default `simple` parser is easy to use for basic searches, but choosing between four parser dialects with different syntax and capabilities (simple/structured/lucene/dismax) adds cognitive overhead." },
+    "flexibility": { "score": 2, "rationale": "Search fields must be defined and configured as text/text-array (or other typed) fields in the CloudSearch domain's index schema ahead of time, offering less dynamic schema flexibility than document-oriented search engines." },
+    "communityAndEcosystem": { "score": 2, "rationale": "Amazon CloudSearch is a long-standing but comparatively low-profile AWS service, largely overshadowed today by Amazon OpenSearch Service; documentation and community discussion are noticeably thinner than for Elasticsearch/Solr." },
+    "extensibility": { "score": 2, "rationale": "Extension is limited to selecting among the four built-in query parser types; there is no mechanism for user-defined functions, custom parsers, or pluggable scoring beyond what AWS provides." },
+    "transportCompatibility": { "score": 5, "rationale": "Search requests are HTTP GET/POST calls to a CloudSearch search endpoint with the query passed via the `q` parameter, making it natively URL-embeddable." },
+    "standardization": { "score": 1, "rationale": "A proprietary AWS service-specific syntax (aside from the optional `lucene`/`dismax` compatibility parsers) with no independent standards body." },
+    "security": { "score": 3, "rationale": "Requests are authenticated/signed via AWS IAM at the transport layer, but the query syntax itself offers no structural protection against injection if user input is concatenated unsanitized into the `q` parameter, especially in `structured` mode's Boolean expressions." },
+    "performance": { "score": 3, "rationale": "A managed, auto-scaling search service, but its documented architecture (fixed instance-type-based partitioning) is generally considered less tunable and less performant at very large scale than modern engines like Elasticsearch/OpenSearch or Solr." },
+    "orthogonality": { "score": 2, "rationale": "The four query parsers (simple, structured, lucene, dismax) are largely separate feature sets rather than composable extensions of one grammar, so switching parsers changes both syntax and available capabilities inconsistently." }
+  },
+  "overallScore": 2.6,
+  "summary": "AWS CloudSearch's query syntax provides four selectable parser dialects (simple, structured, lucene, dismax) submitted as HTTP query parameters, but as a smaller, increasingly legacy AWS service it offers narrower flexibility, extensibility, and community support than mainstream search engines, with no independent standardization behind any of its parser modes.",
+  "evaluatedDate": "2026-09-04"
+}

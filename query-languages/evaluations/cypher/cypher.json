@@ -1,0 +1,27 @@
+{
+  "title": "Cypher",
+  "slug": "cypher",
+  "officialDocUrl": "https://neo4j.com/developer/cypher/",
+  "mediaType": "None known — openCypher/Neo4j statements travel over the Bolt protocol or are wrapped in generic `application/json` via Neo4j's HTTP query API; no dedicated Cypher media type.",
+  "category": "Graph",
+  "sources": [
+    { "title": "Introduction — Cypher Manual", "publisher": "Neo4j, Inc.", "url": "https://neo4j.com/developer/cypher/", "date": null },
+    { "title": "openCypher", "publisher": "Neo4j, Inc.", "url": "https://opencypher.org/", "date": null },
+    { "title": "Cypher (query language)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cypher_(query_language)", "date": "2026-04-23" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "ASCII-art pattern matching over nodes and relationships supports filtering, aggregation, and full CRUD (MATCH/CREATE/MERGE/SET/DELETE), giving high expressiveness for graph traversal and pattern queries." },
+    "simplicity": { "score": 4, "rationale": "Explicitly designed to be visual and human-readable — patterns structurally mirror the graph shape being queried — and openCypher markets it as 'easy-to-learn and human-readable' for developers, data scientists, and operators alike." },
+    "flexibility": { "score": 4, "rationale": "The underlying property graph model (labels + properties on nodes/relationships) is inherently schema-optional, letting labels and properties be added without a rigid predefined schema." },
+    "communityAndEcosystem": { "score": 4, "rationale": "The dominant graph-database query language via Neo4j, extended through openCypher to other implementations (e.g. AgensGraph), with a sizable community though smaller than SQL's or GraphQL's." },
+    "extensibility": { "score": 3, "rationale": "Supports user-defined procedures and functions in practice (e.g. Neo4j's APOC library), but this is implementation-specific tooling rather than a feature defined by the openCypher specification itself." },
+    "transportCompatibility": { "score": 2, "rationale": "Typically sent via the binary Bolt protocol or as a JSON request body to a transactional HTTP endpoint, with the query string as one field — not designed for URL query-string embedding." },
+    "standardization": { "score": 4, "rationale": "Originated as a single-vendor (Neo4j) language but was opened via the openCypher project in 2015 and directly fed into ISO/IEC 39075:2024 (GQL), a formal ISO standard for graph query languages — a strong and still-improving standardization trajectory." },
+    "security": { "score": 3, "rationale": "Supports parameterized queries (e.g. `$yearParameter`) that avoid string concatenation, reducing injection risk when used properly, but string-built Cypher remains possible and vulnerable in the same way as SQL." },
+    "performance": { "score": 4, "rationale": "Graph-native storage with index-backed pattern matching is designed for efficient multi-hop traversal — explicitly cited as a core motivation behind the GQL standardization effort for reachability and shortest-path queries." },
+    "orthogonality": { "score": 4, "rationale": "Clauses (MATCH/WHERE/RETURN/CREATE/DELETE/SET/MERGE) are composable and follow a consistent pattern-based syntax across both read and write use cases." }
+  },
+  "overallScore": 3.7,
+  "summary": "Cypher combines high expressiveness for graph pattern-matching with unusually strong readability and a clear path toward formal standardization via GQL, but like SQL it is built around persistent driver connections (Bolt) rather than lightweight HTTP transport.",
+  "evaluatedDate": "2026-09-04"
+}

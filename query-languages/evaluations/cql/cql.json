@@ -1,0 +1,26 @@
+{
+  "title": "CQL",
+  "slug": "cql",
+  "officialDocUrl": "https://cassandra.apache.org/doc/latest/cassandra/cql/",
+  "mediaType": "None known for Cassandra's CQL — statements are normally sent over Cassandra's native binary protocol, not HTTP. Note: IANA's registered `text/cql` media type belongs to HL7's unrelated Clinical Quality Language, and OGC defines a separate, also-unrelated CQL for geospatial filtering; neither refers to Cassandra Query Language.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "The Cassandra Query Language (CQL)", "publisher": "Apache Software Foundation", "url": "https://cassandra.apache.org/doc/stable/cassandra/developing/cql/index.html", "date": null },
+    { "title": "Apache Cassandra", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_Cassandra", "date": "2026-03-17" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 2, "rationale": "Deliberately SQL-like SELECT/INSERT/UPDATE/DELETE syntax, but Wikipedia explicitly notes Cassandra 'does not support advanced query patterns such as multi-table JOINs, ad hoc aggregations, or complex queries' by design." },
+    "simplicity": { "score": 4, "rationale": "Close resemblance to familiar SQL syntax (CREATE KEYSPACE/TABLE, SELECT, INSERT) makes it easy to pick up for anyone with relational database experience." },
+    "flexibility": { "score": 3, "rationale": "Supports flexible, sparse-column rows and user-defined types, with tables that can be created/altered at runtime without blocking, but query patterns must be designed around the partition/clustering key structure fixed at table-creation time." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Apache Cassandra is a long-established (2008), Apache Software Foundation top-level project with a large ecosystem, official documentation, and drivers for Java, Python, Node.js, Go, and C++." },
+    "extensibility": { "score": 3, "rationale": "Supports user-defined types, functions (UDFs/UDAs), and secondary indexes, but the query language's core capabilities are fixed by the engine's partitioned-row storage model." },
+    "transportCompatibility": { "score": 1, "rationale": "Used exclusively via CQL-native binary protocol drivers (cqlsh, language drivers) inside applications, with no notion of URL or HTTP-based transport." },
+    "standardization": { "score": 1, "rationale": "A single-project, Apache-governed but not independently standardized language, with no external standards body or competing implementations of the CQL specification itself." },
+    "security": { "score": 3, "rationale": "Parameterized statements via drivers are standard practice, giving protection comparable to prepared SQL statements, though this depends on correct client-side usage." },
+    "performance": { "score": 4, "rationale": "Purpose-built around an LSM-tree storage engine optimized for very high write throughput and linear scalability by adding nodes, explicitly prioritizing availability/partition tolerance over strict consistency." },
+    "orthogonality": { "score": 2, "rationale": "SELECT/INSERT/UPDATE syntax looks SQL-like, but requiring queries to be modeled around a fixed partition/clustering key, and the explicit lack of joins/aggregation, means the language does not compose as freely as SQL across arbitrary query shapes." }
+  },
+  "overallScore": 2.7,
+  "summary": "CQL brings a familiar, easy-to-learn SQL-like syntax to Cassandra's wide-column, partition-oriented data model, backed by a mature Apache Software Foundation project and strong write-throughput performance, but it deliberately omits joins, ad hoc aggregation, and any HTTP/URL transport, requiring queries to be designed around a table's fixed key structure.",
+  "evaluatedDate": "2026-09-04"
+}

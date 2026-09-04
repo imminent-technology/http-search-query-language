@@ -1,0 +1,27 @@
+{
+  "title": "GraphQL",
+  "slug": "graphql",
+  "officialDocUrl": "https://graphql.org/",
+  "mediaType": "`application/graphql-response+json` (responses) and `application/json` (requests) per the GraphQL-over-HTTP specification (graphql.github.io/graphql-over-http). Not registered with IANA. (A legacy, non-standard `application/graphql` convention for raw request bodies exists in some older server implementations but is not part of any official spec.)",
+  "category": "API/data-fetching",
+  "sources": [
+    { "title": "The query language for modern APIs", "publisher": "The GraphQL Foundation", "url": "https://graphql.org/", "date": null },
+    { "title": "GraphQL", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/GraphQL", "date": "2026-09-01" },
+    { "title": "GraphQL Specification — September 2025 Release", "publisher": "The GraphQL Foundation", "url": "https://spec.graphql.org/", "date": "2025-09-03" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports precise nested field selection, mutations, and subscriptions across a typed schema, but per Wikipedia's own comparison section it is not a full graph query language — it cannot, for example, return an unbounded set of ancestors in a single query the way SPARQL or recursive SQL can." },
+    "simplicity": { "score": 4, "rationale": "Declarative queries mirror the shape of the UI/response, and the schema is self-documenting via introspection, though fragments, directives, and variable handling add complexity beyond trivial queries." },
+    "flexibility": { "score": 4, "rationale": "Storage-agnostic and designed for continuous schema evolution without versioning (fields can be deprecated and added without breaking clients), though every query is still bound to a predefined schema rather than being truly schema-less." },
+    "communityAndEcosystem": { "score": 5, "rationale": "Governed by the GraphQL Foundation under the Linux Foundation since 2018, with adoption by Meta, GitHub, Shopify, AWS, and a large tooling ecosystem (GraphiQL, Apollo, GraphQL Hive)." },
+    "extensibility": { "score": 4, "rationale": "Custom scalars, directives, and resolvers give strong extension points, and the schema-first model lets teams add domain-specific types and operations." },
+    "transportCompatibility": { "score": 4, "rationale": "Purpose-built for HTTP APIs — queries are usually POSTed as a JSON body to a single endpoint, and simple queries can also be passed as URL query-string parameters, though large queries are not comfortably URL-embeddable." },
+    "standardization": { "score": 4, "rationale": "Defined by a formal, versioned open specification (spec.graphql.org) governed by a vendor-neutral foundation with many independent server/client implementations, though it is not an ISO/W3C-level standard." },
+    "security": { "score": 4, "rationale": "The strongly-typed schema validates queries before execution, reducing injection-style risks, but introduces its own attack surface (query depth/complexity abuse, introspection exposure) that requires separate mitigation." },
+    "performance": { "score": 3, "rationale": "Performance depends heavily on resolver implementation; the well-known N+1 query problem typically requires patterns like DataLoader batching rather than being solved by the language/runtime itself." },
+    "orthogonality": { "score": 4, "rationale": "Queries, mutations, and subscriptions are cleanly separated operation types, and fragments/directives compose predictably against a single consistent type system." }
+  },
+  "overallScore": 4.0,
+  "summary": "GraphQL is the strongest of the pilot languages for HTTP-native API design and client-driven flexibility, trading full graph-traversal expressiveness and built-in query optimization for precision, schema evolution, and a very active vendor-neutral ecosystem.",
+  "evaluatedDate": "2026-09-04"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "MongoDB Query Syntax",
+  "slug": "mongodb-query-syntax",
+  "officialDocUrl": "https://www.mongodb.com/docs/manual/tutorial/query-documents/",
+  "mediaType": "None known — MongoDB's wire protocol uses BSON, and the Atlas Data API wraps queries in generic `application/json`.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "Read Documents", "publisher": "MongoDB, Inc.", "url": "https://www.mongodb.com/docs/manual/tutorial/query-documents/", "date": null },
+    { "title": "MongoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/MongoDB", "date": "2026-08-31" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Rich JSON-based query filter documents with a large operator set ($in, $or, $and, $regex, comparisons), plus a separate, highly expressive aggregation pipeline (supports $lookup joins, grouping, statistical operators) that Wikipedia notes achieves results similar to SQL's GROUP BY." },
+    "simplicity": { "score": 4, "rationale": "The `{field: value}` equality and simple operator syntax directly mirrors the shape of the documents being queried, lowering the learning curve versus writing separate SQL strings." },
+    "flexibility": { "score": 5, "rationale": "Designed from the ground up for MongoDB's schema-less BSON/JSON documents — its core strength, described in its own 'ad-hoc queries' feature." },
+    "communityAndEcosystem": { "score": 5, "rationale": "MongoDB is, per Wikipedia/DB-Engines, among the most popular database systems, with drivers for nearly every major language, extensive official docs, a large community, and dedicated tools like Compass." },
+    "extensibility": { "score": 3, "rationale": "Supports user-defined JavaScript functions in some query/aggregation contexts and a broad built-in operator library, though the now-deprecated map-reduce approach shows some historical churn in extension mechanisms." },
+    "transportCompatibility": { "score": 2, "rationale": "MongoDB uses its own binary wire protocol over TCP rather than native HTTP, so query documents are not natively URL/HTTP-transportable without an intermediary API layer such as the Atlas Data API." },
+    "standardization": { "score": 1, "rationale": "A single-vendor proprietary query language with no independent specification; MongoDB itself is licensed under the vendor-authored SSPL rather than a standard open-source license." },
+    "security": { "score": 3, "rationale": "Driver query-builder helpers (e.g., Filters.eq()) and BSON documents avoid classic string-concatenation SQL-injection risk, but MongoDB's historically permissive default security configuration has been directly linked to widespread real-world data breaches and ransom incidents per Wikipedia." },
+    "performance": { "score": 3, "rationale": "Supports primary/secondary indexing and a dedicated aggregation pipeline, but independent Jepsen research found that even at its strongest consistency/write settings the database exhibited read skew, dirty reads, and lost writes, showing real trade-offs behind its performance/consistency claims." },
+    "orthogonality": { "score": 4, "rationale": "Query filters, projections, and aggregation stages compose in a consistent, uniform JSON-document style across drivers and languages, contributing to the language's perceived simplicity." }
+  },
+  "overallScore": 3.4,
+  "summary": "MongoDB's query language (MQL) is a widely adopted, highly flexible JSON-native document query language with a powerful aggregation pipeline, but it is a proprietary, non-HTTP-native language whose historically weak default security posture and independently documented consistency trade-offs temper its otherwise strong ecosystem and expressiveness.",
+  "evaluatedDate": "2026-09-04"
+}

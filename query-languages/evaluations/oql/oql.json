@@ -1,0 +1,26 @@
+{
+  "title": "OQL",
+  "slug": "oql",
+  "officialDocUrl": "https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language",
+  "mediaType": "None known — no registered or documented media type could be verified.",
+  "category": "Niche/misc",
+  "sources": [
+    { "title": "Object Query Language", "publisher": "IBM Corporation", "url": "https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language", "date": "2026-03-30" },
+    { "title": "Object Query Language", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Object_Query_Language", "date": "2025-12-27" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 2, "rationale": "IBM's documented dialect supports basic SQL-style statements (select, insert, update, delete, subqueries, conditional tests) scoped to configuring and querying IBM Network Manager's internal component databases, a narrow tool-specific feature set." },
+    "simplicity": { "score": 3, "rationale": "Deliberately SQL-like with simple rules (semicolon-terminated statements, comma-separated lists, quoted strings), though the unrelated ODMG OQL standard that shares this name is separately noted by Wikipedia as complex enough that 'the complete OQL standard has not yet been fully implemented in any software'." },
+    "flexibility": { "score": 2, "rationale": "Tightly scoped to creating, inserting into, and querying IBM Network Manager's own internal configuration databases, not a general-purpose data query mechanism." },
+    "communityAndEcosystem": { "score": 1, "rationale": "A niche language embedded in one IBM network-management product; the broader ODMG OQL concept it is named after also has very limited practical adoption, per Wikipedia noting the full standard was never fully implemented by any software." },
+    "extensibility": { "score": 1, "rationale": "A fixed set of statement types documented for a specific embedded database tool, with no user extension mechanism described." },
+    "transportCompatibility": { "score": 2, "rationale": "Issued via a Perl API/scripting interface within IBM Network Manager (the 'OQL Service Provider'), rather than being HTTP/URL-native." },
+    "standardization": { "score": 2, "rationale": "The name traces to the ODMG (Object Data Management Group) standard for object-oriented database query languages, but the dialect actually documented at list.csv's linked URL is IBM's own proprietary, tool-specific variant unrelated to that standards body's formal specification — a naming discrepancy worth flagging explicitly." },
+    "security": { "score": 2, "rationale": "No documented security-specific design; SQL-like statement execution against internal configuration databases carries typical injection-style risk if built from unsanitized input." },
+    "performance": { "score": 2, "rationale": "No independent performance data documented; used for a specific network-management embedded database rather than benchmarked for general-purpose or large-scale use." },
+    "orthogonality": { "score": 3, "rationale": "A basic SQL-like statement structure (SELECT/INSERT/UPDATE/DELETE-style) that is moderately consistent across the documented statement types." }
+  },
+  "overallScore": 2.0,
+  "summary": "The OQL documented at list.csv's linked URL is IBM's own proprietary, SQL-like configuration-database language for its Network Manager product — a naming discrepancy worth noting, since the name 'Object Query Language' more commonly refers to the ODMG's much more ambitious (but per Wikipedia, never fully implemented) object-database query standard; either way, this is a narrow, low-adoption, single-vendor tool-specific language with no meaningful extensibility or standardization.",
+  "evaluatedDate": "2026-09-04"
+}

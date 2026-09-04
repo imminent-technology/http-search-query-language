@@ -1,0 +1,26 @@
+{
+  "title": "Solr Query Syntax",
+  "slug": "solr-query-syntax",
+  "officialDocUrl": "https://solr.apache.org/guide/6_6/the-standard-query-parser.html",
+  "mediaType": "None known — Solr accepts query strings as URL parameters or within the JSON Request API's generic `application/json`.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "The Standard Query Parser", "publisher": "The Apache Software Foundation", "url": "https://solr.apache.org/guide/6_6/the-standard-query-parser.html", "date": "2017-06-09" },
+    { "title": "Apache Solr", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_Solr", "date": "2026-03-27" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Beyond Lucene's base term/boolean/range/proximity/boosting syntax, Solr adds constant-score queries (^=), function-query hooks, nested query-parser clauses, and a cacheable filter(...) syntax." },
+    "simplicity": { "score": 3, "rationale": "Basic field:value and boolean queries are intuitive, but escaping the long list of reserved characters and understanding the differences from the plain Lucene parser add real complexity." },
+    "flexibility": { "score": 3, "rationale": "Query terms are scoped to fields defined in the Solr Schema; while dynamic fields and NoSQL-style features exist, the parser fundamentally expects indexed/analyzed fields rather than arbitrary schema-less data." },
+    "communityAndEcosystem": { "score": 4, "rationale": "A top-level Apache project since 2007 with two decades of releases, client libraries in most major languages, and adoption inside Hadoop distributions and enterprise CMS/search products." },
+    "extensibility": { "score": 3, "rationale": "Supports pluggable query parsers (DisMax, eDisMax, function queries) and a plugin architecture, though the standard query parser's own grammar is fixed by the Solr version." },
+    "transportCompatibility": { "score": 5, "rationale": "Queries are submitted as the `q` parameter of a REST-like HTTP GET/POST request (e.g. `?q=id:SP2514N`), making the syntax natively URL-embeddable." },
+    "standardization": { "score": 1, "rationale": "An Apache Solr/Lucene-specific syntax with no independent standards body; the guide itself documents version-specific differences from the plain Lucene query parser." },
+    "security": { "score": 2, "rationale": "Query strings are commonly built by concatenating user input into the `q` parameter; without escaping the documented reserved characters, this is exposed to injection-style manipulation of query logic." },
+    "performance": { "score": 5, "rationale": "Built directly on the Apache Lucene inverted-index engine, with SolrCloud enabling distributed, horizontally-scalable search across shards and replicas." },
+    "orthogonality": { "score": 3, "rationale": "Core Boolean/field/range operators compose consistently, but Solr-specific extensions over the base Lucene parser (open-ended ranges, pure-negative queries, function-query casts) are layered on rather than unified with the base grammar." }
+  },
+  "overallScore": 3.3,
+  "summary": "Solr's standard query parser extends Apache Lucene's HTTP-native, URL-embeddable query syntax with additional constant-scoring, function-query, and caching features, backed by a mature, widely-deployed enterprise search project — but it remains a Solr/Lucene-specific syntax with no formal standardization and the same string-based injection exposure as its parent Lucene parser.",
+  "evaluatedDate": "2026-09-04"
+}

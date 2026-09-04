@@ -2,6 +2,8 @@
 > [!NOTE] Work in Progress
 > The list of query languages is being built and is not final.
 
+An evaluation of these query languages against a common set of criteria is available in [`evaluations/summary.md`](evaluations/summary.md).
+
 | Title | Description |
 |-----|-----------|
 | AQL |	[ArangoDB Query Language](https://www.arangodb.com/docs/stable/aql/) |

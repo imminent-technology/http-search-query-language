@@ -1,0 +1,26 @@
+{
+  "title": "CouchDB Mango Query Language",
+  "slug": "couchdb-mango-query-language",
+  "officialDocUrl": "https://dev.to/yenyih/query-in-apache-couchdb-mango-query-lfd",
+  "mediaType": "None known — Mango selectors are POSTed as a JSON document to `/db/_find` using the generic `application/json` media type.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "1.3.6. /{db}/_find (Mango Query API)", "publisher": "Apache Software Foundation", "url": "https://docs.couchdb.org/en/stable/api/database/find.html", "date": null },
+    { "title": "Apache CouchDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_CouchDB", "date": "2025-12-30" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 3, "rationale": "JSON-based selector syntax supports rich operators ($gt, $lt, $in, $regex, etc.), sorting, field projection, pagination via bookmarks, and execution-stats/explain introspection, but lacks SQL-style joins or aggregation." },
+    "simplicity": { "score": 4, "rationale": "Declarative JSON selector documents are straightforward to construct without writing JavaScript map/reduce views; Mango was created specifically to simplify CouchDB querying." },
+    "flexibility": { "score": 4, "rationale": "Operates over CouchDB's schema-less JSON documents and can create ad hoc indexes on the fly, well suited to evolving document shapes." },
+    "communityAndEcosystem": { "score": 3, "rationale": "Backed by the Apache Software Foundation with solid documentation, but CouchDB has a smaller, more specialized community (offline-first/sync use cases) than mainstream NoSQL databases." },
+    "extensibility": { "score": 2, "rationale": "Selector operators and index types (json/text/nouveau) are fixed by CouchDB; Mango itself provides no user-defined functions, unlike the older JavaScript map/reduce views." },
+    "transportCompatibility": { "score": 5, "rationale": "Mango queries are POSTed as JSON bodies to CouchDB's native HTTP _find endpoint, making the language inherently designed for HTTP-based access, consistent with CouchDB's all-HTTP API design." },
+    "standardization": { "score": 1, "rationale": "A CouchDB/Mango-specific syntax with no independent standard or cross-vendor adoption." },
+    "security": { "score": 3, "rationale": "Being JSON-document based rather than a string-concatenated query language reduces classic injection risk, though care is still needed with dynamically constructed selectors." },
+    "performance": { "score": 3, "rationale": "Relies on explicit or automatically-selected secondary indexes; querying without a suitable index falls back to the slow built-in _all_docs index, which the docs explicitly warn against." },
+    "orthogonality": { "score": 3, "rationale": "Selector, sort, fields, and pagination options compose predictably as JSON, though sort fields must already be covered by an existing index, a documented constraint on composability." }
+  },
+  "overallScore": 3.1,
+  "summary": "CouchDB's Mango query language offers a simple, JSON-native declarative alternative to hand-written map/reduce views, well suited to CouchDB's HTTP-first, schema-less document model, but it is CouchDB-specific with no independent standardization and lacks SQL-style joins or aggregation.",
+  "evaluatedDate": "2026-09-04"
+}

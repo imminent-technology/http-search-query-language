@@ -1,0 +1,26 @@
+{
+  "title": "LINQ",
+  "slug": "linq",
+  "officialDocUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/",
+  "mediaType": "Not applicable — LINQ is a .NET language-integrated query syntax compiled into expression trees at compile time; it has no independent wire format.",
+  "category": "Language-integrated",
+  "sources": [
+    { "title": "Language Integrated Query (LINQ) - C#", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/", "date": "2025-12-01" },
+    { "title": "Language Integrated Query", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Language_Integrated_Query", "date": "2026-07-03" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "A full set of Standard Query Operators (Select, Where, SelectMany, Join, GroupJoin, Aggregate, OrderBy, GroupBy, Distinct, Union/Intersect/Except, and more) integrated as first-class language constructs, general enough to be used for event handlers and monadic parsers beyond just data querying." },
+    "simplicity": { "score": 4, "rationale": "Query expressions use familiar declarative syntax resembling SQL (from...where...select), are strongly typed with compiler type inference, and have a documented one-to-one translation to method-call syntax, making them approachable and predictable." },
+    "flexibility": { "score": 5, "rationale": "Works across many heterogeneous data sources via different providers — LINQ to Objects (in-memory collections), LINQ to XML, LINQ to SQL, LINQ to DataSets — and can be extended to any data source that implements IQueryable/IEnumerable." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Deeply embedded in the .NET ecosystem since .NET Framework 3.5 (2007), implemented across C#, F#, and VB.NET, with a massive developer base and extensive documentation and tooling support." },
+    "extensibility": { "score": 5, "rationale": "Its core architecture is explicitly designed around pluggable 'LINQ Providers' that translate expression trees for any data source, meaning entirely new backends (e.g. Entity Framework Core) can be built without changing the language itself." },
+    "transportCompatibility": { "score": 1, "rationale": "A language-integrated, in-process query construct evaluated locally or translated by a provider (e.g. to T-SQL); it has no native HTTP/URL transport mechanism of its own." },
+    "standardization": { "score": 3, "rationale": "Not an independently standardized query language, but its query-expression syntax and translation rules are formally documented as part of the C# language specification (and implemented consistently across C#, F#, and VB.NET), giving it more formal grounding than a purely proprietary API." },
+    "security": { "score": 3, "rationale": "As a strongly-typed, compiled language construct rather than a raw string query, it is inherently resistant to typical string-injection attacks, though providers that translate queries into SQL still require the same care as any other SQL-generation layer." },
+    "performance": { "score": 2, "rationale": "Documented performance pitfalls exist — naive LINQ to Objects usage patterns can cause 'catastrophic degradation of performance' according to community sources, though Parallel LINQ (PLINQ) offers a documented mitigation via parallel execution." },
+    "orthogonality": { "score": 4, "rationale": "Query syntax has an exact, well-defined translation into fluent method-chain syntax, and query operators compose uniformly (every operator returns an enumerable/queryable that any other operator can act on)." }
+  },
+  "overallScore": 3.6,
+  "summary": "LINQ is a deeply expressive and extensible query framework integrated directly into .NET languages, offering strong type safety and a uniform, provider-based architecture that spans in-memory collections, XML, and SQL databases, but it is fundamentally an in-process language construct rather than a network-transportable query language, and naive usage patterns carry documented performance risks.",
+  "evaluatedDate": "2026-09-04"
+}

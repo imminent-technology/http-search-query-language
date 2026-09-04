@@ -1,0 +1,26 @@
+{
+  "title": "HQL",
+  "slug": "hql",
+  "officialDocUrl": "https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm",
+  "mediaType": "Not applicable — HQL is parsed and translated to SQL inside the JVM by Hibernate; it is not transmitted over HTTP with its own media type.",
+  "category": "Relational/SQL-family",
+  "sources": [
+    { "title": "Hibernate - Query Language", "publisher": "Tutorials Point", "url": "https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm", "date": null },
+    { "title": "Hibernate (framework)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hibernate_(framework)", "date": "2026-04-09" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports SELECT/WHERE/JOIN/GROUP BY/ORDER BY, aggregate functions, bulk UPDATE/DELETE/INSERT and named/positional parameters, closely mirroring SQL's expressiveness over entity objects." },
+    "simplicity": { "score": 4, "rationale": "Deliberately SQL-like syntax makes it easy to learn for anyone who knows SQL, though understanding entity/property mapping adds a layer of indirection." },
+    "flexibility": { "score": 2, "rationale": "Queries operate over statically mapped, annotated or XML-configured entity classes, making it a poor fit for schema-less or rapidly evolving data models." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Hibernate is the most widely used Java ORM (started 2001, now backed by Red Hat) with extensive documentation, books and tooling, though scoped to the Java ecosystem." },
+    "extensibility": { "score": 3, "rationale": "Allows registering custom SQL functions and dialects, but the core HQL grammar itself is fixed by the framework." },
+    "transportCompatibility": { "score": 1, "rationale": "HQL is only executed through the in-process Hibernate Session/Query API within a Java application; it has no notion of URL or HTTP transport." },
+    "standardization": { "score": 3, "rationale": "Not itself an independent formal standard, but it closely mirrors — and historically influenced — the standardized JPQL defined in the Jakarta Persistence specification." },
+    "security": { "score": 4, "rationale": "Named and positional parameters are the idiomatic way to build HQL queries, giving protection against injection comparable to parameterized SQL when used as intended." },
+    "performance": { "score": 3, "rationale": "Hibernate translates HQL into native SQL and applies caching/lazy loading, but the ORM abstraction can make manual query-plan tuning less direct than hand-written SQL." },
+    "orthogonality": { "score": 3, "rationale": "Clauses compose in a SQL-like way, but the object-relational impedance mismatch (collections, associations, lazy loading) introduces special-casing absent from plain SQL." }
+  },
+  "overallScore": 3.1,
+  "summary": "HQL brings a deliberately SQL-like, database-portable query syntax to Hibernate's object-relational mapping layer, backed by one of the most widely used Java ORM frameworks, but it is usable only from within a Java application process and is tightly coupled to a static entity schema rather than dynamic data.",
+  "evaluatedDate": "2026-09-04"
+}

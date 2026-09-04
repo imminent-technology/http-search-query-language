@@ -1,0 +1,26 @@
+{
+  "title": "PromQL",
+  "slug": "promql",
+  "officialDocUrl": "https://prometheus.io/docs/prometheus/latest/querying/basics/",
+  "mediaType": "None known — Prometheus's HTTP API accepts PromQL as a URL query parameter or `application/x-www-form-urlencoded` field, not a dedicated media type.",
+  "category": "Analytics/Observability",
+  "sources": [
+    { "title": "Querying basics — Prometheus Documentation", "publisher": "Prometheus Authors", "url": "https://prometheus.io/docs/prometheus/latest/querying/basics/", "date": null },
+    { "title": "Prometheus (software)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Prometheus_(software)", "date": "2026-08-25" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Rich set of aggregation operators, functions (rate, histogram_quantile), and instant/range vector selectors purpose-built for time-series analysis, but it is narrowly scoped — no joins or filtering across non-metric data models." },
+    "simplicity": { "score": 3, "rationale": "Basic metric selection is simple, but vector-matching modifiers (on/ignoring/group_left/group_right), duration expressions, and staleness semantics are documented by Prometheus itself as sources of confusion (its docs include a dedicated 'Gotchas' section)." },
+    "flexibility": { "score": 2, "rationale": "Tightly coupled to Prometheus's multi-dimensional label/value time-series model; not usable for other data shapes or schemas." },
+    "communityAndEcosystem": { "score": 5, "rationale": "A graduated CNCF project since 2018 with a massive cloud-native adoption footprint, extensive exporters, client libraries for most languages, and the de facto pairing with Grafana." },
+    "extensibility": { "score": 2, "rationale": "PromQL itself has no user-defined function mechanism; extensibility happens at the exporter or recording-rule level, outside the query language." },
+    "transportCompatibility": { "score": 4, "rationale": "Designed from the start to be sent as a parameter to Prometheus's HTTP API (instant/range query endpoints), fitting naturally into URL query strings or POST bodies." },
+    "standardization": { "score": 2, "rationale": "A single-project, CNCF-governed language rather than a formally standardized one; OpenMetrics standardizes the metrics exposition format consumed by Prometheus, but not PromQL's query syntax itself." },
+    "security": { "score": 3, "rationale": "Structured selector/function syntax avoids raw string concatenation, but there is no built-in parameterization primitive comparable to SQL prepared statements, and expensive queries can be used to overload a server (explicitly called out in Prometheus's own docs)." },
+    "performance": { "score": 4, "rationale": "Backed by an inverted index and time-series-optimized on-disk storage, but Prometheus's own documentation warns that broad selectors (e.g. a bare metric name) can expand to thousands of series and recommends recording rules to pre-aggregate expensive queries." },
+    "orthogonality": { "score": 3, "rationale": "Instant vs. range vector semantics are consistent, but binary-operator vector-matching modifiers interact with aggregation in ways that require special-cased knowledge, and duration-expression syntax was layered on over time." }
+  },
+  "overallScore": 3.2,
+  "summary": "PromQL is a highly specialized, HTTP-native query language optimized for one job — querying multi-dimensional time-series metrics — with an enormous ecosystem behind it, but it trades away flexibility, extensibility, and formal standardization for that specialization.",
+  "evaluatedDate": "2026-09-04"
+}

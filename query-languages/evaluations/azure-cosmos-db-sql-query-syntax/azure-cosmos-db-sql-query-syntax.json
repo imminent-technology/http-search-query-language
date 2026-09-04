@@ -1,0 +1,26 @@
+{
+  "title": "Azure Cosmos DB SQL Query Syntax",
+  "slug": "azure-cosmos-db-sql-query-syntax",
+  "officialDocUrl": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started",
+  "mediaType": "`application/query+json` — required `Content-Type` for SQL API query requests per Microsoft's Cosmos DB REST API documentation. Not registered with IANA, but officially documented by Microsoft.",
+  "category": "Relational/SQL-family",
+  "sources": [
+    { "title": "Query language for Cosmos DB (in Azure and Fabric) documentation", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started", "date": "2025-12-31" },
+    { "title": "Cosmos DB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cosmos_DB", "date": "2026-04-15" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 3, "rationale": "Supports filtering, sorting, cross-product joins, subqueries, scalar/vector/full-text functions and aggregates (COUNT/SUM/MIN/MAX/AVG), but Wikipedia notes there is no GROUP BY or cross-container joins, requiring stored procedures for gaps." },
+    "simplicity": { "score": 4, "rationale": "Deliberately reuses familiar ANSI SQL keywords over JSON documents, making it easy for SQL-literate developers to pick up." },
+    "flexibility": { "score": 5, "rationale": "Containers are schema-agnostic JSON documents with automatic indexing by default, making the language a natural fit for dynamic and evolving data models." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Backed by Microsoft with extensive official documentation and SDKs across .NET, Node.js, Java and Python, and wide adoption within the Azure ecosystem." },
+    "extensibility": { "score": 4, "rationale": "The embedded JavaScript engine enables stored procedures, triggers and user-defined functions, which are explicitly used to work around gaps like missing aggregation support." },
+    "transportCompatibility": { "score": 3, "rationale": "Exposed as a REST API that fits naturally as an HTTP request body, though it is not designed to be compactly embedded in a URL query string." },
+    "standardization": { "score": 1, "rationale": "A proprietary Microsoft SQL dialect specific to Cosmos DB, with no independent specification or alternate implementations." },
+    "security": { "score": 3, "rationale": "SDKs support parameterized queries, but query text is still commonly built as strings, carrying similar injection risk profile to SQL if not parameterized." },
+    "performance": { "score": 4, "rationale": "Every field is automatically indexed by default with a tunable indexing policy, and throughput (RU/s) is provisioned specifically to bound query latency." },
+    "orthogonality": { "score": 3, "rationale": "Core filtering and projection compose well, but Wikipedia explicitly documents missing GROUP BY and cross-container joins as gaps requiring special-cased stored-procedure workarounds." }
+  },
+  "overallScore": 3.4,
+  "summary": "Azure Cosmos DB's SQL API brings familiar ANSI SQL syntax to schema-agnostic JSON documents, offering strong flexibility and default indexing backed by Microsoft's ecosystem, but it is a single-vendor proprietary dialect with notable expressiveness gaps (no GROUP BY, no cross-container joins) that require JavaScript-based stored procedures to work around.",
+  "evaluatedDate": "2026-09-04"
+}

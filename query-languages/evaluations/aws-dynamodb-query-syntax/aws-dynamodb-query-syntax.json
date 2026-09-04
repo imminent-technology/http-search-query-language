@@ -1,0 +1,26 @@
+{
+  "title": "AWS DynamoDB Query Syntax",
+  "slug": "aws-dynamodb-query-syntax",
+  "officialDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html",
+  "mediaType": "None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.0`); no dedicated media type for DynamoDB's KeyConditionExpression syntax.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "Query - Amazon DynamoDB API Reference", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html", "date": null },
+    { "title": "Amazon DynamoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Amazon_DynamoDB", "date": "2026-06-11" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 2, "rationale": "Query requires an equality condition on the partition key plus an optional single comparison/range/begins_with condition on the sort key, further refinable only by a post-read FilterExpression; there are no joins, aggregation, or arbitrary multi-field key conditions." },
+    "simplicity": { "score": 3, "rationale": "KeyConditionExpression/FilterExpression syntax is a simple string mini-language, but correct use requires DynamoDB-specific concepts (partition/sort keys, expression attribute name/value placeholders) not needed in general SQL." },
+    "flexibility": { "score": 2, "rationale": "Item attributes themselves are schema-less, but the Query operation is rigid, tied tightly to the table's or index's declared partition/sort key structure decided at table design time." },
+    "communityAndEcosystem": { "score": 4, "rationale": "A flagship, widely used AWS managed NoSQL service with extensive official documentation, SDKs in most major languages, and a large body of practitioner data-modeling guidance (e.g., single-table design)." },
+    "extensibility": { "score": 2, "rationale": "The expression language supports only a fixed set of built-in functions (begins_with, size, attribute_exists, etc.) with no user-defined functions." },
+    "transportCompatibility": { "score": 3, "rationale": "Invoked via a JSON request body over AWS's HTTP API (or SDKs/CLI wrapping it), so it is HTTP-native but not designed to be compactly embedded in a URL query string." },
+    "standardization": { "score": 1, "rationale": "A proprietary, single-vendor AWS API with no independent specification." },
+    "security": { "score": 4, "rationale": "ExpressionAttributeNames/Values act as required placeholders/bind parameters rather than raw string concatenation, combined with IAM-based access control, giving strong built-in injection resistance." },
+    "performance": { "score": 4, "rationale": "Performance is highly predictable because reads are bounded by the declared partition/sort key structure and provisioned/on-demand capacity, with the engine explicitly bypassing query planning/optimization in favor of direct hash-based partition routing." },
+    "orthogonality": { "score": 2, "rationale": "KeyConditionExpression, FilterExpression, and Select/ProjectionExpression each carry distinct, non-overlapping rules (e.g., FilterExpression cannot reference key attributes), reflecting documented special-casing rather than uniform composability." }
+  },
+  "overallScore": 2.7,
+  "summary": "DynamoDB's Query API trades expressiveness and flexibility for predictable, low-latency performance at scale, requiring queries to be shaped around a table's fixed partition/sort key design with strong parameterization-based injection resistance, but with no joins, aggregation, or independent standardization.",
+  "evaluatedDate": "2026-09-04"
+}

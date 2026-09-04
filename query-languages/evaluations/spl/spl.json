@@ -1,0 +1,26 @@
+{
+  "title": "SPL",
+  "slug": "spl",
+  "officialDocUrl": "https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction",
+  "mediaType": "None known — submitted as a `search` form field via Splunk's REST API (`application/x-www-form-urlencoded`).",
+  "category": "Log/security search",
+  "sources": [
+    { "title": "Introduction (SPL2 Search Reference)", "publisher": "Splunk Inc.", "url": "https://help.splunk.com/en?resourceId=SCS_SearchReference_Introduction", "date": null },
+    { "title": "Splunk", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Splunk", "date": "2026-07-30" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "An extensive pipe-chained command library (stats, eval, join, lookup, timechart, tstats, mvexpand, rex, streamstats, and dozens more) covering statistics, regex extraction, joins, and time-series analytics across searching, reporting, and alerting." },
+    "simplicity": { "score": 3, "rationale": "The core Unix-pipe-like command-chaining model (search | command | command...) is conceptually straightforward, but the very large surface area of commands, functions, and options takes real time to master." },
+    "flexibility": { "score": 4, "rationale": "Designed to work over heterogeneous machine-generated data collected from files, TCP/UDP syslog, and application APIs without requiring a predefined schema; fields are extracted and interpreted per search." },
+    "communityAndEcosystem": { "score": 5, "rationale": "Splunk (founded 2003, ~8,000 employees pre-acquisition, acquired by Cisco for $28 billion in 2024) has one of the largest log-analytics/SIEM ecosystems, with over 2,000 community apps and add-ons on Splunkbase." },
+    "extensibility": { "score": 4, "rationale": "Supports custom search commands, lookups, and a large third-party app/add-on ecosystem via Splunkbase for extending platform functionality." },
+    "transportCompatibility": { "score": 3, "rationale": "Reachable via Splunk's REST API and web UI/search bar, though not natively URL-embeddable itself; the note that list.csv's original link is a broken self-referential URL was flagged in the project plan and worked around by using the correct docs.splunk.com/help.splunk.com URL instead." },
+    "standardization": { "score": 1, "rationale": "A proprietary, single-vendor language now owned by Cisco, with no independent standards body, and even a newer, partially incompatible variant (SPL2) coexisting alongside classic SPL." },
+    "security": { "score": 2, "rationale": "No distinctive built-in anti-injection design is documented for SPL itself; typical string-based query risk applies, though the broader Splunk platform provides role-based access control and other platform-level security features separately." },
+    "performance": { "score": 4, "rationale": "Purpose-built and heavily optimized for indexing and searching very large volumes of machine-generated log data at scale, a core differentiator of the Splunk platform." },
+    "orthogonality": { "score": 3, "rationale": "A uniform pipe-chaining model underlies every search, but the large number of individual commands accumulated over two decades of development have somewhat inconsistent syntax and argument conventions." }
+  },
+  "overallScore": 3.4,
+  "summary": "SPL is a mature, highly expressive pipe-based search and analytics language purpose-built for large-scale log and security data, backed by one of the largest ecosystems in the observability/SIEM space, but it remains a proprietary single-vendor language (now under Cisco) with no formal standardization and no documented built-in anti-injection design, and its very large command surface takes real effort to master.",
+  "evaluatedDate": "2026-09-04"
+}

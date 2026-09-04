@@ -1,0 +1,26 @@
+{
+  "title": "DAX",
+  "slug": "dax",
+  "officialDocUrl": "https://learn.microsoft.com/en-us/dax/",
+  "mediaType": "None known — DAX queries are submitted inside a generic `application/json` body via the Power BI/Analysis Services REST APIs.",
+  "category": "Analytics/Observability",
+  "sources": [
+    { "title": "Data Analysis Expressions (DAX) Reference", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/dax/", "date": null },
+    { "title": "Data Analysis Expressions", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Data_Analysis_Expressions", "date": "2026-05-31" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "A formula language with around 340 functions for calculated columns, measures, calculated tables, calculation groups, custom format strings, and row-level security filters, plus dedicated time-intelligence functions." },
+    "simplicity": { "score": 3, "rationale": "Designed to feel familiar to Excel formula authors and 'be simple and easy to learn', but its row-context vs. filter-context evaluation model is a well-documented conceptual hurdle distinct from ordinary spreadsheet or SQL thinking." },
+    "flexibility": { "score": 2, "rationale": "DAX expressions are evaluated against a predefined Tabular/Power Pivot data model (tables and relationships) rather than arbitrary or schema-free data, so a data model must be designed and loaded first." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Powers Power BI, Excel Power Pivot, and SQL Server Analysis Services Tabular models — one of the most widely used BI toolchains — with a mature ecosystem of dedicated books, the DAX Patterns methodology, and community reference sites like dax.guide." },
+    "extensibility": { "score": 2, "rationale": "The function library is fixed and versioned entirely by Microsoft (with periodic additions of 'new DAX functions'); there is no user-defined function mechanism for extending the core language." },
+    "transportCompatibility": { "score": 2, "rationale": "Evaluated inside BI client tools (Power BI, Excel, SSAS) or via XMLA-based query endpoints rather than being designed for direct URL/query-string embedding." },
+    "standardization": { "score": 1, "rationale": "A Microsoft-proprietary formula/query language with no independent standards body governing its syntax or semantics." },
+    "security": { "score": 3, "rationale": "Primarily used to define calculations evaluated inside a trusted BI model rather than as raw user-supplied query strings sent over a network, reducing typical injection exposure, though DAX queries issued via XMLA/REST endpoints still lack documented parameterization protections." },
+    "performance": { "score": 4, "rationale": "Runs against the in-memory VertiPaq columnar storage engine used by Analysis Services Tabular models, purpose-built for fast analytical aggregations over large BI datasets." },
+    "orthogonality": { "score": 3, "rationale": "Blends Excel-like formula syntax with relational filter/row-context semantics inherited in part from MDX, resulting in two coexisting evaluation models that can behave inconsistently for the same-looking expression depending on context." }
+  },
+  "overallScore": 2.8,
+  "summary": "DAX is a mature, Excel-formula-inspired analytical expression language deeply embedded in Microsoft's Power BI/Analysis Services BI ecosystem, offering strong expressiveness for calculations over a fast in-memory columnar engine, but it requires a predefined Tabular data model, has no user-extensible function mechanism, and its dual row-context/filter-context evaluation model remains a genuine learning curve despite its Excel-like surface syntax.",
+  "evaluatedDate": "2026-09-04"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "TaxiQL",
+  "slug": "taxiql",
+  "officialDocUrl": "https://github.com/taxilang/taxilang",
+  "mediaType": "None known — no registered or documented media type could be verified.",
+  "category": "API/data-fetching",
+  "sources": [
+    { "title": "taxilang/taxilang", "publisher": "Taxi Lang project (Orbital)", "url": "https://github.com/taxilang/taxilang", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Built on Taxi's rich semantic type system (types can 'inherit' from primitives and carry meaning, e.g. distinguishing a CustomerId from a generic String), letting TaxiQL describe API operations and cross-system data relationships more richly than typical schema languages." },
+    "simplicity": { "score": 3, "rationale": "Readability is an explicit language goal ('A familiar syntax that should be easy to write, and easy to understand'), but semantic-type modeling as a paradigm requires real learning investment beyond typical schema or query languages." },
+    "flexibility": { "score": 4, "rationale": "Designed to bridge multiple protocol/schema formats — OpenAPI, RAML, JsonSchema, Protobuf, databases, message queues, and serverless functions — rather than being tied to one data source or format." },
+    "communityAndEcosystem": { "score": 1, "rationale": "A small open-source project (199 GitHub stars, 7 forks, roughly a dozen contributors) primarily tied to the commercial Orbital product ecosystem, with limited broader adoption." },
+    "extensibility": { "score": 4, "rationale": "Extensibility is an explicit language goal: 'Taxi allows you to refine and compose API schemas, adding context, annotations, and improving type signatures.'" },
+    "transportCompatibility": { "score": 2, "rationale": "TaxiQL queries are resolved by a separate query engine (such as Orbital) against underlying APIs and data sources, rather than being a native URL/HTTP query format in its own right." },
+    "standardization": { "score": 1, "rationale": "A single open-source project's own bespoke language with no independent standards body, competing conceptually with the much more widely adopted OpenAPI specification." },
+    "security": { "score": 2, "rationale": "No explicit security-design discussion is documented; as a query/orchestration layer that resolves and stitches together calls to arbitrary underlying APIs, its risk profile depends heavily on the security of those downstream systems." },
+    "performance": { "score": 2, "rationale": "No independent performance data is documented; performance is largely inherited from whatever underlying APIs and data sources TaxiQL orchestrates." },
+    "orthogonality": { "score": 3, "rationale": "A consistent model-based approach where types inherit from other types and operations reference those types, though as a hybrid schema-and-query language it lacks the small, uniform composition primitives seen in more focused query languages." }
+  },
+  "overallScore": 2.6,
+  "summary": "TaxiQL is the query layer of Taxi, a semantic type/schema language designed to bridge OpenAPI, RAML, databases, message queues, and more without requiring GraphQL-style resolvers, offering genuinely rich and extensible cross-system type modeling, but it remains a small open-source project with limited community adoption, no independent standardization, and no native HTTP transport mechanism of its own.",
+  "evaluatedDate": "2026-09-04"
+}

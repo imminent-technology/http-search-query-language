@@ -1,0 +1,26 @@
+{
+  "title": "Firebase Cloud Firestore Query Language",
+  "slug": "firebase-cloud-firestore-query-language",
+  "officialDocUrl": "https://firebase.google.com/docs/firestore/query-data/queries",
+  "mediaType": "None known — Firestore queries are structured protobuf/JSON (`StructuredQuery`) sent via gRPC or the REST API's generic `application/json`.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "Perform simple and compound queries in Cloud Firestore", "publisher": "Google", "url": "https://firebase.google.com/docs/firestore/query-data/queries", "date": "2026-09-01" },
+    { "title": "Firebase", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Firebase", "date": "2026-07-20" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 3, "rationale": "Supports equality/range/array-membership operators, compound AND/OR queries, collection-group queries, and ordering, but explicitly limits Standard edition queries to 30 disjunctions in disjunctive normal form and imposes several combination restrictions (e.g., only one array-contains clause per OR group)." },
+    "simplicity": { "score": 4, "rationale": "A fluent, chainable where()/query() builder API in each SDK language is easy to read and write for typical filtering use cases." },
+    "flexibility": { "score": 4, "rationale": "Operates over schema-less JSON-like documents and collections, well suited to evolving mobile/web app data models." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Backed by Google with extensive official documentation, SDKs across many languages/platforms, and a large developer community given Firebase's popularity." },
+    "extensibility": { "score": 2, "rationale": "Query capabilities are fixed by the Firestore engine with no user-defined functions, and Standard edition enforces hard, non-adjustable disjunction limits." },
+    "transportCompatibility": { "score": 3, "rationale": "Accessed via Firestore's gRPC/REST APIs and SDKs rather than embedded directly as a URL query string, though the REST API exposes structured query documents over HTTP." },
+    "standardization": { "score": 1, "rationale": "A proprietary Google/Firebase query API with no independent specification or alternate implementations." },
+    "security": { "score": 4, "rationale": "Queries are built from typed method calls/objects in each SDK rather than string concatenation, and are further constrained by declarative Firestore Security Rules, giving strong built-in injection resistance." },
+    "performance": { "score": 4, "rationale": "Queries are backed by required composite indexes (auto-suggested via error messages when missing), giving predictable, index-backed performance at scale." },
+    "orthogonality": { "score": 3, "rationale": "Filters, ordering and limits compose in a predictable builder style, but documented interactions (e.g., orderBy requiring the field to exist, restrictions on combining not-in/!=/or) show real special-casing." }
+  },
+  "overallScore": 3.2,
+  "summary": "Firestore's query API offers an easy-to-use, index-backed builder syntax over schema-less documents with strong injection resistance via typed SDK calls and security rules, but it is a proprietary Google API with fixed disjunction limits and several documented composability restrictions.",
+  "evaluatedDate": "2026-09-04"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Criteria API",
+  "slug": "criteria-api",
+  "officialDocUrl": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html",
+  "mediaType": "Not applicable — the Criteria API is a Java object-graph API for building queries programmatically; it has no serialized wire format.",
+  "category": "Relational/SQL-family",
+  "sources": [
+    { "title": "Chapter 32: Introduction to the Java Persistence API", "publisher": "Oracle", "url": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html", "date": null },
+    { "title": "Jakarta Persistence", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jakarta_Persistence", "date": "2025-10-30" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Builds SQL-like queries programmatically with joins, subqueries, aggregate and group-by expressions, and dynamic predicate composition, though more verbose to write than an equivalent JPQL string." },
+    "simplicity": { "score": 2, "rationale": "The type-safe, fluent-builder style requires generated metamodel classes and verbose Java code for even simple queries, a steeper learning curve than writing a JPQL/SQL string directly." },
+    "flexibility": { "score": 2, "rationale": "Like JPQL, it operates over a fixed, annotated object-relational entity schema and is not designed for dynamic or schema-less data." },
+    "communityAndEcosystem": { "score": 4, "rationale": "Part of the same widely-adopted Jakarta Persistence specification as JPQL, implemented by Hibernate, EclipseLink and OpenJPA, with mature documentation and IDE tooling for the generated metamodel." },
+    "extensibility": { "score": 3, "rationale": "Supports custom expressions and generic function calls similar to JPQL, but the API surface itself is fixed by the specification." },
+    "transportCompatibility": { "score": 1, "rationale": "Exists only as an in-process Java API for building queries; has no notion of URL or HTTP transport." },
+    "standardization": { "score": 5, "rationale": "Formally part of the Jakarta Persistence specification (JSR 317/338), implemented independently by multiple ORM vendors." },
+    "security": { "score": 5, "rationale": "Queries are built entirely from typed Java objects and bound parameters rather than string concatenation, making it structurally resistant to injection by construction." },
+    "performance": { "score": 3, "rationale": "Translated to native SQL by the JPA provider with the same caching/optimization characteristics as JPQL; the type-safe API adds no runtime cost beyond query construction." },
+    "orthogonality": { "score": 3, "rationale": "Predicates and expressions compose fluently as Java objects, but the API's verbosity and reliance on generated metamodel classes add indirection compared to a plain query string." }
+  },
+  "overallScore": 3.2,
+  "summary": "The JPA Criteria API is a type-safe, programmatic alternative to JPQL that is structurally immune to injection by construction and formally standardized alongside it, but its fluent, metamodel-driven style trades away the simplicity of writing plain query strings and, like JPQL, is confined to in-process Java use over a fixed entity schema.",
+  "evaluatedDate": "2026-09-04"
+}

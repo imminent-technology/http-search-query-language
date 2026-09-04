@@ -1,0 +1,25 @@
+{
+  "title": "JSON Query Language",
+  "slug": "json-query-language",
+  "officialDocUrl": "https://jsonquerylang.org/",
+  "mediaType": "None known — no registered or documented media type found for this specification (jsonquerylang.org).",
+  "category": "API/data-fetching",
+  "sources": [
+    { "title": "JSON Query", "publisher": "JSON Query project (Jos de Jong)", "url": "https://jsonquerylang.org/", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 3, "rationale": "Provides a functional pipe/chain model with property getters, operators, functions (filter, sort, map, pick, aggregate functions), objects for parallel transforms, and arrays, covering most common query and transform needs, though its own docs acknowledge its scope is intentionally smaller than full-featured JSON query languages." },
+    "simplicity": { "score": 4, "rationale": "Explicitly designed as a reaction against JSONPath/JMESPath-style syntaxes that rely on dense special characters (@, $, |, ?, :, *, &); its Text Format instead resembles familiar JavaScript/Lodash method chaining, which the project states makes it easy to learn." },
+    "flexibility": { "score": 5, "rationale": "Operates directly over arbitrary JSON documents and arrays with no schema requirement whatsoever, reflecting JSON's own inherently schema-free structure." },
+    "communityAndEcosystem": { "score": 1, "rationale": "A small, single-maintainer open-source project with a modest set of listed implementations; it has nowhere near the adoption of established JSON query languages like JSONPath or JMESPath, let alone mainstream database query languages." },
+    "extensibility": { "score": 4, "rationale": "Explicitly marketed as 'expandable', with a documented, easy-to-parse intermediate JSON Format (arrays of function calls) specifically designed to make it straightforward to build new integrations, GUIs, or ports to other languages/environments." },
+    "transportCompatibility": { "score": 2, "rationale": "Used as an embedded library function (`jsonquery(data, query)`) invoked programmatically within an application, rather than being designed for direct HTTP/URL query-string embedding." },
+    "standardization": { "score": 1, "rationale": "A single open-source project's own bespoke specification with no independent standards body behind it, unlike JSONPath which has an IETF RFC (RFC 9535)." },
+    "security": { "score": 4, "rationale": "Explicitly designed with security as a stated goal: property access is restricted to plain JSON objects/arrays and disallows accessing object methods or class properties specifically 'because accessing arbitrary properties may introduce security risks' — a direct contrast to the JavaScript+Lodash approach it calls out as an injection risk." },
+    "performance": { "score": 3, "rationale": "Built to be extremely lightweight (small bundle size, suitable for browser use) by leveraging native JSON parsing and built-in language functions, though no independent large-scale performance benchmarks are documented." },
+    "orthogonality": { "score": 4, "rationale": "The entire language reduces to a small set of uniform, composable constructs — functions, operators, pipes, objects, arrays, and property getters — all of which convert cleanly and losslessly between the Text Format and an equivalent JSON Format." }
+  },
+  "overallScore": 3.1,
+  "summary": "JSON Query Language is a small, deliberately minimal, and explicitly security-conscious functional query language for arbitrary JSON data, designed to avoid the dense special-character syntax of JSONPath/JMESPath in favor of readable pipe/chain composition, but as a young single-maintainer project it has a tiny community, no independent standardization, and is used as an embedded library call rather than a URL-native transport mechanism.",
+  "evaluatedDate": "2026-09-04"
+}

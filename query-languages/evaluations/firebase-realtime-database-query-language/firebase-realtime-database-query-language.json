@@ -1,0 +1,26 @@
+{
+  "title": "Firebase Realtime Database Query Language",
+  "slug": "firebase-realtime-database-query-language",
+  "officialDocUrl": "https://firebase.google.com/docs/database/admin/retrieve-data",
+  "mediaType": "None known — query parameters are passed via the URL query string on the REST API; responses use generic `application/json`.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "Retrieving Data", "publisher": "Google", "url": "https://firebase.google.com/docs/database/admin/retrieve-data", "date": "2026-09-01" },
+    { "title": "Firebase", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Firebase", "date": "2026-07-20" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 2, "rationale": "Queries can only order by one child key/value/key at a time (orderByChild, orderByKey, orderByValue) combined with limit/range methods; there is no compound filtering across multiple fields, no joins, and no aggregation." },
+    "simplicity": { "score": 4, "rationale": "A small, easy-to-learn set of ordering and range methods (orderByChild, limitToFirst, startAt, endAt, equalTo) that compose in simple chains." },
+    "flexibility": { "score": 3, "rationale": "Works over a single large schema-less JSON tree, but the lack of compound queries means complex access patterns often require denormalizing data rather than relying on flexible querying." },
+    "communityAndEcosystem": { "score": 3, "rationale": "Long-established as Firebase's original 2012 product with solid official docs and multi-language SDKs, though Google has steered new development toward Firestore as its successor." },
+    "extensibility": { "score": 1, "rationale": "The query surface is fixed to the documented ordering/range/limit methods, with no mechanism for custom query logic beyond client-side filtering after retrieval." },
+    "transportCompatibility": { "score": 3, "rationale": "Reachable via a REST API where query parameters (orderBy, startAt, etc.) can be passed directly on the URL in addition to persistent SDK connections, giving partial URL-based usability." },
+    "standardization": { "score": 1, "rationale": "A proprietary Google/Firebase API with no independent specification." },
+    "security": { "score": 3, "rationale": "Queries are built via SDK method chains rather than raw strings and are gated by Realtime Database security rules, though the product's historically permissive default configuration has caused real-world data exposure incidents." },
+    "performance": { "score": 3, "rationale": "Requires explicit .indexOn rules for production-scale ordered queries; without them, ad hoc queries can be slow, as the documentation explicitly warns." },
+    "orthogonality": { "score": 2, "rationale": "Ordering functions cannot be combined (e.g., calling orderByChild() twice throws an error), and range/limit methods only layer on top of a single ordering choice, a notable composability limitation." }
+  },
+  "overallScore": 2.5,
+  "summary": "Firebase Realtime Database's query language offers a small, easy-to-learn set of single-key ordering and range methods well suited to simple lookups, but it cannot combine multiple ordering criteria or filter compound conditions, making it the least expressive of Firebase's two database query languages and largely superseded by Firestore.",
+  "evaluatedDate": "2026-09-04"
+}

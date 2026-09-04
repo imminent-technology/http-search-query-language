@@ -1,0 +1,26 @@
+{
+  "title": "XPath",
+  "slug": "xpath",
+  "officialDocUrl": "https://developer.mozilla.org/en-US/docs/Web/XPath",
+  "mediaType": "None known — no IANA-registered media type exists; XPath expressions are normally embedded within another document (XSLT, XQuery, WebDAV SEARCH request bodies) rather than transmitted standalone.",
+  "category": "Path/document navigation",
+  "sources": [
+    { "title": "XPath", "publisher": "MDN Web Docs (Mozilla)", "url": "https://developer.mozilla.org/en-US/docs/Web/XPath", "date": null },
+    { "title": "XPath", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/XPath", "date": "2025-11-17" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "A rich set of axes (child, descendant, ancestor, following, preceding, attribute, etc.), node tests, predicates, and a substantial function library (string, boolean, number functions), with XPath 2.0+ adding a much richer type system and XPath 3.0 adding functions as first-class values." },
+    "simplicity": { "score": 4, "rationale": "The abbreviated syntax deliberately mimics familiar URI and Unix-style file-path syntax (e.g. /A/B/C), making basic expressions intuitive, though the full unabbreviated axis syntax and predicate rules add real depth for complex cases." },
+    "flexibility": { "score": 3, "rationale": "Fundamentally tied to navigating the tree structure of XML (and XML-like) documents via the XQuery and XPath Data Model; XPath 3.1 added maps and arrays to better support JSON, but it remains document-tree-centric rather than data-format-agnostic." },
+    "communityAndEcosystem": { "score": 5, "rationale": "A foundational W3C technology implemented across nearly every major programming language (Java, Python, JavaScript, PHP, Perl, .NET, C/C++) and embedded natively in web browsers, XSLT, XML Schema, and XForms." },
+    "extensibility": { "score": 3, "rationale": "The core language is fixed per W3C specification version, but implementations widely support custom function extensions (e.g. the EXPath community group's extensions), and each major version (1.0 through 3.1) has added substantial new capability." },
+    "transportCompatibility": { "score": 2, "rationale": "Typically invoked via an API (e.g. document.evaluate() in browsers, javax.xml.xpath in Java) or embedded within other languages like XSLT, rather than being submitted directly as an HTTP query string." },
+    "standardization": { "score": 5, "rationale": "A formal W3C Recommendation since 1999, with stable versioned specifications (1.0, 2.0, 2.0 2nd edition, 3.0, 3.1) each formally ratified by the World Wide Web Consortium." },
+    "security": { "score": 2, "rationale": "No distinctive built-in anti-injection design; XPath injection is a well-documented attack class in security literature when expressions are built from unsanitized user input." },
+    "performance": { "score": 3, "rationale": "Performance varies significantly by implementation and document size; adequate for typical document-navigation use cases but XPath itself is not designed as a big-data analytics engine." },
+    "orthogonality": { "score": 4, "rationale": "Each location step uniformly combines an axis, a node test, and zero or more predicates, and the abbreviated and full-unabbreviated syntaxes are systematically interchangeable, giving a clean, composable model." }
+  },
+  "overallScore": 3.5,
+  "summary": "XPath is a mature, formally W3C-standardized expression language for navigating XML document trees, with a clean and highly composable axis/node-test/predicate model implemented across nearly every major programming ecosystem, but it remains tied to the XML tree data model, has no native HTTP transport of its own, and (like SQL) has no built-in defense against injection when expressions are built from unsanitized input.",
+  "evaluatedDate": "2026-09-04"
+}

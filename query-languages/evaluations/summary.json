@@ -1,0 +1,802 @@
+[
+  {
+    "title": "SQL",
+    "slug": "sql",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://en.wikipedia.org/wiki/SQL",
+    "mediaType": "`application/sql` — IANA-registered, RFC 6922.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 5,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 5,
+      "security": 2,
+      "performance": 5,
+      "orthogonality": 3
+    },
+    "overallScore": 3.6
+  },
+  {
+    "title": "HQL",
+    "slug": "hql",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm",
+    "mediaType": "Not applicable — HQL is parsed and translated to SQL inside the JVM by Hibernate; it is not transmitted over HTTP with its own media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 1,
+      "standardization": 3,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.1
+  },
+  {
+    "title": "JPQL",
+    "slug": "jpql",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html",
+    "mediaType": "Not applicable — like HQL, JPQL is used internally by the JPA provider and is not transmitted over HTTP with a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 1,
+      "standardization": 5,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.3
+  },
+  {
+    "title": "Criteria API",
+    "slug": "criteria-api",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html",
+    "mediaType": "Not applicable — the Criteria API is a Java object-graph API for building queries programmatically; it has no serialized wire format.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 2,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 1,
+      "standardization": 5,
+      "security": 5,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.2
+  },
+  {
+    "title": "SOQL",
+    "slug": "soql",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm",
+    "mediaType": "None known — submitted as a URL-encoded `q` query-string parameter on Salesforce's REST API.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 2.8
+  },
+  {
+    "title": "SQL++",
+    "slug": "sql-plus-plus",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://www.couchbase.com/sqlplusplus/",
+    "mediaType": "None known — Couchbase's Query REST API accepts SQL++/N1QL as a `\"statement\"` field inside a generic `application/json` body.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 5,
+      "communityAndEcosystem": 2,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 2,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.0
+  },
+  {
+    "title": "Azure Cosmos DB SQL Query Syntax",
+    "slug": "azure-cosmos-db-sql-query-syntax",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started",
+    "mediaType": "`application/query+json` — required `Content-Type` for SQL API query requests per Microsoft's Cosmos DB REST API documentation. Not registered with IANA, but officially documented by Microsoft.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "AWS Athena Query Syntax",
+    "slug": "aws-athena-query-syntax",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html",
+    "mediaType": "None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.1`) for the whole Athena API action, not a dedicated media type for the SQL text.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 2,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.1
+  },
+  {
+    "title": "MongoDB Query Syntax",
+    "slug": "mongodb-query-syntax",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://www.mongodb.com/docs/manual/tutorial/query-documents/",
+    "mediaType": "None known — MongoDB's wire protocol uses BSON, and the Atlas Data API wraps queries in generic `application/json`.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 5,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "CouchDB Mango Query Language",
+    "slug": "couchdb-mango-query-language",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://dev.to/yenyih/query-in-apache-couchdb-mango-query-lfd",
+    "mediaType": "None known — Mango selectors are POSTed as a JSON document to `/db/_find` using the generic `application/json` media type.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 5,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.1
+  },
+  {
+    "title": "Firebase Cloud Firestore Query Language",
+    "slug": "firebase-cloud-firestore-query-language",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://firebase.google.com/docs/firestore/query-data/queries",
+    "mediaType": "None known — Firestore queries are structured protobuf/JSON (`StructuredQuery`) sent via gRPC or the REST API's generic `application/json`.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 4,
+      "extensibility": 2,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 4,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.2
+  },
+  {
+    "title": "Firebase Realtime Database Query Language",
+    "slug": "firebase-realtime-database-query-language",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://firebase.google.com/docs/database/admin/retrieve-data",
+    "mediaType": "None known — query parameters are passed via the URL query string on the REST API; responses use generic `application/json`.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 3,
+      "extensibility": 1,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 2
+    },
+    "overallScore": 2.5
+  },
+  {
+    "title": "AWS DynamoDB Query Syntax",
+    "slug": "aws-dynamodb-query-syntax",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html",
+    "mediaType": "None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.0`); no dedicated media type for DynamoDB's KeyConditionExpression syntax.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 2,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 4,
+      "performance": 4,
+      "orthogonality": 2
+    },
+    "overallScore": 2.7
+  },
+  {
+    "title": "AQL",
+    "slug": "aql",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://www.arangodb.com/docs/stable/aql/",
+    "mediaType": "None known — ArangoDB's HTTP API wraps AQL queries in a generic `application/json` request body; no dedicated media type exists.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 5,
+      "communityAndEcosystem": 2,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 2.9
+  },
+  {
+    "title": "CQL",
+    "slug": "cql",
+    "category": "Document/NoSQL",
+    "officialDocUrl": "https://cassandra.apache.org/doc/latest/cassandra/cql/",
+    "mediaType": "None known for Cassandra's CQL — statements are normally sent over Cassandra's native binary protocol, not HTTP. Note: IANA's registered `text/cql` media type belongs to HL7's unrelated Clinical Quality Language, and OGC defines a separate, also-unrelated CQL for geospatial filtering; neither refers to Cassandra Query Language.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 1,
+      "standardization": 1,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 2
+    },
+    "overallScore": 2.7
+  },
+  {
+    "title": "GraphQL",
+    "slug": "graphql",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://graphql.org/",
+    "mediaType": "`application/graphql-response+json` (responses) and `application/json` (requests) per the GraphQL-over-HTTP specification (graphql.github.io/graphql-over-http). Not registered with IANA. (A legacy, non-standard `application/graphql` convention for raw request bodies exists in some older server implementations but is not part of any official spec.)",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 5,
+      "extensibility": 4,
+      "transportCompatibility": 4,
+      "standardization": 4,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 4.0
+  },
+  {
+    "title": "PromQL",
+    "slug": "promql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://prometheus.io/docs/prometheus/latest/querying/basics/",
+    "mediaType": "None known — Prometheus's HTTP API accepts PromQL as a URL query parameter or `application/x-www-form-urlencoded` field, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 5,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 2,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.2
+  },
+  {
+    "title": "KQL",
+    "slug": "kql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/",
+    "mediaType": "None known — KQL text is submitted as a JSON field inside a generic `application/json` body via the Azure Data Explorer/Log Analytics REST APIs.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 4,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "NRQL",
+    "slug": "nrql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/",
+    "mediaType": "None known — NRQL strings are submitted as a field inside a GraphQL request (`application/json`) to New Relic's NerdGraph API.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 2.8
+  },
+  {
+    "title": "DQL",
+    "slug": "dql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://www.dynatrace.com/support/help/platform/grail/dynatrace-query-language",
+    "mediaType": "None known — Dynatrace's Grail Query REST API accepts DQL as a JSON field within a generic `application/json` body.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 5,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 2,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.2
+  },
+  {
+    "title": "DAX",
+    "slug": "dax",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/dax/",
+    "mediaType": "None known — DAX queries are submitted inside a generic `application/json` body via the Power BI/Analysis Services REST APIs.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 2,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 2.8
+  },
+  {
+    "title": "MDX",
+    "slug": "mdx",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16",
+    "mediaType": "None known — MDX statements are typically embedded in a SOAP/XML request (`text/xml`/`application/soap+xml`) to an XMLA endpoint; no dedicated MDX media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 2,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 3,
+      "security": 2,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 2.9
+  },
+  {
+    "title": "JSON Query Language",
+    "slug": "json-query-language",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://jsonquerylang.org/",
+    "mediaType": "None known — no registered or documented media type found for this specification (jsonquerylang.org).",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 1,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.1
+  },
+  {
+    "title": "Lucene Query Syntax",
+    "slug": "lucene-query-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html",
+    "mediaType": "None known — Lucene query strings are embedded as plain text inside the `q` parameter of systems (Solr, Elasticsearch) that wrap it in their own generic JSON APIs.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 5,
+      "extensibility": 2,
+      "transportCompatibility": 5,
+      "standardization": 1,
+      "security": 3,
+      "performance": 5,
+      "orthogonality": 3
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "Solr Query Syntax",
+    "slug": "solr-query-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://solr.apache.org/guide/6_6/the-standard-query-parser.html",
+    "mediaType": "None known — Solr accepts query strings as URL parameters or within the JSON Request API's generic `application/json`.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 5,
+      "standardization": 1,
+      "security": 2,
+      "performance": 5,
+      "orthogonality": 3
+    },
+    "overallScore": 3.3
+  },
+  {
+    "title": "ESQL",
+    "slug": "esql",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html",
+    "mediaType": "None known — Elasticsearch's Query DSL/ES|QL requests use the generic `application/json` content type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 5,
+      "extensibility": 3,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 2,
+      "performance": 5,
+      "orthogonality": 3
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "AWS CloudSearch Query Syntax",
+    "slug": "aws-cloudsearch-query-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html",
+    "mediaType": "None known — queries are passed as URL query-string parameters (`q`, `q.parser`) on the CloudSearch search endpoint; no dedicated media type.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 2,
+      "extensibility": 2,
+      "transportCompatibility": 5,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 2
+    },
+    "overallScore": 2.6
+  },
+  {
+    "title": "Cypher",
+    "slug": "cypher",
+    "category": "Graph",
+    "officialDocUrl": "https://neo4j.com/developer/cypher/",
+    "mediaType": "None known — openCypher/Neo4j statements travel over the Bolt protocol or are wrapped in generic `application/json` via Neo4j's HTTP query API; no dedicated Cypher media type.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 4,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.7
+  },
+  {
+    "title": "Gremlin",
+    "slug": "gremlin",
+    "category": "Graph",
+    "officialDocUrl": "https://tinkerpop.apache.org/gremlin.html",
+    "mediaType": "None known — no documented or registered media type for Gremlin scripts could be verified.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 3,
+      "security": 2,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "SPARQL",
+    "slug": "sparql",
+    "category": "Graph",
+    "officialDocUrl": "https://www.w3.org/TR/rdf-sparql-protocol/",
+    "mediaType": "`application/sparql-query` — IANA-registered per the W3C SPARQL 1.1 Protocol. Query results use the related, also IANA-registered `application/sparql-results+xml` / `application/sparql-results+json`.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 2,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 4,
+      "standardization": 5,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.5
+  },
+  {
+    "title": "Datalog",
+    "slug": "datalog",
+    "category": "Graph",
+    "officialDocUrl": "https://en.m.wikipedia.org/wiki/Datalog",
+    "mediaType": "`application/vnd.datalog` — registered in the IANA Media Types registry (registrant: Simon Johnston).",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 2,
+      "flexibility": 4,
+      "communityAndEcosystem": 2,
+      "extensibility": 4,
+      "transportCompatibility": 1,
+      "standardization": 2,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 2.8
+  },
+  {
+    "title": "Crul Queries",
+    "slug": "crul-queries",
+    "category": "Niche/misc",
+    "officialDocUrl": "https://www.crul.com/docs/features/queries/",
+    "mediaType": "None known — no verifiable, actively documented standard or registered media type could be found for this query language.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 1,
+      "extensibility": 2,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 2,
+      "performance": 2,
+      "orthogonality": 4
+    },
+    "overallScore": 2.3
+  },
+  {
+    "title": "Flux",
+    "slug": "flux",
+    "category": "Scripting",
+    "officialDocUrl": "https://www.influxdata.com/products/flux/",
+    "mediaType": "`application/vnd.flux` — documented `Content-Type` for Flux query requests to InfluxDB's `/api/v2/query` endpoint (InfluxData documentation). Not registered with IANA.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.0
+  },
+  {
+    "title": "FQL",
+    "slug": "fql",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://en.wikipedia.org/wiki/Facebook_Query_Language",
+    "mediaType": "None known — the (now-deprecated) Facebook Query Language was submitted as a `q` parameter of Facebook's Graph API using generic form/JSON encoding; the feature has been retired.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 4,
+      "flexibility": 1,
+      "communityAndEcosystem": 1,
+      "extensibility": 1,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 2,
+      "performance": 2,
+      "orthogonality": 3
+    },
+    "overallScore": 2.1
+  },
+  {
+    "title": "LINQ",
+    "slug": "linq",
+    "category": "Language-integrated",
+    "officialDocUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/",
+    "mediaType": "Not applicable — LINQ is a .NET language-integrated query syntax compiled into expression trees at compile time; it has no independent wire format.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 4,
+      "extensibility": 5,
+      "transportCompatibility": 1,
+      "standardization": 3,
+      "security": 3,
+      "performance": 2,
+      "orthogonality": 4
+    },
+    "overallScore": 3.6
+  },
+  {
+    "title": "OQL",
+    "slug": "oql",
+    "category": "Niche/misc",
+    "officialDocUrl": "https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language",
+    "mediaType": "None known — no registered or documented media type could be verified.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 1,
+      "extensibility": 1,
+      "transportCompatibility": 2,
+      "standardization": 2,
+      "security": 2,
+      "performance": 2,
+      "orthogonality": 3
+    },
+    "overallScore": 2.0
+  },
+  {
+    "title": "SPL",
+    "slug": "spl",
+    "category": "Log/security search",
+    "officialDocUrl": "https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction",
+    "mediaType": "None known — submitted as a `search` form field via Splunk's REST API (`application/x-www-form-urlencoded`).",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 5,
+      "extensibility": 4,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 2,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.4
+  },
+  {
+    "title": "TaxiQL",
+    "slug": "taxiql",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://github.com/taxilang/taxilang",
+    "mediaType": "None known — no registered or documented media type could be verified.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 1,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 2,
+      "performance": 2,
+      "orthogonality": 3
+    },
+    "overallScore": 2.6
+  },
+  {
+    "title": "XPath",
+    "slug": "xpath",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://developer.mozilla.org/en-US/docs/Web/XPath",
+    "mediaType": "None known — no IANA-registered media type exists; XPath expressions are normally embedded within another document (XSLT, XQuery, WebDAV SEARCH request bodies) rather than transmitted standalone.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 5,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 5,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.5
+  },
+  {
+    "title": "XQuery",
+    "slug": "xquery",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://www.w3.org/XML/Query/",
+    "mediaType": "None known / not registered — despite XQuery being a mature W3C Recommendation, no `application/xquery` (or similar) media type is registered with IANA.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 5,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.5
+  }
+]

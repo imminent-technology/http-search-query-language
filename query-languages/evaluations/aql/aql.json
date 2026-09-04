@@ -1,0 +1,25 @@
+{
+  "title": "AQL",
+  "slug": "aql",
+  "officialDocUrl": "https://www.arangodb.com/docs/stable/aql/",
+  "mediaType": "None known — ArangoDB's HTTP API wraps AQL queries in a generic `application/json` request body; no dedicated media type exists.",
+  "category": "Document/NoSQL",
+  "sources": [
+    { "title": "ArangoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/ArangoDB", "date": "2026-08-16" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "FOR/FILTER/COLLECT/RETURN syntax supports full CRUD over documents and graphs, geospatial queries, and aggregation, combining document, graph and key-value access within a single query." },
+    "simplicity": { "score": 3, "rationale": "Declarative and SQL-like in spirit, but its FOR-based syntax and multi-model concepts (documents, graphs, joins) require learning a distinct mental model compared to plain SQL." },
+    "flexibility": { "score": 5, "rationale": "A native, JSON-oriented multi-model query language spanning documents, graphs and key-value data in one unified language, ArangoDB's core differentiator." },
+    "communityAndEcosystem": { "score": 2, "rationale": "Driven primarily by a single vendor (ArangoDB GmbH) with a smaller community than mainstream databases; the 2023 shift from Apache 2.0 to a Business Source License may further limit adoption." },
+    "extensibility": { "score": 3, "rationale": "Supports user-defined functions via the Foxx JavaScript framework and search/vector extensions (ArangoSearch), though its extension ecosystem is narrower than major open standards." },
+    "transportCompatibility": { "score": 2, "rationale": "Executed through ArangoDB's HTTP REST API as request bodies or via language drivers, not designed for compact embedding directly in a URL query string." },
+    "standardization": { "score": 1, "rationale": "A single-vendor proprietary language with no independent specification or alternate implementations." },
+    "security": { "score": 3, "rationale": "Idiomatic use relies on bind parameters via drivers to avoid injection, a risk profile similar to other declarative query languages." },
+    "performance": { "score": 3, "rationale": "Implemented in C++ with self-managed memory for predictable performance and native clustering support, though real-world performance depends heavily on the specific ArangoDB version and deployment." },
+    "orthogonality": { "score": 3, "rationale": "FOR/FILTER/COLLECT/RETURN compose reasonably well across document and graph models, but mixing multiple data models in a single query adds complexity relative to a single-model language." }
+  },
+  "overallScore": 2.9,
+  "summary": "AQL is ArangoDB's SQL-like, JSON-oriented multi-model query language, offering strong flexibility for combining document, graph and key-value access in one query, but it remains a single-vendor proprietary language with a smaller ecosystem and no HTTP/URL-native transport model.",
+  "evaluatedDate": "2026-09-04"
+}

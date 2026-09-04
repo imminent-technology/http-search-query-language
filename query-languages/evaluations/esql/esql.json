@@ -1,0 +1,26 @@
+{
+  "title": "ESQL",
+  "slug": "esql",
+  "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html",
+  "mediaType": "None known — Elasticsearch's Query DSL/ES|QL requests use the generic `application/json` content type.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "Query string query", "publisher": "Elastic NV", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html", "date": null },
+    { "title": "Elasticsearch", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Elasticsearch", "date": "2026-08-10" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports field-scoped terms, wildcards, regular expressions, fuzzy and proximity matching, inclusive/exclusive ranges, boosting, boolean operators, grouping, and multi-field search with configurable matching strategies." },
+    "simplicity": { "score": 3, "rationale": "Simple term/phrase queries are easy to write, but the parser is strict and 'returns an error if the query string includes any invalid syntax' per Elastic's own docs, which explicitly warn against using it for user-facing search boxes." },
+    "flexibility": { "score": 4, "rationale": "Runs over Elasticsearch's schema-free, dynamically-mapped JSON documents, letting queries target arbitrary or wildcard-matched fields without a rigid predefined schema." },
+    "communityAndEcosystem": { "score": 5, "rationale": "Elasticsearch is one of the most widely deployed search/observability engines, with official clients in Java, C#, PHP, Python and Ruby and a large surrounding Elastic Stack ecosystem." },
+    "extensibility": { "score": 3, "rationale": "Analyzers, synonym filters, and custom scoring can be configured, but the query_string mini-language's own grammar is fixed by the Elasticsearch version; it is only one of several related query types (match, simple_query_string) rather than an open grammar." },
+    "transportCompatibility": { "score": 4, "rationale": "Submitted over Elasticsearch's HTTP REST API, either as the `q` request parameter on the search endpoint or embedded in a JSON request body — HTTP-native by design." },
+    "standardization": { "score": 1, "rationale": "A proprietary Elastic-defined syntax (internally reusing Apache Lucene's query parser) with no independent standards body governing it." },
+    "security": { "score": 2, "rationale": "Because the strict parser throws on invalid syntax, un-sanitized user input concatenated into a query_string is a documented anti-pattern; Elastic explicitly recommends match/simple_query_string instead for exposing to end users, underscoring the injection/error-oracle risk of raw usage." },
+    "performance": { "score": 5, "rationale": "Built on Apache Lucene with distributed sharding and replication across cluster nodes, purpose-built for low-latency full-text search at scale." },
+    "orthogonality": { "score": 3, "rationale": "Boolean, range, boosting, and field-search constructs compose reasonably, but the reserved-character escaping rules, JSON double-escaping requirement, and overlap with sibling query types (match, simple_query_string, multi_match) add inconsistency." }
+  },
+  "overallScore": 3.4,
+  "summary": "Elasticsearch's query_string syntax (referenced in list.csv as 'ESQL'/Elasticsearch Query Syntax) offers Lucene-derived expressiveness over schema-free JSON documents via a native HTTP REST API, backed by one of the largest search ecosystems, but its strict, error-throwing parser is explicitly discouraged by Elastic for direct end-user input and remains a single-vendor, non-standardized dialect.",
+  "evaluatedDate": "2026-09-04"
+}

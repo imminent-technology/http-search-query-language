@@ -75,6 +75,7 @@ Right after the `# Title` heading, add a back-link to the aggregate summary so r
   - Add a row to the matching `## <Category>` table (create a new category section — placed after the existing ones — only if it's genuinely a new category not in the taxonomy). If this entry is a name collision (per step 1/2), use the disambiguated label (e.g. `CQL (OGC)`) as the row's link text instead of the bare title.
   - Update the "Status: N of N languages evaluated" line to the new total and mention the addition.
   - Add a row to the "## Media types" table, in the same relative position as its category table above, using the same disambiguated label if applicable.
+- [`README.md`](../../../README.md): update the "whether one of the N query languages analyzed here already fits" sentence near the top to the new total.
 
 ### 7. Update the Observations section
 
@@ -90,6 +91,7 @@ Read the existing "## Observations so far" bullets in `summary.md`. Only touch t
 - Confirm `list.csv` and `list.md` each gained exactly one row, in the correct alphabetical position, with matching Title/Description.
 - Confirm `summary.json` is still valid JSON and `summary.md`'s tables/counts are internally consistent (row counts, "Status: N of N" line).
 - Confirm the new `<slug>.md` file has the `[↑ Full comparison table](../summary.md)` back-link right under its `# Title` heading.
+- Confirm `README.md`'s "N query languages analyzed here" count matches the new total.
 - If this was a name collision, confirm the new slug/folder doesn't overwrite the existing one, and that every link to the new entry in `summary.md` uses the disambiguated label consistently.
 - Report a concise summary of every file created/changed.
 

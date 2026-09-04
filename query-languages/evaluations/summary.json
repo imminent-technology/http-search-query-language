@@ -819,6 +819,27 @@
     "designQualityScore": 3.0
   },
   {
+    "title": "OData",
+    "slug": "odata",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://www.odata.org/",
+    "mediaType": "`application/json` with OData-specific parameters (e.g. `odata.metadata=minimal|full|none`) per the OData JSON Format v4.01 spec; no dedicated media type is registered with IANA.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 5,
+      "standardization": 5,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.7,
+    "designQualityScore": 3.5
+  },
+  {
     "title": "XPath",
     "slug": "xpath",
     "category": "Path/document navigation",

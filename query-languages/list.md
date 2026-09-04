@@ -36,6 +36,7 @@ An evaluation of these query languages against a common set of criteria is avail
 | MDX | [Multidimensional Expressions](https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16) |
 | MongoDB Query Syntax | [MongoDB Query Syntax](https://www.mongodb.com/docs/manual/tutorial/query-documents/) |
 | NRQL | [New Relic Query Language](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/) |
+| OData | [Open Data Protocol](https://www.odata.org/) |
 | OQL | [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language) |
 | PromQL | [Prometheus Query Language](https://prometheus.io/docs/prometheus/latest/querying/basics/) |
 | Solr Query Syntax | [Solr Query Syntax](https://solr.apache.org/guide/6_6/the-standard-query-parser.html) |

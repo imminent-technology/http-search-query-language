@@ -1,0 +1,16 @@
+.github/skills/add-query-language/SKILL.md
+  h_e2c7967ec6cbec 1-96
+README.md
+  h_e2c7967ec6cbec 57-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5da8a3133efc58ae4dcff80e9faa7ddc25a7f515",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

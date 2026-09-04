@@ -1,0 +1,189 @@
+query-languages/evaluations/aql/aql.json
+  s_aea0357f24d0cb::t_86f7350c5b2369 23
+query-languages/evaluations/aql/aql.md
+  s_aea0357f24d0cb::t_47030930db3954 26
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.json
+  s_aea0357f24d0cb::t_c4e038bb04a2b2 23
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.md
+  s_aea0357f24d0cb::t_503cebfb72948b 26
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.json
+  s_aea0357f24d0cb::t_e7e9c22268f0cf 23
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md
+  s_aea0357f24d0cb::t_bb2d29a44ecb33 26
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.json
+  s_aea0357f24d0cb::t_7d2436e6513bab 24
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md
+  s_aea0357f24d0cb::t_67390157858cfe 26
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.json
+  s_aea0357f24d0cb::t_88c9e1008c8f44 24
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md
+  s_aea0357f24d0cb::t_1a58e6be1b7180 26
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.json
+  s_aea0357f24d0cb::t_29603f981748e6 24
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.md
+  s_aea0357f24d0cb::t_3d4ba734c9be84 26
+query-languages/evaluations/cql/cql.json
+  s_aea0357f24d0cb::t_477054042beae3 24
+query-languages/evaluations/cql/cql.md
+  s_aea0357f24d0cb::t_fbc40b4c80af87 26
+query-languages/evaluations/criteria-api/criteria-api.json
+  s_aea0357f24d0cb::t_3b3a8cacb62a11 24
+query-languages/evaluations/criteria-api/criteria-api.md
+  s_aea0357f24d0cb::t_9b415090af70ca 26
+query-languages/evaluations/crul-queries/crul-queries.json
+  s_aea0357f24d0cb::t_b2385b6f9c31bf 23
+query-languages/evaluations/crul-queries/crul-queries.md
+  s_aea0357f24d0cb::t_56474c03726ec3 28
+query-languages/evaluations/cypher/cypher.json
+  s_aea0357f24d0cb::t_6f643ff266103a 25
+query-languages/evaluations/cypher/cypher.md
+  s_aea0357f24d0cb::t_7548fd85f79dd1 26
+query-languages/evaluations/datalog/datalog.json
+  s_aea0357f24d0cb::t_5094451e529e9f 23
+query-languages/evaluations/datalog/datalog.md
+  s_aea0357f24d0cb::t_6f99babe7b5d48 26
+query-languages/evaluations/dax/dax.json
+  s_aea0357f24d0cb::t_de67af6a59e216 24
+query-languages/evaluations/dax/dax.md
+  s_aea0357f24d0cb::t_1d3769033b2ab7 26
+query-languages/evaluations/dql/dql.json
+  s_aea0357f24d0cb::t_dd5e7dc210ed76 24
+query-languages/evaluations/dql/dql.md
+  s_aea0357f24d0cb::t_5e84a71b54a70b 26
+query-languages/evaluations/esql/esql.json
+  s_aea0357f24d0cb::t_4056f605542564 24
+query-languages/evaluations/esql/esql.md
+  s_aea0357f24d0cb::t_761d045615a551 28
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.json
+  s_aea0357f24d0cb::t_8285f0a6b323ae 24
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md
+  s_aea0357f24d0cb::t_d91f39088e2698 26
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.json
+  s_aea0357f24d0cb::t_d8029ef643e033 24
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.md
+  s_aea0357f24d0cb::t_52176eb2964691 26
+query-languages/evaluations/flux/flux.json
+  s_aea0357f24d0cb::t_f3d96398ad8511 24
+query-languages/evaluations/flux/flux.md
+  s_aea0357f24d0cb::t_43055fe2fe3880 26
+query-languages/evaluations/fql/fql.json
+  s_aea0357f24d0cb::t_7dd8f273ef5a06 23
+query-languages/evaluations/fql/fql.md
+  s_aea0357f24d0cb::t_488a431fc70726 28
+query-languages/evaluations/graphql/graphql.json
+  s_aea0357f24d0cb::t_a65734ad973517 25
+query-languages/evaluations/graphql/graphql.md
+  s_aea0357f24d0cb::t_049a470ea56781 26
+query-languages/evaluations/gremlin/gremlin.json
+  s_aea0357f24d0cb::t_013904f2504f68 24
+query-languages/evaluations/gremlin/gremlin.md
+  s_aea0357f24d0cb::t_557e05f4f5b4bb 26
+query-languages/evaluations/hql/hql.json
+  s_aea0357f24d0cb::t_2a6a3064b32027 24
+query-languages/evaluations/hql/hql.md
+  s_aea0357f24d0cb::t_6f70c951df2735 26
+query-languages/evaluations/jpql/jpql.json
+  s_aea0357f24d0cb::t_83b1c0c3747449 24
+query-languages/evaluations/jpql/jpql.md
+  s_aea0357f24d0cb::t_6878713f31663a 26
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.json
+  s_aea0357f24d0cb::t_2d72c318ec82c2 23
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  s_aea0357f24d0cb::t_3c1e56f8f3545c 28
+query-languages/evaluations/json-query-language/json-query-language.json
+  s_aea0357f24d0cb::t_d2bd1361b471cb 23
+query-languages/evaluations/json-query-language/json-query-language.md
+  s_aea0357f24d0cb::t_16e4a1651f718d 28
+query-languages/evaluations/kql/kql.json
+  s_aea0357f24d0cb::t_03d4632d50d900 23
+query-languages/evaluations/kql/kql.md
+  s_aea0357f24d0cb::t_203d541f2c4c8b 28
+query-languages/evaluations/linq/linq.json
+  s_aea0357f24d0cb::t_2aa94dac33e561 24
+query-languages/evaluations/linq/linq.md
+  s_aea0357f24d0cb::t_fd16037ba34600 26
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.json
+  s_aea0357f24d0cb::t_a78e75ffd8666f 24
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.md
+  s_aea0357f24d0cb::t_75146a8a3bc24e 26
+query-languages/evaluations/mdx/mdx.json
+  s_aea0357f24d0cb::t_f0449b82412262 24
+query-languages/evaluations/mdx/mdx.md
+  s_aea0357f24d0cb::t_dfcb05ed58054f 26
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.json
+  s_aea0357f24d0cb::t_6c9b5abc8c0f54 24
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.md
+  s_aea0357f24d0cb::t_33f99b76bcce71 26
+query-languages/evaluations/nrql/nrql.json
+  s_aea0357f24d0cb::t_32f9bb56f65f48 24
+query-languages/evaluations/nrql/nrql.md
+  s_aea0357f24d0cb::t_e41baad08a316b 26
+query-languages/evaluations/oql/oql.json
+  s_aea0357f24d0cb::t_75088350e57005 24
+query-languages/evaluations/oql/oql.md
+  s_aea0357f24d0cb::t_f2e33c9f5fc19f 28
+query-languages/evaluations/promql/promql.json
+  s_aea0357f24d0cb::t_397f08fcbada81 24
+query-languages/evaluations/promql/promql.md
+  s_aea0357f24d0cb::t_11d10e4984a3be 26
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.json
+  s_aea0357f24d0cb::t_0e2eb1e33f53df 24
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.md
+  s_aea0357f24d0cb::t_e5ec51f8512f94 26
+query-languages/evaluations/soql/soql.json
+  s_aea0357f24d0cb::t_b4c37fbd5f3fce 23
+query-languages/evaluations/soql/soql.md
+  s_aea0357f24d0cb::t_7a21c94cff835f 26
+query-languages/evaluations/sparql/sparql.json
+  s_aea0357f24d0cb::t_08c2f45cf58820 24
+query-languages/evaluations/sparql/sparql.md
+  s_aea0357f24d0cb::t_014667d0a98686 26
+query-languages/evaluations/spl/spl.json
+  s_aea0357f24d0cb::t_de2611bb742075 24
+query-languages/evaluations/spl/spl.md
+  s_aea0357f24d0cb::t_f8e2f62363bd0b 28
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.json
+  s_aea0357f24d0cb::t_9c54e72ecc1564 23
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.md
+  s_aea0357f24d0cb::t_b68badc8118c8b 26
+query-languages/evaluations/sql/sql.json
+  s_aea0357f24d0cb::t_8987e7c8a38a90 25
+query-languages/evaluations/sql/sql.md
+  s_aea0357f24d0cb::t_c742df71f72144 26
+query-languages/evaluations/summary.json
+  s_aea0357f24d0cb::t_34fbc08d425b94 20-21,41-42,62-63,83-84,104-105,125-126,146-147,167-168,188-189,209-210,230-231,251-252,272-273,293-294,314-315,335-336,356-357,377-378,398-399,419-420,440-441,461-462,482-483,503-504,524-525,545-546,566-567,587-588,608-609,629-630,650-651,671-672,692-693,713-714,734-735,755-756,776-777,797-798,818-819,839-840,860-861
+query-languages/evaluations/summary.md
+  s_aea0357f24d0cb::t_15a389cd60a794 3,7,11-20,24-32,36-41,45-50,54-61,65-71,75-77,81-83,87-89,93-96,100-103
+query-languages/evaluations/taxiql/taxiql.json
+  s_aea0357f24d0cb::t_9c4b5df2441036 23
+query-languages/evaluations/taxiql/taxiql.md
+  s_aea0357f24d0cb::t_15b5a0b94a658e 28
+query-languages/evaluations/xpath/xpath.json
+  s_aea0357f24d0cb::t_629dfa5d14fdf6 24
+query-languages/evaluations/xpath/xpath.md
+  s_aea0357f24d0cb::t_98517124172a98 26
+query-languages/evaluations/xquery/xquery.json
+  s_aea0357f24d0cb::t_c04e6ee86064cf 23
+query-languages/evaluations/xquery/xquery.md
+  s_aea0357f24d0cb::t_92d2080496b324 26
+.github/skills/add-query-language/SKILL.md
+  s_aea0357f24d0cb::t_27ac78dc19d599 63,67,69,73,75,94
+query-languages/evaluations/rubric.md
+  s_aea0357f24d0cb::t_9ef78044c233a0 76,84-85,92-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dc4b085d3ccccaba6f8270fe158407cba4bcf4a3",
+  "prompts": {},
+  "sessions": {
+    "s_aea0357f24d0cb": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d8a5aced-631d-4d06-a373-1d3bdebbc117",
+        "model": "copilot/claude-sonnet-5"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

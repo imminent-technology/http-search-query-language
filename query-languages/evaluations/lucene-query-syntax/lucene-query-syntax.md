@@ -1,5 +1,7 @@
 # Lucene Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Search/full-text
 - **Official docs**: [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 - **Media type**: None known — Lucene query strings are embedded as plain text inside the `q` parameter of systems (Solr, Elasticsearch) that wrap it in their own generic JSON APIs.

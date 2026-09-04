@@ -1,5 +1,7 @@
 # PromQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Analytics/Observability
 - **Official docs**: [Querying basics — Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 - **Media type**: None known — Prometheus's HTTP API accepts PromQL as a URL query parameter or `application/x-www-form-urlencoded` field, not a dedicated media type.

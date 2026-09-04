@@ -1,5 +1,7 @@
 # Firebase Realtime Database Query Language
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [Retrieving Data](https://firebase.google.com/docs/database/admin/retrieve-data)
 - **Media type**: None known — query parameters are passed via the URL query string on the REST API; responses use generic `application/json`.

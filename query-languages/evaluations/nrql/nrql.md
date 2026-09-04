@@ -1,5 +1,7 @@
 # NRQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Analytics/Observability
 - Official docs: [Get started with NRQL: the language of data](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/)
 - Media type: None known — NRQL strings are submitted as a field inside a GraphQL request (`application/json`) to New Relic's NerdGraph API.

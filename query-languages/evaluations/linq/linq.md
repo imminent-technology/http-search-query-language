@@ -1,5 +1,7 @@
 # LINQ
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Language-integrated
 - Official docs: [Language Integrated Query (LINQ) - C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)
 - Media type: Not applicable — LINQ is a .NET language-integrated query syntax compiled into expression trees at compile time; it has no independent wire format.

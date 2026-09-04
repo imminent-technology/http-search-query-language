@@ -1,5 +1,7 @@
 # Cypher
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Graph
 - **Official docs**: [Neo4j Cypher Manual](https://neo4j.com/developer/cypher/)
 - **Media type**: None known — openCypher/Neo4j statements travel over the Bolt protocol or are wrapped in generic `application/json` via Neo4j's HTTP query API; no dedicated Cypher media type.

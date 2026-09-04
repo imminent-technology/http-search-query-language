@@ -1,5 +1,7 @@
 # MongoDB Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [Read Documents](https://www.mongodb.com/docs/manual/tutorial/query-documents/)
 - **Media type**: None known — MongoDB's wire protocol uses BSON, and the Atlas Data API wraps queries in generic `application/json`.

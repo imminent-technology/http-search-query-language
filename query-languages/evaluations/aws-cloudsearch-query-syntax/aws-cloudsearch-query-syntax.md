@@ -1,5 +1,7 @@
 # AWS CloudSearch Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Search/full-text
 - Official docs: [Searching Your Data with Amazon CloudSearch](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html)
 - Media type: None known — queries are passed as URL query-string parameters (`q`, `q.parser`) on the CloudSearch search endpoint; no dedicated media type.

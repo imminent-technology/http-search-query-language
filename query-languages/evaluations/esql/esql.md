@@ -1,5 +1,7 @@
 # ESQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Search/full-text
 - Official docs: [Query string query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 - Media type: None known — Elasticsearch's Query DSL/ES|QL requests use the generic `application/json` content type.

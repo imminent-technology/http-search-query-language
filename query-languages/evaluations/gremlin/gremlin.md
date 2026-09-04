@@ -1,5 +1,7 @@
 # Gremlin
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Graph
 - Official docs: [Gremlin Query Language](https://tinkerpop.apache.org/gremlin.html)
 - Media type: None known — no documented or registered media type for Gremlin scripts could be verified.

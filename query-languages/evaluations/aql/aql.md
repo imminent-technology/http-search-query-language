@@ -1,5 +1,7 @@
 # AQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [ArangoDB Query Language](https://www.arangodb.com/docs/stable/aql/)
 - **Media type**: None known — ArangoDB's HTTP API wraps AQL queries in a generic `application/json` request body; no dedicated media type exists.

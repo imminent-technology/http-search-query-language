@@ -1,5 +1,7 @@
 # SQL++
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [SQL++](https://www.couchbase.com/sqlplusplus/)
 - **Media type**: None known — Couchbase's Query REST API accepts SQL++/N1QL as a `"statement"` field inside a generic `application/json` body.

@@ -1,5 +1,7 @@
 # DAX
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Analytics/Observability
 - Official docs: [Data Analysis Expressions (DAX) Reference](https://learn.microsoft.com/en-us/dax/)
 - Media type: None known — DAX queries are submitted inside a generic `application/json` body via the Power BI/Analysis Services REST APIs.

@@ -1,5 +1,7 @@
 # AWS Athena Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [SQL reference for Athena](https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html)
 - **Media type**: None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.1`) for the whole Athena API action, not a dedicated media type for the SQL text.

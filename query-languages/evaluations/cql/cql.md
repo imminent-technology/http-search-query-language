@@ -1,5 +1,7 @@
 # CQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [The Cassandra Query Language (CQL)](https://cassandra.apache.org/doc/latest/cassandra/cql/)
 - **Media type**: None known for Cassandra's CQL — statements are normally sent over Cassandra's native binary protocol, not HTTP. Note: IANA's registered `text/cql` media type belongs to HL7's unrelated Clinical Quality Language, and OGC defines a separate, also-unrelated CQL for geospatial filtering; neither refers to Cassandra Query Language.

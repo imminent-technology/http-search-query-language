@@ -1,5 +1,7 @@
 # JPQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [Chapter 34: The Java Persistence Query Language](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html)
 - **Media type**: Not applicable — like HQL, JPQL is used internally by the JPA provider and is not transmitted over HTTP with a dedicated media type.

@@ -1,5 +1,7 @@
 # HQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [Hibernate - Query Language](https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm)
 - **Media type**: Not applicable — HQL is parsed and translated to SQL inside the JVM by Hibernate; it is not transmitted over HTTP with its own media type.

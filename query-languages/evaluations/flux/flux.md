@@ -1,5 +1,7 @@
 # Flux
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Scripting
 - Official docs: [InfluxDB 2.x and Flux](https://www.influxdata.com/products/flux/)
 - Media type: `application/vnd.flux` — documented `Content-Type` for Flux query requests to InfluxDB's `/api/v2/query` endpoint (InfluxData documentation). Not registered with IANA.

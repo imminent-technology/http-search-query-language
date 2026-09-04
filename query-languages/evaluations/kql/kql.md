@@ -1,5 +1,7 @@
 # KQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Analytics/Observability
 - Official docs: [Kusto Query Language (KQL) overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
 - Media type: None known — KQL text is submitted as a JSON field inside a generic `application/json` body via the Azure Data Explorer/Log Analytics REST APIs.

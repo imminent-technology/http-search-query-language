@@ -1,5 +1,7 @@
 # SOQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [Salesforce Object Query Language (SOQL)](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)
 - **Media type**: None known — submitted as a URL-encoded `q` query-string parameter on Salesforce's REST API.

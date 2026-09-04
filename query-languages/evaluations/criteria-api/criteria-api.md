@@ -1,5 +1,7 @@
 # Criteria API
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [Chapter 32: Introduction to the Java Persistence API](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html)
 - **Media type**: Not applicable — the Criteria API is a Java object-graph API for building queries programmatically; it has no serialized wire format.

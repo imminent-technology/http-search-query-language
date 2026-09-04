@@ -66,6 +66,8 @@ Follow `evaluation.md` for what each criterion means and `rubric.md` for the 1-5
 
 Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, following the schema documented in `rubric.md` (`title`, `slug`, `officialDocUrl`, `mediaType`, `category`, `sources[]`, `scores{}`, `overallScore`, `summary`, `evaluatedDate` = today's date). Mirror an existing pair (e.g. `graphql/graphql.json` + `graphql/graphql.md`) exactly for formatting. Cite sources in APA style in the Markdown file's "Sources" section.
 
+Right after the `# Title` heading, add a back-link to the aggregate summary so readers can jump back to the full table: `[↑ Full comparison table](../summary.md)`, on its own line, before the metadata bullets.
+
 ### 6. Update the aggregate summary files
 
 - `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct.
@@ -87,6 +89,7 @@ Read the existing "## Observations so far" bullets in `summary.md`. Only touch t
 - Confirm the new JSON file parses.
 - Confirm `list.csv` and `list.md` each gained exactly one row, in the correct alphabetical position, with matching Title/Description.
 - Confirm `summary.json` is still valid JSON and `summary.md`'s tables/counts are internally consistent (row counts, "Status: N of N" line).
+- Confirm the new `<slug>.md` file has the `[↑ Full comparison table](../summary.md)` back-link right under its `# Title` heading.
 - If this was a name collision, confirm the new slug/folder doesn't overwrite the existing one, and that every link to the new entry in `summary.md` uses the disambiguated label consistently.
 - Report a concise summary of every file created/changed.
 

@@ -1,5 +1,7 @@
 # TaxiQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: API/data-fetching
 - Official docs: [taxilang/taxilang](https://github.com/taxilang/taxilang)
 - Media type: None known — no registered or documented media type could be verified.

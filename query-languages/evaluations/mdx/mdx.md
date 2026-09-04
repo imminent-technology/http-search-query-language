@@ -1,5 +1,7 @@
 # MDX
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Analytics/Observability
 - Official docs: [Multidimensional Expressions (MDX) Reference](https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16)
 - Media type: None known — MDX statements are typically embedded in a SOAP/XML request (`text/xml`/`application/soap+xml`) to an XMLA endpoint; no dedicated MDX media type.

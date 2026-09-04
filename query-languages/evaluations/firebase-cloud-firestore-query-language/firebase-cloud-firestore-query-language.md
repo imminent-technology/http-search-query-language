@@ -1,5 +1,7 @@
 # Firebase Cloud Firestore Query Language
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [Perform simple and compound queries in Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/queries)
 - **Media type**: None known — Firestore queries are structured protobuf/JSON (`StructuredQuery`) sent via gRPC or the REST API's generic `application/json`.

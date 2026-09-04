@@ -1,5 +1,7 @@
 # GraphQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: API/data-fetching
 - **Official docs**: [graphql.org](https://graphql.org/)
 - **Media type**: `application/graphql-response+json` (responses) and `application/json` (requests) per the GraphQL-over-HTTP specification (graphql.github.io/graphql-over-http). Not registered with IANA. (A legacy, non-standard `application/graphql` convention for raw request bodies exists in some older server implementations but is not part of any official spec.)

@@ -1,5 +1,7 @@
 # XPath
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Path/document navigation
 - Official docs: [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath)
 - Media type: None known — no IANA-registered media type exists; XPath expressions are normally embedded within another document (XSLT, XQuery, WebDAV SEARCH request bodies) rather than transmitted standalone.

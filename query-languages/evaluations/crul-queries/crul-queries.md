@@ -1,5 +1,7 @@
 # Crul Queries
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Niche/misc
 - Official docs: [Queries](https://www.crul.com/docs/features/queries/)
 - Media type: None known — no verifiable, actively documented standard or registered media type could be found for this query language.

@@ -1,5 +1,7 @@
 # SPL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Log/security search
 - Official docs: [Introduction (SPL2 Search Reference)](https://help.splunk.com/en?resourceId=SCS_SearchReference_Introduction)
 - Media type: None known — submitted as a `search` form field via Splunk's REST API (`application/x-www-form-urlencoded`).

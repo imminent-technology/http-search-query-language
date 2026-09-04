@@ -1,5 +1,7 @@
 # OQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Niche/misc
 - Official docs: [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language)
 - Media type: None known — no registered or documented media type could be verified.

@@ -1,5 +1,7 @@
 # AWS DynamoDB Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Document/NoSQL
 - **Official docs**: [Query - Amazon DynamoDB API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html)
 - **Media type**: None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.0`); no dedicated media type for DynamoDB's KeyConditionExpression syntax.

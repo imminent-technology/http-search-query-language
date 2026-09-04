@@ -1,5 +1,7 @@
 # SQL
 
+[↑ Full comparison table](../summary.md)
+
 - **Category**: Relational/SQL-family
 - **Official docs**: [SQL — Wikipedia](https://en.wikipedia.org/wiki/SQL)
 - **Media type**: `application/sql` — IANA-registered, RFC 6922.

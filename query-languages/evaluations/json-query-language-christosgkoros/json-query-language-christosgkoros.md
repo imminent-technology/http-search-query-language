@@ -1,5 +1,7 @@
 # JSON Query Language (christosgkoros)
 
+[↑ Full comparison table](../summary.md)
+
 - Category: API/data-fetching
 - Official docs: [json-query-language](https://github.com/christosgkoros/json-query-language)
 - Media type: None known — filter objects are embedded as a JSON Schema-validated field within a generic `application/json` request body (per the project's OpenAPI 3.1/3.2 integration examples); no dedicated media type is registered or documented for the predicate language itself.

@@ -1,5 +1,7 @@
 # Solr Query Syntax
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Search/full-text
 - Official docs: [The Standard Query Parser](https://solr.apache.org/guide/6_6/the-standard-query-parser.html)
 - Media type: None known — Solr accepts query strings as URL parameters or within the JSON Request API's generic `application/json`.

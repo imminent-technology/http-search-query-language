@@ -1,5 +1,7 @@
 # SPARQL
 
+[↑ Full comparison table](../summary.md)
+
 - Category: Graph
 - Official docs: [SPARQL 1.1 Recommendation](https://www.w3.org/TR/sparql11-overview/) (list.csv links the related [SPARQL Protocol](https://www.w3.org/TR/rdf-sparql-protocol/) recommendation)
 - Media type: `application/sparql-query` — IANA-registered per the W3C SPARQL 1.1 Protocol. Query results use the related, also IANA-registered `application/sparql-results+xml` / `application/sparql-results+json`.

@@ -1,5 +1,7 @@
 # JSON Query Language
 
+[↑ Full comparison table](../summary.md)
+
 - Category: API/data-fetching
 - Official docs: [JSON Query](https://jsonquerylang.org/)
 - Media type: None known — no registered or documented media type found for this specification (jsonquerylang.org).

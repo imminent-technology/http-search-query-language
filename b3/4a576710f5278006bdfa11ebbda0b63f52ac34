@@ -1,0 +1,99 @@
+query-languages/evaluations/aql/aql.md
+  s_aea0357f24d0cb::t_6eb56b16c3cdaf 26
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.md
+  s_aea0357f24d0cb::t_65b51c2188f7b7 26
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md
+  s_aea0357f24d0cb::t_bd3cc7db6b55dc 26
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md
+  s_aea0357f24d0cb::t_1ded0f776211c6 26
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md
+  s_aea0357f24d0cb::t_3a394ae7fe540f 26
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.md
+  s_aea0357f24d0cb::t_2bb30c6abfbb6c 26
+query-languages/evaluations/cql/cql.md
+  s_aea0357f24d0cb::t_9f30a8d35a4a4b 26
+query-languages/evaluations/criteria-api/criteria-api.md
+  s_aea0357f24d0cb::t_ebbb190abf8b13 26
+query-languages/evaluations/crul-queries/crul-queries.md
+  s_aea0357f24d0cb::t_3c7d64e73cd554 28
+query-languages/evaluations/cypher/cypher.md
+  s_aea0357f24d0cb::t_c790cc6640928f 26
+query-languages/evaluations/datalog/datalog.md
+  s_aea0357f24d0cb::t_9c65025471e9c0 26
+query-languages/evaluations/dax/dax.md
+  s_aea0357f24d0cb::t_9335885d027daa 26
+query-languages/evaluations/dql/dql.md
+  s_aea0357f24d0cb::t_39242a0a151d6c 26
+query-languages/evaluations/esql/esql.md
+  s_aea0357f24d0cb::t_b070bde39640d2 28
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md
+  s_aea0357f24d0cb::t_744b2ef04524d1 26
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.md
+  s_aea0357f24d0cb::t_e362a5d80067dd 26
+query-languages/evaluations/flux/flux.md
+  s_aea0357f24d0cb::t_10e5695ff0f012 26
+query-languages/evaluations/fql/fql.md
+  s_aea0357f24d0cb::t_faf17e64e76928 28
+query-languages/evaluations/graphql/graphql.md
+  s_aea0357f24d0cb::t_9c783e6fc5ebb2 26
+query-languages/evaluations/gremlin/gremlin.md
+  s_aea0357f24d0cb::t_fed0c47a2e62b6 26
+query-languages/evaluations/hql/hql.md
+  s_aea0357f24d0cb::t_6c6d7c58b2782d 26
+query-languages/evaluations/jpql/jpql.md
+  s_aea0357f24d0cb::t_bfb302bf2ff719 26
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  s_aea0357f24d0cb::t_d5993d35b115d1 28
+query-languages/evaluations/json-query-language/json-query-language.md
+  s_aea0357f24d0cb::t_7c22aada71bb84 28
+query-languages/evaluations/kql/kql.md
+  s_aea0357f24d0cb::t_c2940aa9a7b158 28
+query-languages/evaluations/linq/linq.md
+  s_aea0357f24d0cb::t_520219e9f0b1d5 26
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.md
+  s_aea0357f24d0cb::t_6448c5f5629e6c 26
+query-languages/evaluations/mdx/mdx.md
+  s_aea0357f24d0cb::t_ea189a77f640f2 26
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.md
+  s_aea0357f24d0cb::t_376014e823dddf 26
+query-languages/evaluations/nrql/nrql.md
+  s_aea0357f24d0cb::t_ca5a5aa353e0d1 26
+query-languages/evaluations/oql/oql.md
+  s_aea0357f24d0cb::t_050e1a8c23896c 28
+query-languages/evaluations/promql/promql.md
+  s_aea0357f24d0cb::t_5ce6d2905c4570 26
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.md
+  s_aea0357f24d0cb::t_65ab082eb04a08 26
+query-languages/evaluations/soql/soql.md
+  s_aea0357f24d0cb::t_f6e7dee664718a 26
+query-languages/evaluations/sparql/sparql.md
+  s_aea0357f24d0cb::t_aed5175303bf9f 26
+query-languages/evaluations/spl/spl.md
+  s_aea0357f24d0cb::t_8c8b7d0fbe844f 28
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.md
+  s_aea0357f24d0cb::t_3a95ef86be1484 26
+query-languages/evaluations/sql/sql.md
+  s_aea0357f24d0cb::t_fa35148cf5b425 26
+query-languages/evaluations/taxiql/taxiql.md
+  s_aea0357f24d0cb::t_32a8ad3face36c 28
+query-languages/evaluations/xpath/xpath.md
+  s_aea0357f24d0cb::t_b4f3e09563b9ca 26
+query-languages/evaluations/xquery/xquery.md
+  s_aea0357f24d0cb::t_6c9d704e894f7f 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b34a576710f5278006bdfa11ebbda0b63f52ac34",
+  "prompts": {},
+  "sessions": {
+    "s_aea0357f24d0cb": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d8a5aced-631d-4d06-a373-1d3bdebbc117",
+        "model": "copilot/claude-sonnet-5"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

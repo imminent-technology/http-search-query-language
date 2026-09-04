@@ -1,0 +1,16 @@
+query-languages/list.csv
+  h_e2c7967ec6cbec 24
+query-languages/list.md
+  h_e2c7967ec6cbec 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d092d833a2238ad3986fcc29e74512c14214a693",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

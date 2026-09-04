@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Wikipedia explicitly notes XQuery "is more orthogonal, in that any expression can be used in any syntactic context", directly contrasted with XSLT's more restrictive two-language system where XPath expressions can be nested in XSLT instructions but not vice versa. |
 
 **Overall score (avg, informational only): 3.5**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.4**
 
 ## Summary

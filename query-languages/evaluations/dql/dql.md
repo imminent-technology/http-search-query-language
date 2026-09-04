@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Follows the same pipe-based command-chaining model as other modern observability query languages (e.g. KQL, Splunk SPL), giving it a small, consistent set of composable building blocks. |
 
 **Overall score (avg, informational only): 3.2**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary

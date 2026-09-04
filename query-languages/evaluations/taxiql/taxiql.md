@@ -25,6 +25,7 @@
 | Orthogonality | 3 | A consistent model-based approach where types inherit from other types and operations reference those types, though as a hybrid schema-and-query language it lacks the small, uniform composition primitives seen in more focused query languages. |
 
 **Overall score (avg, informational only): 2.6**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary

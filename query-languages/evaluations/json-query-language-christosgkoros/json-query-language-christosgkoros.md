@@ -25,6 +25,7 @@
 | Orthogonality | 3 | The core model is fairly uniform — one `Constraint` shared across every field, AND-by-default sibling composition at every nesting level — but several operators carry special-cased exceptions (three-valued `$not`/`$ne`, `$in` needing a distinct `$hasAny` for array membership, `$elemMatch` vs. wildcard-path semantics) that require explicit documentation to use correctly. |
 
 **Overall score (avg, informational only): 3.0**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary

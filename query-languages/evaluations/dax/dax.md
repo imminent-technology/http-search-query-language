@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Blends Excel-like formula syntax with relational filter/row-context semantics inherited in part from MDX, resulting in two coexisting evaluation models that can behave inconsistently for the same-looking expression depending on context. |
 
 **Overall score (avg, informational only): 2.8**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.9**
 
 ## Summary

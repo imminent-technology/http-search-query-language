@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Filters, ordering and limits compose in a predictable builder style, but documented interactions (e.g., orderBy requiring the field to exist, restrictions on combining not-in/!=/or) show real special-casing. |
 
 **Overall score (avg, informational only): 3.2**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.4**
 
 ## Summary

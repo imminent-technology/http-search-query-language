@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Each location step uniformly combines an axis, a node test, and zero or more predicates, and the abbreviated and full-unabbreviated syntaxes are systematically interchangeable, giving a clean, composable model. |
 
 **Overall score (avg, informational only): 3.5**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.1**
 
 ## Summary

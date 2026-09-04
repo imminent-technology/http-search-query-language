@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Query filters, projections, and aggregation stages compose in a consistent, uniform JSON-document style across drivers and languages, contributing to the language's perceived simplicity. |
 
 **Overall score (avg, informational only): 3.4**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary

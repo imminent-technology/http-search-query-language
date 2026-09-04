@@ -23,6 +23,7 @@
 | Orthogonality | 4 | The entire language reduces to two uniform constructs — ground facts and Horn-clause rules — giving Datalog one of the cleanest, most consistent theoretical foundations among the languages evaluated, per its formal model-theoretic, fixed-point, and proof-theoretic semantics all being proven equivalent. |
 
 **Overall score (avg, informational only): 2.8**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary

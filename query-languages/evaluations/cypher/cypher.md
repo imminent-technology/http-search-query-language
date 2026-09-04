@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Clauses (MATCH/WHERE/RETURN/CREATE/DELETE/SET/MERGE) are composable and follow a consistent pattern-based syntax across both read and write use cases. |
 
 **Overall score (avg, informational only): 3.7**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.6**
 
 ## Summary

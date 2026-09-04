@@ -25,6 +25,7 @@
 | Orthogonality | 4 | The entire language reduces to a small set of uniform, composable constructs — functions, operators, pipes, objects, arrays, and property getters — all of which convert cleanly and losslessly between the Text Format and an equivalent JSON Format. |
 
 **Overall score (avg, informational only): 3.1**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.6**
 
 ## Summary

@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Clauses generally compose in a SQL-like way, but object-relational mapping concepts (path expressions, collection-valued associations) introduce special-casing not present in plain SQL. |
 
 **Overall score (avg, informational only): 3.3**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary

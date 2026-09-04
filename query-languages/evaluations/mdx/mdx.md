@@ -23,6 +23,7 @@
 | Orthogonality | 3 | The SELECT ... ON COLUMNS, ... ON ROWS / FROM / WHERE clause structure mirrors SQL's clause-based consistency, but the distinct member/tuple/set data types compose in ways that require careful handling to avoid coordination issues across hierarchies. |
 
 **Overall score (avg, informational only): 2.9**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.9**
 
 ## Summary

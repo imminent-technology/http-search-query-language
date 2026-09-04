@@ -25,6 +25,7 @@
 | Orthogonality | 3 | A uniform pipe-chaining model underlies every search, but the large number of individual commands accumulated over two decades of development have somewhat inconsistent syntax and argument conventions. |
 
 **Overall score (avg, informational only): 3.4**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary

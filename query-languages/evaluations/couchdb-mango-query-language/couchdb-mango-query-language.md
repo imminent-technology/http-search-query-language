@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Selector, sort, fields, and pagination options compose predictably as JSON, though sort fields must already be covered by an existing index, a documented constraint on composability. |
 
 **Overall score (avg, informational only): 3.1**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.4**
 
 ## Summary

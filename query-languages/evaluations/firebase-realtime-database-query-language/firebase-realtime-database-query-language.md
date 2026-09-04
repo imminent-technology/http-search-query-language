@@ -23,6 +23,7 @@
 | Orthogonality | 2 | Ordering functions cannot be combined (e.g., calling orderByChild() twice throws an error), and range/limit methods only layer on top of a single ordering choice, a notable composability limitation. |
 
 **Overall score (avg, informational only): 2.5**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.6**
 
 ## Summary

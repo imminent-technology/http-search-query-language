@@ -23,6 +23,7 @@
 | Orthogonality | 3 | The SELECT/FROM/WHERE/FACET/LIMIT/SINCE/UNTIL clause ordering is fixed and consistent across queries, mirroring SQL's own moderately orthogonal clause-based structure. |
 
 **Overall score (avg, informational only): 2.8**
+
 **Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary

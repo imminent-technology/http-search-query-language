@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Each location step uniformly combines an axis, a node test, and zero or more predicates, and the abbreviated and full-unabbreviated syntaxes are systematically interchangeable, giving a clean, composable model." }
   },
   "overallScore": 3.5,
+  "designQualityScore": 3.1,
   "summary": "XPath is a mature, formally W3C-standardized expression language for navigating XML document trees, with a clean and highly composable axis/node-test/predicate model implemented across nearly every major programming ecosystem, but it remains tied to the XML tree data model, has no native HTTP transport of its own, and (like SQL) has no built-in defense against injection when expressions are built from unsanitized input.",
   "evaluatedDate": "2026-09-04"
 }

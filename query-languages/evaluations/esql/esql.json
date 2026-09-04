@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Boolean, range, boosting, and field-search constructs compose reasonably, but the reserved-character escaping rules, JSON double-escaping requirement, and overlap with sibling query types (match, simple_query_string, multi_match) add inconsistency." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.5,
   "summary": "Elasticsearch's query_string syntax (referenced in list.csv as 'ESQL'/Elasticsearch Query Syntax) offers Lucene-derived expressiveness over schema-free JSON documents via a native HTTP REST API, backed by one of the largest search ecosystems, but its strict, error-throwing parser is explicitly discouraged by Elastic for direct end-user input and remains a single-vendor, non-standardized dialect.",
   "evaluatedDate": "2026-09-04"
 }

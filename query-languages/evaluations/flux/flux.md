@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Built around a uniform pipe-forward (\|>) operator that chains functional transformations in sequence, giving it a consistent, Unix-pipe-like composition model. |
 
 **Overall score (avg, informational only): 3.0**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.3**
 
 ## Summary
 

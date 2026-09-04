@@ -20,6 +20,7 @@
     "orthogonality": { "score": 4, "rationale": "The entire language reduces to a small set of uniform, composable constructs — functions, operators, pipes, objects, arrays, and property getters — all of which convert cleanly and losslessly between the Text Format and an equivalent JSON Format." }
   },
   "overallScore": 3.1,
+  "designQualityScore": 3.6,
   "summary": "JSON Query Language is a small, deliberately minimal, and explicitly security-conscious functional query language for arbitrary JSON data, designed to avoid the dense special-character syntax of JSONPath/JMESPath in favor of readable pipe/chain composition, but as a young single-maintainer project it has a tiny community, no independent standardization, and is used as an embedded library call rather than a URL-native transport mechanism.",
   "evaluatedDate": "2026-09-04"
 }

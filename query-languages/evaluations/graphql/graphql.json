@@ -22,6 +22,7 @@
     "orthogonality": { "score": 4, "rationale": "Queries, mutations, and subscriptions are cleanly separated operation types, and fragments/directives compose predictably against a single consistent type system." }
   },
   "overallScore": 4.0,
+  "designQualityScore": 3.9,
   "summary": "GraphQL is the strongest of the pilot languages for HTTP-native API design and client-driven flexibility, trading full graph-traversal expressiveness and built-in query optimization for precision, schema evolution, and a very active vendor-neutral ecosystem.",
   "evaluatedDate": "2026-09-04"
 }

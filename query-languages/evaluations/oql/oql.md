@@ -25,6 +25,7 @@
 | Orthogonality | 3 | A basic SQL-like statement structure (SELECT/INSERT/UPDATE/DELETE-style) that is moderately consistent across the documented statement types. |
 
 **Overall score (avg, informational only): 2.0**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.1**
 
 ## Summary
 

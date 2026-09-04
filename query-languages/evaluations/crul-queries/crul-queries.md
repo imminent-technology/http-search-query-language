@@ -25,6 +25,7 @@
 | Orthogonality | 4 | Every stage follows the same uniform structure (command, ordered arguments, flags) chained via a single pipe operator, giving the language a small, consistent set of composable building blocks. |
 
 **Overall score (avg, informational only): 2.3**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.6**
 
 ## Summary
 

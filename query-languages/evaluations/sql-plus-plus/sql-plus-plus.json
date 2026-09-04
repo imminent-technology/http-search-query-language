@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "Extends SQL's composable clause structure to nested JSON, but the added array/object navigation constructs are layered on top of SQL rather than fully unified with it." }
   },
   "overallScore": 3.0,
+  "designQualityScore": 3.3,
   "summary": "SQL++ extends familiar SQL syntax to natively query nested and heterogeneous JSON data, giving it strong flexibility for document-style workloads, but it remains a smaller, largely Couchbase-driven specification without ISO-style standardization or SQL's mature security/optimization track record.",
   "evaluatedDate": "2026-09-04"
 }

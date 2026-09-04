@@ -25,6 +25,7 @@
 | Orthogonality | 4 | Every query is built from the same uniform building block — a tabular operator connected by pipes, where each operator takes tabular input and produces tabular output — giving the language a small, consistent composition model. |
 
 **Overall score (avg, informational only): 3.4**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.6**
 
 ## Summary
 

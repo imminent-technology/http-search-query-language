@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Follows the same pipe-based command-chaining model as other modern observability query languages (e.g. KQL, Splunk SPL), giving it a small, consistent set of composable building blocks." }
   },
   "overallScore": 3.2,
+  "designQualityScore": 3.5,
   "summary": "DQL is Dynatrace's purpose-built query language for its schema-on-read Grail data lakehouse, offering strong flexibility across logs, metrics, security, and business event data with a consistent pipe-based composition model, but as a newer, single-vendor language it lacks external standardization, has a smaller dedicated community than more established observability languages, and has no documented built-in injection-prevention design.",
   "evaluatedDate": "2026-09-04"
 }

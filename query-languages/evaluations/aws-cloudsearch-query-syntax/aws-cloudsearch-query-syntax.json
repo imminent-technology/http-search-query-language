@@ -20,6 +20,7 @@
     "orthogonality": { "score": 2, "rationale": "The four query parsers (simple, structured, lucene, dismax) are largely separate feature sets rather than composable extensions of one grammar, so switching parsers changes both syntax and available capabilities inconsistently." }
   },
   "overallScore": 2.6,
+  "designQualityScore": 2.9,
   "summary": "AWS CloudSearch's query syntax provides four selectable parser dialects (simple, structured, lucene, dismax) submitted as HTTP query parameters, but as a smaller, increasingly legacy AWS service it offers narrower flexibility, extensibility, and community support than mainstream search engines, with no independent standardization behind any of its parser modes.",
   "evaluatedDate": "2026-09-04"
 }

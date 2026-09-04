@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "A consistent model-based approach where types inherit from other types and operations reference those types, though as a hybrid schema-and-query language it lacks the small, uniform composition primitives seen in more focused query languages." }
   },
   "overallScore": 2.6,
+  "designQualityScore": 3.0,
   "summary": "TaxiQL is the query layer of Taxi, a semantic type/schema language designed to bridge OpenAPI, RAML, databases, message queues, and more without requiring GraphQL-style resolvers, offering genuinely rich and extensible cross-system type modeling, but it remains a small open-source project with limited community adoption, no independent standardization, and no native HTTP transport mechanism of its own.",
   "evaluatedDate": "2026-09-04"
 }

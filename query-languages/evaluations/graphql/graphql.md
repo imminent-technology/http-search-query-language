@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Queries, mutations, and subscriptions are cleanly separated operation types, and fragments/directives compose predictably against a single consistent type system. |
 
 **Overall score (avg, informational only): 4.0**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.9**
 
 ## Summary
 

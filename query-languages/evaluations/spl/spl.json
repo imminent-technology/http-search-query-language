@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "A uniform pipe-chaining model underlies every search, but the large number of individual commands accumulated over two decades of development have somewhat inconsistent syntax and argument conventions." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.5,
   "summary": "SPL is a mature, highly expressive pipe-based search and analytics language purpose-built for large-scale log and security data, backed by one of the largest ecosystems in the observability/SIEM space, but it remains a proprietary single-vendor language (now under Cisco) with no formal standardization and no documented built-in anti-injection design, and its very large command surface takes real effort to master.",
   "evaluatedDate": "2026-09-04"
 }

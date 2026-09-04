@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "The SELECT ... ON COLUMNS, ... ON ROWS / FROM / WHERE clause structure mirrors SQL's clause-based consistency, but the distinct member/tuple/set data types compose in ways that require careful handling to avoid coordination issues across hierarchies." }
   },
   "overallScore": 2.9,
+  "designQualityScore": 2.9,
   "summary": "MDX is a mature, de facto industry-standard query language purpose-built for navigating OLAP cube dimensions and hierarchies with strong analytical expressiveness and performance, but its distinct multidimensional vocabulary (members, tuples, sets) creates a real learning curve, requires a predefined cube schema, and remains without formal standardization body backing despite broad cross-vendor adoption.",
   "evaluatedDate": "2026-09-04"
 }

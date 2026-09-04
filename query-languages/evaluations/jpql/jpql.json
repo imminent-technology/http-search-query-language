@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Clauses generally compose in a SQL-like way, but object-relational mapping concepts (path expressions, collection-valued associations) introduce special-casing not present in plain SQL." }
   },
   "overallScore": 3.3,
+  "designQualityScore": 3.0,
   "summary": "JPQL is the formally standardized, SQL-like query language of the Jakarta Persistence specification, offering strong expressiveness and injection resistance over Java entity objects across independently maintained implementations, but like other ORM query languages it is confined to a static entity schema and to in-process Java API usage rather than HTTP transport.",
   "evaluatedDate": "2026-09-04"
 }

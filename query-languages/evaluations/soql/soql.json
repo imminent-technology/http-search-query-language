@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "Core SELECT/WHERE/ORDER BY compose in a SQL-like way, but the lack of arbitrary joins/subquery placement and relationship-query rules introduce Salesforce-specific special-casing." }
   },
   "overallScore": 2.8,
+  "designQualityScore": 3.0,
   "summary": "SOQL is a deliberately SQL-like, HTTP-transportable query language purpose-built for the Salesforce platform, easy to learn but structurally limited to Salesforce's object schema and query features (no arbitrary joins or wildcards), with a single vendor governing its evolution.",
   "evaluatedDate": "2026-09-04"
 }

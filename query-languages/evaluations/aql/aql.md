@@ -23,6 +23,7 @@
 | Orthogonality | 3 | FOR/FILTER/COLLECT/RETURN compose reasonably well across document and graph models, but mixing multiple data models in a single query adds complexity relative to a single-model language. |
 
 **Overall score (avg, informational only): 2.9**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.3**
 
 ## Summary
 

@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Wikipedia explicitly describes SPARQL's evaluation model as a pipeline where expressions are evaluated in declared order with consistent variable-binding semantics across FILTER/JOIN stages, giving it a notably uniform composition model relative to SQL's separately-specified clauses." }
   },
   "overallScore": 3.5,
+  "designQualityScore": 3.4,
   "summary": "SPARQL is a formally W3C-standardized, HTTP-native query language purpose-built for RDF's flexible, self-describing triple model, offering strong expressiveness (property paths, federation, native dateTime operations) and a notably consistent pipeline evaluation model, but its distinct triple-based mental model has a real learning curve and it shares SQL's classic string-based injection exposure without SQL's decades of mature parameterization tooling.",
   "evaluatedDate": "2026-09-04"
 }

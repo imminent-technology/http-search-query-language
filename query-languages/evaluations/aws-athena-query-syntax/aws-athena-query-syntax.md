@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Inherits reasonable SQL orthogonality, but sourcing DDL from HiveQL and DML from Trino/Presto creates some inconsistency between the two halves of the language. |
 
 **Overall score (avg, informational only): 3.1**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.3**
 
 ## Summary
 

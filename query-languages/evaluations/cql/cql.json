@@ -21,6 +21,7 @@
     "orthogonality": { "score": 2, "rationale": "SELECT/INSERT/UPDATE syntax looks SQL-like, but requiring queries to be modeled around a fixed partition/clustering key, and the explicit lack of joins/aggregation, means the language does not compose as freely as SQL across arbitrary query shapes." }
   },
   "overallScore": 2.7,
+  "designQualityScore": 2.8,
   "summary": "CQL brings a familiar, easy-to-learn SQL-like syntax to Cassandra's wide-column, partition-oriented data model, backed by a mature Apache Software Foundation project and strong write-throughput performance, but it deliberately omits joins, ad hoc aggregation, and any HTTP/URL transport, requiring queries to be designed around a table's fixed key structure.",
   "evaluatedDate": "2026-09-04"
 }

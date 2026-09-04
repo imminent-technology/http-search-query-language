@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Wikipedia explicitly describes SPARQL's evaluation model as a pipeline where expressions are evaluated in declared order with consistent variable-binding semantics across FILTER/JOIN stages, giving it a notably uniform composition model relative to SQL's separately-specified clauses. |
 
 **Overall score (avg, informational only): 3.5**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.4**
 
 ## Summary
 

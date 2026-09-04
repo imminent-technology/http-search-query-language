@@ -25,6 +25,7 @@
 | Orthogonality | 3 | A simple, SQL-like clause structure (SELECT/FROM/WHERE) that was reasonably consistent, though the language's scope was too narrow to test composition much further. |
 
 **Overall score (avg, informational only): 2.1**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.4**
 
 ## Summary
 

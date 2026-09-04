@@ -20,6 +20,7 @@
     "orthogonality": { "score": 4, "rationale": "The entire language reduces to two uniform constructs — ground facts and Horn-clause rules — giving Datalog one of the cleanest, most consistent theoretical foundations among the languages evaluated, per its formal model-theoretic, fixed-point, and proof-theoretic semantics all being proven equivalent." }
   },
   "overallScore": 2.8,
+  "designQualityScore": 3.0,
   "summary": "Datalog is a minimal, mathematically elegant declarative logic language whose Horn-clause rules naturally express recursive graph-style queries (transitive closure) and adapt flexibly to ad hoc relations, but its academic core lacks negation, aggregation, and basic data types without engine-specific extensions, has no defined transport protocol, and remains confined to specialized research and program-analysis tooling rather than mainstream, HTTP-facing use.",
   "evaluatedDate": "2026-09-04"
 }

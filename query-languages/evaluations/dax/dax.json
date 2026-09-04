@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Blends Excel-like formula syntax with relational filter/row-context semantics inherited in part from MDX, resulting in two coexisting evaluation models that can behave inconsistently for the same-looking expression depending on context." }
   },
   "overallScore": 2.8,
+  "designQualityScore": 2.9,
   "summary": "DAX is a mature, Excel-formula-inspired analytical expression language deeply embedded in Microsoft's Power BI/Analysis Services BI ecosystem, offering strong expressiveness for calculations over a fast in-memory columnar engine, but it requires a predefined Tabular data model, has no user-extensible function mechanism, and its dual row-context/filter-context evaluation model remains a genuine learning curve despite its Excel-like surface syntax.",
   "evaluatedDate": "2026-09-04"
 }

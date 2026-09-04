@@ -25,6 +25,7 @@
 | Orthogonality | 3 | Boolean, range, boosting, and field-search constructs compose reasonably, but the reserved-character escaping rules, JSON double-escaping requirement, and overlap with sibling query types (match, simple_query_string, multi_match) add inconsistency. |
 
 **Overall score (avg, informational only): 3.4**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary
 

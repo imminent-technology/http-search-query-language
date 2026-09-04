@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "Inherits reasonable SQL orthogonality, but sourcing DDL from HiveQL and DML from Trino/Presto creates some inconsistency between the two halves of the language." }
   },
   "overallScore": 3.1,
+  "designQualityScore": 3.3,
   "summary": "AWS Athena's query syntax is a serverless SQL dialect over S3 data, combining Trino/Presto's expressive DML with HiveQL-derived DDL for a familiar, reasonably performant analytics experience, but it remains an AWS-specific service rather than a standardized query language and is used through SDKs/APIs rather than as a URL-embeddable string.",
   "evaluatedDate": "2026-09-04"
 }

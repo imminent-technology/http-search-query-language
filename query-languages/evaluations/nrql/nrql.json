@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "The SELECT/FROM/WHERE/FACET/LIMIT/SINCE/UNTIL clause ordering is fixed and consistent across queries, mirroring SQL's own moderately orthogonal clause-based structure." }
   },
   "overallScore": 2.8,
+  "designQualityScore": 3.0,
   "summary": "NRQL is a deliberately SQL-like query language for New Relic's telemetry platform, easy to pick up for anyone who knows SQL and accessible over HTTP via the NerdGraph API, but it is a fixed, single-vendor syntax with no extensibility mechanism, no documented parameterization/injection protections, and a narrower feature set than general-purpose observability query languages like KQL or DQL.",
   "evaluatedDate": "2026-09-04"
 }

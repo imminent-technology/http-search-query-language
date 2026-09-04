@@ -23,6 +23,7 @@
 | Orthogonality | 2 | SELECT/INSERT/UPDATE syntax looks SQL-like, but requiring queries to be modeled around a fixed partition/clustering key, and the explicit lack of joins/aggregation, means the language does not compose as freely as SQL across arbitrary query shapes. |
 
 **Overall score (avg, informational only): 2.7**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.8**
 
 ## Summary
 

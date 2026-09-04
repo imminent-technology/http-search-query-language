@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Predicates and expressions compose fluently as Java objects, but the API's verbosity and reliance on generated metamodel classes add indirection compared to a plain query string. |
 
 **Overall score (avg, informational only): 3.2**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.9**
 
 ## Summary
 

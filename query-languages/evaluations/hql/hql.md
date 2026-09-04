@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Clauses compose in a SQL-like way, but the object-relational impedance mismatch (collections, associations, lazy loading) introduces special-casing absent from plain SQL. |
 
 **Overall score (avg, informational only): 3.1**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary
 

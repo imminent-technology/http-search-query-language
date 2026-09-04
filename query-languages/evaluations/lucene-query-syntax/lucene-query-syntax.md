@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Operators are documented as largely independent modifiers, but real documented restrictions exist (wildcards can't be the first character, NOT cannot be used alone), showing some feature interaction/special-casing. |
 
 **Overall score (avg, informational only): 3.4**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary
 

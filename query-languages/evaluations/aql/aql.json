@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "FOR/FILTER/COLLECT/RETURN compose reasonably well across document and graph models, but mixing multiple data models in a single query adds complexity relative to a single-model language." }
   },
   "overallScore": 2.9,
+  "designQualityScore": 3.3,
   "summary": "AQL is ArangoDB's SQL-like, JSON-oriented multi-model query language, offering strong flexibility for combining document, graph and key-value access in one query, but it remains a single-vendor proprietary language with a smaller ecosystem and no HTTP/URL-native transport model.",
   "evaluatedDate": "2026-09-04"
 }

@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "A basic SQL-like statement structure (SELECT/INSERT/UPDATE/DELETE-style) that is moderately consistent across the documented statement types." }
   },
   "overallScore": 2.0,
+  "designQualityScore": 2.1,
   "summary": "The OQL documented at list.csv's linked URL is IBM's own proprietary, SQL-like configuration-database language for its Network Manager product — a naming discrepancy worth noting, since the name 'Object Query Language' more commonly refers to the ODMG's much more ambitious (but per Wikipedia, never fully implemented) object-database query standard; either way, this is a narrow, low-adoption, single-vendor tool-specific language with no meaningful extensibility or standardization.",
   "evaluatedDate": "2026-09-04"
 }

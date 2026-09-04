@@ -22,6 +22,7 @@
     "orthogonality": { "score": 3, "rationale": "Core CRUD operations compose reasonably well, but Wikipedia's 'Orthogonality and completeness' criticism notes historical gaps (no primary keys or subqueries pre-1992) and bolted-on extensions like SQL/XML and SQL/JSON that don't integrate cleanly with the core model." }
   },
   "overallScore": 3.6,
+  "designQualityScore": 3.3,
   "summary": "SQL is the most expressive, standardized, and performant of the widely-used query languages, backed by an unmatched ecosystem, but its rigid schema, weak default injection resistance, and poor fit for URL-based HTTP transport are the tradeoffs of a language designed in the 1970s for persistent database connections rather than stateless web APIs.",
   "evaluatedDate": "2026-09-04"
 }

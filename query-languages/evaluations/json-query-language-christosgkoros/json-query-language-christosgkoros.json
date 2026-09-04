@@ -20,6 +20,7 @@
     "orthogonality": { "score": 3, "rationale": "The core model is fairly uniform — one `Constraint` shared across every field, AND-by-default sibling composition at every nesting level — but several operators carry special-cased exceptions (three-valued `$not`/`$ne`, `$in` needing a distinct `$hasAny` for array membership, `$elemMatch` vs. wildcard-path semantics) that require explicit documentation to use correctly." }
   },
   "overallScore": 3.0,
+  "designQualityScore": 3.5,
   "summary": "JSON Query Language (christosgkoros) is a pre-1.0, single-maintainer JSON Schema-described predicate/filter language purpose-built for OpenAPI search endpoints and MCP tool inputSchemas, offering a broad, profile-organized operator set and a generator that derives per-resource filter schemas with real operand domains. Its explicit safety guidance and schema-validated construction give it a solid security posture, but as an unstandardized, pre-naming working title with a tiny community it remains an early-stage design rather than a production-ready specification — and it shares its common name with the unrelated jsonquerylang.org project.",
   "evaluatedDate": "2026-09-04"
 }

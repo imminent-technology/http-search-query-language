@@ -17,7 +17,8 @@
       "performance": 5,
       "orthogonality": 3
     },
-    "overallScore": 3.6
+    "overallScore": 3.6,
+    "designQualityScore": 3.3
   },
   {
     "title": "HQL",
@@ -37,7 +38,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.1
+    "overallScore": 3.1,
+    "designQualityScore": 3.0
   },
   {
     "title": "JPQL",
@@ -57,7 +59,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.3
+    "overallScore": 3.3,
+    "designQualityScore": 3.0
   },
   {
     "title": "Criteria API",
@@ -77,7 +80,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.2
+    "overallScore": 3.2,
+    "designQualityScore": 2.9
   },
   {
     "title": "SOQL",
@@ -97,7 +101,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 2.8
+    "overallScore": 2.8,
+    "designQualityScore": 3.0
   },
   {
     "title": "SQL++",
@@ -117,7 +122,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.0
+    "overallScore": 3.0,
+    "designQualityScore": 3.3
   },
   {
     "title": "Azure Cosmos DB SQL Query Syntax",
@@ -137,7 +143,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.6
   },
   {
     "title": "AWS Athena Query Syntax",
@@ -157,7 +164,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 3.1
+    "overallScore": 3.1,
+    "designQualityScore": 3.3
   },
   {
     "title": "MongoDB Query Syntax",
@@ -177,7 +185,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
   },
   {
     "title": "CouchDB Mango Query Language",
@@ -197,7 +206,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.1
+    "overallScore": 3.1,
+    "designQualityScore": 3.4
   },
   {
     "title": "Firebase Cloud Firestore Query Language",
@@ -217,7 +227,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 3.2
+    "overallScore": 3.2,
+    "designQualityScore": 3.4
   },
   {
     "title": "Firebase Realtime Database Query Language",
@@ -237,7 +248,8 @@
       "performance": 3,
       "orthogonality": 2
     },
-    "overallScore": 2.5
+    "overallScore": 2.5,
+    "designQualityScore": 2.6
   },
   {
     "title": "AWS DynamoDB Query Syntax",
@@ -257,7 +269,8 @@
       "performance": 4,
       "orthogonality": 2
     },
-    "overallScore": 2.7
+    "overallScore": 2.7,
+    "designQualityScore": 2.8
   },
   {
     "title": "AQL",
@@ -277,7 +290,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 2.9
+    "overallScore": 2.9,
+    "designQualityScore": 3.3
   },
   {
     "title": "CQL",
@@ -297,7 +311,8 @@
       "performance": 4,
       "orthogonality": 2
     },
-    "overallScore": 2.7
+    "overallScore": 2.7,
+    "designQualityScore": 2.8
   },
   {
     "title": "GraphQL",
@@ -317,7 +332,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 4.0
+    "overallScore": 4.0,
+    "designQualityScore": 3.9
   },
   {
     "title": "PromQL",
@@ -337,7 +353,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 3.2
+    "overallScore": 3.2,
+    "designQualityScore": 3.1
   },
   {
     "title": "KQL",
@@ -357,7 +374,8 @@
       "performance": 4,
       "orthogonality": 4
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.6
   },
   {
     "title": "NRQL",
@@ -377,7 +395,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 2.8
+    "overallScore": 2.8,
+    "designQualityScore": 3.0
   },
   {
     "title": "DQL",
@@ -397,7 +416,8 @@
       "performance": 4,
       "orthogonality": 4
     },
-    "overallScore": 3.2
+    "overallScore": 3.2,
+    "designQualityScore": 3.5
   },
   {
     "title": "DAX",
@@ -417,7 +437,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 2.8
+    "overallScore": 2.8,
+    "designQualityScore": 2.9
   },
   {
     "title": "MDX",
@@ -437,7 +458,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 2.9
+    "overallScore": 2.9,
+    "designQualityScore": 2.9
   },
   {
     "title": "JSON Query Language",
@@ -457,7 +479,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.1
+    "overallScore": 3.1,
+    "designQualityScore": 3.6
   },
   {
     "title": "JSON Query Language",
@@ -477,7 +500,8 @@
       "performance": 3,
       "orthogonality": 3
     },
-    "overallScore": 3.0
+    "overallScore": 3.0,
+    "designQualityScore": 3.5
   },
   {
     "title": "Lucene Query Syntax",
@@ -497,7 +521,8 @@
       "performance": 5,
       "orthogonality": 3
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
   },
   {
     "title": "Solr Query Syntax",
@@ -517,7 +542,8 @@
       "performance": 5,
       "orthogonality": 3
     },
-    "overallScore": 3.3
+    "overallScore": 3.3,
+    "designQualityScore": 3.5
   },
   {
     "title": "ESQL",
@@ -537,7 +563,8 @@
       "performance": 5,
       "orthogonality": 3
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
   },
   {
     "title": "AWS CloudSearch Query Syntax",
@@ -557,7 +584,8 @@
       "performance": 3,
       "orthogonality": 2
     },
-    "overallScore": 2.6
+    "overallScore": 2.6,
+    "designQualityScore": 2.9
   },
   {
     "title": "Cypher",
@@ -577,7 +605,8 @@
       "performance": 4,
       "orthogonality": 4
     },
-    "overallScore": 3.7
+    "overallScore": 3.7,
+    "designQualityScore": 3.6
   },
   {
     "title": "Gremlin",
@@ -597,7 +626,8 @@
       "performance": 4,
       "orthogonality": 4
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
   },
   {
     "title": "SPARQL",
@@ -617,7 +647,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.5
+    "overallScore": 3.5,
+    "designQualityScore": 3.4
   },
   {
     "title": "Datalog",
@@ -637,7 +668,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 2.8
+    "overallScore": 2.8,
+    "designQualityScore": 3.0
   },
   {
     "title": "Crul Queries",
@@ -657,7 +689,8 @@
       "performance": 2,
       "orthogonality": 4
     },
-    "overallScore": 2.3
+    "overallScore": 2.3,
+    "designQualityScore": 2.6
   },
   {
     "title": "Flux",
@@ -677,7 +710,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.0
+    "overallScore": 3.0,
+    "designQualityScore": 3.3
   },
   {
     "title": "FQL",
@@ -697,7 +731,8 @@
       "performance": 2,
       "orthogonality": 3
     },
-    "overallScore": 2.1
+    "overallScore": 2.1,
+    "designQualityScore": 2.4
   },
   {
     "title": "LINQ",
@@ -717,7 +752,8 @@
       "performance": 2,
       "orthogonality": 4
     },
-    "overallScore": 3.6
+    "overallScore": 3.6,
+    "designQualityScore": 3.6
   },
   {
     "title": "OQL",
@@ -737,7 +773,8 @@
       "performance": 2,
       "orthogonality": 3
     },
-    "overallScore": 2.0
+    "overallScore": 2.0,
+    "designQualityScore": 2.1
   },
   {
     "title": "SPL",
@@ -757,7 +794,8 @@
       "performance": 4,
       "orthogonality": 3
     },
-    "overallScore": 3.4
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
   },
   {
     "title": "TaxiQL",
@@ -777,7 +815,8 @@
       "performance": 2,
       "orthogonality": 3
     },
-    "overallScore": 2.6
+    "overallScore": 2.6,
+    "designQualityScore": 3.0
   },
   {
     "title": "XPath",
@@ -797,7 +836,8 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.5
+    "overallScore": 3.5,
+    "designQualityScore": 3.1
   },
   {
     "title": "XQuery",
@@ -817,6 +857,7 @@
       "performance": 3,
       "orthogonality": 4
     },
-    "overallScore": 3.5
+    "overallScore": 3.5,
+    "designQualityScore": 3.4
   }
 ]

@@ -20,6 +20,7 @@
     "orthogonality": { "score": 4, "rationale": "Every stage follows the same uniform structure (command, ordered arguments, flags) chained via a single pipe operator, giving the language a small, consistent set of composable building blocks." }
   },
   "overallScore": 2.3,
+  "designQualityScore": 2.6,
   "summary": "Crul Queries is a small, pipe-based DSL for orchestrating and curating HTTP API calls within the Crul platform, with a clean and uniform stage-based syntax, but it is a niche, single-vendor product with a tiny community, no independent standardization, and no documented security-specific design beyond its basic token-substitution mechanism.",
   "evaluatedDate": "2026-09-04"
 }

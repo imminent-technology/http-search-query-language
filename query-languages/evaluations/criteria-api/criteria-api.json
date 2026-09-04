@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Predicates and expressions compose fluently as Java objects, but the API's verbosity and reliance on generated metamodel classes add indirection compared to a plain query string." }
   },
   "overallScore": 3.2,
+  "designQualityScore": 2.9,
   "summary": "The JPA Criteria API is a type-safe, programmatic alternative to JPQL that is structurally immune to injection by construction and formally standardized alongside it, but its fluent, metamodel-driven style trades away the simplicity of writing plain query strings and, like JPQL, is confined to in-process Java use over a fixed entity schema.",
   "evaluatedDate": "2026-09-04"
 }

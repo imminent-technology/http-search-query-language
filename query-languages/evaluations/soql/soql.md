@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Core SELECT/WHERE/ORDER BY compose in a SQL-like way, but the lack of arbitrary joins/subquery placement and relationship-query rules introduce Salesforce-specific special-casing. |
 
 **Overall score (avg, informational only): 2.8**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.0**
 
 ## Summary
 

@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Core filtering and projection compose well, but Wikipedia explicitly documents missing GROUP BY and cross-container joins as gaps requiring special-cased stored-procedure workarounds. |
 
 **Overall score (avg, informational only): 3.4**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.6**
 
 ## Summary
 

@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Core filtering and projection compose well, but Wikipedia explicitly documents missing GROUP BY and cross-container joins as gaps requiring special-cased stored-procedure workarounds." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.6,
   "summary": "Azure Cosmos DB's SQL API brings familiar ANSI SQL syntax to schema-agnostic JSON documents, offering strong flexibility and default indexing backed by Microsoft's ecosystem, but it is a single-vendor proprietary dialect with notable expressiveness gaps (no GROUP BY, no cross-container joins) that require JavaScript-based stored procedures to work around.",
   "evaluatedDate": "2026-09-04"
 }

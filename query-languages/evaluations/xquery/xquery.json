@@ -20,6 +20,7 @@
     "orthogonality": { "score": 4, "rationale": "Wikipedia explicitly notes XQuery 'is more orthogonal, in that any expression can be used in any syntactic context', directly contrasted with XSLT's more restrictive two-language system where XPath expressions can be nested in XSLT instructions but not vice versa." }
   },
   "overallScore": 3.5,
+  "designQualityScore": 3.4,
   "summary": "XQuery is a formally W3C-standardized, functional query and transformation language for XML that extends XPath with SQL-like FLWOR expressions and a highly orthogonal composition model, implemented across several established XML database engines, but it remains a comparatively niche technology outside the XML-database space, with no native HTTP transport of its own and no documented built-in defense against query injection.",
   "evaluatedDate": "2026-09-04"
 }

@@ -21,6 +21,7 @@
     "orthogonality": { "score": 2, "rationale": "Ordering functions cannot be combined (e.g., calling orderByChild() twice throws an error), and range/limit methods only layer on top of a single ordering choice, a notable composability limitation." }
   },
   "overallScore": 2.5,
+  "designQualityScore": 2.6,
   "summary": "Firebase Realtime Database's query language offers a small, easy-to-learn set of single-key ordering and range methods well suited to simple lookups, but it cannot combine multiple ordering criteria or filter compound conditions, making it the least expressive of Firebase's two database query languages and largely superseded by Firestore.",
   "evaluatedDate": "2026-09-04"
 }

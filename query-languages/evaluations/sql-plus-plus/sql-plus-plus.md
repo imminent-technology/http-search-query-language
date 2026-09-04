@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Extends SQL's composable clause structure to nested JSON, but the added array/object navigation constructs are layered on top of SQL rather than fully unified with it. |
 
 **Overall score (avg, informational only): 3.0**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.3**
 
 ## Summary
 

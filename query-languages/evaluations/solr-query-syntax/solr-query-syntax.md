@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Core Boolean/field/range operators compose consistently, but Solr-specific extensions over the base Lucene parser (open-ended ranges, pure-negative queries, function-query casts) are layered on rather than unified with the base grammar. |
 
 **Overall score (avg, informational only): 3.3**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary
 

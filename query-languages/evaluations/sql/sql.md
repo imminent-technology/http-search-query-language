@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Core CRUD operations compose reasonably well, but Wikipedia's "Orthogonality and completeness" criticism notes historical gaps (no primary keys or subqueries pre-1992) and bolted-on extensions like SQL/XML and SQL/JSON that don't integrate cleanly with the core model. |
 
 **Overall score (avg, informational only): 3.6**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.3**
 
 ## Summary
 

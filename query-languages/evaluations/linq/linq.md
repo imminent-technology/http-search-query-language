@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Query syntax has an exact, well-defined translation into fluent method-chain syntax, and query operators compose uniformly (every operator returns an enumerable/queryable that any other operator can act on). |
 
 **Overall score (avg, informational only): 3.6**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.6**
 
 ## Summary
 

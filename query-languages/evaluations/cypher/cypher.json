@@ -22,6 +22,7 @@
     "orthogonality": { "score": 4, "rationale": "Clauses (MATCH/WHERE/RETURN/CREATE/DELETE/SET/MERGE) are composable and follow a consistent pattern-based syntax across both read and write use cases." }
   },
   "overallScore": 3.7,
+  "designQualityScore": 3.6,
   "summary": "Cypher combines high expressiveness for graph pattern-matching with unusually strong readability and a clear path toward formal standardization via GQL, but like SQL it is built around persistent driver connections (Bolt) rather than lightweight HTTP transport.",
   "evaluatedDate": "2026-09-04"
 }

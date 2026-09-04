@@ -73,6 +73,7 @@ Slug = kebab-case of the `Title` column in `list.csv` (e.g. "AWS Athena Query Sy
     "orthogonality": { "score": 1, "rationale": "string" }
   },
   "overallScore": 1.0,
+  "designQualityScore": 1.0,
   "summary": "string, 2-3 sentences, neutral/comparative tone",
   "evaluatedDate": "YYYY-MM-DD"
 }
@@ -80,14 +81,16 @@ Slug = kebab-case of the `Title` column in `list.csv` (e.g. "AWS Athena Query Sy
 
 `overallScore` is the unweighted average of the 10 criterion scores, rounded to one decimal — informational only, not a ranking signal.
 
+`designQualityScore` is a second, additive metric: the unweighted average of only 8 of the 10 criteria — Expressiveness, Simplicity, Flexibility, Extensibility, Transport Compatibility, Security, Performance, and Orthogonality — rounded to one decimal. It deliberately excludes Community and Ecosystem and Standardization, which measure a language's adoption and governance history rather than its inherent design quality, and therefore structurally favor established, long-lived products over newer or niche ones regardless of how well-designed the language itself is. Like `overallScore`, it is informational only, not a ranking signal, and every future evaluation must compute both.
+
 ## Per-language Markdown (`<slug>/<slug>.md`)
 
 Mirrors the JSON for human reading: title + doc link, category, a scores table (criterion | score | rationale), the summary paragraph, and a "Sources" list. Sources are cited in APA style so the publisher/organization (provenance) is always visible alongside the title and date, e.g. `- Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).` or `- The PostgreSQL Global Development Group. (n.d.). [*Part II. The SQL Language*](https://www.postgresql.org/docs/current/sql.html).` when no fixed publication/revision date is available (common for continuously-updated docs and marketing pages).
 
 ## Aggregate files
 
-- `summary.json`: array of compact objects `{ title, slug, category, officialDocUrl, scores: { <criterion>: number }, overallScore }` for all evaluated languages — data-viz friendly.
-- `summary.md`: comparison matrix (languages as rows grouped by category, 10 criteria as columns) plus a short methodology note linking back to this rubric and to `../evaluation.md`.
+- `summary.json`: array of compact objects `{ title, slug, category, officialDocUrl, mediaType, scores: { <criterion>: number }, overallScore, designQualityScore }` for all evaluated languages — data-viz friendly.
+- `summary.md`: comparison matrix (languages as rows grouped by category, 10 criteria as columns, plus `Avg` (overallScore) and `DQ` (designQualityScore)) plus a short methodology note linking back to this rubric and to `../evaluation.md`.
 
 ## Sourcing constraint
 

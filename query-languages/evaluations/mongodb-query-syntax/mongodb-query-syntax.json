@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Query filters, projections, and aggregation stages compose in a consistent, uniform JSON-document style across drivers and languages, contributing to the language's perceived simplicity." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.5,
   "summary": "MongoDB's query language (MQL) is a widely adopted, highly flexible JSON-native document query language with a powerful aggregation pipeline, but it is a proprietary, non-HTTP-native language whose historically weak default security posture and independently documented consistency trade-offs temper its otherwise strong ecosystem and expressiveness.",
   "evaluatedDate": "2026-09-04"
 }

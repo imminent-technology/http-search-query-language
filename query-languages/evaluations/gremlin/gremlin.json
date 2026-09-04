@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Every step is uniformly classified as a map-step, filter-step, or sideEffect-step, giving the language a small, consistent set of composition primitives that Wikipedia notes is sufficient for general-purpose graph computing." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.5,
   "summary": "Gremlin is a highly expressive, Turing-complete graph traversal language and virtual machine backed by Apache TinkerPop, offering strong extensibility and vendor-neutral portability across OLTP and OLAP graph systems, but it is designed for host-language embedding or a binary server protocol rather than HTTP/URL transport, and its declarative pattern-matching features add a real learning curve.",
   "evaluatedDate": "2026-09-04"
 }

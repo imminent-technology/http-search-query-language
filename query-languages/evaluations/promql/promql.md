@@ -23,6 +23,7 @@
 | Orthogonality | 3 | Instant vs. range vector semantics are consistent, but binary-operator vector-matching modifiers interact with aggregation in ways that require special-cased knowledge, and duration-expression syntax was layered on over time. |
 
 **Overall score (avg, informational only): 3.2**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.1**
 
 ## Summary
 

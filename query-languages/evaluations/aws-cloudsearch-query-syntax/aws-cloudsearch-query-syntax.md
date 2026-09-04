@@ -23,6 +23,7 @@
 | Orthogonality | 2 | The four query parsers (simple, structured, lucene, dismax) are largely separate feature sets rather than composable extensions of one grammar, so switching parsers changes both syntax and available capabilities inconsistently. |
 
 **Overall score (avg, informational only): 2.6**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 2.9**
 
 ## Summary
 

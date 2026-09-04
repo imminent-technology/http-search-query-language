@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Operators are documented as largely independent modifiers, but real documented restrictions exist (wildcards can't be the first character, NOT cannot be used alone), showing some feature interaction/special-casing." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.5,
   "summary": "Lucene Query Syntax is a narrow but battle-tested full-text search language that fits HTTP transport almost perfectly and underpins most of the search-engine ecosystem, at the cost of formal standardization, extensibility within the syntax itself, and any notion of joins or aggregation.",
   "evaluatedDate": "2026-09-04"
 }

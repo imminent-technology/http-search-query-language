@@ -1,106 +1,106 @@
 # Query language comparison
 
-Methodology: each language is scored 1-5 on the 10 criteria defined in [`../evaluation.md`](../evaluation.md), using the rubric in [`rubric.md`](rubric.md). Scores are descriptive snapshots intended as raw research material for a comparison article — not a ranking or a "best language" verdict.
+Methodology: each language is scored 1-5 on the 10 criteria defined in [`../evaluation.md`](../evaluation.md), using the rubric in [`rubric.md`](rubric.md). Scores are descriptive snapshots intended as raw research material for a comparison article — not a ranking or a "best language" verdict. Each table below also reports a Design Quality Score (`DQ`), a second, additive average over only 8 of the 10 criteria that excludes Community & Ecosystem and Standardization — see [`rubric.md`](rubric.md) for why.
 
 **Status: 41 of 41 languages evaluated.** (pilot batch + Relational/SQL-family batch + Document/NoSQL batch + Search/full-text & Graph batch + Analytics/Observability & JSON Query Language batch + Language-integrated/Log-security-search/Scripting/Path-document-navigation/Niche-misc/API-data-fetching-remainder batch + JSON Query Language (christosgkoros) name-collision addition). Note: an earlier miscount stated the project total as 39 languages; a full recount of `list.csv` confirmed the true total is 40, and it has since grown to 41 with the addition of a second, unrelated "JSON Query Language" spec.
 
-Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & Ecosystem, Ext=Extensibility, Trans=Transport Compatibility, Std=Standardization, Sec=Security, Perf=Performance, Orth=Orthogonality, Avg=overall average (informational only).
+Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & Ecosystem, Ext=Extensibility, Trans=Transport Compatibility, Std=Standardization, Sec=Security, Perf=Performance, Orth=Orthogonality, Avg=overall average (informational only), DQ=Design Quality Score (avg of the 8 criteria excluding Community & Ecosystem and Standardization).
 
 ## Relational/SQL-family
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [SQL](sql/sql.md) | 5 | 3 | 2 | 5 | 4 | 2 | 5 | 2 | 5 | 3 | 3.6 |
-| [HQL](hql/hql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 3 | 4 | 3 | 3 | 3.1 |
-| [JPQL](jpql/jpql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 5 | 4 | 3 | 3 | 3.3 |
-| [Criteria API](criteria-api/criteria-api.md) | 4 | 2 | 2 | 4 | 3 | 1 | 5 | 5 | 3 | 3 | 3.2 |
-| [SOQL](soql/soql.md) | 3 | 4 | 2 | 3 | 2 | 4 | 1 | 3 | 3 | 3 | 2.8 |
-| [SQL++](sql-plus-plus/sql-plus-plus.md) | 4 | 3 | 5 | 2 | 3 | 3 | 2 | 2 | 3 | 3 | 3.0 |
-| [Azure Cosmos DB SQL Query Syntax](azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md) | 3 | 4 | 5 | 4 | 4 | 3 | 1 | 3 | 4 | 3 | 3.4 |
-| [AWS Athena Query Syntax](aws-athena-query-syntax/aws-athena-query-syntax.md) | 4 | 4 | 3 | 3 | 3 | 2 | 2 | 3 | 4 | 3 | 3.1 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SQL](sql/sql.md) | 5 | 3 | 2 | 5 | 4 | 2 | 5 | 2 | 5 | 3 | 3.6 | 3.3 |
+| [HQL](hql/hql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 3 | 4 | 3 | 3 | 3.1 | 3.0 |
+| [JPQL](jpql/jpql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 5 | 4 | 3 | 3 | 3.3 | 3.0 |
+| [Criteria API](criteria-api/criteria-api.md) | 4 | 2 | 2 | 4 | 3 | 1 | 5 | 5 | 3 | 3 | 3.2 | 2.9 |
+| [SOQL](soql/soql.md) | 3 | 4 | 2 | 3 | 2 | 4 | 1 | 3 | 3 | 3 | 2.8 | 3.0 |
+| [SQL++](sql-plus-plus/sql-plus-plus.md) | 4 | 3 | 5 | 2 | 3 | 3 | 2 | 2 | 3 | 3 | 3.0 | 3.3 |
+| [Azure Cosmos DB SQL Query Syntax](azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md) | 3 | 4 | 5 | 4 | 4 | 3 | 1 | 3 | 4 | 3 | 3.4 | 3.6 |
+| [AWS Athena Query Syntax](aws-athena-query-syntax/aws-athena-query-syntax.md) | 4 | 4 | 3 | 3 | 3 | 2 | 2 | 3 | 4 | 3 | 3.1 | 3.3 |
 
 ## Document/NoSQL
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [MongoDB Query Syntax](mongodb-query-syntax/mongodb-query-syntax.md) | 4 | 4 | 5 | 5 | 3 | 2 | 1 | 3 | 3 | 4 | 3.4 |
-| [CouchDB Mango Query Language](couchdb-mango-query-language/couchdb-mango-query-language.md) | 3 | 4 | 4 | 3 | 2 | 5 | 1 | 3 | 3 | 3 | 3.1 |
-| [Firebase Cloud Firestore Query Language](firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md) | 3 | 4 | 4 | 4 | 2 | 3 | 1 | 4 | 4 | 3 | 3.2 |
-| [Firebase Realtime Database Query Language](firebase-realtime-database-query-language/firebase-realtime-database-query-language.md) | 2 | 4 | 3 | 3 | 1 | 3 | 1 | 3 | 3 | 2 | 2.5 |
-| [AWS DynamoDB Query Syntax](aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md) | 2 | 3 | 2 | 4 | 2 | 3 | 1 | 4 | 4 | 2 | 2.7 |
-| [AQL](aql/aql.md) | 4 | 3 | 5 | 2 | 3 | 2 | 1 | 3 | 3 | 3 | 2.9 |
-| [CQL](cql/cql.md) | 2 | 4 | 3 | 4 | 3 | 1 | 1 | 3 | 4 | 2 | 2.7 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [MongoDB Query Syntax](mongodb-query-syntax/mongodb-query-syntax.md) | 4 | 4 | 5 | 5 | 3 | 2 | 1 | 3 | 3 | 4 | 3.4 | 3.5 |
+| [CouchDB Mango Query Language](couchdb-mango-query-language/couchdb-mango-query-language.md) | 3 | 4 | 4 | 3 | 2 | 5 | 1 | 3 | 3 | 3 | 3.1 | 3.4 |
+| [Firebase Cloud Firestore Query Language](firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md) | 3 | 4 | 4 | 4 | 2 | 3 | 1 | 4 | 4 | 3 | 3.2 | 3.4 |
+| [Firebase Realtime Database Query Language](firebase-realtime-database-query-language/firebase-realtime-database-query-language.md) | 2 | 4 | 3 | 3 | 1 | 3 | 1 | 3 | 3 | 2 | 2.5 | 2.6 |
+| [AWS DynamoDB Query Syntax](aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md) | 2 | 3 | 2 | 4 | 2 | 3 | 1 | 4 | 4 | 2 | 2.7 | 2.8 |
+| [AQL](aql/aql.md) | 4 | 3 | 5 | 2 | 3 | 2 | 1 | 3 | 3 | 3 | 2.9 | 3.3 |
+| [CQL](cql/cql.md) | 2 | 4 | 3 | 4 | 3 | 1 | 1 | 3 | 4 | 2 | 2.7 | 2.8 |
 
 ## Search/full-text
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Lucene Query Syntax](lucene-query-syntax/lucene-query-syntax.md) | 3 | 4 | 3 | 5 | 2 | 5 | 1 | 3 | 5 | 3 | 3.4 |
-| [Solr Query Syntax](solr-query-syntax/solr-query-syntax.md) | 4 | 3 | 3 | 4 | 3 | 5 | 1 | 2 | 5 | 3 | 3.3 |
-| [ESQL](esql/esql.md) | 4 | 3 | 4 | 5 | 3 | 4 | 1 | 2 | 5 | 3 | 3.4 |
-| [AWS CloudSearch Query Syntax](aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md) | 3 | 3 | 2 | 2 | 2 | 5 | 1 | 3 | 3 | 2 | 2.6 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Lucene Query Syntax](lucene-query-syntax/lucene-query-syntax.md) | 3 | 4 | 3 | 5 | 2 | 5 | 1 | 3 | 5 | 3 | 3.4 | 3.5 |
+| [Solr Query Syntax](solr-query-syntax/solr-query-syntax.md) | 4 | 3 | 3 | 4 | 3 | 5 | 1 | 2 | 5 | 3 | 3.3 | 3.5 |
+| [ESQL](esql/esql.md) | 4 | 3 | 4 | 5 | 3 | 4 | 1 | 2 | 5 | 3 | 3.4 | 3.5 |
+| [AWS CloudSearch Query Syntax](aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md) | 3 | 3 | 2 | 2 | 2 | 5 | 1 | 3 | 3 | 2 | 2.6 | 2.9 |
 
 ## Graph
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Cypher](cypher/cypher.md) | 5 | 4 | 4 | 4 | 3 | 2 | 4 | 3 | 4 | 4 | 3.7 |
-| [Gremlin](gremlin/gremlin.md) | 5 | 3 | 4 | 3 | 4 | 2 | 3 | 2 | 4 | 4 | 3.4 |
-| [SPARQL](sparql/sparql.md) | 5 | 2 | 4 | 3 | 3 | 4 | 5 | 2 | 3 | 4 | 3.5 |
-| [Datalog](datalog/datalog.md) | 3 | 2 | 4 | 2 | 4 | 1 | 2 | 3 | 3 | 4 | 2.8 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Cypher](cypher/cypher.md) | 5 | 4 | 4 | 4 | 3 | 2 | 4 | 3 | 4 | 4 | 3.7 | 3.6 |
+| [Gremlin](gremlin/gremlin.md) | 5 | 3 | 4 | 3 | 4 | 2 | 3 | 2 | 4 | 4 | 3.4 | 3.5 |
+| [SPARQL](sparql/sparql.md) | 5 | 2 | 4 | 3 | 3 | 4 | 5 | 2 | 3 | 4 | 3.5 | 3.4 |
+| [Datalog](datalog/datalog.md) | 3 | 2 | 4 | 2 | 4 | 1 | 2 | 3 | 3 | 4 | 2.8 | 3.0 |
 
 ## Analytics/Observability
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [PromQL](promql/promql.md) | 4 | 3 | 2 | 5 | 2 | 4 | 2 | 3 | 4 | 3 | 3.2 |
-| [KQL](kql/kql.md) | 4 | 4 | 3 | 4 | 3 | 3 | 1 | 4 | 4 | 4 | 3.4 |
-| [NRQL](nrql/nrql.md) | 3 | 4 | 3 | 3 | 2 | 4 | 1 | 2 | 3 | 3 | 2.8 |
-| [DQL](dql/dql.md) | 4 | 3 | 5 | 3 | 3 | 3 | 1 | 2 | 4 | 4 | 3.2 |
-| [DAX](dax/dax.md) | 4 | 3 | 2 | 4 | 2 | 2 | 1 | 3 | 4 | 3 | 2.8 |
-| [MDX](mdx/mdx.md) | 4 | 2 | 2 | 3 | 3 | 3 | 3 | 2 | 4 | 3 | 2.9 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [PromQL](promql/promql.md) | 4 | 3 | 2 | 5 | 2 | 4 | 2 | 3 | 4 | 3 | 3.2 | 3.1 |
+| [KQL](kql/kql.md) | 4 | 4 | 3 | 4 | 3 | 3 | 1 | 4 | 4 | 4 | 3.4 | 3.6 |
+| [NRQL](nrql/nrql.md) | 3 | 4 | 3 | 3 | 2 | 4 | 1 | 2 | 3 | 3 | 2.8 | 3.0 |
+| [DQL](dql/dql.md) | 4 | 3 | 5 | 3 | 3 | 3 | 1 | 2 | 4 | 4 | 3.2 | 3.5 |
+| [DAX](dax/dax.md) | 4 | 3 | 2 | 4 | 2 | 2 | 1 | 3 | 4 | 3 | 2.8 | 2.9 |
+| [MDX](mdx/mdx.md) | 4 | 2 | 2 | 3 | 3 | 3 | 3 | 2 | 4 | 3 | 2.9 | 2.9 |
 
 ## API/data-fetching
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [GraphQL](graphql/graphql.md) | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 4 | 3 | 4 | 4.0 |
-| [JSON Query Language](json-query-language/json-query-language.md) | 3 | 4 | 5 | 1 | 4 | 2 | 1 | 4 | 3 | 4 | 3.1 |
-| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 3 | 3.0 |
-| [FQL](fql/fql.md) | 2 | 4 | 1 | 1 | 1 | 4 | 1 | 2 | 2 | 3 | 2.1 |
-| [TaxiQL](taxiql/taxiql.md) | 4 | 3 | 4 | 1 | 4 | 2 | 1 | 2 | 2 | 3 | 2.6 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [GraphQL](graphql/graphql.md) | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 4 | 3 | 4 | 4.0 | 3.9 |
+| [JSON Query Language](json-query-language/json-query-language.md) | 3 | 4 | 5 | 1 | 4 | 2 | 1 | 4 | 3 | 4 | 3.1 | 3.6 |
+| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 3 | 3.0 | 3.5 |
+| [FQL](fql/fql.md) | 2 | 4 | 1 | 1 | 1 | 4 | 1 | 2 | 2 | 3 | 2.1 | 2.4 |
+| [TaxiQL](taxiql/taxiql.md) | 4 | 3 | 4 | 1 | 4 | 2 | 1 | 2 | 2 | 3 | 2.6 | 3.0 |
 
 ## Language-integrated
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [LINQ](linq/linq.md) | 5 | 4 | 5 | 4 | 5 | 1 | 3 | 3 | 2 | 4 | 3.6 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [LINQ](linq/linq.md) | 5 | 4 | 5 | 4 | 5 | 1 | 3 | 3 | 2 | 4 | 3.6 | 3.6 |
 
 ## Log/security search
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [SPL](spl/spl.md) | 5 | 3 | 4 | 5 | 4 | 3 | 1 | 2 | 4 | 3 | 3.4 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SPL](spl/spl.md) | 5 | 3 | 4 | 5 | 4 | 3 | 1 | 2 | 4 | 3 | 3.4 | 3.5 |
 
 ## Scripting
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Flux](flux/flux.md) | 4 | 3 | 4 | 3 | 3 | 3 | 1 | 2 | 3 | 4 | 3.0 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Flux](flux/flux.md) | 4 | 3 | 4 | 3 | 3 | 3 | 1 | 2 | 3 | 4 | 3.0 | 3.3 |
 
 ## Path/document navigation
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [XPath](xpath/xpath.md) | 4 | 4 | 3 | 5 | 3 | 2 | 5 | 2 | 3 | 4 | 3.5 |
-| [XQuery](xquery/xquery.md) | 5 | 3 | 4 | 3 | 4 | 2 | 5 | 2 | 3 | 4 | 3.5 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [XPath](xpath/xpath.md) | 4 | 4 | 3 | 5 | 3 | 2 | 5 | 2 | 3 | 4 | 3.5 | 3.1 |
+| [XQuery](xquery/xquery.md) | 5 | 3 | 4 | 3 | 4 | 2 | 5 | 2 | 3 | 4 | 3.5 | 3.4 |
 
 ## Niche/misc
 
-| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Crul Queries](crul-queries/crul-queries.md) | 2 | 4 | 3 | 1 | 2 | 2 | 1 | 2 | 2 | 4 | 2.3 |
-| [OQL](oql/oql.md) | 2 | 3 | 2 | 1 | 1 | 2 | 2 | 2 | 2 | 3 | 2.0 |
+| Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Crul Queries](crul-queries/crul-queries.md) | 2 | 4 | 3 | 1 | 2 | 2 | 1 | 2 | 2 | 4 | 2.3 | 2.6 |
+| [OQL](oql/oql.md) | 2 | 3 | 2 | 1 | 1 | 2 | 2 | 2 | 2 | 3 | 2.0 | 2.1 |
 
 ## Observations so far (partial data, not yet conclusive)
 

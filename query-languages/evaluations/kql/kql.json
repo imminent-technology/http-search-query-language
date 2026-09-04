@@ -20,6 +20,7 @@
     "orthogonality": { "score": 4, "rationale": "Every query is built from the same uniform building block — a tabular operator connected by pipes, where each operator takes tabular input and produces tabular output — giving the language a small, consistent composition model." }
   },
   "overallScore": 3.4,
+  "designQualityScore": 3.6,
   "summary": "KQL is a highly expressive, pipe-based analytics language purpose-built for exploring large-scale telemetry, logs, and security data across Microsoft's Azure/Sentinel/Fabric ecosystem, with a notably deliberate security design (queries vs. dot-prefixed management commands) and a uniform tabular-operator composition model, but it remains a proprietary, non-standardized language accessed via REST API rather than native URL embedding.",
   "evaluatedDate": "2026-09-04"
 }

@@ -21,6 +21,7 @@
     "orthogonality": { "score": 4, "rationale": "Query syntax has an exact, well-defined translation into fluent method-chain syntax, and query operators compose uniformly (every operator returns an enumerable/queryable that any other operator can act on)." }
   },
   "overallScore": 3.6,
+  "designQualityScore": 3.6,
   "summary": "LINQ is a deeply expressive and extensible query framework integrated directly into .NET languages, offering strong type safety and a uniform, provider-based architecture that spans in-memory collections, XML, and SQL databases, but it is fundamentally an in-process language construct rather than a network-transportable query language, and naive usage patterns carry documented performance risks.",
   "evaluatedDate": "2026-09-04"
 }

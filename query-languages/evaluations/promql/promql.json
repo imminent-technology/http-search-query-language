@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Instant vs. range vector semantics are consistent, but binary-operator vector-matching modifiers interact with aggregation in ways that require special-cased knowledge, and duration-expression syntax was layered on over time." }
   },
   "overallScore": 3.2,
+  "designQualityScore": 3.1,
   "summary": "PromQL is a highly specialized, HTTP-native query language optimized for one job — querying multi-dimensional time-series metrics — with an enormous ecosystem behind it, but it trades away flexibility, extensibility, and formal standardization for that specialization.",
   "evaluatedDate": "2026-09-04"
 }

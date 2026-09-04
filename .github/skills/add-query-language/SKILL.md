@@ -60,19 +60,19 @@ No general web-search tool is available for this work — only fetch specific, i
 
 ### 4. Score the language
 
-Follow `evaluation.md` for what each criterion means and `rubric.md` for the 1-5 scale and per-criterion anchors. For each of the 10 criteria (`expressiveness`, `simplicity`, `flexibility`, `communityAndEcosystem`, `extensibility`, `transportCompatibility`, `standardization`, `security`, `performance`, `orthogonality`) write a 1-3 sentence rationale grounded in a cited source — never an unsupported score. Assign a `category` from the existing taxonomy (propose a new one only if none genuinely fit, and confirm it with the user first). Compute `overallScore` as the unweighted average of the 10 scores, rounded to one decimal.
+Follow `evaluation.md` for what each criterion means and `rubric.md` for the 1-5 scale and per-criterion anchors. For each of the 10 criteria (`expressiveness`, `simplicity`, `flexibility`, `communityAndEcosystem`, `extensibility`, `transportCompatibility`, `standardization`, `security`, `performance`, `orthogonality`) write a 1-3 sentence rationale grounded in a cited source — never an unsupported score. Assign a `category` from the existing taxonomy (propose a new one only if none genuinely fit, and confirm it with the user first). Compute `overallScore` as the unweighted average of the 10 scores, rounded to one decimal, and `designQualityScore` as the unweighted average of the same 10 minus `communityAndEcosystem` and `standardization` (8 scores), also rounded to one decimal — see `rubric.md` for why that second metric exists.
 
 ### 5. Create the per-language files
 
-Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, following the schema documented in `rubric.md` (`title`, `slug`, `officialDocUrl`, `mediaType`, `category`, `sources[]`, `scores{}`, `overallScore`, `summary`, `evaluatedDate` = today's date). Mirror an existing pair (e.g. `graphql/graphql.json` + `graphql/graphql.md`) exactly for formatting. Cite sources in APA style in the Markdown file's "Sources" section.
+Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, following the schema documented in `rubric.md` (`title`, `slug`, `officialDocUrl`, `mediaType`, `category`, `sources[]`, `scores{}`, `overallScore`, `designQualityScore`, `summary`, `evaluatedDate` = today's date). Mirror an existing pair (e.g. `graphql/graphql.json` + `graphql/graphql.md`) exactly for formatting. Cite sources in APA style in the Markdown file's "Sources" section.
 
-Right after the `# Title` heading, add a back-link to the aggregate summary so readers can jump back to the full table: `[↑ Full comparison table](../summary.md)`, on its own line, before the metadata bullets.
+Right after the `# Title` heading, add a back-link to the aggregate summary so readers can jump back to the full table: `[↑ Full comparison table](../summary.md)`, on its own line, before the metadata bullets. Right after the scores table's `**Overall score (avg, informational only): X.X**` line, add a matching `**Design quality score (avg of the 8 criteria excluding Community & Ecosystem and Standardization): X.X**` line.
 
 ### 6. Update the aggregate summary files
 
-- `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct.
+- `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`, `designQualityScore`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct.
 - `summary.md`:
-  - Add a row to the matching `## <Category>` table (create a new category section — placed after the existing ones — only if it's genuinely a new category not in the taxonomy). If this entry is a name collision (per step 1/2), use the disambiguated label (e.g. `CQL (OGC)`) as the row's link text instead of the bare title.
+  - Add a row to the matching `## <Category>` table (create a new category section — placed after the existing ones — only if it's genuinely a new category not in the taxonomy), including a `DQ` value in the column right after `Avg`. If this entry is a name collision (per step 1/2), use the disambiguated label (e.g. `CQL (OGC)`) as the row's link text instead of the bare title.
   - Update the "Status: N of N languages evaluated" line to the new total and mention the addition.
   - Add a row to the "## Media types" table, in the same relative position as its category table above, using the same disambiguated label if applicable.
 - [`README.md`](../../../README.md): update the "whether one of the N query languages analyzed here already fits" sentence near the top to the new total.
@@ -91,6 +91,7 @@ Read the existing "## Observations so far" bullets in `summary.md`. Only touch t
 - Confirm `list.csv` and `list.md` each gained exactly one row, in the correct alphabetical position, with matching Title/Description.
 - Confirm `summary.json` is still valid JSON and `summary.md`'s tables/counts are internally consistent (row counts, "Status: N of N" line).
 - Confirm the new `<slug>.md` file has the `[↑ Full comparison table](../summary.md)` back-link right under its `# Title` heading.
+- Confirm `designQualityScore` is present in the new `<slug>.json`, the new `<slug>.md`, `summary.json`, and the new `summary.md` table row, and re-check its arithmetic (average of the 8 non-excluded criteria).
 - Confirm `README.md`'s "N query languages analyzed here" count matches the new total.
 - If this was a name collision, confirm the new slug/folder doesn't overwrite the existing one, and that every link to the new entry in `summary.md` uses the disambiguated label consistently.
 - Report a concise summary of every file created/changed.

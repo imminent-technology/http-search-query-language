@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Filters, ordering and limits compose in a predictable builder style, but documented interactions (e.g., orderBy requiring the field to exist, restrictions on combining not-in/!=/or) show real special-casing." }
   },
   "overallScore": 3.2,
+  "designQualityScore": 3.4,
   "summary": "Firestore's query API offers an easy-to-use, index-backed builder syntax over schema-less documents with strong injection resistance via typed SDK calls and security rules, but it is a proprietary Google API with fixed disjunction limits and several documented composability restrictions.",
   "evaluatedDate": "2026-09-04"
 }

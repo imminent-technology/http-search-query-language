@@ -23,6 +23,7 @@
 | Orthogonality | 4 | Every step is uniformly classified as a map-step, filter-step, or sideEffect-step, giving the language a small, consistent set of composition primitives that Wikipedia notes is sufficient for general-purpose graph computing. |
 
 **Overall score (avg, informational only): 3.4**
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.5**
 
 ## Summary
 

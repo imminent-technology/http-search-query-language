@@ -21,6 +21,7 @@
     "orthogonality": { "score": 3, "rationale": "Clauses compose in a SQL-like way, but the object-relational impedance mismatch (collections, associations, lazy loading) introduces special-casing absent from plain SQL." }
   },
   "overallScore": 3.1,
+  "designQualityScore": 3.0,
   "summary": "HQL brings a deliberately SQL-like, database-portable query syntax to Hibernate's object-relational mapping layer, backed by one of the most widely used Java ORM frameworks, but it is usable only from within a Java application process and is tightly coupled to a static entity schema rather than dynamic data.",
   "evaluatedDate": "2026-09-04"
 }

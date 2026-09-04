@@ -1,0 +1,19 @@
+README.md
+  s_aea0357f24d0cb::t_63166ef0463203 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7ac5672493702066b39ad6aa3cf0ff3f5de1bfca",
+  "prompts": {},
+  "sessions": {
+    "s_aea0357f24d0cb": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "d8a5aced-631d-4d06-a373-1d3bdebbc117",
+        "model": "unknown"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

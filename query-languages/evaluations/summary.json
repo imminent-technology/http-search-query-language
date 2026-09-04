@@ -460,6 +460,26 @@
     "overallScore": 3.1
   },
   {
+    "title": "JSON Query Language",
+    "slug": "json-query-language-christosgkoros",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://github.com/christosgkoros/json-query-language",
+    "mediaType": "None known — filter objects are embedded as a JSON Schema-validated field within a generic `application/json` request body; no dedicated media type is registered or documented for the predicate language itself.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 1,
+      "extensibility": 4,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.0
+  },
+  {
     "title": "Lucene Query Syntax",
     "slug": "lucene-query-syntax",
     "category": "Search/full-text",

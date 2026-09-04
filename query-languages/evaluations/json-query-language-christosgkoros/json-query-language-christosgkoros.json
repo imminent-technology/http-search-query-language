@@ -1,0 +1,25 @@
+{
+  "title": "JSON Query Language",
+  "slug": "json-query-language-christosgkoros",
+  "officialDocUrl": "https://github.com/christosgkoros/json-query-language",
+  "mediaType": "None known — filter objects are embedded as a JSON Schema-validated field within a generic `application/json` request body (per the project's OpenAPI 3.1/3.2 integration examples); no dedicated media type is registered or documented for the predicate language itself.",
+  "category": "API/data-fetching",
+  "sources": [
+    { "title": "json-query-language (README)", "publisher": "Christos Gkoros (GitHub)", "url": "https://github.com/christosgkoros/json-query-language", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Defines a broad operator set across nine profiles — logical ($and/$or/$nor/$not), comparison, ranges, string pattern-matching ($like/$ilike/$startsWith/$endsWith/$contains), regex, types, collections ($hasAny/$hasAll/$hasNone/$size/$elemMatch), cross-field references ($field), and free text ($search) — plus nested paths and array wildcards, covering most relational-style filtering needs." },
+    "simplicity": { "score": 3, "rationale": "Uses a deliberately SQL-flavored, readable JSON structure (sibling keys AND together, bare scalars mean equality) but documents several non-obvious gotchas up front — three-valued NOT/null semantics, $in comparing whole values rather than array membership, and a `$$`-escaping rule for literal `$`-prefixed field names — that add a real learning curve beyond the basic shape." },
+    "flexibility": { "score": 4, "rationale": "Operates over arbitrary JSON documents with no fixed field list by default, and ships a generator that derives a narrower, per-resource filter schema (with per-field operators/domains) from any existing JSON Schema, trading a bit of schema-agnosticism for stronger correctness guarantees when a resource schema exists." },
+    "communityAndEcosystem": { "score": 1, "rationale": "A pre-1.0, single-maintainer project (2 GitHub stars, one human contributor plus an AI coding assistant) that is explicitly 'not yet packaged for consumption' — unpublished to npm/GitHub Packages and still a working title even for its own name." },
+    "extensibility": { "score": 4, "rationale": "Explicitly designed around conformance profiles (core/strings/regex/ranges/types/collections/refs/text) that implementations can adopt piecemeal, plus a documented `x-jql` per-field override mechanism and a schema-generator tool for building resource-specific extensions." },
+    "transportCompatibility": { "score": 3, "rationale": "Purpose-built for HTTP APIs as a JSON request-body field — documented integration patterns cover both a conventional `POST /resource/search` (OpenAPI 3.1) and the new `QUERY` HTTP method (OpenAPI 3.2, RFC 10008) — but it is JSON-body-native rather than URL-query-string-native, with no dedicated GET/URL-encoding story." },
+    "standardization": { "score": 1, "rationale": "A single individual's working-title specification with an explicitly unsettled name and provisional identifiers (its own `$id` URL does not currently resolve); it references external standards (JSON Schema, RFC 9457, RFC 10008) but is not itself standardized by any independent body." },
+    "security": { "score": 4, "rationale": "Ships a dedicated safety section recommending bounds on nesting depth, clause count, set length and body size with rejection (not truncation) on overflow, plus explicit ReDoS guidance to use linear-time regex engines or drop the `regex` profile entirely — structural, schema-validated construction rather than string concatenation." },
+    "performance": { "score": 3, "rationale": "No independent benchmarks are published; the design defers actual query execution to whatever backend a server compiles the filter into (the repo's own `experiments/filter-to-sql` explores compiling to SQL), so performance depends entirely on the implementation rather than the language itself." },
+    "orthogonality": { "score": 3, "rationale": "The core model is fairly uniform — one `Constraint` shared across every field, AND-by-default sibling composition at every nesting level — but several operators carry special-cased exceptions (three-valued `$not`/`$ne`, `$in` needing a distinct `$hasAny` for array membership, `$elemMatch` vs. wildcard-path semantics) that require explicit documentation to use correctly." }
+  },
+  "overallScore": 3.0,
+  "summary": "JSON Query Language (christosgkoros) is a pre-1.0, single-maintainer JSON Schema-described predicate/filter language purpose-built for OpenAPI search endpoints and MCP tool inputSchemas, offering a broad, profile-organized operator set and a generator that derives per-resource filter schemas with real operand domains. Its explicit safety guidance and schema-validated construction give it a solid security posture, but as an unstandardized, pre-naming working title with a tiny community it remains an early-stage design rather than a production-ready specification — and it shares its common name with the unrelated jsonquerylang.org project.",
+  "evaluatedDate": "2026-09-04"
+}

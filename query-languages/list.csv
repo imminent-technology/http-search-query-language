@@ -4,6 +4,7 @@
 "AWS CloudSearch Query Syntax","[AWS CloudSearch Query Syntax](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html)"
 "AWS DynamoDB Query Syntax","[AWS DynamoDB Query Syntax](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html)"
 "Azure Cosmos DB SQL Query Syntax","[Azure Cosmos DB SQL Query Syntax](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started)"
+"CEL","[Common Expression Language](https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md)"
 "CouchDB Mango Query Language","[CouchDB Mango Query Language](https://dev.to/yenyih/query-in-apache-couchdb-mango-query-lfd)"
 "CQL","[Cassandra Query Language](https://cassandra.apache.org/doc/latest/cassandra/cql/)"
 "Criteria API","[Java Persistence API](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html)"

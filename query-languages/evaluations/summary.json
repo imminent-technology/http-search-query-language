@@ -714,6 +714,27 @@
     "designQualityScore": 2.6
   },
   {
+    "title": "CEL (Common Expression Language)",
+    "slug": "cel",
+    "category": "Scripting",
+    "officialDocUrl": "https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md",
+    "mediaType": "None known — CEL expressions are embedded as a plain string field within a host application's own configuration or API payload (e.g., a Kubernetes `ValidatingAdmissionPolicy` YAML rule, an Envoy proxy config, a Google Cloud IAM Condition, or a Firebase Security Rules file), not transmitted via any dedicated, independently registered media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 4,
+      "extensibility": 5,
+      "transportCompatibility": 2,
+      "standardization": 3,
+      "security": 5,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.9,
+    "designQualityScore": 4.0
+  },
+  {
     "title": "Flux",
     "slug": "flux",
     "category": "Scripting",

@@ -1,0 +1,208 @@
+.github/skills/add-query-language/SKILL.md
+  h_e2c7967ec6cbec 71-72,97
+query-languages/evaluations/aql/aql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/aql/aql.md
+  h_e2c7967ec6cbec 33-44
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/aws-athena-query-syntax/aws-athena-query-syntax.md
+  h_e2c7967ec6cbec 33-47
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md
+  h_e2c7967ec6cbec 33-52
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md
+  h_e2c7967ec6cbec 33-46
+query-languages/evaluations/cel/cel.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/cel/cel.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/couchdb-mango-query-language/couchdb-mango-query-language.md
+  h_e2c7967ec6cbec 33-50
+query-languages/evaluations/cql/cql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/cql/cql.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/criteria-api/criteria-api.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/criteria-api/criteria-api.md
+  h_e2c7967ec6cbec 33-53
+query-languages/evaluations/crul-queries/crul-queries.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/crul-queries/crul-queries.md
+  h_e2c7967ec6cbec 35-44
+query-languages/evaluations/cypher/cypher.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/cypher/cypher.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/datalog/datalog.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/datalog/datalog.md
+  h_e2c7967ec6cbec 33-44
+query-languages/evaluations/dax/dax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/dax/dax.md
+  h_e2c7967ec6cbec 33-54
+query-languages/evaluations/dql/dql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/dql/dql.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/esql/esql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/esql/esql.md
+  h_e2c7967ec6cbec 35-53
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md
+  h_e2c7967ec6cbec 33-57
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/firebase-realtime-database-query-language/firebase-realtime-database-query-language.md
+  h_e2c7967ec6cbec 33-47
+query-languages/evaluations/flux/flux.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/flux/flux.md
+  h_e2c7967ec6cbec 33-43
+query-languages/evaluations/fql/fql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/fql/fql.md
+  h_e2c7967ec6cbec 35-47
+query-languages/evaluations/graphql/graphql.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/graphql/graphql.md
+  h_e2c7967ec6cbec 33-49
+query-languages/evaluations/gremlin/gremlin.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/gremlin/gremlin.md
+  h_e2c7967ec6cbec 33-44
+query-languages/evaluations/hql/hql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/hql/hql.md
+  h_e2c7967ec6cbec 33-48
+query-languages/evaluations/jmespath/jmespath.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/jmespath/jmespath.md
+  h_e2c7967ec6cbec 33-40
+query-languages/evaluations/jpql/jpql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/jpql/jpql.md
+  h_e2c7967ec6cbec 33-49
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  h_e2c7967ec6cbec 35-47
+query-languages/evaluations/json-query-language/json-query-language.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/json-query-language/json-query-language.md
+  h_e2c7967ec6cbec 35-44
+query-languages/evaluations/jsonpath/jsonpath.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/jsonpath/jsonpath.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/kql/kql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/kql/kql.md
+  h_e2c7967ec6cbec 35-48
+query-languages/evaluations/linq/linq.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/linq/linq.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/lucene-query-syntax/lucene-query-syntax.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/mdx/mdx.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/mdx/mdx.md
+  h_e2c7967ec6cbec 33-53
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/mongodb-query-syntax/mongodb-query-syntax.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/nrql/nrql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/nrql/nrql.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/odata/odata.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/odata/odata.md
+  h_e2c7967ec6cbec 33-40
+query-languages/evaluations/oql/oql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/oql/oql.md
+  h_e2c7967ec6cbec 35-46
+query-languages/evaluations/partiql/partiql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/partiql/partiql.md
+  h_e2c7967ec6cbec 33-44
+query-languages/evaluations/promql/promql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/promql/promql.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/rsql-fiql/rsql-fiql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/rsql-fiql/rsql-fiql.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/rubric.md
+  h_e2c7967ec6cbec 52-61,88-92,103-105
+query-languages/evaluations/scim-filter/scim-filter.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/scim-filter/scim-filter.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/solr-query-syntax/solr-query-syntax.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/soql/soql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/soql/soql.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/sparql/sparql.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/sparql/sparql.md
+  h_e2c7967ec6cbec 33-50
+query-languages/evaluations/spl/spl.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/spl/spl.md
+  h_e2c7967ec6cbec 35-47
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/sql-plus-plus/sql-plus-plus.md
+  h_e2c7967ec6cbec 33-44
+query-languages/evaluations/sql/sql.json
+  h_e2c7967ec6cbec 27-31
+query-languages/evaluations/sql/sql.md
+  h_e2c7967ec6cbec 33-45
+query-languages/evaluations/taxiql/taxiql.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/taxiql/taxiql.md
+  h_e2c7967ec6cbec 35-44
+query-languages/evaluations/xpath/xpath.json
+  h_e2c7967ec6cbec 26-30
+query-languages/evaluations/xpath/xpath.md
+  h_e2c7967ec6cbec 33-42
+query-languages/evaluations/xquery/xquery.json
+  h_e2c7967ec6cbec 25-29
+query-languages/evaluations/xquery/xquery.md
+  h_e2c7967ec6cbec 33-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a13beb9a5d90ebdbfe5f13761298456e6702cfad",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

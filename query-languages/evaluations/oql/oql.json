@@ -21,7 +21,11 @@
     "orthogonality": { "score": 3, "rationale": "A basic SQL-like statement structure (SELECT/INSERT/UPDATE/DELETE-style) that is moderately consistent across the documented statement types." }
   },
   "overallScore": 2.0,
-  "designQualityScore": 2.1,
   "summary": "The OQL documented at list.csv's linked URL is IBM's own proprietary, SQL-like configuration-database language for its Network Manager product — a naming discrepancy worth noting, since the name 'Object Query Language' more commonly refers to the ODMG's much more ambitious (but per Wikipedia, never fully implemented) object-database query standard; either way, this is a narrow, low-adoption, single-vendor tool-specific language with no meaningful extensibility or standardization.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "select * from staff.products\nwhere category = \"electronics\" and price > 100\norder by price desc;",
+    "notes": "OQL's documented select syntax supports where and order by [asc|desc], but has no LIMIT/OFFSET clause — pagination (page 2 of 10) can't be expressed natively; this example reflects only the filter and sort portions of the scenario."
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -32,6 +32,18 @@
 
 The OQL documented at list.csv's linked URL is IBM's own proprietary, SQL-like configuration-database language for its Network Manager product — a naming discrepancy worth noting, since the name "Object Query Language" more commonly refers to the ODMG's much more ambitious (but per Wikipedia, never fully implemented) object-database query standard; either way, this is a narrow, low-adoption, single-vendor tool-specific language with no meaningful extensibility or standardization.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+select * from staff.products
+where category = "electronics" and price > 100
+order by price desc;
+```
+
+OQL's documented `select` syntax supports `where` and `order by [asc|desc]`, but has no `LIMIT`/`OFFSET` clause — pagination (page 2 of 10) can't be expressed natively; this example reflects only the filter and sort portions of the scenario.
+
 ## Sources
 
 - IBM Corporation. (2026, March 30). [*Object Query Language*](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language).

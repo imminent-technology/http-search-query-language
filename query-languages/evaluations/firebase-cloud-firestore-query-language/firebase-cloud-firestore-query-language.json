@@ -23,5 +23,10 @@
   "overallScore": 3.2,
   "designQualityScore": 3.4,
   "summary": "Firestore's query API offers an easy-to-use, index-backed builder syntax over schema-less documents with strong injection resistance via typed SDK calls and security rules, but it is a proprietary Google API with fixed disjunction limits and several documented composability restrictions.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "const firstPage = await db.collection(\"products\")\n  .where(\"category\", \"==\", \"electronics\")\n  .where(\"price\", \">\", 100)\n  .orderBy(\"price\", \"desc\")\n  .limit(10)\n  .get();\n\nconst lastVisible = firstPage.docs[firstPage.docs.length - 1];\n\nconst secondPage = await db.collection(\"products\")\n  .where(\"category\", \"==\", \"electronics\")\n  .where(\"price\", \">\", 100)\n  .orderBy(\"price\", \"desc\")\n  .startAfter(lastVisible)\n  .limit(10)\n  .get();",
+    "notes": "Firestore paginates via cursors (startAfter referencing the last document of the previous page) rather than a numeric offset, per its own recommendation over a plain offset() for large pages."
+  },
   "evaluatedDate": "2026-09-04"
 }

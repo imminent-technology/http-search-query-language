@@ -30,6 +30,18 @@
 
 AQL is ArangoDB's SQL-like, JSON-oriented multi-model query language, offering strong flexibility for combining document, graph and key-value access in one query, but it remains a single-vendor proprietary language with a smaller ecosystem and no HTTP/URL-native transport model.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```aql
+FOR p IN products
+  FILTER p.category == "electronics" AND p.price > 100
+  SORT p.price DESC
+  LIMIT 10, 10
+  RETURN p
+```
+
 ## Sources
 
 - Wikipedia. (2026, August 16). [*ArangoDB*](https://en.wikipedia.org/wiki/ArangoDB).

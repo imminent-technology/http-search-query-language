@@ -23,5 +23,10 @@
   "overallScore": 2.5,
   "designQualityScore": 2.6,
   "summary": "Firebase Realtime Database's query language offers a small, easy-to-learn set of single-key ordering and range methods well suited to simple lookups, but it cannot combine multiple ordering criteria or filter compound conditions, making it the least expressive of Firebase's two database query languages and largely superseded by Firestore.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "db.ref(\"products\")\n  .orderByChild(\"price\")\n  .startAt(100)\n  .limitToFirst(20)\n  .once(\"value\");",
+    "notes": "RTDB can only order/filter on a single child key per query, so category and price can't be combined natively (the docs' own workaround is denormalizing a composite key). There is also no native descending sort and no numeric offset/skip — real pagination uses startAt/endBefore cursors from the previous page's last key."
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -30,6 +30,16 @@
 
 Lucene Query Syntax is a narrow but battle-tested full-text search language that fits HTTP transport almost perfectly and underpins most of the search-engine ecosystem, at the cost of formal standardization, extensibility within the syntax itself, and any notion of joins or aggregation.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+category:electronics AND price:{100 TO *}
+```
+
+Lucene's query-string grammar only expresses the filter predicate — sorting and pagination aren't part of the syntax itself. They're request-level parameters of the systems that embed Lucene's query parser (e.g. Solr's `sort`/`start`/`rows`, Elasticsearch's `sort`/`from`/`size`).
+
 ## Sources
 
 - The Apache Software Foundation. (2013, June 21). [*Apache Lucene - Query Parser Syntax*](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).

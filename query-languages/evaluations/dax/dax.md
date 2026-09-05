@@ -30,6 +30,28 @@
 
 DAX is a mature, Excel-formula-inspired analytical expression language deeply embedded in Microsoft's Power BI/Analysis Services BI ecosystem, offering strong expressiveness for calculations over a fast in-memory columnar engine, but it requires a predefined Tabular data model, has no user-extensible function mechanism, and its dual row-context/filter-context evaluation model remains a genuine learning curve despite its Excel-like surface syntax.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```dax
+EVALUATE
+VAR MatchingProducts =
+    FILTER(Products, Products[Category] = "electronics" && Products[Price] > 100)
+VAR RankedProducts =
+    FILTER(
+        ADDCOLUMNS(
+            MatchingProducts,
+            "Rank", RANKX(MatchingProducts, Products[Price], , DESC, DENSE)
+        ),
+        [Rank] > 10 && [Rank] <= 20
+    )
+RETURN
+    RankedProducts
+```
+
+DAX has no built-in OFFSET/skip-N-rows pagination clause — its own `OFFSET()` function returns a single preceding/following row relative to the *current* row (like SQL's `LAG`/`LEAD`), not a page of rows. "Page 2" is instead emulated with `RANKX` to number the sorted rows and filter to the desired rank range.
+
 ## Sources
 
 - Microsoft. (n.d.). [*Data Analysis Expressions (DAX) Reference*](https://learn.microsoft.com/en-us/dax/).

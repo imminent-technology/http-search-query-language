@@ -30,6 +30,16 @@
 
 CEL (Common Expression Language) is a small, non-Turing-complete expression language originated at Google and now governed by a multi-organization "CEL Language Council," designed to be embedded in host applications for evaluating boolean conditions and expressions over typed (often protobuf) data. It underpins security- and policy-critical systems including Kubernetes admission-control validation rules, Envoy proxy configuration, Google Cloud IAM Conditions, and Firebase Security Rules. Its core design goals — memory safety, termination, and freedom from side effects — make it uniquely well-suited to safely evaluating untrusted, user-supplied expressions, driving standout scores on Security and a formally specified Performance model, alongside a deliberately extensible, orthogonal grammar. It has no HTTP/URL-native transport convention of its own (expressions are always embedded within a host system's configuration) and remains a semi-formally governed, non-standards-body specification.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```cel
+resource.category == "electronics" && resource.price > 100
+```
+
+CEL is a single-expression evaluation language with no query, sort, or pagination concept at all — it can only express the boolean filter predicate shown above. Sorting and paging a result set are entirely outside CEL's scope by design (it isn't Turing-complete and has no notion of an ordered result set to sort or page through).
+
 ## Sources
 
 - CEL project (cel-expr; originated at Google). (n.d.). [*Common Expression Language (cel-spec README)*](https://github.com/cel-expr/cel-spec).

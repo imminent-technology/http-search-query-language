@@ -30,6 +30,21 @@
 
 AWS Athena's query syntax is a serverless SQL dialect over S3 data, combining Trino/Presto's expressive DML with HiveQL-derived DDL for a familiar, reasonably performant analytics experience, but it remains an AWS-specific service rather than a standardized query language and is used through SDKs/APIs rather than as a URL-embeddable string.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT *
+FROM products
+WHERE category = 'electronics' AND price > 100
+ORDER BY price DESC
+OFFSET 10
+LIMIT 10
+```
+
+Athena's DML follows Trino syntax, which evaluates `ORDER BY` before `OFFSET`/`LIMIT`, both natively supported.
+
 ## Sources
 
 - Amazon Web Services (AWS). (n.d.). [*SQL reference for Athena*](https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html).

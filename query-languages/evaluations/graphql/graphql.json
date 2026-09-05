@@ -24,5 +24,10 @@
   "overallScore": 4.0,
   "designQualityScore": 3.9,
   "summary": "GraphQL is the strongest of the pilot languages for HTTP-native API design and client-driven flexibility, trading full graph-traversal expressiveness and built-in query optimization for precision, schema evolution, and a very active vendor-neutral ecosystem.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "query {\n  products(category: \"electronics\", priceGreaterThan: 100, sortBy: PRICE, sortDirection: DESC, skip: 10, limit: 10) {\n    id\n    name\n    category\n    price\n  }\n}",
+    "notes": "GraphQL's core spec standardizes argument syntax but not argument names/semantics — category/priceGreaterThan/sortBy/skip/limit here are a common server-side convention, not part of the language itself; Relay-style cursor connections (first/after) are also a convention layered on top of core GraphQL, not part of the base spec."
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -23,5 +23,10 @@
   "overallScore": 3.4,
   "designQualityScore": 3.5,
   "summary": "Gremlin is a highly expressive, Turing-complete graph traversal language and virtual machine backed by Apache TinkerPop, offering strong extensibility and vendor-neutral portability across OLTP and OLAP graph systems, but it is designed for host-language embedding or a binary server protocol rather than HTTP/URL transport, and its declarative pattern-matching features add a real learning curve.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "g.V().hasLabel('Product')\n  .has('category', 'electronics')\n  .has('price', gt(100))\n  .order().by('price', desc)\n  .range(10, 20)",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

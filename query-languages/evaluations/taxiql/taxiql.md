@@ -32,6 +32,16 @@
 
 TaxiQL is the query layer of Taxi, a semantic type/schema language designed to bridge OpenAPI, RAML, databases, message queues, and more without requiring GraphQL-style resolvers, offering genuinely rich and extensible cross-system type modeling, but it remains a small open-source project with limited community adoption, no independent standardization, and no native HTTP transport mechanism of its own.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```taxiql
+find { Product[]( ProductCategory == "electronics", Price > 100 ) }
+```
+
+TaxiQL's publicly available documentation doesn't clearly enumerate a native sort/pagination syntax alongside its documented constraint-based `find` query shown above — sorting and paging are typically left to the resolving query engine (e.g. Orbital) or the underlying API being orchestrated, not part of the core TaxiQL grammar itself.
+
 ## Sources
 
 - Taxi Lang project (Orbital). (n.d.). [*taxilang/taxilang*](https://github.com/taxilang/taxilang).

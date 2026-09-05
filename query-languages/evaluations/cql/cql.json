@@ -23,5 +23,10 @@
   "overallScore": 2.7,
   "designQualityScore": 2.8,
   "summary": "CQL brings a familiar, easy-to-learn SQL-like syntax to Cassandra's wide-column, partition-oriented data model, backed by a mature Apache Software Foundation project and strong write-throughput performance, but it deliberately omits joins, ad hoc aggregation, and any HTTP/URL transport, requiring queries to be designed around a table's fixed key structure.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT * FROM products\nWHERE category = 'electronics' AND price > 100\nORDER BY price DESC\nLIMIT 10;",
+    "notes": "Requires category as the partition key and price as a clustering column (otherwise ALLOW FILTERING/a secondary index is needed). ORDER BY can only reverse the pre-declared clustering order. CQL has no OFFSET — pagination uses the driver's opaque paging-state token, not a numeric page/skip."
+  },
   "evaluatedDate": "2026-09-04"
 }

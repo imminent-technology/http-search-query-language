@@ -30,6 +30,20 @@
 
 XQuery is a formally W3C-standardized, functional query and transformation language for XML that extends XPath with SQL-like FLWOR expressions and a highly orthogonal composition model, implemented across several established XML database engines, but it remains a comparatively niche technology outside the XML-database space, with no native HTTP transport of its own and no documented built-in defense against query injection.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```xquery
+subsequence(
+  for $p in /products/product
+  where $p/category = "electronics" and $p/price > 100
+  order by $p/price descending
+  return $p,
+  11, 10
+)
+```
+
 ## Sources
 
 - Wikipedia. (2026, June 10). [*XQuery*](https://en.wikipedia.org/wiki/XQuery).

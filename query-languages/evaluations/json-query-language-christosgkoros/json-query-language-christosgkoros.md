@@ -32,6 +32,19 @@
 
 JSON Query Language (christosgkoros) is a pre-1.0, single-maintainer JSON Schema-described predicate/filter language purpose-built for OpenAPI search endpoints and MCP tool inputSchemas, offering a broad, profile-organized operator set and a generator that derives per-resource filter schemas with real operand domains. Its explicit safety guidance and schema-validated construction give it a solid security posture, but as an unstandardized, pre-naming working title with a tiny community it remains an early-stage design rather than a production-ready specification — and it shares its common name with the unrelated jsonquerylang.org project.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```json
+{
+  "category": "electronics",
+  "price": { "$gt": 100 }
+}
+```
+
+This project's grammar is a pure filter/predicate language (like SCIM Filter) — sorting and pagination are documented as separate companion parameters of the consuming API endpoint (e.g. a `sortBy`/`page` query parameter), not part of the JSON filter object itself.
+
 ## Sources
 
 - Gkoros, C. (n.d.). [*json-query-language*](https://github.com/christosgkoros/json-query-language). GitHub.

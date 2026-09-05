@@ -32,6 +32,19 @@
 
 FQL was a SQL-style query language for retrieving Facebook Platform data over HTTP, easy to pick up for anyone familiar with SQL, but it was a proprietary single-vendor language with a fixed schema that Facebook fully deprecated in 2016 alongside Graph API 2.0, making its Community/Ecosystem, Extensibility, and Flexibility permanently frozen at zero further development — a useful illustration of a query language dying alongside the platform that hosted it.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT uid, name, category, price FROM product
+WHERE category = 'electronics' AND price > 100
+ORDER BY price DESC
+LIMIT 10, 10
+```
+
+FQL was fully deprecated in 2016 and its official documentation no longer exists; this query illustrates FQL's historically documented SQL-style `ORDER BY`/`LIMIT offset, count` syntax based on now-removed Facebook developer documentation, and isn't independently re-verifiable today.
+
 ## Sources
 
 - Wikipedia. (2026, June 30). [*Facebook Query Language*](https://en.wikipedia.org/wiki/Facebook_Query_Language).

@@ -30,6 +30,20 @@
 
 Azure Cosmos DB's SQL API brings familiar ANSI SQL syntax to schema-agnostic JSON documents, offering strong flexibility and default indexing backed by Microsoft's ecosystem, but it is a single-vendor proprietary dialect with notable expressiveness gaps (no GROUP BY, no cross-container joins) that require JavaScript-based stored procedures to work around.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT *
+FROM products p
+WHERE p.category = "electronics" AND p.price > 100
+ORDER BY p.price DESC
+OFFSET 10 LIMIT 10
+```
+
+Cosmos DB's OFFSET/LIMIT clause requires the preceding ORDER BY (and a matching composite index) for stable, deterministic paging.
+
 ## Sources
 
 - Microsoft. (2025, December 31). [*Query language for Cosmos DB (in Azure and Fabric) documentation*](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started).

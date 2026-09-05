@@ -23,5 +23,10 @@
   "overallScore": 3.1,
   "designQualityScore": 3.4,
   "summary": "CouchDB's Mango query language offers a simple, JSON-native declarative alternative to hand-written map/reduce views, well suited to CouchDB's HTTP-first, schema-less document model, but it is CouchDB-specific with no independent standardization and lacks SQL-style joins or aggregation.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "{\n  \"selector\": {\n    \"category\": \"electronics\",\n    \"price\": { \"$gt\": 100 }\n  },\n  \"sort\": [{ \"price\": \"desc\" }],\n  \"limit\": 10,\n  \"skip\": 10\n}",
+    "notes": "skip/limit are native, documented fields, though Mango's own docs recommend the response bookmark for continued paging over large skip values."
+  },
   "evaluatedDate": "2026-09-04"
 }

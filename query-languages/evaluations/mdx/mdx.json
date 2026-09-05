@@ -23,5 +23,10 @@
   "overallScore": 2.9,
   "designQualityScore": 2.9,
   "summary": "MDX is a mature, de facto industry-standard query language purpose-built for navigating OLAP cube dimensions and hierarchies with strong analytical expressiveness and performance, but its distinct multidimensional vocabulary (members, tuples, sets) creates a real learning curve, requires a predefined cube schema, and remains without formal standardization body backing despite broad cross-vendor adoption.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT\n  {[Measures].[Price]} ON COLUMNS,\n  SUBSET(\n    ORDER(\n      FILTER(\n        [Product].[Product].MEMBERS,\n        [Product].[Product].CurrentMember.Properties(\"Category\") = \"electronics\"\n        AND [Measures].[Price] > 100\n      ),\n      [Measures].[Price], BDESC\n    ),\n    10, 10\n  ) ON ROWS\nFROM [ProductsCube]",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

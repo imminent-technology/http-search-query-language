@@ -68,6 +68,8 @@ Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, 
 
 Right after the `# Title` heading, add a back-link to the aggregate summary so readers can jump back to the full table: `[↑ Full comparison table](../summary.md)`, on its own line, before the metadata bullets. Right after the scores table's `**Overall score (avg, informational only): X.X**` line, add a matching `**Design quality score (avg of the 8 criteria excluding Community & Ecosystem and Standardization): X.X**` line.
 
+Also add an "## Example" section (after "## Summary", before "## Sources") plus a matching `example` object in the JSON — see the "Example scenario" and per-language schema sections of `rubric.md` for the canonical scenario text, required fields, and how to note a language's gaps (missing native filter/sort/pagination) honestly instead of faking coverage.
+
 ### 6. Update the aggregate summary files
 
 - `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`, `designQualityScore`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct.
@@ -92,6 +94,7 @@ Read the existing "## Observations so far" bullets in `summary.md`. Only touch t
 - Confirm `summary.json` is still valid JSON and `summary.md`'s tables/counts are internally consistent (row counts, "Status: N of N" line).
 - Confirm the new `<slug>.md` file has the `[↑ Full comparison table](../summary.md)` back-link right under its `# Title` heading.
 - Confirm `designQualityScore` is present in the new `<slug>.json`, the new `<slug>.md`, `summary.json`, and the new `summary.md` table row, and re-check its arithmetic (average of the 8 non-excluded criteria).
+- Confirm the new `<slug>.md` has an "## Example" section (after Summary, before Sources) and the new `<slug>.json` has a matching `example` object, per `rubric.md`'s "Example scenario" section.
 - Confirm `README.md`'s "N query languages analyzed here" count matches the new total.
 - If this was a name collision, confirm the new slug/folder doesn't overwrite the existing one, and that every link to the new entry in `summary.md` uses the disambiguated label consistently.
 - Report a concise summary of every file created/changed.

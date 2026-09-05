@@ -30,6 +30,16 @@
 
 MongoDB's query language (MQL) is a widely adopted, highly flexible JSON-native document query language with a powerful aggregation pipeline, but it is a proprietary, non-HTTP-native language whose historically weak default security posture and independently documented consistency trade-offs temper its otherwise strong ecosystem and expressiveness.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```js
+db.products.find(
+  { category: "electronics", price: { $gt: 100 } }
+).sort({ price: -1 }).skip(10).limit(10)
+```
+
 ## Sources
 
 - MongoDB, Inc. (n.d.). [*Read Documents*](https://www.mongodb.com/docs/manual/tutorial/query-documents/).

@@ -30,6 +30,16 @@
 
 RSQL and FIQL are evaluated together as a single, closely related pair: FIQL (the Feed Item Query Language) is Mark Nottingham's 2007 IETF Internet-Draft for a URL-friendly Atom/RSS feed filter syntax that expired in 2008 without becoming an RFC, and RSQL is Jakub Jirutka's open-source superset of FIQL that adds friendlier alternative operators (`>`, `<`, `and`, `or`) for use in RESTful API filtering. Neither has formal standards-body backing, but RSQL's reference parser has real ecosystem traction — hundreds of dependent projects and independent converters targeting JPA, QueryDSL, and MongoDB — and its extensible operator model and URL-native design make it a practical, if narrowly filter-scoped, choice for REST API query parameters.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+category==electronics;price=gt=100
+```
+
+RSQL/FIQL's grammar is filter-only — it has no built-in concept of sorting or pagination. Those are typically separate companion query parameters defined by the consuming API (e.g. `sort=price,desc&page=2&size=10`), not part of the RSQL/FIQL grammar itself.
+
 ## Sources
 
 - Nottingham, M. (2007, December 12). [*FIQL: The Feed Item Query Language (draft-nottingham-atompub-fiql-00)*](https://datatracker.ietf.org/doc/html/draft-nottingham-atompub-fiql-00). IETF.

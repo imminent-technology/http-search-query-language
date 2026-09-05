@@ -49,6 +49,16 @@ Assigned per language for grouping in `summary.md` and, later, the article. Adju
 
 Slug = kebab-case of the `Title` column in `list.csv` (e.g. "AWS Athena Query Syntax" → `aws-athena-query-syntax`, "SQL++" → `sql-plus-plus`). Each language gets its own folder named after its slug, containing that language's JSON and Markdown files: `<slug>/<slug>.json` and `<slug>/<slug>.md`.
 
+## Example scenario
+
+Every language's evaluation includes one worked example expressed in that language's own real syntax, so readers can compare the same query side by side. The scenario is identical, word-for-word in substance, across every language:
+
+> Retrieve `products` where `category = "electronics"` and `price > 100`, sorted by `price` descending, returning page 2 of results at a page size of 10 (skip the first 10 matches, return the next 10).
+
+That gives every example the same three ingredients to express: a two-predicate filter, a single-field descending sort, and offset-style pagination (10 per page, second page).
+
+When a language's own core spec doesn't natively support one of those three ingredients (e.g. a pure expression/predicate language with no sort or pagination concept, or a filter grammar whose sorting/paging lives in a separate protocol layer rather than the language itself), the example must say so explicitly — state the gap in the `notes` field/prose rather than substituting a vendor extension or an adjacent protocol feature to fake full coverage. Cursor-based pagination (`startAfter`/`ExclusiveStartKey`-style) is a legitimate way to satisfy the pagination ingredient when that's how a language's own store actually paginates — it doesn't need to be forced into an offset/limit shape.
+
 ## Per-language JSON schema (`<slug>/<slug>.json`)
 
 ```json
@@ -75,6 +85,11 @@ Slug = kebab-case of the `Title` column in `list.csv` (e.g. "AWS Athena Query Sy
   "overallScore": 1.0,
   "designQualityScore": 1.0,
   "summary": "string, 2-3 sentences, neutral/comparative tone",
+  "example": {
+    "scenario": "string, the shared canonical scenario from the 'Example scenario' section above, identical in substance across every language",
+    "query": "string, the verbatim query/code snippet expressing that scenario in this language's own real syntax",
+    "notes": "string or null — required when the core language spec doesn't natively support filtering, sorting, or pagination; explain the gap here instead of faking coverage with a vendor extension"
+  },
   "evaluatedDate": "YYYY-MM-DD"
 }
 ```
@@ -85,7 +100,9 @@ Slug = kebab-case of the `Title` column in `list.csv` (e.g. "AWS Athena Query Sy
 
 ## Per-language Markdown (`<slug>/<slug>.md`)
 
-Mirrors the JSON for human reading: title + doc link, category, a scores table (criterion | score | rationale), the summary paragraph, and a "Sources" list. Sources are cited in APA style so the publisher/organization (provenance) is always visible alongside the title and date, e.g. `- Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).` or `- The PostgreSQL Global Development Group. (n.d.). [*Part II. The SQL Language*](https://www.postgresql.org/docs/current/sql.html).` when no fixed publication/revision date is available (common for continuously-updated docs and marketing pages).
+Mirrors the JSON for human reading: title + doc link, category, a scores table (criterion | score | rationale), the summary paragraph, an "Example" section, and a "Sources" list. Sources are cited in APA style so the publisher/organization (provenance) is always visible alongside the title and date, e.g. `- Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).` or `- The PostgreSQL Global Development Group. (n.d.). [*Part II. The SQL Language*](https://www.postgresql.org/docs/current/sql.html).` when no fixed publication/revision date is available (common for continuously-updated docs and marketing pages).
+
+The "## Example" section goes after "## Summary" and before "## Sources". It contains a one-line **Scenario:** restatement of the canonical scenario (see "Example scenario" above), a fenced code block with the query in the language's own syntax, and — only when needed — a short closing sentence noting any of the three ingredients (filter/sort/pagination) the language's core spec doesn't natively support.
 
 ## Aggregate files
 

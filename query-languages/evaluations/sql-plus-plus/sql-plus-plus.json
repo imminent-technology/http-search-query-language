@@ -22,5 +22,10 @@
   "overallScore": 3.0,
   "designQualityScore": 3.3,
   "summary": "SQL++ extends familiar SQL syntax to natively query nested and heterogeneous JSON data, giving it strong flexibility for document-style workloads, but it remains a smaller, largely Couchbase-driven specification without ISO-style standardization or SQL's mature security/optimization track record.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT *\nFROM products\nWHERE category = \"electronics\" AND price > 100\nORDER BY price DESC\nLIMIT 10 OFFSET 10",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

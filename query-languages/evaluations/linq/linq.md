@@ -30,6 +30,19 @@
 
 LINQ is a deeply expressive and extensible query framework integrated directly into .NET languages, offering strong type safety and a uniform, provider-based architecture that spans in-memory collections, XML, and SQL databases, but it is fundamentally an in-process language construct rather than a network-transportable query language, and naive usage patterns carry documented performance risks.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```csharp
+var filtered = from p in products
+               where p.Category == "electronics" && p.Price > 100
+               orderby p.Price descending
+               select p;
+
+var page2 = filtered.Skip(10).Take(10);
+```
+
 ## Sources
 
 - Microsoft. (2025, December 1). [*Language Integrated Query (LINQ) - C#*](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/).

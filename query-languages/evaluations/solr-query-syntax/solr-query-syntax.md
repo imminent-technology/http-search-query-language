@@ -30,6 +30,16 @@
 
 Solr's standard query parser extends Apache Lucene's HTTP-native, URL-embeddable query syntax with additional constant-scoring, function-query, and caching features, backed by a mature, widely-deployed enterprise search project — but it remains a Solr/Lucene-specific syntax with no formal standardization and the same string-based injection exposure as its parent Lucene parser.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+?q=category:electronics AND price:{100 TO *}&sort=price desc&start=10&rows=10
+```
+
+`sort`, `start`, and `rows` are standard Solr request parameters documented alongside the query parser, submitted as siblings of `q` rather than part of the query-string grammar itself.
+
 ## Sources
 
 - The Apache Software Foundation. (2017, June 9). [*The Standard Query Parser*](https://solr.apache.org/guide/6_6/the-standard-query-parser.html).

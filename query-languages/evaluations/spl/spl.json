@@ -23,5 +23,10 @@
   "overallScore": 3.4,
   "designQualityScore": 3.5,
   "summary": "SPL is a mature, highly expressive pipe-based search and analytics language purpose-built for large-scale log and security data, backed by one of the largest ecosystems in the observability/SIEM space, but it remains a proprietary single-vendor language (now under Cisco) with no formal standardization and no documented built-in anti-injection design, and its very large command surface takes real effort to master.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "search category=\"electronics\" price>100\n| sort - price\n| head 20\n| tail 10",
+    "notes": "SPL has no direct OFFSET/skip command — pagination is commonly emulated by chaining head N (take the first N) then tail M (take the last M of those), giving rows 11–20 here; this two-step idiom is the documented workaround, not a single pagination keyword."
+  },
   "evaluatedDate": "2026-09-04"
 }

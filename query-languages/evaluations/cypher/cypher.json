@@ -24,5 +24,10 @@
   "overallScore": 3.7,
   "designQualityScore": 3.6,
   "summary": "Cypher combines high expressiveness for graph pattern-matching with unusually strong readability and a clear path toward formal standardization via GQL, but like SQL it is built around persistent driver connections (Bolt) rather than lightweight HTTP transport.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "MATCH (p:Product)\nWHERE p.category = \"electronics\" AND p.price > 100\nRETURN p\nORDER BY p.price DESC\nSKIP 10\nLIMIT 10",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -30,6 +30,16 @@
 
 JSONPath (RFC 9535) is a lightweight, XPath-inspired path syntax for selecting and extracting values from JSON documents, standardized by the IETF in 2024 after 17 years of divergent library implementations. Its dot/bracket segment syntax, filter selectors, and typed function-extension mechanism make it well suited to schema-less JSON navigation, though it has no native sorting, aggregation, or join support and is used mainly as an embedded library/CLI convention rather than a first-class HTTP query mechanism.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```jsonpath
+$.products[?@.category=="electronics" && @.price>100]
+```
+
+JSONPath (RFC 9535) has no sort function — only the filter selector shown above is natively expressible. Pagination via the array slice selector (e.g. `[10:20]`) only works if the array is already sorted by price, since JSONPath itself provides no ordering capability.
+
 ## Sources
 
 - IETF (RFC Editor). (2024, February). [*RFC 9535: JSONPath: Query Expressions for JSON*](https://www.rfc-editor.org/rfc/rfc9535).

@@ -23,5 +23,10 @@
   "overallScore": 3.4,
   "designQualityScore": 3.5,
   "summary": "Elasticsearch's query_string syntax (referenced in list.csv as 'ESQL'/Elasticsearch Query Syntax) offers Lucene-derived expressiveness over schema-free JSON documents via a native HTTP REST API, backed by one of the largest search ecosystems, but its strict, error-throwing parser is explicitly discouraged by Elastic for direct end-user input and remains a single-vendor, non-standardized dialect.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "{\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"category:electronics AND price:>100\"\n    }\n  },\n  \"sort\": [{ \"price\": \"desc\" }],\n  \"from\": 10,\n  \"size\": 10\n}",
+    "notes": "sort and from/size are top-level Elasticsearch request-body fields, not part of the query_string mini-language itself — that syntax only expresses the filter predicate."
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -32,6 +32,16 @@
 
 JSON Query Language is a small, deliberately minimal, and explicitly security-conscious functional query language for arbitrary JSON data, designed to avoid the dense special-character syntax of JSONPath/JMESPath in favor of readable pipe/chain composition, but as a young single-maintainer project it has a tiny community, no independent standardization, and is used as an embedded library call rather than a URL-native transport mechanism.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+filter((.category == "electronics") and (.price > 100)) | sort(.price, "desc") | limit(20)
+```
+
+JSON Query has a `limit(n)` function (take the first n) but no `skip`/`offset` function — there's no native way to skip the first 10 matches and return only the next 10; only limiting from the very start of the sorted results is supported natively.
+
 ## Sources
 
 - JSON Query project (Jos de Jong). (n.d.). [*JSON Query*](https://jsonquerylang.org/).

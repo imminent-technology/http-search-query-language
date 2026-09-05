@@ -22,5 +22,10 @@
   "overallScore": 2.9,
   "designQualityScore": 3.3,
   "summary": "AQL is ArangoDB's SQL-like, JSON-oriented multi-model query language, offering strong flexibility for combining document, graph and key-value access in one query, but it remains a single-vendor proprietary language with a smaller ecosystem and no HTTP/URL-native transport model.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "FOR p IN products\n  FILTER p.category == \"electronics\" AND p.price > 100\n  SORT p.price DESC\n  LIMIT 10, 10\n  RETURN p",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

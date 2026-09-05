@@ -23,5 +23,10 @@
   "overallScore": 3.2,
   "designQualityScore": 3.1,
   "summary": "PromQL is a highly specialized, HTTP-native query language optimized for one job — querying multi-dimensional time-series metrics — with an enormous ecosystem behind it, but it trades away flexibility, extensibility, and formal standardization for that specialization.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "sort_desc(product_price{category=\"electronics\"} > 100)",
+    "notes": "PromQL has no OFFSET/pagination concept for query results at all — topk(k, ...) can only return the top k from the start, not an arbitrary page. Adapted here to PromQL's time-series model (a product_price gauge metric labeled by category), with the actual products/price scenario not a natural fit for this language."
+  },
   "evaluatedDate": "2026-09-04"
 }

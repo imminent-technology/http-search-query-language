@@ -30,6 +30,31 @@
 
 Firestore's query API offers an easy-to-use, index-backed builder syntax over schema-less documents with strong injection resistance via typed SDK calls and security rules, but it is a proprietary Google API with fixed disjunction limits and several documented composability restrictions.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```js
+const firstPage = await db.collection("products")
+  .where("category", "==", "electronics")
+  .where("price", ">", 100)
+  .orderBy("price", "desc")
+  .limit(10)
+  .get();
+
+const lastVisible = firstPage.docs[firstPage.docs.length - 1];
+
+const secondPage = await db.collection("products")
+  .where("category", "==", "electronics")
+  .where("price", ">", 100)
+  .orderBy("price", "desc")
+  .startAfter(lastVisible)
+  .limit(10)
+  .get();
+```
+
+Firestore paginates via cursors (`startAfter`, referencing the last document of the previous page) rather than a numeric offset — its own documentation recommends cursors over a plain `offset()` for large pages since a numeric offset still bills reads for every skipped document.
+
 ## Sources
 
 - Google. (2026, September 1). [*Perform simple and compound queries in Cloud Firestore*](https://firebase.google.com/docs/firestore/query-data/queries).

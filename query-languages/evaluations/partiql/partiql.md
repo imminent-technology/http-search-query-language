@@ -30,6 +30,18 @@
 
 PartiQL is an open-source, SQL-compatible query language maintained by Amazon that extends SQL-92 with first-class support for nested and semi-structured data (JSON, Ion, Parquet) and schemaless datasets, while remaining backwards-compatible with plain SQL queries. It is used as the query language across several AWS services (DynamoDB, Redshift Spectrum/SUPER, QLDB), with reference implementations in Kotlin and Rust and a public RFC-driven extension process. Its design scores strongly on expressiveness, flexibility, and orthogonality — unifying relational and nested-data querying under one grammar — but it lacks any URL/HTTP-native transport convention (queries are embedded as string parameters within each host service's own API) and, despite a rigorous open specification, has no formal standards-body ratification.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT *
+FROM products
+WHERE category = 'electronics' AND price > 100
+ORDER BY price DESC
+LIMIT 10 OFFSET 10
+```
+
 ## Sources
 
 - PartiQL. (n.d.). [*PartiQL — An expressive, SQL-compatible query language giving access to relational, semi-structured, and nested data*](https://partiql.org/). Maintained by Amazon; developed by open-source contributors.

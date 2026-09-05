@@ -30,6 +30,26 @@
 
 DynamoDB's Query API trades expressiveness and flexibility for predictable, low-latency performance at scale, requiring queries to be shaped around a table's fixed partition/sort key design with strong parameterization-based injection resistance, but with no joins, aggregation, or independent standardization.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```json
+{
+  "TableName": "products",
+  "KeyConditionExpression": "category = :category AND price > :price",
+  "ExpressionAttributeValues": {
+    ":category": { "S": "electronics" },
+    ":price": { "N": "100" }
+  },
+  "ScanIndexForward": false,
+  "Limit": 10,
+  "ExclusiveStartKey": { "category": { "S": "electronics" }, "price": { "N": "100" } }
+}
+```
+
+This only works because `category` is modeled as the table's partition key and `price` as its sort key (Query's fixed requirement). Pagination is cursor-based via `ExclusiveStartKey`/the previous response's `LastEvaluatedKey`, not a numeric offset — "page 2, skip 10" isn't expressible as a plain offset in DynamoDB's Query API.
+
 ## Sources
 
 - Amazon Web Services (AWS). (n.d.). [*Query - Amazon DynamoDB API Reference*](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html).

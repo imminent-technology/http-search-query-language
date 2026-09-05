@@ -30,6 +30,17 @@
 
 Flux is a functional data scripting language built for InfluxDB 2.x that can query, join, and transform data from InfluxDB alongside many external sources via a uniform pipe-forward composition model, but as a proprietary, single-vendor language whose role has become uncertain following InfluxDB 3.x's shift toward SQL-based querying, its long-term ecosystem position is less assured than more established query languages.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```flux
+from(bucket: "products")
+  |> filter(fn: (r) => r.category == "electronics" and r.price > 100)
+  |> sort(columns: ["price"], desc: true)
+  |> limit(n: 10, offset: 10)
+```
+
 ## Sources
 
 - InfluxData Inc. (n.d.). [*InfluxDB 2.x and Flux*](https://www.influxdata.com/products/flux/).

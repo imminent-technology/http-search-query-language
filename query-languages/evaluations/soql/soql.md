@@ -30,6 +30,19 @@
 
 SOQL is a deliberately SQL-like, HTTP-transportable query language purpose-built for the Salesforce platform, easy to learn but structurally limited to Salesforce's object schema and query features (no arbitrary joins or wildcards), with a single vendor governing its evolution.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT Id, Name, Category__c, Price__c
+FROM Product__c
+WHERE Category__c = 'electronics' AND Price__c > 100
+ORDER BY Price__c DESC
+LIMIT 10
+OFFSET 10
+```
+
 ## Sources
 
 - Salesforce, Inc. (n.d.). [*Salesforce Object Query Language (SOQL)*](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm).

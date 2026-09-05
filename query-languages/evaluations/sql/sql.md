@@ -30,6 +30,19 @@
 
 SQL is the most expressive, standardized, and performant of the widely-used query languages, backed by an unmatched ecosystem, but its rigid schema, weak default injection resistance, and poor fit for URL-based HTTP transport are the tradeoffs of a language designed in the 1970s for persistent database connections rather than stateless web APIs.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT *
+FROM products
+WHERE category = 'electronics' AND price > 100
+ORDER BY price DESC
+OFFSET 10 ROWS
+FETCH NEXT 10 ROWS ONLY;
+```
+
 ## Sources
 
 - Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).

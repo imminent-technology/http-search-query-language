@@ -30,6 +30,16 @@
 
 PromQL is a highly specialized, HTTP-native query language optimized for one job — querying multi-dimensional time-series metrics — with an enormous ecosystem behind it, but it trades away flexibility, extensibility, and formal standardization for that specialization.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page (adapted to PromQL's time-series model: a `product_price` gauge metric labeled by `category`).
+
+```promql
+sort_desc(product_price{category="electronics"} > 100)
+```
+
+PromQL has no OFFSET/pagination concept for query results at all — there's no way to skip the first 10 matches and return the next 10; `topk(k, ...)` can only return the top k from the start, not an arbitrary page. Filtering (label match + value comparison) and descending sort are natively expressible, but pagination is not.
+
 ## Sources
 
 - Prometheus Authors. (n.d.). [*Querying basics — Prometheus Documentation*](https://prometheus.io/docs/prometheus/latest/querying/basics/).

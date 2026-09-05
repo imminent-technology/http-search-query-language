@@ -30,6 +30,14 @@
 
 OData is a formally standardized (OASIS/ISO) protocol for URL-native REST query conventions, pairing strong transport compatibility and a rich filter/expand grammar with a schema-bound data model that trades away the flexibility of schema-less alternatives.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+GET /Products?$filter=category eq 'electronics' and price gt 100&$orderby=price desc&$skip=10&$top=10
+```
+
 ## Sources
 
 - OData.org (OASIS OData Technical Committee). (n.d.). [*OData - the best way to REST*](https://www.odata.org/).

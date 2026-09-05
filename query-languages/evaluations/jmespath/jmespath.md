@@ -30,6 +30,14 @@
 
 JMESPath is a JSON query language authored by James Saryerwinnie, defined by a complete ABNF grammar and a cross-implementation compliance test suite, and best known as the engine behind the AWS CLI's and Azure CLI's `--query` option. Its filter expressions, pipe/sub-expression composition, and rich built-in function library (including sort_by, max_by, avg, and merge) give it genuine sorting/aggregation capability beyond simple selection, though it remains a single-author specification without formal standards-body governance or a registered media type.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```jmespath
+reverse(sort_by(products[?category=='electronics' && price > `100`], &price))[10:20]
+```
+
 ## Sources
 
 - JMESPath (James Saryerwinnie). (n.d.). [*JMESPath Specification*](https://jmespath.org/specification.html).

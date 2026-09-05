@@ -30,6 +30,18 @@
 
 Datalog is a minimal, mathematically elegant declarative logic language whose Horn-clause rules naturally express recursive graph-style queries (transitive closure) and adapt flexibly to ad hoc relations, but its academic core lacks negation, aggregation, and basic data types without engine-specific extensions, has no defined transport protocol, and remains confined to specialized research and program-analysis tooling rather than mainstream, HTTP-facing use.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```prolog
+electronics_over_100(Id, Name, Price) :-
+  product(Id, Name, "electronics", Price),
+  Price > 100.
+```
+
+Core Datalog's model-theoretic semantics has no ORDER BY/LIMIT/OFFSET (or any result-ordering concept at all) — sorting and pagination of the derived facts are engine-specific extensions (e.g. Soufflé's output ordering, LogicBlox query blocks), not part of the base Horn-clause language, so only the filter predicate can be expressed natively.
+
 ## Sources
 
 - Wikipedia. (2026, August 24). [*Datalog*](https://en.wikipedia.org/wiki/Datalog).

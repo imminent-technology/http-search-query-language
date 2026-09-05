@@ -30,6 +30,22 @@
 
 HQL brings a deliberately SQL-like, database-portable query syntax to Hibernate's object-relational mapping layer, backed by one of the most widely used Java ORM frameworks, but it is usable only from within a Java application process and is tightly coupled to a static entity schema rather than dynamic data.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```java
+String hql = "FROM Product p WHERE p.category = :category AND p.price > :price ORDER BY p.price DESC";
+List<Product> page2 = session.createQuery(hql, Product.class)
+    .setParameter("category", "electronics")
+    .setParameter("price", 100)
+    .setFirstResult(10)
+    .setMaxResults(10)
+    .list();
+```
+
+Pagination isn't part of the HQL string itself — it's applied via `Query.setFirstResult()`/`setMaxResults()` on the Java `Query` object, not HQL keywords.
+
 ## Sources
 
 - Tutorials Point. (n.d.). [*Hibernate - Query Language*](https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm).

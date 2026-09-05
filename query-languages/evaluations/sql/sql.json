@@ -24,5 +24,10 @@
   "overallScore": 3.6,
   "designQualityScore": 3.3,
   "summary": "SQL is the most expressive, standardized, and performant of the widely-used query languages, backed by an unmatched ecosystem, but its rigid schema, weak default injection resistance, and poor fit for URL-based HTTP transport are the tradeoffs of a language designed in the 1970s for persistent database connections rather than stateless web APIs.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT *\nFROM products\nWHERE category = 'electronics' AND price > 100\nORDER BY price DESC\nOFFSET 10 ROWS\nFETCH NEXT 10 ROWS ONLY;",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

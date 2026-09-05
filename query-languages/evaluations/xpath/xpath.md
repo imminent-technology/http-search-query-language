@@ -30,6 +30,16 @@
 
 XPath is a mature, formally W3C-standardized expression language for navigating XML document trees, with a clean and highly composable axis/node-test/predicate model implemented across nearly every major programming ecosystem, but it remains tied to the XML tree data model, has no native HTTP transport of its own, and (like SQL) has no built-in defense against injection when expressions are built from unsanitized input.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```xpath
+(/products/product[category='electronics' and price>100])[position() > 10 and position() <= 20]
+```
+
+XPath itself has no sort function — results are returned in document order only; sorting is performed by a host language (e.g. XSLT's `xsl:sort`, or XQuery's `order by`) applied before this XPath predicate could correctly select rows 11–20. This expression only paginates via `position()` over whatever order the nodes already have.
+
 ## Sources
 
 - MDN Web Docs (Mozilla). (n.d.). [*XPath*](https://developer.mozilla.org/en-US/docs/Web/XPath).

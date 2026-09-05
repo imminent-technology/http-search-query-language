@@ -30,6 +30,27 @@
 
 MDX is a mature, de facto industry-standard query language purpose-built for navigating OLAP cube dimensions and hierarchies with strong analytical expressiveness and performance, but its distinct multidimensional vocabulary (members, tuples, sets) creates a real learning curve, requires a predefined cube schema, and remains without formal standardization body backing despite broad cross-vendor adoption.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```mdx
+SELECT
+  {[Measures].[Price]} ON COLUMNS,
+  SUBSET(
+    ORDER(
+      FILTER(
+        [Product].[Product].MEMBERS,
+        [Product].[Product].CurrentMember.Properties("Category") = "electronics"
+        AND [Measures].[Price] > 100
+      ),
+      [Measures].[Price], BDESC
+    ),
+    10, 10
+  ) ON ROWS
+FROM [ProductsCube]
+```
+
 ## Sources
 
 - Microsoft. (n.d.). [*Multidimensional Expressions (MDX) Reference*](https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16).

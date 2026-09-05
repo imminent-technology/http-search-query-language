@@ -22,5 +22,10 @@
   "overallScore": 2.8,
   "designQualityScore": 3.0,
   "summary": "Datalog is a minimal, mathematically elegant declarative logic language whose Horn-clause rules naturally express recursive graph-style queries (transitive closure) and adapt flexibly to ad hoc relations, but its academic core lacks negation, aggregation, and basic data types without engine-specific extensions, has no defined transport protocol, and remains confined to specialized research and program-analysis tooling rather than mainstream, HTTP-facing use.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "electronics_over_100(Id, Name, Price) :-\n  product(Id, Name, \"electronics\", Price),\n  Price > 100.",
+    "notes": "Core Datalog's model-theoretic semantics has no ORDER BY/LIMIT/OFFSET or any result-ordering concept — sorting and pagination of the derived facts are engine-specific extensions (e.g. Soufflé's output ordering, LogicBlox query blocks), not part of the base Horn-clause language."
+  },
   "evaluatedDate": "2026-09-04"
 }

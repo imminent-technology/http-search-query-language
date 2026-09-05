@@ -30,6 +30,16 @@
 
 AWS CloudSearch's query syntax provides four selectable parser dialects (simple, structured, lucene, dismax) submitted as HTTP query parameters, but as a smaller, increasingly legacy AWS service it offers narrower flexibility, extensibility, and community support than mainstream search engines, with no independent standardization behind any of its parser modes.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+q=(and category:'electronics' price:{100,})&q.parser=structured&sort=price desc&start=10&size=10
+```
+
+`sort`, `start`, and `size` are documented CloudSearch request parameters submitted alongside `q`, not part of the structured query grammar itself.
+
 ## Sources
 
 - Amazon Web Services (AWS). (n.d.). [*Searching Your Data with Amazon CloudSearch*](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html).

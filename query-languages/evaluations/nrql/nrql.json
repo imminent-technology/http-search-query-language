@@ -23,5 +23,10 @@
   "overallScore": 2.8,
   "designQualityScore": 3.0,
   "summary": "NRQL is a deliberately SQL-like query language for New Relic's telemetry platform, easy to pick up for anyone who knows SQL and accessible over HTTP via the NerdGraph API, but it is a fixed, single-vendor syntax with no extensibility mechanism, no documented parameterization/injection protections, and a narrower feature set than general-purpose observability query languages like KQL or DQL.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT id, name, category, price FROM Product\nWHERE category = 'electronics' AND price > 100\nORDER BY price DESC\nLIMIT 10",
+    "notes": "NRQL doesn't support OFFSET/SKIP — only a LIMIT clause (max 2000 rows) is documented; there's no native way to request 'page 2' within a single NRQL query."
+  },
   "evaluatedDate": "2026-09-04"
 }

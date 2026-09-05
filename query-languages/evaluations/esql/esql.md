@@ -32,6 +32,25 @@
 
 Elasticsearch's query_string syntax (referenced in list.csv as "ESQL"/Elasticsearch Query Syntax) offers Lucene-derived expressiveness over schema-free JSON documents via a native HTTP REST API, backed by one of the largest search ecosystems, but its strict, error-throwing parser is explicitly discouraged by Elastic for direct end-user input and remains a single-vendor, non-standardized dialect.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```json
+{
+  "query": {
+    "query_string": {
+      "query": "category:electronics AND price:>100"
+    }
+  },
+  "sort": [{ "price": "desc" }],
+  "from": 10,
+  "size": 10
+}
+```
+
+`sort` and `from`/`size` are top-level Elasticsearch request-body fields, not part of the `query_string` mini-language itself — that syntax only expresses the filter predicate.
+
 ## Sources
 
 - Elastic NV. (n.d.). [*Query string query*](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html).

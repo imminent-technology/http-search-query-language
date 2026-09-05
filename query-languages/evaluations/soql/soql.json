@@ -22,5 +22,10 @@
   "overallScore": 2.8,
   "designQualityScore": 3.0,
   "summary": "SOQL is a deliberately SQL-like, HTTP-transportable query language purpose-built for the Salesforce platform, easy to learn but structurally limited to Salesforce's object schema and query features (no arbitrary joins or wildcards), with a single vendor governing its evolution.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT Id, Name, Category__c, Price__c\nFROM Product__c\nWHERE Category__c = 'electronics' AND Price__c > 100\nORDER BY Price__c DESC\nLIMIT 10\nOFFSET 10",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

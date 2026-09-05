@@ -23,5 +23,10 @@
   "overallScore": 3.4,
   "designQualityScore": 3.6,
   "summary": "Azure Cosmos DB's SQL API brings familiar ANSI SQL syntax to schema-agnostic JSON documents, offering strong flexibility and default indexing backed by Microsoft's ecosystem, but it is a single-vendor proprietary dialect with notable expressiveness gaps (no GROUP BY, no cross-container joins) that require JavaScript-based stored procedures to work around.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT *\nFROM products p\nWHERE p.category = \"electronics\" AND p.price > 100\nORDER BY p.price DESC\nOFFSET 10 LIMIT 10",
+    "notes": "Requires the ORDER BY and, for reliable ordering, a matching composite index — both documented Cosmos DB requirements for the OFFSET LIMIT clause."
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -22,5 +22,10 @@
   "overallScore": 2.3,
   "designQualityScore": 2.6,
   "summary": "Crul Queries is a small, pipe-based DSL for orchestrating and curating HTTP API calls within the Crul platform, with a clean and uniform stage-based syntax, but it is a niche, single-vendor product with a tiny community, no independent standardization, and no documented security-specific design beyond its basic token-substitution mechanism.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "api get https://api.example.com/products || find \"category:electronics\" || sort price",
+    "notes": "Crul's public command reference documents find (keyword search) and sort commands but doesn't clearly specify field-based comparison filtering (e.g. price > 100), sort direction, or any pagination/limit stage — this example only approximates the scenario using the two most relevant documented commands; a genuine descending-sort/page-2 construct isn't confirmable from the available docs."
+  },
   "evaluatedDate": "2026-09-04"
 }

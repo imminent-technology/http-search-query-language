@@ -24,5 +24,10 @@
   "overallScore": 3.7,
   "designQualityScore": 3.5,
   "summary": "OData is a formally standardized (OASIS/ISO) protocol for URL-native REST query conventions, pairing strong transport compatibility and a rich filter/expand grammar with a schema-bound data model that trades away the flexibility of schema-less alternatives.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "GET /Products?$filter=category eq 'electronics' and price gt 100&$orderby=price desc&$skip=10&$top=10",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

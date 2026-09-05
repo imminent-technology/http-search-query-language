@@ -32,6 +32,20 @@
 
 KQL is a highly expressive, pipe-based analytics language purpose-built for exploring large-scale telemetry, logs, and security data across Microsoft's Azure/Sentinel/Fabric ecosystem, with a notably deliberate security design (queries vs. dot-prefixed management commands) and a uniform tabular-operator composition model, but it remains a proprietary, non-standardized language accessed via REST API rather than native URL embedding.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```kql
+Products
+| where category == "electronics" and price > 100
+| order by price desc
+| serialize rn = row_number()
+| where rn between (11 .. 20)
+```
+
+KQL has no native OFFSET/SKIP operator — pagination is emulated via `serialize` + `row_number()` to number the sorted rows, then filtering to the desired range; this is the documented workaround, not a first-class pagination keyword.
+
 ## Sources
 
 - Microsoft. (n.d.). [*Kusto Query Language (KQL) overview*](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/).

@@ -30,6 +30,27 @@
 
 The JPA Criteria API is a type-safe, programmatic alternative to JPQL that is structurally immune to injection by construction and formally standardized alongside it, but its fluent, metamodel-driven style trades away the simplicity of writing plain query strings and, like JPQL, is confined to in-process Java use over a fixed entity schema.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```java
+CriteriaBuilder cb = em.getCriteriaBuilder();
+CriteriaQuery<Product> cq = cb.createQuery(Product.class);
+Root<Product> product = cq.from(Product.class);
+
+cq.select(product)
+  .where(cb.and(
+      cb.equal(product.get("category"), "electronics"),
+      cb.greaterThan(product.get("price"), 100)))
+  .orderBy(cb.desc(product.get("price")));
+
+TypedQuery<Product> query = em.createQuery(cq);
+query.setFirstResult(10);
+query.setMaxResults(10);
+List<Product> page2 = query.getResultList();
+```
+
 ## Sources
 
 - Oracle. (n.d.). [*Chapter 32: Introduction to the Java Persistence API*](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html).

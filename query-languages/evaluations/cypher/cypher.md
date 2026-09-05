@@ -30,6 +30,19 @@
 
 Cypher combines high expressiveness for graph pattern-matching with unusually strong readability and a clear path toward formal standardization via GQL, but like SQL it is built around persistent driver connections (Bolt) rather than lightweight HTTP transport.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```cypher
+MATCH (p:Product)
+WHERE p.category = "electronics" AND p.price > 100
+RETURN p
+ORDER BY p.price DESC
+SKIP 10
+LIMIT 10
+```
+
 ## Sources
 
 - Neo4j, Inc. (n.d.). [*Introduction — Cypher Manual*](https://neo4j.com/developer/cypher/).

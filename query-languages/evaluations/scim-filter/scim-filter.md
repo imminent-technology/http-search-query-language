@@ -30,6 +30,16 @@
 
 SCIM Filter is the query/filter expression language defined within RFC 7644, the IETF Proposed Standard protocol for the System for Cross-domain Identity Management (SCIM 2.0), used to request a subset of User/Group resources via a `filter` query parameter (or POST body) on a SCIM REST API. It combines ten simple attribute operators (eq, ne, co, sw, ew, pr, gt, ge, lt, le) with logical and/or/not, parenthesized grouping, and a distinctive bracketed complex-attribute filter for scoping predicates to a single value of a multi-valued attribute. As part of a mature, IETF-standardized, HTTP-native identity-provisioning protocol with broad industry adoption (Okta, Microsoft, Salesforce, and others), it scores strongly on standardization, transport compatibility, and community/ecosystem, while remaining schema-bound to the SCIM resource model rather than a general-purpose query language.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+filter=category eq "electronics" and price gt 100
+```
+
+SCIM Filter's grammar (RFC 7644 §3.4.2.2) is filter-only — sorting and pagination are separate protocol-level query parameters defined by RFC 7644 (`sortBy`/`sortOrder` and `startIndex`/`count`), not part of the filter expression language itself.
+
 ## Sources
 
 - Hunt, P. (Ed.), Grizzle, K., Ansari, M., Wahlstroem, E., & Mortimore, C. (2015, September). [*System for Cross-domain Identity Management: Protocol (RFC 7644), Section 3.4.2.2 "Filtering"*](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2). IETF.

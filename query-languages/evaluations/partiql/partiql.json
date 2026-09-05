@@ -23,6 +23,9 @@
   },
   "overallScore": 3.6,
   "designQualityScore": 3.8,
-  "summary": "PartiQL is an open-source, SQL-compatible query language maintained by Amazon that extends SQL-92 with first-class support for nested and semi-structured data (JSON, Ion, Parquet) and schemaless datasets, while remaining backwards-compatible with plain SQL queries. It is used as the query language across several AWS services (DynamoDB, Redshift Spectrum/SUPER, QLDB), with reference implementations in Kotlin and Rust and a public RFC-driven extension process. Its design scores strongly on expressiveness, flexibility, and orthogonality \u2014 unifying relational and nested-data querying under one grammar \u2014 but it lacks any URL/HTTP-native transport convention (queries are embedded as string parameters within each host service's own API) and, despite a rigorous open specification, has no formal standards-body ratification.",
-  "evaluatedDate": "2026-09-05"
+  "summary": "PartiQL is an open-source, SQL-compatible query language maintained by Amazon that extends SQL-92 with first-class support for nested and semi-structured data (JSON, Ion, Parquet) and schemaless datasets, while remaining backwards-compatible with plain SQL queries. It is used as the query language across several AWS services (DynamoDB, Redshift Spectrum/SUPER, QLDB), with reference implementations in Kotlin and Rust and a public RFC-driven extension process. Its design scores strongly on expressiveness, flexibility, and orthogonality \u2014 unifying relational and nested-data querying under one grammar \u2014 but it lacks any URL/HTTP-native transport convention (queries are embedded as string parameters within each host service's own API) and, despite a rigorous open specification, has no formal standards-body ratification.",  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "SELECT *\nFROM products\nWHERE category = 'electronics' AND price > 100\nORDER BY price DESC\nLIMIT 10 OFFSET 10",
+    "notes": null
+  },  "evaluatedDate": "2026-09-05"
 }

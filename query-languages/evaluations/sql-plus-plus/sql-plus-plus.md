@@ -30,6 +30,18 @@
 
 SQL++ extends familiar SQL syntax to natively query nested and heterogeneous JSON data, giving it strong flexibility for document-style workloads, but it remains a smaller, largely Couchbase-driven specification without ISO-style standardization or SQL's mature security/optimization track record.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sql
+SELECT *
+FROM products
+WHERE category = "electronics" AND price > 100
+ORDER BY price DESC
+LIMIT 10 OFFSET 10
+```
+
 ## Sources
 
 - Couchbase, Inc. (n.d.). [*SQL++*](https://www.couchbase.com/sqlplusplus/).

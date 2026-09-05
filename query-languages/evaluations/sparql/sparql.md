@@ -30,6 +30,24 @@
 
 SPARQL is a formally W3C-standardized, HTTP-native query language purpose-built for RDF's flexible, self-describing triple model, offering strong expressiveness (property paths, federation, native dateTime operations) and a notably consistent pipeline evaluation model, but its distinct triple-based mental model has a real learning curve and it shares SQL's classic string-based injection exposure without SQL's decades of mature parameterization tooling.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```sparql
+SELECT ?product ?name ?price
+WHERE {
+  ?product a :Product ;
+           :category "electronics" ;
+           :price ?price ;
+           :name ?name .
+  FILTER (?price > 100)
+}
+ORDER BY DESC(?price)
+OFFSET 10
+LIMIT 10
+```
+
 ## Sources
 
 - Wikipedia. (2026, July 12). [*SPARQL*](https://en.wikipedia.org/wiki/SPARQL).

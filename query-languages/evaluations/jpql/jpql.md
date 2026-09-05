@@ -30,6 +30,23 @@
 
 JPQL is the formally standardized, SQL-like query language of the Jakarta Persistence specification, offering strong expressiveness and injection resistance over Java entity objects across independently maintained implementations, but like other ORM query languages it is confined to a static entity schema and to in-process Java API usage rather than HTTP transport.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```java
+TypedQuery<Product> query = em.createQuery(
+    "SELECT p FROM Product p WHERE p.category = :category AND p.price > :price ORDER BY p.price DESC",
+    Product.class);
+query.setParameter("category", "electronics");
+query.setParameter("price", 100);
+query.setFirstResult(10);
+query.setMaxResults(10);
+List<Product> page2 = query.getResultList();
+```
+
+Pagination isn't part of the JPQL string itself — it's applied via `TypedQuery.setFirstResult()`/`setMaxResults()`, not JPQL keywords.
+
 ## Sources
 
 - Oracle. (n.d.). [*Chapter 34: The Java Persistence Query Language*](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html).

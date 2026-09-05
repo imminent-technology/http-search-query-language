@@ -23,5 +23,10 @@
   "overallScore": 3.2,
   "designQualityScore": 2.9,
   "summary": "The JPA Criteria API is a type-safe, programmatic alternative to JPQL that is structurally immune to injection by construction and formally standardized alongside it, but its fluent, metamodel-driven style trades away the simplicity of writing plain query strings and, like JPQL, is confined to in-process Java use over a fixed entity schema.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "CriteriaBuilder cb = em.getCriteriaBuilder();\nCriteriaQuery<Product> cq = cb.createQuery(Product.class);\nRoot<Product> product = cq.from(Product.class);\n\ncq.select(product)\n  .where(cb.and(\n      cb.equal(product.get(\"category\"), \"electronics\"),\n      cb.greaterThan(product.get(\"price\"), 100)))\n  .orderBy(cb.desc(product.get(\"price\")));\n\nTypedQuery<Product> query = em.createQuery(cq);\nquery.setFirstResult(10);\nquery.setMaxResults(10);\nList<Product> page2 = query.getResultList();",
+    "notes": null
+  },
   "evaluatedDate": "2026-09-04"
 }

@@ -30,6 +30,19 @@
 
 DQL is Dynatrace's purpose-built query language for its schema-on-read Grail data lakehouse, offering strong flexibility across logs, metrics, security, and business event data with a consistent pipe-based composition model, but as a newer, single-vendor language it lacks external standardization, has a smaller dedicated community than more established observability languages, and has no documented built-in injection-prevention design.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```dql
+fetch products
+| filter category == "electronics" and price > 100
+| sort price desc
+| limit 10
+```
+
+DQL's `limit` command has no documented companion offset/skip parameter — there's no native way to skip the first 10 matches and return the next 10 within a single query.
+
 ## Sources
 
 - Dynatrace LLC. (2026, January 28). [*Dynatrace Query Language*](https://docs.dynatrace.com/docs/platform/grail/dynatrace-query-language).

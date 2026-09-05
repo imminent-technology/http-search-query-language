@@ -32,6 +32,19 @@
 
 SPL is a mature, highly expressive pipe-based search and analytics language purpose-built for large-scale log and security data, backed by one of the largest ecosystems in the observability/SIEM space, but it remains a proprietary single-vendor language (now under Cisco) with no formal standardization and no documented built-in anti-injection design, and its very large command surface takes real effort to master.
 
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```spl
+search category="electronics" price>100
+| sort - price
+| head 20
+| tail 10
+```
+
+SPL has no direct OFFSET/skip command — pagination is commonly emulated by chaining `head N` (take the first N) then `tail M` (take the last M of those), giving rows 11–20 here; this two-step idiom is the documented workaround, not a single pagination keyword.
+
 ## Sources
 
 - Splunk Inc. (n.d.). [*Introduction (SPL2 Search Reference)*](https://help.splunk.com/en?resourceId=SCS_SearchReference_Introduction).

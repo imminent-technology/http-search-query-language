@@ -1,0 +1,31 @@
+README.md
+  s_526224ebb9b21b::t_81fa8c23bbe5e4 5
+query-languages/evaluations/cel/cel.json
+  s_526224ebb9b21b::t_edd700d1b1585e 1-28
+query-languages/evaluations/cel/cel.md
+  s_526224ebb9b21b::t_790da46790873c 1-37
+query-languages/evaluations/summary.json
+  s_526224ebb9b21b::t_cd45efd7781bbf 716-736
+query-languages/evaluations/summary.md
+  s_526224ebb9b21b::t_703e36ad153a42 5,93,130,132,174
+query-languages/list.csv
+  s_526224ebb9b21b::t_7e12452f90e407 7
+query-languages/list.md
+  s_526224ebb9b21b::t_d272adc21e0d06 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b7aedcc933f69cf7250790a1df066666952567e5",
+  "prompts": {},
+  "sessions": {
+    "s_526224ebb9b21b": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "ce8fa479-0891-4f15-b773-d5e6003ea469",
+        "model": "unknown"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

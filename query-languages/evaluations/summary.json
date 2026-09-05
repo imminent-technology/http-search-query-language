@@ -840,6 +840,27 @@
     "designQualityScore": 3.5
   },
   {
+    "title": "RSQL/FIQL",
+    "slug": "rsql-fiql",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://github.com/jirutka/rsql-parser",
+    "mediaType": "None known — RSQL/FIQL expressions are embedded as a plain-text query-string parameter (e.g. a `query` or `filter` param) on a REST API's URL; no IANA-registered or vendor-documented media type exists for either syntax.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.3,
+    "designQualityScore": 3.6
+  },
+  {
     "title": "JMESPath",
     "slug": "jmespath",
     "category": "Path/document navigation",

@@ -168,6 +168,27 @@
     "designQualityScore": 3.3
   },
   {
+    "title": "PartiQL",
+    "slug": "partiql",
+    "category": "Relational/SQL-family",
+    "officialDocUrl": "https://partiql.org/dql/overview.html",
+    "mediaType": "None known — PartiQL statements are submitted as a plain string field within a host service's own JSON API request (e.g., DynamoDB's `ExecuteStatement` API `Statement` parameter), not as a dedicated, independently registered media type.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 2,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.6,
+    "designQualityScore": 3.8
+  },
+  {
     "title": "MongoDB Query Syntax",
     "slug": "mongodb-query-syntax",
     "category": "Document/NoSQL",

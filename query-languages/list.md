@@ -40,6 +40,7 @@ An evaluation of these query languages against a common set of criteria is avail
 | NRQL | [New Relic Query Language](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/) |
 | OData | [Open Data Protocol](https://www.odata.org/) |
 | OQL | [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language) |
+| PartiQL | [PartiQL — SQL-compatible query language for relational, semi-structured, and nested data](https://partiql.org/) |
 | PromQL | [Prometheus Query Language](https://prometheus.io/docs/prometheus/latest/querying/basics/) |
 | RSQL/FIQL | [RSQL – Query Language for RESTful APIs, based on FIQL (Feed Item Query Language)](https://github.com/jirutka/rsql-parser) |
 | SCIM Filter | [System for Cross-domain Identity Management (SCIM) Filter Expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) |

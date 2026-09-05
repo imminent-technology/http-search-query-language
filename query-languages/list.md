@@ -27,6 +27,7 @@ An evaluation of these query languages against a common set of criteria is avail
 | GraphQL | [Graph Query Language](https://graphql.org/) |
 | Gremlin | [Graph Traversal Language](https://tinkerpop.apache.org/gremlin.html) |
 | HQL | [Hibernate Query Language](https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm) |
+| JMESPath | [JMESPath Specification](https://jmespath.org/specification.html) |
 | JPQL | [Java Persistence Query Language](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html) |
 | JSON Query Language | [JSON Query Language](https://jsonquerylang.org/) |
 | JSON Query Language | [JSON Query Language (christosgkoros)](https://github.com/christosgkoros/json-query-language) |

@@ -840,6 +840,27 @@
     "designQualityScore": 3.5
   },
   {
+    "title": "JMESPath",
+    "slug": "jmespath",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://jmespath.org/specification.html",
+    "mediaType": "None known — no IANA-registered or vendor-documented media type; JMESPath expressions are passed as plain-text CLI arguments (AWS CLI/Azure CLI `--query`) or embedded as string fields in application code, not transmitted as a request body with a dedicated content type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 2,
+      "security": 3,
+      "performance": 2,
+      "orthogonality": 4
+    },
+    "overallScore": 3.4,
+    "designQualityScore": 3.5
+  },
+  {
     "title": "JSONPath",
     "slug": "jsonpath",
     "category": "Path/document navigation",

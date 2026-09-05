@@ -840,6 +840,27 @@
     "designQualityScore": 3.5
   },
   {
+    "title": "JSONPath",
+    "slug": "jsonpath",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://www.rfc-editor.org/rfc/rfc9535",
+    "mediaType": "`application/jsonpath` — IANA-registered per RFC 9535 §3.1 (intended usage: COMMON).",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 5,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 3,
+      "standardization": 5,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.8,
+    "designQualityScore": 3.8
+  },
+  {
     "title": "XPath",
     "slug": "xpath",
     "category": "Path/document navigation",

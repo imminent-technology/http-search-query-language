@@ -30,6 +30,7 @@ An evaluation of these query languages against a common set of criteria is avail
 | JPQL | [Java Persistence Query Language](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html) |
 | JSON Query Language | [JSON Query Language](https://jsonquerylang.org/) |
 | JSON Query Language | [JSON Query Language (christosgkoros)](https://github.com/christosgkoros/json-query-language) |
+| JSONPath | [JSONPath - Query Expressions for JSON](https://www.rfc-editor.org/rfc/rfc9535) |
 | KQL | [Kusto Query Language](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) |
 | LINQ | [Language Integrated Query](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) |
 | Lucene Query Syntax | [Lucene Query Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html) |

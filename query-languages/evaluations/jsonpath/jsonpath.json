@@ -1,0 +1,28 @@
+{
+  "title": "JSONPath",
+  "slug": "jsonpath",
+  "officialDocUrl": "https://www.rfc-editor.org/rfc/rfc9535",
+  "mediaType": "`application/jsonpath` — IANA-registered per RFC 9535 §3.1 (intended usage: COMMON).",
+  "category": "Path/document navigation",
+  "sources": [
+    { "title": "RFC 9535: JSONPath: Query Expressions for JSON", "publisher": "IETF (RFC Editor)", "url": "https://www.rfc-editor.org/rfc/rfc9535", "date": "2024-02" },
+    { "title": "JSONPath", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/JSONPath", "date": "2026-08-07" },
+    { "title": "JSONPath - XPath for JSON", "publisher": "Stefan Gössner", "url": "https://goessner.net/articles/JsonPath/", "date": "2007-02-21" }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports name/wildcard/index/slice/filter selectors, a recursive descendant segment (`..`), and five built-in function extensions (length, count, match, search, value) enabling regex-based filtering and existence tests (RFC 9535 §2.3-2.4), but has no native sorting, aggregation beyond count()/length(), or cross-document joins." },
+    "simplicity": { "score": 4, "rationale": "The core dot/bracket syntax (e.g. `$.store.book[0].title`) is compact and immediately readable, but the full RFC 9535 grammar adds real complexity — filter-expression well-typedness rules, dual single/double-quote string literals, and Unicode scalar-value escaping — that a conformant implementation must get right." },
+    "flexibility": { "score": 5, "rationale": "Purpose-built for JSON's schema-less object/array model: a segment simply produces an empty nodelist when a member or index doesn't exist rather than raising an error (RFC 9535 §2.1.2), making it naturally tolerant of missing fields and evolving document shapes." },
+    "communityAndEcosystem": { "score": 3, "rationale": "Wikipedia cites over fifty independent implementations catalogued by the JSONPath Comparison Project and wide use in the Java ecosystem, but RFC 9535 itself exists precisely because pre-2024 implementations diverged in behavior (many delegating fragments to a host language's `eval()`); ecosystem-wide conformance to the 2024 standard is still catching up." },
+    "extensibility": { "score": 4, "rationale": "RFC 9535 §2.4 defines a formal 'Function Extensions' mechanism with a typed parameter/result system (ValueType/LogicalType/NodesType) and a dedicated IANA 'Function Extensions' subregistry (§3.2) for registering functions beyond the five predefined ones — a genuine, standardized extension point." },
+    "transportCompatibility": { "score": 3, "rationale": "Has an IANA-registered `application/jsonpath` media type (RFC 9535 §3.1, intended usage COMMON) for conveying queries in JSON data, but it is predominantly consumed by libraries embedded in application/CLI code (e.g. `kubectl -o jsonpath`, the Java JsonPath library) rather than as an established HTTP query-string or request-body convention." },
+    "standardization": { "score": 5, "rationale": "Defined by RFC 9535, an IETF Internet Standards Track (Proposed Standard) specification published in February 2024, formalizing Stefan Gössner's original 2007 proposal after 17 years of divergent implementations." },
+    "security": { "score": 3, "rationale": "RFC 9535 §4 explicitly warns that historical JSONPath implementations fed query fragments to a host language's `eval()`, enabling injection, and requires conformant implementations to parse the full grammar instead of relying on such engines; §4.2 further warns that queries formed from untrusted variables still need validation and delimiter escaping." },
+    "performance": { "score": 3, "rationale": "The grammar distinguishes cheap child-segment access (name/index/slice) from potentially expensive recursive descendant (`..`) and filter-selector traversal, but RFC 9535 defines no indexing or query-planning concept itself; academic work on SIMD-accelerated descendant-segment processing exists precisely because naive descendant search is costly." },
+    "orthogonality": { "score": 4, "rationale": "Selectors combine consistently within a bracketed child segment (name, index, slice, filter can all appear together), descendant and filter segments nest freely, and function extensions integrate through a single declared type system that keeps composition well-typed and predictable (RFC 9535 §2.4.1)." }
+  },
+  "overallScore": 3.8,
+  "designQualityScore": 3.8,
+  "summary": "JSONPath (RFC 9535) is a lightweight, XPath-inspired path syntax for selecting and extracting values from JSON documents, standardized by the IETF in 2024 after 17 years of divergent library implementations. Its dot/bracket segment syntax, filter selectors, and typed function-extension mechanism make it well suited to schema-less JSON navigation, though it has no native sorting, aggregation, or join support and is used mainly as an embedded library/CLI convention rather than a first-class HTTP query mechanism.",
+  "evaluatedDate": "2026-09-05"
+}

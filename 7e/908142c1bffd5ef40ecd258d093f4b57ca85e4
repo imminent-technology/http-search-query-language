@@ -1,0 +1,31 @@
+README.md
+  s_526224ebb9b21b::t_d5b23414707649 5
+query-languages/evaluations/rsql-fiql/rsql-fiql.json
+  s_526224ebb9b21b::t_25d1da3f903e59 1-27
+query-languages/evaluations/rsql-fiql/rsql-fiql.md
+  s_526224ebb9b21b::t_442a579f23142b 1-36
+query-languages/evaluations/summary.json
+  s_526224ebb9b21b::t_4b682a13649ccf 842-862
+query-languages/evaluations/summary.md
+  s_526224ebb9b21b::t_9b4db8e71199db 5,73,127,176
+query-languages/list.csv
+  s_526224ebb9b21b::t_e5924e87b98ab4 37
+query-languages/list.md
+  s_526224ebb9b21b::t_537be2a1e1348c 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7e908142c1bffd5ef40ecd258d093f4b57ca85e4",
+  "prompts": {},
+  "sessions": {
+    "s_526224ebb9b21b": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "ce8fa479-0891-4f15-b773-d5e6003ea469",
+        "model": "unknown"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

@@ -42,6 +42,7 @@ An evaluation of these query languages against a common set of criteria is avail
 | OQL | [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language) |
 | PromQL | [Prometheus Query Language](https://prometheus.io/docs/prometheus/latest/querying/basics/) |
 | RSQL/FIQL | [RSQL – Query Language for RESTful APIs, based on FIQL (Feed Item Query Language)](https://github.com/jirutka/rsql-parser) |
+| SCIM Filter | [System for Cross-domain Identity Management (SCIM) Filter Expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) |
 | Solr Query Syntax | [Solr Query Syntax](https://solr.apache.org/guide/6_6/the-standard-query-parser.html) |
 | SOQL | [Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm) |
 | SPARQL | [Simple Protocol and RDF Query Language](https://www.w3.org/TR/rdf-sparql-protocol/) |

@@ -2,7 +2,7 @@
 
 Research on which query language to use when performing search/query operations over HTTP — specifically in the context of the new **HTTP `QUERY` method**.
 
-Use this research to figure out, for your own API, whether one of the 45 query languages analyzed here already fits the query content of a `QUERY` request — or whether none of them do, and you're better off designing a brand new, purpose-built query language instead.
+Use this research to figure out, for your own API, whether one of the 46 query languages analyzed here already fits the query content of a `QUERY` request — or whether none of them do, and you're better off designing a brand new, purpose-built query language instead.
 
 ## What is this?
 

@@ -861,6 +861,27 @@
     "designQualityScore": 3.6
   },
   {
+    "title": "SCIM Filter",
+    "slug": "scim-filter",
+    "category": "API/data-fetching",
+    "officialDocUrl": "https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2",
+    "mediaType": "`application/scim+json` — IANA-registered per RFC 7644 §8.1 (intended usage: COMMON, with restrictions).",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 5,
+      "standardization": 5,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.9,
+    "designQualityScore": 3.8
+  },
+  {
     "title": "JMESPath",
     "slug": "jmespath",
     "category": "Path/document navigation",

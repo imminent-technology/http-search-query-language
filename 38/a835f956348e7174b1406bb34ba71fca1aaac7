@@ -1,0 +1,19 @@
+query-languages/evaluations/scim-filter/scim-filter.json
+  s_526224ebb9b21b::t_2632280054e069 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "38a835f956348e7174b1406bb34ba71fca1aaac7",
+  "prompts": {},
+  "sessions": {
+    "s_526224ebb9b21b": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "ce8fa479-0891-4f15-b773-d5e6003ea469",
+        "model": "unknown"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

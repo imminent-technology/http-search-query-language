@@ -183,10 +183,10 @@
       "standardization": 2,
       "security": 3,
       "performance": 3,
-      "orthogonality": 4
+      "orthogonality": 3
     },
-    "overallScore": 3.6,
-    "designQualityScore": 3.8
+    "overallScore": 3.5,
+    "designQualityScore": 3.6
   },
   {
     "title": "MongoDB Query Syntax",

@@ -18,7 +18,7 @@ Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & E
 | [SQL++](sql-plus-plus/sql-plus-plus.md) | 4 | 3 | 5 | 2 | 3 | 3 | 2 | 2 | 3 | 3 | 3.0 | 3.3 |
 | [Azure Cosmos DB SQL Query Syntax](azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md) | 3 | 4 | 5 | 4 | 4 | 3 | 1 | 3 | 4 | 3 | 3.4 | 3.6 |
 | [AWS Athena Query Syntax](aws-athena-query-syntax/aws-athena-query-syntax.md) | 4 | 4 | 3 | 3 | 3 | 2 | 2 | 3 | 4 | 3 | 3.1 | 3.3 |
-| [PartiQL](partiql/partiql.md) | 5 | 4 | 5 | 4 | 4 | 2 | 2 | 3 | 3 | 4 | 3.6 | 3.8 |
+| [PartiQL](partiql/partiql.md) | 5 | 4 | 5 | 4 | 4 | 2 | 2 | 3 | 3 | 3 | 3.5 | 3.6 |
 
 ## Document/NoSQL
 

@@ -1,0 +1,16 @@
+query-languages/evaluations/partiql/partiql.json
+  h_e2c7967ec6cbec 12-14,31,34-36
+query-languages/evaluations/partiql/partiql.md
+  h_e2c7967ec6cbec 8,45-46,54-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5ba68d59973f28268959f1b59592c6432f000725",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

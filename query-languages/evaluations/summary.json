@@ -483,6 +483,48 @@
     "designQualityScore": 2.9
   },
   {
+    "title": "LogQL",
+    "slug": "logql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://grafana.com/docs/loki/latest/query/",
+    "mediaType": "None known — Loki's HTTP API accepts LogQL as a URL query parameter (`query=`) on `GET` endpoints, or as an `application/x-www-form-urlencoded` field on the equivalent `POST` endpoints, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 4,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 2,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.3,
+    "designQualityScore": 3.4
+  },
+  {
+    "title": "TraceQL",
+    "slug": "traceql",
+    "category": "Analytics/Observability",
+    "officialDocUrl": "https://grafana.com/docs/tempo/latest/traceql/",
+    "mediaType": "None known — Tempo's HTTP Search API accepts a TraceQL query as a URL query parameter (`q=`) on `GET /api/search`, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 3,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 2,
+      "security": 4,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 3.3,
+    "designQualityScore": 3.5
+  },
+  {
     "title": "JSON Query Language",
     "slug": "json-query-language",
     "category": "API/data-fetching",
@@ -607,6 +649,216 @@
     },
     "overallScore": 2.6,
     "designQualityScore": 2.9
+  },
+  {
+    "title": "JQL",
+    "slug": "jql",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://www.atlassian.com/software/jira/guides/jql/overview",
+    "mediaType": "None known — Jira's REST API accepts JQL as a `jql` URL query parameter on `GET` search endpoints, or as a JSON string field in the request body on the equivalent `POST` endpoints, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 3,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.1,
+    "designQualityScore": 3.3
+  },
+  {
+    "title": "CQL",
+    "slug": "cql-confluence",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/",
+    "mediaType": "None known — Confluence's REST API accepts CQL as a `cql` URL query parameter on `GET` endpoints (e.g. `GET /wiki/rest/api/content/search?cql=...`), not a dedicated media type.",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 2.8,
+    "designQualityScore": 3.0
+  },
+  {
+    "title": "SOSL",
+    "slug": "sosl",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm",
+    "mediaType": "None known — Salesforce's REST API accepts SOSL as a `q` URL query parameter on the `GET /services/data/vXX.X/search` endpoint, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 3,
+      "communityAndEcosystem": 4,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 2
+    },
+    "overallScore": 2.9,
+    "designQualityScore": 3.0
+  },
+  {
+    "title": "Stripe Search Query Syntax",
+    "slug": "stripe-search-query-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://docs.stripe.com/search",
+    "mediaType": "None known — Stripe's Search API accepts the query as a `query` URL/form parameter on `GET` requests (e.g. `GET /v1/charges/search?query=...`), not a dedicated media type.",
+    "scores": {
+      "expressiveness": 2,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 1,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 2
+    },
+    "overallScore": 2.7,
+    "designQualityScore": 2.8
+  },
+  {
+    "title": "GitHub Search Syntax",
+    "slug": "github-search-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax",
+    "mediaType": "None known — GitHub's REST API accepts search queries as a `q` URL query parameter on `GET` endpoints (e.g. `GET /search/repositories?q=...&sort=...&order=...`), not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 4,
+      "extensibility": 1,
+      "transportCompatibility": 5,
+      "standardization": 1,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.0,
+    "designQualityScore": 3.1
+  },
+  {
+    "title": "Elasticsearch/OpenSearch Query DSL",
+    "slug": "elasticsearch-query-dsl",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html",
+    "mediaType": "None known — both engines accept Query DSL as a JSON `application/json` request body on `POST _search` (or `GET _search` with a body), not a dedicated registered media type.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 2,
+      "flexibility": 4,
+      "communityAndEcosystem": 5,
+      "extensibility": 4,
+      "transportCompatibility": 3,
+      "standardization": 2,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.6,
+    "designQualityScore": 3.6
+  },
+  {
+    "title": "Algolia Filter Syntax",
+    "slug": "algolia-filter-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://www.algolia.com/doc/api-reference/api-parameters/filters/",
+    "mediaType": "None known — Algolia's Search API accepts `filters` as a string field in the JSON body of `POST /1/indexes/{indexName}/query`, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 1,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 2.8,
+    "designQualityScore": 3.0
+  },
+  {
+    "title": "Meilisearch Filter Syntax",
+    "slug": "meilisearch-filter-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://www.meilisearch.com/docs/reference/api/search",
+    "mediaType": "None known — Meilisearch's API accepts `filter`, `sort`, and pagination parameters as fields in the JSON body of `POST /indexes/{index_uid}/search`, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 3,
+      "standardization": 2,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 3.0,
+    "designQualityScore": 3.1
+  },
+  {
+    "title": "Typesense Filter Syntax",
+    "slug": "typesense-filter-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://typesense.org/docs/latest/api/search.html",
+    "mediaType": "None known — Typesense's API accepts `filter_by`, `sort_by`, and pagination as query parameters on `GET /collections/{collection}/documents/search`, not a dedicated media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 3,
+      "communityAndEcosystem": 3,
+      "extensibility": 2,
+      "transportCompatibility": 4,
+      "standardization": 2,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.2,
+    "designQualityScore": 3.4
+  },
+  {
+    "title": "RediSearch Query Syntax",
+    "slug": "redisearch-query-syntax",
+    "category": "Search/full-text",
+    "officialDocUrl": "https://redis.io/docs/latest/commands/ft.search/",
+    "mediaType": "None known — issued as arguments to the `FT.SEARCH` command over Redis's RESP protocol, not an HTTP/JSON media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 2,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 2,
+      "standardization": 2,
+      "security": 4,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 2.9,
+    "designQualityScore": 3.0
   },
   {
     "title": "Cypher",

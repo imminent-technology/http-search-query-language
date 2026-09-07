@@ -1,0 +1,31 @@
+{
+  "title": "Algolia Filter Syntax",
+  "slug": "algolia-filter-syntax",
+  "officialDocUrl": "https://www.algolia.com/doc/api-reference/api-parameters/filters/",
+  "mediaType": "None known — Algolia's Search API accepts `filters` as a string field in the JSON body of `POST /1/indexes/{indexName}/query`, not a dedicated media type.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "filters", "publisher": "Algolia", "url": "https://www.algolia.com/doc/api-reference/api-parameters/filters/", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports facet filters, boolean filters, numeric comparisons (<, <=, =, !=, >=, >), numeric ranges (`low TO high`), tag filters, and filtering on array/nested attributes, combined via AND/OR/NOT with parenthesized grouping, but it is purely a filter language — full-text relevance search is a separate `query` parameter, and there is no built-in sort clause within the filter string itself." },
+    "simplicity": { "score": 4, "rationale": "The SQL-like `attribute:value`/comparison shape with boolean operators and parentheses is easy to read, though the docs devote extensive space to quoting edge cases (spaces, reserved keywords, embedded single/double quotes) that a user must get right." },
+    "flexibility": { "score": 2, "rationale": "Only attributes explicitly declared in `attributesForFaceting` (or governed by `numericAttributesForFiltering`) can be filtered on, so the filter language is scoped to a pre-configured, indexed subset of fields rather than being usable against arbitrary attributes." },
+    "communityAndEcosystem": { "score": 3, "rationale": "Algolia is a well-established search-as-a-service platform with broad SDK support across many languages and a solid developer community, though a narrower footprint than general-purpose search engines like Elasticsearch." },
+    "extensibility": { "score": 1, "rationale": "The set of filter types (facet, boolean, numeric, range, tag, array, nested) and operators is fixed and defined entirely by Algolia, with no mechanism for users to add new filter types or functions." },
+    "transportCompatibility": { "score": 3, "rationale": "Passed as a `filters` string field in the JSON body of the Search API's `query` request (used identically across all official SDKs), fitting well as a structured request parameter, though it is not typically embedded as a bare URL query string like some other languages surveyed." },
+    "standardization": { "score": 1, "rationale": "A closed, single-vendor (Algolia) proprietary filter syntax built into the Algolia SaaS product, with no published formal grammar specification or independent governance body." },
+    "security": { "score": 3, "rationale": "Structured `attribute:value`/comparison clauses with well-documented quoting and escaping rules reduce ambiguity, and current-generation API clients auto-escape values, though the docs show that legacy API clients historically required manual escaping — a documented historical footgun." },
+    "performance": { "score": 4, "rationale": "Filtering is restricted to attributes explicitly declared in `attributesForFaceting`/`numericAttributesForFiltering`, a deliberate index-time trade-off that lets Algolia pre-build fast filter structures for exactly the fields a developer opts into, typical of the search-as-a-service performance model." },
+    "orthogonality": { "score": 3, "rationale": "Facet, boolean, numeric, and range filters share a broadly consistent `attribute:value`/comparison shape and combine uniformly via AND/OR/NOT with parentheses, but tag filters use their own distinct `_tags:value` shorthand rather than the general attribute syntax." }
+  },
+  "overallScore": 2.8,
+  "designQualityScore": 3.0,
+  "summary": "Algolia's filter syntax is a closed, SQL-like `attribute:value` filter language layered alongside Algolia's separate full-text `query` parameter, supporting facet, boolean, numeric, range, tag, and array/nested attribute filters combined via AND/OR/NOT with parentheses. It requires attributes to be explicitly declared for faceting/numeric filtering ahead of time, trading schema flexibility for fast, pre-indexed filtering, and has no sort clause of its own — sorting is instead configured via replica indices.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "filters: \"category:electronics AND price > 100\"",
+    "notes": "Algolia's filter syntax has no runtime ORDER BY: sorting by an arbitrary field like price (descending) requires pre-configuring a replica index with a custom ranking formula at index-settings time, not expressing it in the filters string. Pagination (page 2 of 10) is likewise controlled by separate `page`/`hitsPerPage` request parameters, not by the filters string."
+  },
+  "evaluatedDate": "2026-09-07"
+}

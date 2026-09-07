@@ -1,0 +1,31 @@
+{
+  "title": "Meilisearch Filter Syntax",
+  "slug": "meilisearch-filter-syntax",
+  "officialDocUrl": "https://www.meilisearch.com/docs/reference/api/search",
+  "mediaType": "None known — Meilisearch's API accepts `filter`, `sort`, and pagination parameters as fields in the JSON body of `POST /indexes/{index_uid}/search`, not a dedicated media type.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "Search with POST", "publisher": "Meilisearch", "url": "https://www.meilisearch.com/docs/reference/api/search", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "The `filter` expression supports comparisons, ranges, boolean combination with AND/OR and parentheses, and geo functions (`_geoRadius`, `_geoBoundingBox`, `_geoPolygon`), and is paired with a separate `sort` parameter and `page`/`hitsPerPage` (or `offset`/`limit`) pagination — genuinely covering filter, sort, and pagination as first-class request parameters." },
+    "simplicity": { "score": 4, "rationale": "The SQL-like filter syntax (e.g. `genres = horror OR genres = mystery`) is readable, though the API accepts filters as either a string or an array-of-arrays representation, and this dual representation adds a small amount of conceptual overhead." },
+    "flexibility": { "score": 2, "rationale": "Attributes used in `filter` or `sort` must be explicitly declared in the index's `filterableAttributes`/`sortableAttributes` settings, so filtering/sorting is scoped to a pre-configured subset of fields rather than working against arbitrary attributes out of the box." },
+    "communityAndEcosystem": { "score": 3, "rationale": "Meilisearch is a fast-growing, actively developed open-source (MIT) search engine with a sizeable GitHub community and official SDKs, though its ecosystem is smaller and younger than Elasticsearch's or Algolia's." },
+    "extensibility": { "score": 2, "rationale": "The filter/sort operator set is fixed and defined by Meilisearch itself with no user-defined functions at query time, though being MIT-licensed and open-source means the community can and does contribute new operators upstream via pull requests." },
+    "transportCompatibility": { "score": 3, "rationale": "`filter`, `sort`, and pagination fields are submitted in the JSON body of the recommended POST search route (a GET route also exists but is documented as discouraged), fitting well as structured request parameters rather than a single bare URL query string." },
+    "standardization": { "score": 2, "rationale": "Open-source (MIT-licensed) but governed entirely by the single Meilisearch project/company with no independent, vendor-neutral specification body for the query syntax." },
+    "security": { "score": 4, "rationale": "Filters are structured field/operator/value clauses rather than raw string concatenation, and attributes must be explicitly allow-listed in `filterableAttributes` before they can be filtered on, limiting the surface for filter-based data enumeration." },
+    "performance": { "score": 3, "rationale": "The docs explicitly warn that combining `rankingScoreThreshold` with `page`/`hitsPerPage` 'may reduce performance because Meilisearch must score all matching documents,' and cap total results at 1000 hits by default (configurable via a `pagination.maxTotalHits` index setting), showing documented, real performance trade-offs." },
+    "orthogonality": { "score": 3, "rationale": "Filter, sort, and pagination are cleanly separated into independent request parameters that compose predictably, though `page`/`hitsPerPage` and `offset`/`limit` are two parallel, mutually-exclusive pagination mechanisms with documented precedence rules that must not be mixed." }
+  },
+  "overallScore": 3.0,
+  "designQualityScore": 3.1,
+  "summary": "Meilisearch exposes filter, sort, and pagination as independent, well-documented parameters of its search API — a SQL-like `filter` expression language, a `sort` array of attribute:direction pairs, and dual offset/limit or page/hitsPerPage pagination mechanisms. All attributes used for filtering or sorting must be explicitly declared in index settings, trading some flexibility for fast, pre-indexed filtering and sorting, similar in spirit to Elasticsearch's separation of query concerns.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "POST /indexes/products/search\n{\n  \"filter\": \"category = \\\"electronics\\\" AND price > 100\",\n  \"sort\": [\"price:desc\"],\n  \"page\": 2,\n  \"hitsPerPage\": 10\n}",
+    "notes": "Meilisearch natively supports all three ingredients — filter, sort, and page-based pagination — directly as documented, first-class search-request parameters, provided the `category`/`price` attributes are declared in filterableAttributes and `price` is declared in sortableAttributes."
+  },
+  "evaluatedDate": "2026-09-07"
+}

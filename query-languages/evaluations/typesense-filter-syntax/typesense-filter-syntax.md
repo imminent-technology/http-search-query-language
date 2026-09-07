@@ -1,0 +1,45 @@
+# Typesense Filter Syntax
+
+[↑ Full comparison table](../summary.md)
+
+- **Category**: Search/full-text
+- **Official docs**: [Search](https://typesense.org/docs/latest/api/search.html)
+- **Media type**: None known — Typesense's API accepts `filter_by`, `sort_by`, and pagination as query parameters on `GET /collections/{collection}/documents/search`, not a dedicated media type.
+- **Evaluated**: 2026-09-07
+
+## Scores
+
+| Criterion | Score | Rationale |
+|---|---|---|
+| Expressiveness | 4 | `filter_by` supports exact (`:=`) vs partial (`:`) field matching, numeric comparisons and ranges, array-value OR matching, and joined-collection filtering, while `sort_by` independently supports up to three tie-breaking fields plus special functions (`_eval()` conditional sorting, `_rand()` random sorting, decay functions for distance-based scoring) — a genuinely rich combined filter/sort surface. |
+| Simplicity | 3 | The basic `field:value` filter shape and `field:direction` sort shape are simple, but advanced features (facet ranges, `_eval()` expressions, decay-function sorting, joined-collection facet referencing) add real complexity for anything beyond basic use. |
+| Flexibility | 3 | Fields must be declared with the correct schema types (e.g. `facet: true`, `sort: true`) at collection-creation time before they can be filtered/sorted on, though a `validate_field_names=false` option explicitly supports programmatic filtering/faceting against evolving schemas. |
+| Community and Ecosystem | 3 | Typesense is a fast-growing, popular open-source (GPL-3.0) Algolia-alternative search engine with an active GitHub community and official client libraries, though its ecosystem remains smaller than Elasticsearch's or Algolia's. |
+| Extensibility | 2 | The set of filter operators and special `sort_by` functions (`_eval`, `_rand`, `_text_match`, decay functions) is fixed and defined by Typesense itself, with no user-defined query-time functions, though the open-source project accepts community contributions upstream. |
+| Transport Compatibility | 4 | `filter_by`, `sort_by`, `page`/`per_page` (or `offset`/`limit`) are plain query-string parameters on a `GET` search endpoint, making the whole query naturally embeddable in a URL. |
+| Standardization | 2 | Open-source (GPL-3.0) but governed entirely by the single Typesense project/company with no independent, vendor-neutral specification body for the filter/sort syntax. |
+| Security | 3 | Filters are structured `field:value`/comparison clauses rather than raw string concatenation, and a `validate_field_names` option controls whether missing/mismatched schema fields raise errors, but no parameterized-query mechanism analogous to prepared statements is documented. |
+| Performance | 4 | The docs expose deliberate, well-documented performance-tuning knobs — `max_candidates`, `facet_sample_percent`/`facet_sample_threshold`, an `exhaustive_search` flag, and `search_cutoff_ms` — reflecting a search engine designed around explicit speed/accuracy trade-offs. |
+| Orthogonality | 4 | `filter_by`, `sort_by`, `facet_by`, `group_by`, and pagination are cleanly separated parameters, and the docs explicitly note that the expression syntax inside `sort_by`'s `_eval()` reuses the same grammar as `filter_by`, showing genuine syntax reuse across features. |
+
+**Overall score (avg, informational only): 3.2**
+
+**Design quality score (avg of Expressiveness/Simplicity/Flexibility/Extensibility/Transport/Security/Performance/Orthogonality — excludes Community & Ecosystem and Standardization): 3.4**
+
+## Summary
+
+Typesense's search API separates filtering (`filter_by`), sorting (`sort_by`, including conditional `_eval()` and decay-function sorting), and pagination (`page`/`per_page` or `offset`/`limit`) into independent, URL-friendly query parameters. Its `sort_by` reuses `filter_by`'s expression grammar for conditional sorting, giving it unusually strong internal consistency, while remaining a single-vendor open-source project without independent governance.
+
+## Example
+
+**Scenario:** products in category `electronics` priced above 100, sorted by price descending, page 2 of 10 per page.
+
+```
+GET /collections/products/documents/search?q=*&filter_by=category:=electronics && price:>100&sort_by=price:desc&page=2&per_page=10
+```
+
+Typesense natively supports all three ingredients — filter_by, sort_by, and page/per_page pagination — as first-class, independently documented search parameters embeddable directly in the request URL.
+
+## Sources
+
+- Typesense. (n.d.). [*Search*](https://typesense.org/docs/latest/api/search.html).

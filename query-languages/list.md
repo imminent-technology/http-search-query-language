@@ -6,6 +6,7 @@ An evaluation of these query languages against a common set of criteria is avail
 
 | Title | Description |
 |-----|-----------|
+| Algolia Filter Syntax | [Algolia Filter Syntax](https://www.algolia.com/doc/api-reference/api-parameters/filters/) |
 | AQL |	[ArangoDB Query Language](https://www.arangodb.com/docs/stable/aql/) |
 | AWS Athena Query Syntax | [AWS Athena Query Syntax](https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html) |
 | AWS CloudSearch Query Syntax | [AWS CloudSearch Query Syntax](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html) |
@@ -14,43 +15,54 @@ An evaluation of these query languages against a common set of criteria is avail
 | CEL | [Common Expression Language](https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md) |
 | CouchDB Mango Query Language | [CouchDB Mango Query Language](https://dev.to/yenyih/query-in-apache-couchdb-mango-query-lfd) |
 | CQL | [Cassandra Query Language](https://cassandra.apache.org/doc/latest/cassandra/cql/) |
+| CQL | [Confluence Query Language](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/) |
 | Criteria API | [Java Persistence API](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html) |
 | Crul Queries | [Crul Queries](https://www.crul.com/docs/features/queries/) |
 | Cypher | [Cypher Query Language](https://neo4j.com/developer/cypher/) |
 | DAX | [Data Analysis Expressions](https://learn.microsoft.com/en-us/dax/) |
 | Datalog | [Declarative Logic Programming Language](https://en.m.wikipedia.org/wiki/Datalog) |
 | DQL | [Dynatrace Query Language](https://www.dynatrace.com/support/help/platform/grail/dynatrace-query-language) |
+| Elasticsearch/OpenSearch Query DSL | [Elasticsearch/OpenSearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html) |
 | ESQL | [Elasticsearch Query Syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html) |
 | Firebase Cloud Firestore Query Language | [Firebase Cloud Firestore Query Language](https://firebase.google.com/docs/firestore/query-data/queries) |
 | Firebase Realtime Database Query Language | [Firebase Realtime Database Query Language](https://firebase.google.com/docs/database/admin/retrieve-data) |
 | Flux | [Functional data scripting language used by InfluxDB](https://www.influxdata.com/products/flux/) |
 | FQL | [Facebook Query Language](https://en.wikipedia.org/wiki/Facebook_Query_Language) |
+| GitHub Search Syntax | [GitHub Search Syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) |
 | GraphQL | [Graph Query Language](https://graphql.org/) |
 | Gremlin | [Graph Traversal Language](https://tinkerpop.apache.org/gremlin.html) |
 | HQL | [Hibernate Query Language](https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm) |
 | JMESPath | [JMESPath Specification](https://jmespath.org/specification.html) |
 | JPQL | [Java Persistence Query Language](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html) |
+| JQL | [Jira Query Language](https://www.atlassian.com/software/jira/guides/jql/overview) |
 | JSON Query Language | [JSON Query Language](https://jsonquerylang.org/) |
 | JSON Query Language | [JSON Query Language (christosgkoros)](https://github.com/christosgkoros/json-query-language) |
 | JSONPath | [JSONPath - Query Expressions for JSON](https://www.rfc-editor.org/rfc/rfc9535) |
 | KQL | [Kusto Query Language](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) |
 | LINQ | [Language Integrated Query](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) |
+| LogQL | [Grafana Loki Query Language](https://grafana.com/docs/loki/latest/query/) |
 | Lucene Query Syntax | [Lucene Query Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html) |
 | MDX | [Multidimensional Expressions](https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16) |
+| Meilisearch Filter Syntax | [Meilisearch Filter Syntax](https://www.meilisearch.com/docs/reference/api/search) |
 | MongoDB Query Syntax | [MongoDB Query Syntax](https://www.mongodb.com/docs/manual/tutorial/query-documents/) |
 | NRQL | [New Relic Query Language](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/) |
 | OData | [Open Data Protocol](https://www.odata.org/) |
 | OQL | [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language) |
 | PartiQL | [PartiQL — SQL-compatible query language for relational, semi-structured, and nested data](https://partiql.org/) |
 | PromQL | [Prometheus Query Language](https://prometheus.io/docs/prometheus/latest/querying/basics/) |
+| RediSearch Query Syntax | [RediSearch Query Syntax](https://redis.io/docs/latest/commands/ft.search/) |
 | RSQL/FIQL | [RSQL – Query Language for RESTful APIs, based on FIQL (Feed Item Query Language)](https://github.com/jirutka/rsql-parser) |
 | SCIM Filter | [System for Cross-domain Identity Management (SCIM) Filter Expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) |
 | Solr Query Syntax | [Solr Query Syntax](https://solr.apache.org/guide/6_6/the-standard-query-parser.html) |
 | SOQL | [Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm) |
+| SOSL | [Salesforce Object Search Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm) |
 | SPARQL | [Simple Protocol and RDF Query Language](https://www.w3.org/TR/rdf-sparql-protocol/) |
 | SPL | [Splunk Search Processing Language](https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction) |
 | SQL | [Structured Query Language](https://en.wikipedia.org/wiki/SQL) |
 | SQL++ | [Couchbase Query Language](https://www.couchbase.com/sqlplusplus/) |
+| Stripe Search Query Syntax | [Stripe Search Query Syntax](https://docs.stripe.com/search) |
 | TaxiQL | [Data and API contract language](https://github.com/taxilang/taxilang) |
+| TraceQL | [Grafana Tempo Trace Query Language](https://grafana.com/docs/tempo/latest/traceql/) |
+| Typesense Filter Syntax | [Typesense Filter Syntax](https://typesense.org/docs/latest/api/search.html) |
 | XPath | [XML Path Language](https://developer.mozilla.org/en-US/docs/Web/XPath) |
 | XQuery | [XML Query Language](https://www.w3.org/XML/Query/) |

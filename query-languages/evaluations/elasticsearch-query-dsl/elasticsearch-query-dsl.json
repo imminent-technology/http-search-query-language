@@ -1,0 +1,32 @@
+{
+  "title": "Elasticsearch/OpenSearch Query DSL",
+  "slug": "elasticsearch-query-dsl",
+  "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html",
+  "mediaType": "None known — both engines accept Query DSL as a JSON `application/json` request body on `POST _search` (or `GET _search` with a body), not a dedicated registered media type.",
+  "category": "Search/full-text",
+  "sources": [
+    { "title": "Query DSL", "publisher": "Elastic", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html", "date": null },
+    { "title": "Query DSL", "publisher": "OpenSearch Project (Linux Foundation)", "url": "https://docs.opensearch.org/latest/query-dsl/", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "A JSON AST of leaf queries (match, term, range, multi_match, geo, wildcard, fuzzy) and compound queries (bool with must/should/must_not/filter, dis_max, function_score) that combines search, structured filtering, and a full aggregations framework (metric/bucket/pipeline) in a single request — among the richest query surfaces in this catalog." },
+    "simplicity": { "score": 2, "rationale": "Individual leaf clauses are simple, but the JSON AST requires understanding query-vs-filter context and can nest deeply for even moderately complex boolean conditions, with no flat/inline shorthand for common cases." },
+    "flexibility": { "score": 4, "rationale": "Built for schema-flexible, dynamically-mapped JSON documents rather than a rigid predefined schema, and the fact that OpenSearch's near-identical fork works interchangeably with Elasticsearch's Query DSL demonstrates real portability across two independent engines." },
+    "communityAndEcosystem": { "score": 5, "rationale": "Elasticsearch is one of the most widely adopted search/analytics engines with a massive community and Kibana/Logstash/Beats ecosystem, and its OpenSearch fork adds an independently governed, AWS-backed alternative with its own large user base." },
+    "extensibility": { "score": 4, "rationale": "Supports custom scoring and filtering via script/script_score queries (Painless scripting in Elasticsearch), custom analyzers/tokenizers, and a plugin architecture that can register entirely new query types." },
+    "transportCompatibility": { "score": 3, "rationale": "Queries are submitted as a JSON body on the `_search` endpoint rather than a bare URL query string; a separate, much simpler Lucene query-string syntax exists for the `q=` URL parameter, but the full Query DSL itself requires a structured request body." },
+    "standardization": { "score": 2, "rationale": "Elasticsearch is Elastic-licensed (source-available, not OSI-approved open source), but its OpenSearch fork is Apache-2.0 and governed by the OpenSearch Software Foundation under the Linux Foundation — a genuine multi-stakeholder governance model, even though no formally ratified independent specification exists." },
+    "security": { "score": 3, "rationale": "Structured JSON avoids raw string-based query injection, and query/filter context is a documented, deliberate security/performance boundary, but script-based queries (script_score, script) introduce a real code-execution surface that both projects explicitly let administrators disable via an `allow_expensive_queries`-style setting." },
+    "performance": { "score": 4, "rationale": "Filter context is explicitly documented as faster than query context (no scoring, automatic caching, lower CPU), and both projects maintain an explicit, documented list of 'expensive' query types (regexp, wildcard, fuzzy, scripts, joins) that administrators can globally disable." },
+    "orthogonality": { "score": 4, "rationale": "Leaf and compound query clauses compose recursively and uniformly — compound queries wrap other leaf or compound clauses in a consistent tree — and aggregations similarly nest into pipelines, though the query-vs-filter context distinction is a meaningful behavioral wrinkle to track." }
+  },
+  "overallScore": 3.6,
+  "designQualityScore": 3.6,
+  "summary": "Elasticsearch's Query DSL (and its near-identical OpenSearch fork) is a JSON-based abstract-syntax-tree query language combining full-text search, structured filtering, and a rich aggregations framework in a single request. It is one of the most expressive and orthogonal languages surveyed, trading a lightweight URL-based transport for a deeply composable JSON request body, with OpenSearch's Linux Foundation governance giving the combined ecosystem more independent standing than most single-vendor search languages.",
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "GET /products/_search\n{\n  \"query\": {\n    \"bool\": {\n      \"filter\": [\n        { \"term\": { \"category\": \"electronics\" } },\n        { \"range\": { \"price\": { \"gt\": 100 } } }\n      ]\n    }\n  },\n  \"sort\": [{ \"price\": \"desc\" }],\n  \"from\": 10,\n  \"size\": 10\n}",
+    "notes": "Query DSL natively supports all three ingredients directly: structured filtering via the bool/filter clause, sorting via the top-level `sort` array, and page 2 of 10 via `from`/`size` offset-based pagination."
+  },
+  "evaluatedDate": "2026-09-07"
+}

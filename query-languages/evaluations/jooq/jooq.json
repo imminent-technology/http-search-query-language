@@ -1,0 +1,32 @@
+{
+  "title": "jOOQ",
+  "slug": "jooq",
+  "officialDocUrl": "https://www.jooq.org/",
+  "mediaType": "Not applicable — jOOQ is an in-process Java DSL/library that generates SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
+  "category": "Language-integrated",
+  "sources": [
+    { "title": "jOOQ — Using SQL in Java is simple!", "publisher": "Data Geekery GmbH", "url": "https://www.jooq.org/", "date": null },
+    { "title": "The SELECT statement", "publisher": "jOOQ Manual", "url": "https://www.jooq.org/doc/latest/manual/sql-building/sql-statements/select-statement/", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "A fluent Java DSL that mirrors nearly all of SQL's syntax — joins, subqueries, window functions, CTEs, GROUP BY/HAVING, set operations — type-checked against a code-generated model of the actual database schema." },
+    "simplicity": { "score": 3, "rationale": "The DSL reads almost like SQL itself (select().from().where().orderBy()...), which is intuitive for anyone who already knows SQL, but the code-generation setup and jOOQ-specific API surface (SelectField, QueryPart, dialect handling) add a real learning curve beyond plain SQL strings." },
+    "flexibility": { "score": 2, "rationale": "Explicitly \"database first\": queries are built against Java classes generated from an existing relational schema, so it is not schema-less or naturally suited to dynamic/evolving structures, though it does support DDL diffing and multi-tenant schema overrides." },
+    "communityAndEcosystem": { "score": 3, "rationale": "A mature, actively maintained product (since 2009) from Data Geekery with real enterprise adoption (Apple, Citi, Deutsche Bank, Toyota Europe listed as customers) and community channels (GitHub, Stack Overflow), but it is a single-vendor dual open-source/commercial product rather than a broadly governed ecosystem." },
+    "extensibility": { "score": 4, "rationale": "Supports custom SQL dialect transformation, custom data type bindings/converters, pluggable code-generation strategies, and embedding of stored procedures/user-defined functions directly into generated SQL." },
+    "transportCompatibility": { "score": 1, "rationale": "Pure in-process Java library operating over a JDBC connection; it has no network transport, URL-embedding convention, or request-body format of its own." },
+    "standardization": { "score": 1, "rationale": "A proprietary, single-vendor Java DSL with no standards-body specification, though it explicitly targets and normalizes differences across the SQL standard and many vendor dialects." },
+    "security": { "score": 5, "rationale": "The DSL is built entirely from typed bind-value expressions rather than string concatenation, and jOOQ's own manual documents a dedicated bind-values/SQL-injection-prevention design, making injection-style attacks structurally very difficult when the DSL (rather than raw SQL templating) is used." },
+    "performance": { "score": 4, "rationale": "A thin, direct abstraction over SQL generation — it does not introduce its own execution engine — so well-formed jOOQ queries compile to close-to-hand-written SQL and can use prepared statements/batching, though ultimate performance still depends on the underlying database and JDBC driver." },
+    "orthogonality": { "score": 4, "rationale": "SELECT clauses, JOIN types, GROUP BY/HAVING, WINDOW, ORDER BY, and LIMIT/OFFSET are each modeled as independent, composable DSL steps mirroring SQL's own clause structure, with consistent typesafety enforced by the Java compiler across all of them." }
+  },
+  "overallScore": 3.2,
+  "designQualityScore": 3.5,
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "create.selectFrom(PRODUCTS)\n      .where(PRODUCTS.CATEGORY.eq(\"electronics\")\n          .and(PRODUCTS.PRICE.gt(100)))\n      .orderBy(PRODUCTS.PRICE.desc())\n      .limit(10)\n      .offset(10)\n      .fetch();",
+    "notes": null
+  },
+  "summary": "jOOQ brings SQL's full expressiveness and near-immunity to string-based injection into a typesafe, code-generated Java DSL, trading schema flexibility and any HTTP-facing transport of its own for compile-time-checked queries that read almost exactly like the SQL they generate.",
+  "evaluatedDate": "2026-09-15"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Slick",
+  "slug": "slick",
+  "officialDocUrl": "https://scala-slick.org/",
+  "mediaType": "Not applicable — Slick is an in-process Scala library that compiles queries to SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
+  "category": "Language-integrated",
+  "sources": [
+    { "title": "Functional Relational Mapping for Scala (Slick homepage)", "publisher": "Slick / Lightbend community", "url": "https://scala-slick.org/", "date": null },
+    { "title": "Queries", "publisher": "Slick 3.6.1 Documentation", "url": "https://scala-slick.org/doc/stable/queries.html", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 4, "rationale": "Supports filtering, mapping, sorting, applicative and monadic joins (including cross/inner/outer/zip joins), grouping, and aggregation (min/max/sum/avg/count/exists) via a Scala-collections-like query API, with an escape hatch to Plain SQL for anything the typed API can't express." },
+    "simplicity": { "score": 3, "rationale": "Deliberately modeled on Scala's own collections API (filter/map/sortBy/take/drop), which lowers the barrier for Scala developers, but its \"lifted embedding\" (Rep[T] types, implicit conversions, `===`/`=!=` instead of `==`/`!=`) is a real conceptual departure from plain Scala that takes time to internalize." },
+    "flexibility": { "score": 2, "rationale": "Queries are built against an explicit `Table` class representation mapped to relational tables/columns (optionally code-generated from an existing schema), so it is not schema-less, though the same query API works across many supported relational engines via pluggable profiles." },
+    "communityAndEcosystem": { "score": 3, "rationale": "A long-running, community-maintained project (since 2011) backed historically by Lightbend, with real adoption in the Scala ecosystem and active support channels (GitHub Discussions, Discord), but it is narrower in reach than mainstream Java ORMs/query builders and has had periods of slower release cadence." },
+    "extensibility": { "score": 4, "rationale": "Supports custom column types and converters, custom SQL profiles for additional database engines, user-defined SQL functions (`SimpleFunction`), and Plain SQL string interpolation for constructs the typed query compiler can't express." },
+    "transportCompatibility": { "score": 1, "rationale": "Pure in-process Scala library operating over a JDBC connection (or async wrapper); it has no network transport, URL-embedding convention, or request-body format of its own." },
+    "standardization": { "score": 1, "rationale": "A proprietary, single-project Scala DSL with no standards-body specification or independent implementations." },
+    "security": { "score": 4, "rationale": "The primary typed query API is built entirely from Scala expressions and column references with no string concatenation, and its documented Plain SQL string-interpolation API (`sql\"...\"`) binds interpolated values as JDBC parameters rather than inlining raw text — though nothing prevents a caller from constructing an unsafe raw string themselves outside that interpolator." },
+    "performance": { "score": 3, "rationale": "Built on an async, non-blocking runtime (Cats Effect/FS2-based in current releases) with connection-pooling and a documented query compiler that generates SQL per-backend, but as with any query builder its real-world performance ultimately depends on the underlying database and JDBC driver rather than anything Slick optimizes itself." },
+    "orthogonality": { "score": 4, "rationale": "Query composition (`filter`, `sortBy`, `take`/`drop`, joins, `groupBy`), action composition (via for-comprehensions on `DBIOAction`), and row-expression composition are explicitly documented as three separate, independently composable layers, each mirroring Scala's own collection/for-comprehension semantics consistently." }
+  },
+  "overallScore": 2.9,
+  "designQualityScore": 3.1,
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "val page2 = products\n  .filter(p => p.category === \"electronics\" && p.price > 100.0)\n  .sortBy(_.price.desc)\n  .drop(10)\n  .take(10)\n  .result",
+    "notes": null
+  },
+  "summary": "Slick brings LINQ-like, Scala-collections-style query composition to relational databases through a typed, async-first Scala DSL, trading true schema flexibility and any HTTP-facing transport of its own for compile-time-checked queries that read almost exactly like ordinary Scala collection operations.",
+  "evaluatedDate": "2026-09-15"
+}

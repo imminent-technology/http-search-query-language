@@ -1258,5 +1258,173 @@
     },
     "overallScore": 3.5,
     "designQualityScore": 3.4
+  },
+  {
+    "title": "jOOQ",
+    "slug": "jooq",
+    "category": "Language-integrated",
+    "officialDocUrl": "https://www.jooq.org/",
+    "mediaType": "Not applicable — jOOQ is an in-process Java DSL/library that generates SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 1,
+      "standardization": 1,
+      "security": 5,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.2,
+    "designQualityScore": 3.5
+  },
+  {
+    "title": "Slick",
+    "slug": "slick",
+    "category": "Language-integrated",
+    "officialDocUrl": "https://scala-slick.org/",
+    "mediaType": "Not applicable — Slick is an in-process Scala library that compiles queries to SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 2,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 1,
+      "standardization": 1,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 2.9,
+    "designQualityScore": 3.1
+  },
+  {
+    "title": "jq",
+    "slug": "jq",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://jqlang.org/manual/",
+    "mediaType": "None known — jq programs are plain text filter expressions, typically supplied as a command-line argument or a `.jq` script file; there is no registered media type for jq filter syntax itself (the data it operates on is ordinary `application/json`).",
+    "scores": {
+      "expressiveness": 5,
+      "simplicity": 3,
+      "flexibility": 5,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 1,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.3,
+    "designQualityScore": 3.5
+  },
+  {
+    "title": "JSONata",
+    "slug": "jsonata",
+    "category": "Path/document navigation",
+    "officialDocUrl": "https://docs.jsonata.org/overview",
+    "mediaType": "application/jsonata (an unregistered, community-proposed media type suggested in JSONata discussions; not an IANA-registered type). JSONata expressions themselves are typically embedded as plain strings within a host application's own JSON payload or configuration.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 5,
+      "communityAndEcosystem": 3,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 3,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.2,
+    "designQualityScore": 3.5
+  },
+  {
+    "title": "Rego",
+    "slug": "rego",
+    "category": "Scripting",
+    "officialDocUrl": "https://www.openpolicyagent.org/docs/policy-language",
+    "mediaType": "application/json (Rego policies are evaluated by the Open Policy Agent (OPA) engine, which is queried over its REST Data/Query APIs using JSON request/response bodies; the Rego source itself is typically loaded as a `.rego` text file rather than transmitted per-request).",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 2,
+      "flexibility": 4,
+      "communityAndEcosystem": 4,
+      "extensibility": 4,
+      "transportCompatibility": 2,
+      "standardization": 2,
+      "security": 4,
+      "performance": 3,
+      "orthogonality": 4
+    },
+    "overallScore": 3.3,
+    "designQualityScore": 3.4
+  },
+  {
+    "title": "EQL",
+    "slug": "eql",
+    "category": "Log/security search",
+    "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/eql.html",
+    "mediaType": "application/json (EQL queries are submitted as a JSON request body's `query` string field to Elasticsearch's `_eql/search` REST endpoint; there is no dedicated media type for EQL syntax itself).",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 3,
+      "flexibility": 4,
+      "communityAndEcosystem": 3,
+      "extensibility": 3,
+      "transportCompatibility": 3,
+      "standardization": 1,
+      "security": 3,
+      "performance": 4,
+      "orthogonality": 4
+    },
+    "overallScore": 3.2,
+    "designQualityScore": 3.5
+  },
+  {
+    "title": "AQL (QRadar)",
+    "slug": "aql-qradar",
+    "category": "Log/security search",
+    "officialDocUrl": "https://www.ibm.com/docs/en/qsip/7.5.0?topic=aql-ariel-query-language",
+    "mediaType": "None known — AQL statements are submitted as plain text through the QRadar Console's Log Activity/Network Activity search UI or the QRadar REST API's `ariel/searches` resource (a JSON-wrapped query string), not as an independently registered media type.",
+    "scores": {
+      "expressiveness": 4,
+      "simplicity": 4,
+      "flexibility": 2,
+      "communityAndEcosystem": 2,
+      "extensibility": 2,
+      "transportCompatibility": 2,
+      "standardization": 1,
+      "security": 2,
+      "performance": 4,
+      "orthogonality": 3
+    },
+    "overallScore": 2.6,
+    "designQualityScore": 2.9
+  },
+  {
+    "title": "FQL (CrowdStrike)",
+    "slug": "fql-crowdstrike",
+    "category": "Log/security search",
+    "officialDocUrl": "https://developer.crowdstrike.com/api-reference/falcon-query-language/",
+    "mediaType": "None known — FQL filter strings are passed as the value of a `filter` query-string parameter on CrowdStrike Falcon REST API requests (transported as ordinary URL-encoded text, not a registered media type of their own).",
+    "scores": {
+      "expressiveness": 3,
+      "simplicity": 4,
+      "flexibility": 3,
+      "communityAndEcosystem": 2,
+      "extensibility": 1,
+      "transportCompatibility": 4,
+      "standardization": 1,
+      "security": 2,
+      "performance": 3,
+      "orthogonality": 3
+    },
+    "overallScore": 2.6,
+    "designQualityScore": 2.9
   }
 ]

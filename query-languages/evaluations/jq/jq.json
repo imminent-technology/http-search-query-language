@@ -1,0 +1,32 @@
+{
+  "title": "jq",
+  "slug": "jq",
+  "officialDocUrl": "https://jqlang.org/manual/",
+  "mediaType": "None known — jq programs are plain text filter expressions, typically supplied as a command-line argument or a `.jq` script file; there is no registered media type for jq filter syntax itself (the data it operates on is ordinary `application/json`).",
+  "category": "Path/document navigation",
+  "sources": [
+    { "title": "jq Manual", "publisher": "jqlang / jq project", "url": "https://jqlang.org/manual/", "date": null },
+    { "title": "jq", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jq_(programming_language)", "date": null }
+  ],
+  "scores": {
+    "expressiveness": { "score": 5, "rationale": "A full functional pipeline language over JSON: filters compose with `|`, includes `select`, `map`, `sort_by`, `group_by`, reduce/foreach, array/object construction, string interpolation, regex, and user-defined functions, letting it express filter+sort+reshape+aggregate pipelines in one expression." },
+    "simplicity": { "score": 3, "rationale": "The Unix-pipe-inspired `.foo | .bar[] | select(...)` style is quick to pick up for simple field access, but its functional/generator semantics (every expression can produce zero, one, or many outputs) and operators like `|=`, `?`, and `//` are a genuine learning curve beyond basic filters." },
+    "flexibility": { "score": 5, "rationale": "Operates purely on ad hoc, dynamically-shaped JSON values with no schema, type declarations, or fixed document model required — any valid JSON document can be queried immediately." },
+    "communityAndEcosystem": { "score": 4, "rationale": "A long-established (since 2012), ubiquitous command-line tool packaged in virtually every OS/package manager, with an active community, a compatible high-performance fork (jaq) and a maintained C-based reimplementation of the manual, though it remains primarily a CLI/scripting tool rather than a library ecosystem with client SDKs in the style of GraphQL or SQL drivers." },
+    "extensibility": { "score": 4, "rationale": "Supports user-defined functions (`def`), importable modules (`import`/`include`), and a documented C-level plugin mechanism for adding new builtins, letting users and downstream tools extend the language beyond its built-in filters." },
+    "transportCompatibility": { "score": 1, "rationale": "A command-line/library filter language with no URL-embedding or HTTP-native transport convention of its own; it is invoked as a CLI filter or through language bindings, not passed as a request parameter." },
+    "standardization": { "score": 1, "rationale": "A single de-facto-standard implementation-defined language (plus a compatible high-performance fork, jaq) with no formal specification or standards-body governance." },
+    "security": { "score": 3, "rationale": "Its own manual documents `--seq`/streaming and sandboxing caveats, and because filters are plain data-transformation expressions with no file/network I/O in the base language, the attack surface for injection is small, but embedding untrusted, user-supplied jq filters (versus untrusted data) into an application still requires care since the language itself was not designed as a sandboxed policy DSL." },
+    "performance": { "score": 3, "rationale": "A lightweight, C-implemented streaming JSON processor designed for fast command-line use on typical JSON payloads, though it is not optimized for large-scale concurrent query workloads the way a database query engine is, and its own ecosystem has spawned a faster Rust reimplementation (jaq) partly to address performance-sensitive use cases." },
+    "orthogonality": { "score": 4, "rationale": "Every jq expression is a filter that maps inputs to (possibly multiple) outputs and composes uniformly via `|`, so path navigation, filtering, sorting, and construction all share the same generator/composition model rather than being separate sub-languages." }
+  },
+  "overallScore": 3.3,
+  "designQualityScore": 3.5,
+  "example": {
+    "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
+    "query": "[.[] | select(.category == \"electronics\" and .price > 100)] | sort_by(.price) | reverse | .[10:20]",
+    "notes": null
+  },
+  "summary": "jq is a ubiquitous, functional command-line filter language for JSON that composes filter, sort, and slice operations into a single pipeline with no schema or setup required, at the cost of a real conceptual learning curve (its generator-based semantics) and no HTTP-native transport or governance of its own.",
+  "evaluatedDate": "2026-09-15"
+}

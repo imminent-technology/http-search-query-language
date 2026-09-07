@@ -1,0 +1,54 @@
+README.md
+  h_e2c7967ec6cbec 5
+query-languages/evaluations/aql-qradar/aql-qradar.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/aql-qradar/aql-qradar.md
+  h_e2c7967ec6cbec 1-50
+query-languages/evaluations/eql/eql.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/eql/eql.md
+  h_e2c7967ec6cbec 1-47
+query-languages/evaluations/fql-crowdstrike/fql-crowdstrike.json
+  h_e2c7967ec6cbec 1-31
+query-languages/evaluations/fql-crowdstrike/fql-crowdstrike.md
+  h_e2c7967ec6cbec 1-45
+query-languages/evaluations/jooq/jooq.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/jooq/jooq.md
+  h_e2c7967ec6cbec 1-50
+query-languages/evaluations/jq/jq.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/jq/jq.md
+  h_e2c7967ec6cbec 1-44
+query-languages/evaluations/jsonata/jsonata.json
+  h_e2c7967ec6cbec 1-34
+query-languages/evaluations/jsonata/jsonata.md
+  h_e2c7967ec6cbec 1-46
+query-languages/evaluations/rego/rego.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/rego/rego.md
+  h_e2c7967ec6cbec 1-52
+query-languages/evaluations/slick/slick.json
+  h_e2c7967ec6cbec 1-32
+query-languages/evaluations/slick/slick.md
+  h_e2c7967ec6cbec 1-49
+query-languages/evaluations/summary.json
+  h_e2c7967ec6cbec 1261-1428
+query-languages/evaluations/summary.md
+  h_e2c7967ec6cbec 5,94-95,102-104,111,122-123,150,154,222-229
+query-languages/list.csv
+  h_e2c7967ec6cbec 4,20,26,32,34,38,53,56
+query-languages/list.md
+  h_e2c7967ec6cbec 11,27,33,39,41,45,60,63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "57d2855571bbeebe6e5d0a4250f08994c83153f1",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

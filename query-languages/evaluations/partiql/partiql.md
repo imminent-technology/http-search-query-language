@@ -5,7 +5,7 @@
 - **Category**: Relational/SQL-family
 - **Official docs**: [PartiQL Query Basics (DQL Overview)](https://partiql.org/dql/overview.html)
 - **Media type**: None known — PartiQL statements are submitted as a plain string field within a host service's own JSON API request (e.g., DynamoDB's `ExecuteStatement` API `Statement` parameter), not as a dedicated, independently registered media type.
-- **Evaluated**: 2026-09-05
+- **Evaluated**: 2026-09-07
 
 ## Scores
 
@@ -42,6 +42,8 @@ ORDER BY price DESC
 LIMIT 10 OFFSET 10
 ```
 
+This is valid PartiQL under the core specification, but it does not port to DynamoDB's PartiQL dialect as written: DynamoDB has no inline `LIMIT`/`OFFSET` in the statement itself — `Limit` is a separate request parameter on `ExecuteStatement`, and there is no offset-based paging at all, only an opaque `NextToken` cursor returned from the previous page. `ORDER BY` is restricted to the table's sort key and requires a partition-key predicate in `WHERE` (otherwise it is a full-table `Scan`), so sorting by an arbitrary attribute like `price` only works if `price` is modeled as the sort key of the table or index being queried, e.g. `SELECT * FROM "Products"."CategoryPriceIndex" WHERE category = 'electronics' AND price > 100 ORDER BY price DESC`, paged via `NextToken` rather than `OFFSET`.
+
 ## Sources
 
 - PartiQL. (n.d.). [*PartiQL — An expressive, SQL-compatible query language giving access to relational, semi-structured, and nested data*](https://partiql.org/). Maintained by Amazon; developed by open-source contributors.
@@ -49,3 +51,5 @@ LIMIT 10 OFFSET 10
 - PartiQL. (n.d.). [*PartiQL Query Basics (DQL Overview)*](https://partiql.org/dql/overview.html).
 - Amazon Web Services (AWS). (n.d.). [*PartiQL select statements for DynamoDB*](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.select.html).
 - DynoTable (via Bluesky). (2026, September 6). [*Reply: "Worth scoring dynamodbs PartiQL apart from the spec..."*](https://bsky.app/profile/dynotable.bsky.social/post/3mutmjde24g23).
+- DynoTable. (n.d.). [*DynamoDB PartiQL vs SQL: What Breaks*](https://dynotable.com/learn/dynamodb-partiql-vs-sql).
+- DynoTable (via Bluesky). (2026, September 6). [*Reply: "One more for the example, dynamodbs grammar is SELECT FROM WHERE ORDER BY and thats it..."*](https://bsky.app/profile/dynotable.bsky.social/post/3muungau6au2c).

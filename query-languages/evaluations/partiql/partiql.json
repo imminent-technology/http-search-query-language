@@ -9,7 +9,9 @@
     { "title": "PartiQL Tutorial", "publisher": "PartiQL", "url": "https://partiql.org/tutorial.html", "date": null },
     { "title": "PartiQL Query Basics (DQL Overview)", "publisher": "PartiQL", "url": "https://partiql.org/dql/overview.html", "date": null },
     { "title": "PartiQL select statements for DynamoDB", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.select.html", "date": null },
-    { "title": "Reply to: I know it's the weekend, but I couldn't resist and evaluated a bunch more query languages...", "publisher": "DynoTable (via Bluesky)", "url": "https://bsky.app/profile/dynotable.bsky.social/post/3mutmjde24g23", "date": "2026-09-06" }
+    { "title": "Reply to: I know it's the weekend, but I couldn't resist and evaluated a bunch more query languages...", "publisher": "DynoTable (via Bluesky)", "url": "https://bsky.app/profile/dynotable.bsky.social/post/3mutmjde24g23", "date": "2026-09-06" },
+    { "title": "DynamoDB PartiQL vs SQL: What Breaks", "publisher": "DynoTable", "url": "https://dynotable.com/learn/dynamodb-partiql-vs-sql", "date": null },
+    { "title": "Reply: One more for the example, dynamodbs grammar is SELECT FROM WHERE ORDER BY and thats it...", "publisher": "DynoTable (via Bluesky)", "url": "https://bsky.app/profile/dynotable.bsky.social/post/3muungau6au2c", "date": "2026-09-06" }
   ],
   "scores": {
     "expressiveness": { "score": 5, "rationale": "PartiQL layers a full SQL SELECT-FROM-WHERE-GROUP BY-HAVING-ORDER BY-LIMIT/OFFSET pipeline (with INNER/LEFT/RIGHT/FULL/CROSS JOIN and UNION/INTERSECT/EXCEPT plus OUTER variants) on top of nested-data extensions unique to it \u2014 implicit UNNEST via FROM-clause path expressions, multistep paths (`e.projects[0].name`), SELECT VALUE for arbitrary (non-tuple) results, GROUP BY...GROUP AS for accessing whole groups, and PIVOT/UNPIVOT for converting between tuples and collections." },
@@ -26,8 +28,10 @@
   "overallScore": 3.5,
   "designQualityScore": 3.6,
   "summary": "PartiQL is an open-source, SQL-compatible query language maintained by Amazon that extends SQL-92 with first-class support for nested and semi-structured data (JSON, Ion, Parquet) and schemaless datasets, while remaining backwards-compatible with plain SQL queries. It is used as the query language across several AWS services (DynamoDB, Redshift Spectrum/SUPER, QLDB), with reference implementations in Kotlin and Rust and a public RFC-driven extension process. Its design scores strongly on expressiveness and flexibility — unifying relational and nested-data querying under one grammar — but it lacks any URL/HTTP-native transport convention (queries are embedded as string parameters within each host service's own API), has no formal standards-body ratification despite a rigorous open specification, and its orthogonality is weaker in practice than on paper: DynamoDB, its most prominent host, has no query planner and requires naming a secondary index directly in the FROM clause to pick an access path.",
+  "example": {
     "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",
     "query": "SELECT *\nFROM products\nWHERE category = 'electronics' AND price > 100\nORDER BY price DESC\nLIMIT 10 OFFSET 10",
-    "notes": null
-  },  "evaluatedDate": "2026-09-05"
+    "notes": "This is valid PartiQL under the core specification, but it does not port to DynamoDB's PartiQL dialect as written: DynamoDB has no inline LIMIT or OFFSET in the statement itself \u2014 Limit is a separate request parameter on ExecuteStatement, and there is no offset-based paging at all, only an opaque NextToken cursor returned from the previous page. ORDER BY is restricted to the table's sort key and requires a partition-key predicate in WHERE (otherwise it is a full-table Scan), so sorting by an arbitrary attribute like price only works if price is modeled as the sort key of the table or index being queried, e.g. SELECT * FROM \"Products\".\"CategoryPriceIndex\" WHERE category = 'electronics' AND price > 100 ORDER BY price DESC, paged via NextToken rather than OFFSET."
+  },
+  "evaluatedDate": "2026-09-07"
 }

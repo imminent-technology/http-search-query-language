@@ -11,80 +11,80 @@ Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & E
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [SQL](sql/sql.md) | 5 | 3 | 2 | 5 | 4 | 2 | 5 | 2 | 5 | 3 | 3.6 | 3.3 |
-| [HQL](hql/hql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 3 | 4 | 3 | 3 | 3.1 | 3.0 |
+| [PartiQL](partiql/partiql.md) | 5 | 4 | 5 | 4 | 4 | 2 | 2 | 3 | 3 | 3 | 3.5 | 3.6 |
+| [Azure Cosmos DB SQL Query Syntax](azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md) | 3 | 4 | 5 | 4 | 4 | 3 | 1 | 3 | 4 | 3 | 3.4 | 3.6 |
 | [JPQL](jpql/jpql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 5 | 4 | 3 | 3 | 3.3 | 3.0 |
 | [Criteria API](criteria-api/criteria-api.md) | 4 | 2 | 2 | 4 | 3 | 1 | 5 | 5 | 3 | 3 | 3.2 | 2.9 |
-| [SOQL](soql/soql.md) | 3 | 4 | 2 | 3 | 2 | 4 | 1 | 3 | 3 | 3 | 2.8 | 3.0 |
-| [SQL++](sql-plus-plus/sql-plus-plus.md) | 4 | 3 | 5 | 2 | 3 | 3 | 2 | 2 | 3 | 3 | 3.0 | 3.3 |
-| [Azure Cosmos DB SQL Query Syntax](azure-cosmos-db-sql-query-syntax/azure-cosmos-db-sql-query-syntax.md) | 3 | 4 | 5 | 4 | 4 | 3 | 1 | 3 | 4 | 3 | 3.4 | 3.6 |
+| [HQL](hql/hql.md) | 4 | 4 | 2 | 4 | 3 | 1 | 3 | 4 | 3 | 3 | 3.1 | 3.0 |
 | [AWS Athena Query Syntax](aws-athena-query-syntax/aws-athena-query-syntax.md) | 4 | 4 | 3 | 3 | 3 | 2 | 2 | 3 | 4 | 3 | 3.1 | 3.3 |
-| [PartiQL](partiql/partiql.md) | 5 | 4 | 5 | 4 | 4 | 2 | 2 | 3 | 3 | 3 | 3.5 | 3.6 |
+| [SQL++](sql-plus-plus/sql-plus-plus.md) | 4 | 3 | 5 | 2 | 3 | 3 | 2 | 2 | 3 | 3 | 3.0 | 3.3 |
+| [SOQL](soql/soql.md) | 3 | 4 | 2 | 3 | 2 | 4 | 1 | 3 | 3 | 3 | 2.8 | 3.0 |
 
 ## Document/NoSQL
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [MongoDB Query Syntax](mongodb-query-syntax/mongodb-query-syntax.md) | 4 | 4 | 5 | 5 | 3 | 2 | 1 | 3 | 3 | 4 | 3.4 | 3.5 |
-| [CouchDB Mango Query Language](couchdb-mango-query-language/couchdb-mango-query-language.md) | 3 | 4 | 4 | 3 | 2 | 5 | 1 | 3 | 3 | 3 | 3.1 | 3.4 |
 | [Firebase Cloud Firestore Query Language](firebase-cloud-firestore-query-language/firebase-cloud-firestore-query-language.md) | 3 | 4 | 4 | 4 | 2 | 3 | 1 | 4 | 4 | 3 | 3.2 | 3.4 |
-| [Firebase Realtime Database Query Language](firebase-realtime-database-query-language/firebase-realtime-database-query-language.md) | 2 | 4 | 3 | 3 | 1 | 3 | 1 | 3 | 3 | 2 | 2.5 | 2.6 |
-| [AWS DynamoDB Query Syntax](aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md) | 2 | 3 | 2 | 4 | 2 | 3 | 1 | 4 | 4 | 2 | 2.7 | 2.8 |
+| [CouchDB Mango Query Language](couchdb-mango-query-language/couchdb-mango-query-language.md) | 3 | 4 | 4 | 3 | 2 | 5 | 1 | 3 | 3 | 3 | 3.1 | 3.4 |
 | [AQL](aql/aql.md) | 4 | 3 | 5 | 2 | 3 | 2 | 1 | 3 | 3 | 3 | 2.9 | 3.3 |
+| [AWS DynamoDB Query Syntax](aws-dynamodb-query-syntax/aws-dynamodb-query-syntax.md) | 2 | 3 | 2 | 4 | 2 | 3 | 1 | 4 | 4 | 2 | 2.7 | 2.8 |
 | [CQL](cql/cql.md) | 2 | 4 | 3 | 4 | 3 | 1 | 1 | 3 | 4 | 2 | 2.7 | 2.8 |
+| [Firebase Realtime Database Query Language](firebase-realtime-database-query-language/firebase-realtime-database-query-language.md) | 2 | 4 | 3 | 3 | 1 | 3 | 1 | 3 | 3 | 2 | 2.5 | 2.6 |
 
 ## Search/full-text
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Lucene Query Syntax](lucene-query-syntax/lucene-query-syntax.md) | 3 | 4 | 3 | 5 | 2 | 5 | 1 | 3 | 5 | 3 | 3.4 | 3.5 |
-| [Solr Query Syntax](solr-query-syntax/solr-query-syntax.md) | 4 | 3 | 3 | 4 | 3 | 5 | 1 | 2 | 5 | 3 | 3.3 | 3.5 |
-| [ESQL](esql/esql.md) | 4 | 3 | 4 | 5 | 3 | 4 | 1 | 2 | 5 | 3 | 3.4 | 3.5 |
-| [AWS CloudSearch Query Syntax](aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md) | 3 | 3 | 2 | 2 | 2 | 5 | 1 | 3 | 3 | 2 | 2.6 | 2.9 |
-| [JQL](jql/jql.md) | 4 | 3 | 3 | 4 | 3 | 4 | 1 | 3 | 3 | 3 | 3.1 | 3.3 |
-| [CQL (Confluence)](cql-confluence/cql-confluence.md) | 3 | 3 | 2 | 3 | 3 | 4 | 1 | 3 | 3 | 3 | 2.8 | 3.0 |
-| [SOSL](sosl/sosl.md) | 4 | 3 | 3 | 4 | 2 | 4 | 1 | 3 | 3 | 2 | 2.9 | 3.0 |
-| [Stripe Search Query Syntax](stripe-search-query-syntax/stripe-search-query-syntax.md) | 2 | 4 | 2 | 4 | 1 | 4 | 1 | 4 | 3 | 2 | 2.7 | 2.8 |
-| [GitHub Search Syntax](github-search-syntax/github-search-syntax.md) | 4 | 3 | 2 | 4 | 1 | 5 | 1 | 4 | 3 | 3 | 3.0 | 3.1 |
 | [Elasticsearch/OpenSearch Query DSL](elasticsearch-query-dsl/elasticsearch-query-dsl.md) | 5 | 2 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 4 | 3.6 | 3.6 |
-| [Algolia Filter Syntax](algolia-filter-syntax/algolia-filter-syntax.md) | 4 | 4 | 2 | 3 | 1 | 3 | 1 | 3 | 4 | 3 | 2.8 | 3.0 |
-| [Meilisearch Filter Syntax](meilisearch-filter-syntax/meilisearch-filter-syntax.md) | 4 | 4 | 2 | 3 | 2 | 3 | 2 | 4 | 3 | 3 | 3.0 | 3.1 |
+| [Lucene Query Syntax](lucene-query-syntax/lucene-query-syntax.md) | 3 | 4 | 3 | 5 | 2 | 5 | 1 | 3 | 5 | 3 | 3.4 | 3.5 |
+| [ESQL](esql/esql.md) | 4 | 3 | 4 | 5 | 3 | 4 | 1 | 2 | 5 | 3 | 3.4 | 3.5 |
+| [Solr Query Syntax](solr-query-syntax/solr-query-syntax.md) | 4 | 3 | 3 | 4 | 3 | 5 | 1 | 2 | 5 | 3 | 3.3 | 3.5 |
 | [Typesense Filter Syntax](typesense-filter-syntax/typesense-filter-syntax.md) | 4 | 3 | 3 | 3 | 2 | 4 | 2 | 3 | 4 | 4 | 3.2 | 3.4 |
+| [JQL](jql/jql.md) | 4 | 3 | 3 | 4 | 3 | 4 | 1 | 3 | 3 | 3 | 3.1 | 3.3 |
+| [GitHub Search Syntax](github-search-syntax/github-search-syntax.md) | 4 | 3 | 2 | 4 | 1 | 5 | 1 | 4 | 3 | 3 | 3.0 | 3.1 |
+| [Meilisearch Filter Syntax](meilisearch-filter-syntax/meilisearch-filter-syntax.md) | 4 | 4 | 2 | 3 | 2 | 3 | 2 | 4 | 3 | 3 | 3.0 | 3.1 |
+| [SOSL](sosl/sosl.md) | 4 | 3 | 3 | 4 | 2 | 4 | 1 | 3 | 3 | 2 | 2.9 | 3.0 |
 | [RediSearch Query Syntax](redisearch-query-syntax/redisearch-query-syntax.md) | 4 | 2 | 2 | 3 | 3 | 2 | 2 | 4 | 4 | 3 | 2.9 | 3.0 |
+| [CQL (Confluence)](cql-confluence/cql-confluence.md) | 3 | 3 | 2 | 3 | 3 | 4 | 1 | 3 | 3 | 3 | 2.8 | 3.0 |
+| [Algolia Filter Syntax](algolia-filter-syntax/algolia-filter-syntax.md) | 4 | 4 | 2 | 3 | 1 | 3 | 1 | 3 | 4 | 3 | 2.8 | 3.0 |
+| [Stripe Search Query Syntax](stripe-search-query-syntax/stripe-search-query-syntax.md) | 2 | 4 | 2 | 4 | 1 | 4 | 1 | 4 | 3 | 2 | 2.7 | 2.8 |
+| [AWS CloudSearch Query Syntax](aws-cloudsearch-query-syntax/aws-cloudsearch-query-syntax.md) | 3 | 3 | 2 | 2 | 2 | 5 | 1 | 3 | 3 | 2 | 2.6 | 2.9 |
 
 ## Graph
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Cypher](cypher/cypher.md) | 5 | 4 | 4 | 4 | 3 | 2 | 4 | 3 | 4 | 4 | 3.7 | 3.6 |
-| [Gremlin](gremlin/gremlin.md) | 5 | 3 | 4 | 3 | 4 | 2 | 3 | 2 | 4 | 4 | 3.4 | 3.5 |
 | [SPARQL](sparql/sparql.md) | 5 | 2 | 4 | 3 | 3 | 4 | 5 | 2 | 3 | 4 | 3.5 | 3.4 |
+| [Gremlin](gremlin/gremlin.md) | 5 | 3 | 4 | 3 | 4 | 2 | 3 | 2 | 4 | 4 | 3.4 | 3.5 |
 | [Datalog](datalog/datalog.md) | 3 | 2 | 4 | 2 | 4 | 1 | 2 | 3 | 3 | 4 | 2.8 | 3.0 |
 
 ## Analytics/Observability
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [PromQL](promql/promql.md) | 4 | 3 | 2 | 5 | 2 | 4 | 2 | 3 | 4 | 3 | 3.2 | 3.1 |
 | [KQL](kql/kql.md) | 4 | 4 | 3 | 4 | 3 | 3 | 1 | 4 | 4 | 4 | 3.4 | 3.6 |
-| [NRQL](nrql/nrql.md) | 3 | 4 | 3 | 3 | 2 | 4 | 1 | 2 | 3 | 3 | 2.8 | 3.0 |
-| [DQL](dql/dql.md) | 4 | 3 | 5 | 3 | 3 | 3 | 1 | 2 | 4 | 4 | 3.2 | 3.5 |
-| [DAX](dax/dax.md) | 4 | 3 | 2 | 4 | 2 | 2 | 1 | 3 | 4 | 3 | 2.8 | 2.9 |
-| [MDX](mdx/mdx.md) | 4 | 2 | 2 | 3 | 3 | 3 | 3 | 2 | 4 | 3 | 2.9 | 2.9 |
 | [LogQL](logql/logql.md) | 4 | 3 | 4 | 4 | 2 | 4 | 2 | 3 | 3 | 4 | 3.3 | 3.4 |
 | [TraceQL](traceql/traceql.md) | 5 | 3 | 3 | 3 | 2 | 4 | 2 | 4 | 4 | 3 | 3.3 | 3.5 |
+| [PromQL](promql/promql.md) | 4 | 3 | 2 | 5 | 2 | 4 | 2 | 3 | 4 | 3 | 3.2 | 3.1 |
+| [DQL](dql/dql.md) | 4 | 3 | 5 | 3 | 3 | 3 | 1 | 2 | 4 | 4 | 3.2 | 3.5 |
+| [MDX](mdx/mdx.md) | 4 | 2 | 2 | 3 | 3 | 3 | 3 | 2 | 4 | 3 | 2.9 | 2.9 |
+| [NRQL](nrql/nrql.md) | 3 | 4 | 3 | 3 | 2 | 4 | 1 | 2 | 3 | 3 | 2.8 | 3.0 |
+| [DAX](dax/dax.md) | 4 | 3 | 2 | 4 | 2 | 2 | 1 | 3 | 4 | 3 | 2.8 | 2.9 |
 
 ## API/data-fetching
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [GraphQL](graphql/graphql.md) | 4 | 4 | 4 | 5 | 4 | 4 | 4 | 4 | 3 | 4 | 4.0 | 3.9 |
-| [JSON Query Language](json-query-language/json-query-language.md) | 3 | 4 | 5 | 1 | 4 | 2 | 1 | 4 | 3 | 4 | 3.1 | 3.6 |
-| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 3 | 3.0 | 3.5 |
-| [FQL](fql/fql.md) | 2 | 4 | 1 | 1 | 1 | 4 | 1 | 2 | 2 | 3 | 2.1 | 2.4 |
-| [TaxiQL](taxiql/taxiql.md) | 4 | 3 | 4 | 1 | 4 | 2 | 1 | 2 | 2 | 3 | 2.6 | 3.0 |
+| [SCIM Filter](scim-filter/scim-filter.md) | 4 | 4 | 3 | 4 | 4 | 5 | 5 | 3 | 3 | 4 | 3.9 | 3.8 |
 | [OData](odata/odata.md) | 4 | 3 | 2 | 4 | 4 | 5 | 5 | 3 | 3 | 4 | 3.7 | 3.5 |
 | [RSQL/FIQL](rsql-fiql/rsql-fiql.md) | 3 | 4 | 4 | 3 | 4 | 4 | 1 | 3 | 3 | 4 | 3.3 | 3.6 |
-| [SCIM Filter](scim-filter/scim-filter.md) | 4 | 4 | 3 | 4 | 4 | 5 | 5 | 3 | 3 | 4 | 3.9 | 3.8 |
+| [JSON Query Language](json-query-language/json-query-language.md) | 3 | 4 | 5 | 1 | 4 | 2 | 1 | 4 | 3 | 4 | 3.1 | 3.6 |
+| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 3 | 3.0 | 3.5 |
+| [TaxiQL](taxiql/taxiql.md) | 4 | 3 | 4 | 1 | 4 | 2 | 1 | 2 | 2 | 3 | 2.6 | 3.0 |
+| [FQL](fql/fql.md) | 2 | 4 | 1 | 1 | 1 | 4 | 1 | 2 | 2 | 3 | 2.1 | 2.4 |
 
 ## Language-integrated
 
@@ -109,9 +109,9 @@ Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & E
 
 | Language | Exp | Sim | Flex | Comm | Ext | Trans | Std | Sec | Perf | Orth | Avg | DQ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [JSONPath](jsonpath/jsonpath.md) | 4 | 4 | 5 | 3 | 4 | 3 | 5 | 3 | 3 | 4 | 3.8 | 3.8 |
 | [XPath](xpath/xpath.md) | 4 | 4 | 3 | 5 | 3 | 2 | 5 | 2 | 3 | 4 | 3.5 | 3.1 |
 | [XQuery](xquery/xquery.md) | 5 | 3 | 4 | 3 | 4 | 2 | 5 | 2 | 3 | 4 | 3.5 | 3.4 |
-| [JSONPath](jsonpath/jsonpath.md) | 4 | 4 | 5 | 3 | 4 | 3 | 5 | 3 | 3 | 4 | 3.8 | 3.8 |
 | [JMESPath](jmespath/jmespath.md) | 4 | 4 | 5 | 4 | 3 | 3 | 2 | 3 | 2 | 4 | 3.4 | 3.5 |
 
 ## Niche/misc

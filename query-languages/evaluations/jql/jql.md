@@ -6,6 +6,8 @@
 - **Official docs**: [JQL: Get started with advanced search in Jira](https://www.atlassian.com/software/jira/guides/jql/overview)
 - **Media type**: None known — Jira's REST API accepts JQL as a `jql` URL query parameter on `GET` search endpoints, or as a JSON string field in the request body on the equivalent `POST` endpoints, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

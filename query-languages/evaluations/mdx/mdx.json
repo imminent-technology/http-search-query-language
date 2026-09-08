@@ -4,6 +4,15 @@
   "officialDocUrl": "https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16",
   "mediaType": "None known — MDX statements are typically embedded in a SOAP/XML request (`text/xml`/`application/soap+xml`) to an XMLA endpoint; no dedicated MDX media type.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Multidimensional Expressions (MDX) Reference", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16", "date": null },
     { "title": "MultiDimensional eXpressions", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/MultiDimensional_eXpressions", "date": "2025-11-22" }

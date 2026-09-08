@@ -18,7 +18,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.6,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "HQL",
@@ -39,7 +40,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.1,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "JPQL",
@@ -60,7 +62,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "Criteria API",
@@ -81,7 +84,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.2,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "SOQL",
@@ -102,7 +106,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.8,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "SQL++",
@@ -123,7 +128,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.0,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Azure Cosmos DB SQL Query Syntax",
@@ -144,7 +150,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "AWS Athena Query Syntax",
@@ -165,7 +172,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.1,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "PartiQL",
@@ -186,7 +194,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.5,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "MongoDB Query Syntax",
@@ -207,7 +216,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "CouchDB Mango Query Language",
@@ -228,7 +238,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.1,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "open-source-community"
   },
   {
     "title": "Firebase Cloud Firestore Query Language",
@@ -249,7 +260,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Firebase Realtime Database Query Language",
@@ -270,7 +282,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.5,
-    "designQualityScore": 2.6
+    "designQualityScore": 2.6,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "AWS DynamoDB Query Syntax",
@@ -291,7 +304,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.7,
-    "designQualityScore": 2.8
+    "designQualityScore": 2.8,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "AQL",
@@ -312,7 +326,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.9,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "CQL",
@@ -333,7 +348,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.7,
-    "designQualityScore": 2.8
+    "designQualityScore": 2.8,
+    "supportModel": "open-source-community"
   },
   {
     "title": "GraphQL",
@@ -354,7 +370,8 @@
       "orthogonality": 4
     },
     "overallScore": 4.0,
-    "designQualityScore": 3.9
+    "designQualityScore": 3.9,
+    "supportModel": "open-source-community"
   },
   {
     "title": "PromQL",
@@ -375,7 +392,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.1
+    "designQualityScore": 3.1,
+    "supportModel": "open-source-community"
   },
   {
     "title": "KQL",
@@ -396,7 +414,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "NRQL",
@@ -417,7 +436,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.8,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "DQL",
@@ -438,7 +458,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "DAX",
@@ -459,7 +480,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.8,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "MDX",
@@ -480,7 +502,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.9,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "LogQL",
@@ -501,7 +524,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "TraceQL",
@@ -522,7 +546,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "JSON Query Language",
@@ -543,7 +568,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.1,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "JSON Query Language",
@@ -564,7 +590,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.0,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "Lucene Query Syntax",
@@ -585,7 +612,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "open-source-community"
   },
   {
     "title": "Solr Query Syntax",
@@ -606,7 +634,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "open-source-community"
   },
   {
     "title": "ESQL",
@@ -627,7 +656,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "AWS CloudSearch Query Syntax",
@@ -648,7 +678,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.6,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "JQL",
@@ -669,7 +700,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.1,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "CQL",
@@ -690,7 +722,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.8,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "SOSL",
@@ -711,7 +744,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.9,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Stripe Search Query Syntax",
@@ -732,7 +766,8 @@
       "orthogonality": 2
     },
     "overallScore": 2.7,
-    "designQualityScore": 2.8
+    "designQualityScore": 2.8,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "GitHub Search Syntax",
@@ -753,7 +788,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.0,
-    "designQualityScore": 3.1
+    "designQualityScore": 3.1,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Elasticsearch/OpenSearch Query DSL",
@@ -774,7 +810,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.6,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "open-source-community"
   },
   {
     "title": "Algolia Filter Syntax",
@@ -795,7 +832,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.8,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Meilisearch Filter Syntax",
@@ -816,7 +854,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.0,
-    "designQualityScore": 3.1
+    "designQualityScore": 3.1,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "Typesense Filter Syntax",
@@ -837,7 +876,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "RediSearch Query Syntax",
@@ -858,7 +898,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.9,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "Cypher",
@@ -879,7 +920,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.7,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "Gremlin",
@@ -900,7 +942,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "open-source-community"
   },
   {
     "title": "SPARQL",
@@ -921,7 +964,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.5,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "Datalog",
@@ -942,7 +986,8 @@
       "orthogonality": 4
     },
     "overallScore": 2.8,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "open-source-community"
   },
   {
     "title": "Crul Queries",
@@ -963,7 +1008,8 @@
       "orthogonality": 4
     },
     "overallScore": 2.3,
-    "designQualityScore": 2.6
+    "designQualityScore": 2.6,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "CEL (Common Expression Language)",
@@ -984,7 +1030,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.9,
-    "designQualityScore": 4.0
+    "designQualityScore": 4.0,
+    "supportModel": "open-source-community"
   },
   {
     "title": "Flux",
@@ -1005,7 +1052,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.0,
-    "designQualityScore": 3.3
+    "designQualityScore": 3.3,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "FQL",
@@ -1026,7 +1074,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.1,
-    "designQualityScore": 2.4
+    "designQualityScore": 2.4,
+    "supportModel": "deprecated"
   },
   {
     "title": "LINQ",
@@ -1047,7 +1096,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.6,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "OQL",
@@ -1068,7 +1118,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.0,
-    "designQualityScore": 2.1
+    "designQualityScore": 2.1,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "SPL",
@@ -1089,7 +1140,8 @@
       "orthogonality": 3
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "TaxiQL",
@@ -1110,7 +1162,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.6,
-    "designQualityScore": 3.0
+    "designQualityScore": 3.0,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "OData",
@@ -1131,7 +1184,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.7,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "RSQL/FIQL",
@@ -1152,7 +1206,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.6
+    "designQualityScore": 3.6,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "SCIM Filter",
@@ -1173,7 +1228,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.9,
-    "designQualityScore": 3.8
+    "designQualityScore": 3.8,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "JMESPath",
@@ -1194,7 +1250,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.4,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "JSONPath",
@@ -1215,7 +1272,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.8,
-    "designQualityScore": 3.8
+    "designQualityScore": 3.8,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "XPath",
@@ -1236,7 +1294,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.5,
-    "designQualityScore": 3.1
+    "designQualityScore": 3.1,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "XQuery",
@@ -1257,7 +1316,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.5,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "formal-standard-multi-vendor"
   },
   {
     "title": "jOOQ",
@@ -1278,7 +1338,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "Slick",
@@ -1299,7 +1360,8 @@
       "orthogonality": 4
     },
     "overallScore": 2.9,
-    "designQualityScore": 3.1
+    "designQualityScore": 3.1,
+    "supportModel": "open-source-community"
   },
   {
     "title": "jq",
@@ -1320,7 +1382,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "open-source-community"
   },
   {
     "title": "JSONata",
@@ -1341,7 +1404,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-small-team"
   },
   {
     "title": "Rego",
@@ -1362,7 +1426,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.3,
-    "designQualityScore": 3.4
+    "designQualityScore": 3.4,
+    "supportModel": "open-source-community"
   },
   {
     "title": "EQL",
@@ -1383,7 +1448,8 @@
       "orthogonality": 4
     },
     "overallScore": 3.2,
-    "designQualityScore": 3.5
+    "designQualityScore": 3.5,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "AQL (QRadar)",
@@ -1404,7 +1470,8 @@
       "orthogonality": 3
     },
     "overallScore": 2.6,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "single-vendor-commercial"
   },
   {
     "title": "FQL (CrowdStrike)",
@@ -1425,6 +1492,7 @@
       "orthogonality": 3
     },
     "overallScore": 2.6,
-    "designQualityScore": 2.9
+    "designQualityScore": 2.9,
+    "supportModel": "single-vendor-commercial"
   }
 ]

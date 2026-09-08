@@ -6,6 +6,8 @@
 - **Official docs**: [jq Manual](https://jqlang.org/manual/)
 - **Media type**: None known — jq programs are plain text filter expressions, typically supplied as a command-line argument or a `.jq` script file; there is no registered media type for jq filter syntax itself (the data it operates on is ordinary `application/json`).
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: partial · Go: mature · Rust: mature · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

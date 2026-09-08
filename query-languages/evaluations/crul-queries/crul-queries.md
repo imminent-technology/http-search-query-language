@@ -6,6 +6,8 @@
 - Official docs: [Queries](https://www.crul.com/docs/features/queries/)
 - Media type: None known — no verifiable, actively documented standard or registered media type could be found for this query language.
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: none · Go: none · Rust: none · .NET: none
+- **Support Model**: single-vendor-small-team
 
 > Note: No independent secondary source exists for this small, niche commercial product, so this evaluation is single-sourced from the vendor's own documentation.
 

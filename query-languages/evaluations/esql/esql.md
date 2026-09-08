@@ -6,6 +6,8 @@
 - Official docs: [Query string query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 - Media type: None known — Elasticsearch's Query DSL/ES|QL requests use the generic `application/json` content type.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: partial · JavaScript: partial · Java: partial · Go: partial · Rust: partial · .NET: partial
+- Support Model: single-vendor-commercial
 
 > Note: `list.csv` labels this entry "ESQL" but links to Elasticsearch's `query_string` query syntax (a Lucene-derived query mini-language), not Elastic's separate, newer ES|QL piped query language. This evaluation covers the syntax actually linked.
 

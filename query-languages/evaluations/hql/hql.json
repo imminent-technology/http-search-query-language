@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm",
   "mediaType": "Not applicable — HQL is parsed and translated to SQL inside the JVM by Hibernate; it is not transmitted over HTTP with its own media type.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "mature",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Hibernate - Query Language", "publisher": "Tutorials Point", "url": "https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm", "date": null },
     { "title": "Hibernate (framework)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hibernate_(framework)", "date": "2026-04-09" }

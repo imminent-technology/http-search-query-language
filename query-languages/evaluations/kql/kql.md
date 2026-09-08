@@ -6,6 +6,8 @@
 - Official docs: [Kusto Query Language (KQL) overview](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
 - Media type: None known — KQL text is submitted as a JSON field inside a generic `application/json` body via the Azure Data Explorer/Log Analytics REST APIs.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- Support Model: single-vendor-commercial
 
 > Note: No usable independent secondary source was found (Wikipedia has no dedicated "Kusto (software)" article), so this evaluation is single-sourced from Microsoft's own documentation.
 

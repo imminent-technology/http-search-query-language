@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html",
   "mediaType": "None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.0`); no dedicated media type for DynamoDB's KeyConditionExpression syntax.",
   "category": "Document/NoSQL",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Query - Amazon DynamoDB API Reference", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html", "date": null },
     { "title": "Amazon DynamoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Amazon_DynamoDB", "date": "2026-06-11" }

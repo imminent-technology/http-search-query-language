@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.jooq.org/",
   "mediaType": "Not applicable — jOOQ is an in-process Java DSL/library that generates SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
   "category": "Language-integrated",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "mature",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "jOOQ — Using SQL in Java is simple!", "publisher": "Data Geekery GmbH", "url": "https://www.jooq.org/", "date": null },
     { "title": "The SELECT statement", "publisher": "jOOQ Manual", "url": "https://www.jooq.org/doc/latest/manual/sql-building/sql-statements/select-statement/", "date": null }

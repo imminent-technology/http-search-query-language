@@ -4,6 +4,15 @@
   "officialDocUrl": "https://github.com/taxilang/taxilang",
   "mediaType": "None known — no registered or documented media type could be verified.",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "partial",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "taxilang/taxilang", "publisher": "Taxi Lang project (Orbital)", "url": "https://github.com/taxilang/taxilang", "date": null }
   ],

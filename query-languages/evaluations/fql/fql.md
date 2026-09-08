@@ -6,6 +6,8 @@
 - Official docs: [Facebook Query Language](https://en.wikipedia.org/wiki/Facebook_Query_Language) (list.csv links directly to Wikipedia, since Facebook's own FQL documentation was removed after deprecation)
 - Media type: None known — the (now-deprecated) Facebook Query Language was submitted as a `q` parameter of Facebook's Graph API using generic form/JSON encoding; the feature has been retired.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: none · JavaScript: none · Java: none · Go: none · Rust: none · .NET: none
+- Support Model: deprecated
 
 > Note: FQL has been fully deprecated since 2016 (Facebook API 2.0 removal); this evaluation is single-sourced to Wikipedia since the language's own vendor documentation no longer exists.
 

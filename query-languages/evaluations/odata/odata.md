@@ -6,6 +6,8 @@
 - **Official docs**: [odata.org](https://www.odata.org/)
 - **Media type**: `application/json` with OData-specific parameters (e.g. `odata.metadata=minimal|full|none`, `odata.streaming=true`, `odata.ieee754compatible=true`) per the OData JSON Format v4.01 spec; older services also supported `application/atom+xml` (Atom), now a deprecated committee-specification-stage format as of OData 4.0. No dedicated `application/odata+json` (or similar) media type is registered in the IANA Media Types registry as of this writing.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: partial · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

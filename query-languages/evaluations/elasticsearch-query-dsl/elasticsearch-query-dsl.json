@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html",
   "mediaType": "None known — both engines accept Query DSL as a JSON `application/json` request body on `POST _search` (or `GET _search` with a body), not a dedicated registered media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Query DSL", "publisher": "Elastic", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html", "date": null },
     { "title": "Query DSL", "publisher": "OpenSearch Project (Linux Foundation)", "url": "https://docs.opensearch.org/latest/query-dsl/", "date": null }

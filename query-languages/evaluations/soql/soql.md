@@ -6,6 +6,8 @@
 - **Official docs**: [Salesforce Object Query Language (SOQL)](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)
 - **Media type**: None known — submitted as a URL-encoded `q` query-string parameter on Salesforce's REST API.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

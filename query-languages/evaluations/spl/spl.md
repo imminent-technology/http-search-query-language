@@ -6,6 +6,8 @@
 - Official docs: [Introduction (SPL2 Search Reference)](https://help.splunk.com/en?resourceId=SCS_SearchReference_Introduction)
 - Media type: None known — submitted as a `search` form field via Splunk's REST API (`application/x-www-form-urlencoded`).
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- Support Model: single-vendor-commercial
 
 > Note: list.csv's SPL row has a broken, self-referential link (`[Splunk Search Processing Language](Splunk Search Processing Language)`), a bug flagged back in the project's Phase A but never fixed in the source file. [list.md](../../list.md) has the correct URL (`docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction`), which redirects to the `help.splunk.com` page cited above.
 

@@ -6,6 +6,8 @@
 - **Official docs**: [Retrieving Data](https://firebase.google.com/docs/database/admin/retrieve-data)
 - **Media type**: None known — query parameters are passed via the URL query string on the REST API; responses use generic `application/json`.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

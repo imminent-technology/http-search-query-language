@@ -6,6 +6,8 @@
 - **Official docs**: [Read Documents](https://www.mongodb.com/docs/manual/tutorial/query-documents/)
 - **Media type**: None known — MongoDB's wire protocol uses BSON, and the Atlas Data API wraps queries in generic `application/json`.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

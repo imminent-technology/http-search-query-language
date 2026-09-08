@@ -4,6 +4,15 @@
   "officialDocUrl": "https://en.m.wikipedia.org/wiki/Datalog",
   "mediaType": "`application/vnd.datalog` — registered in the IANA Media Types registry (registrant: Simon Johnston).",
   "category": "Graph",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Datalog", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Datalog", "date": "2026-08-24" }
   ],

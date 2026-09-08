@@ -6,6 +6,8 @@
 - **Official docs**: [Search with POST](https://www.meilisearch.com/docs/reference/api/search)
 - **Media type**: None known — Meilisearch's API accepts `filter`, `sort`, and pagination parameters as fields in the JSON body of `POST /indexes/{index_uid}/search`, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: mature · .NET: mature
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

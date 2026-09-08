@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.dynatrace.com/support/help/platform/grail/dynatrace-query-language",
   "mediaType": "None known — Dynatrace's Grail Query REST API accepts DQL as a JSON field within a generic `application/json` body.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Dynatrace Query Language", "publisher": "Dynatrace LLC", "url": "https://docs.dynatrace.com/docs/platform/grail/dynatrace-query-language", "date": "2026-01-28" },
     { "title": "Dynatrace", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Dynatrace", "date": "2026-09-01" }

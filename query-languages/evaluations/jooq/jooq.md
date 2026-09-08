@@ -6,6 +6,8 @@
 - **Official docs**: [jOOQ — Using SQL in Java is simple!](https://www.jooq.org/)
 - **Media type**: Not applicable — jOOQ is an in-process Java DSL/library that generates SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: none · JavaScript: none · Java: mature · Go: none · Rust: none · .NET: none
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

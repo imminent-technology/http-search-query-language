@@ -6,6 +6,8 @@
 - Official docs: [json-query-language](https://github.com/christosgkoros/json-query-language)
 - Media type: None known — filter objects are embedded as a JSON Schema-validated field within a generic `application/json` request body (per the project's OpenAPI 3.1/3.2 integration examples); no dedicated media type is registered or documented for the predicate language itself.
 - Evaluated: 2026-09-07
+- Client Libraries: Python: none · JavaScript: partial · Java: none · Go: none · Rust: none · .NET: none
+- Support Model: single-vendor-small-team
 
 > Note: this is a distinct, unrelated project that happens to share the exact title "JSON Query Language" with the [jsonquerylang.org project](../json-query-language/json-query-language.md) already cataloged in this repository — see this file's disambiguated slug/label. No independent secondary source exists for this pre-1.0, single-maintainer project, so this evaluation is sourced from the project's own README, SPEC.md, and CHANGELOG.md (re-verified 2026-09-07 against the current `main` branch, tag v0.3.1 — the schema/grammar itself is unchanged from v0.3.0; v0.3.1 only removed an npm/GitHub Packages publish attempt and fixed a broken install instruction).
 

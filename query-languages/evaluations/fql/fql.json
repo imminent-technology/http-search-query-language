@@ -4,6 +4,15 @@
   "officialDocUrl": "https://en.wikipedia.org/wiki/Facebook_Query_Language",
   "mediaType": "None known — the (now-deprecated) Facebook Query Language was submitted as a `q` parameter of Facebook's Graph API using generic form/JSON encoding; the feature has been retired.",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "deprecated",
   "sources": [
     { "title": "Facebook Query Language", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Facebook_Query_Language", "date": "2026-06-30" }
   ],

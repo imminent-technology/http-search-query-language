@@ -6,6 +6,8 @@
 - Official docs: [Searching Your Data with Amazon CloudSearch](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html)
 - Media type: None known — queries are passed as URL query-string parameters (`q`, `q.parser`) on the CloudSearch search endpoint; no dedicated media type.
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

@@ -6,6 +6,8 @@
 - **Official docs**: [RSQL / FIQL parser](https://github.com/jirutka/rsql-parser)
 - **Media type**: None known — RSQL/FIQL expressions are embedded as a plain-text query-string parameter (e.g. a `query` or `filter` param) on a REST API's URL; no IANA-registered or vendor-documented media type exists for either syntax.
 - **Evaluated**: 2026-09-05
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: mature · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

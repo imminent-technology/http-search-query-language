@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html",
   "mediaType": "Not applicable — like HQL, JPQL is used internally by the JPA provider and is not transmitted over HTTP with a dedicated media type.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "mature",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "Chapter 34: The Java Persistence Query Language", "publisher": "Oracle", "url": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html", "date": null },
     { "title": "Jakarta Persistence", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jakarta_Persistence", "date": "2025-10-30" }

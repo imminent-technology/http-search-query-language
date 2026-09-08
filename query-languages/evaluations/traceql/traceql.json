@@ -4,6 +4,15 @@
   "officialDocUrl": "https://grafana.com/docs/tempo/latest/traceql/",
   "mediaType": "None known — Tempo's HTTP Search API accepts a TraceQL query as a URL query parameter (`q=`) on `GET /api/search`, not a dedicated media type.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "TraceQL", "publisher": "Grafana Labs", "url": "https://grafana.com/docs/tempo/latest/traceql/", "date": null },
     { "title": "Construct a TraceQL query", "publisher": "Grafana Labs", "url": "https://grafana.com/docs/tempo/latest/traceql/construct-traceql-queries/", "date": null },

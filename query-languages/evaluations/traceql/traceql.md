@@ -6,6 +6,8 @@
 - **Official docs**: [TraceQL](https://grafana.com/docs/tempo/latest/traceql/)
 - **Media type**: None known — Tempo's HTTP Search API accepts a TraceQL query as a URL query parameter (`q=`) on `GET /api/search`, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: partial · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

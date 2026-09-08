@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/",
   "mediaType": "None known — NRQL strings are submitted as a field inside a GraphQL request (`application/json`) to New Relic's NerdGraph API.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Get started with NRQL: the language of data", "publisher": "New Relic, Inc.", "url": "https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/", "date": "2026" },
     { "title": "New Relic", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/New_Relic", "date": "2026-09-02" }

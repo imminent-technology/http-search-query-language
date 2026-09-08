@@ -4,6 +4,15 @@
   "officialDocUrl": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm",
   "mediaType": "None known — Salesforce's REST API accepts SOSL as a `q` URL query parameter on the `GET /services/data/vXX.X/search` endpoint, not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Salesforce Object Search Language (SOSL)", "publisher": "Salesforce", "url": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm", "date": null },
     { "title": "SOSL Syntax", "publisher": "Salesforce", "url": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl_syntax.htm", "date": null }

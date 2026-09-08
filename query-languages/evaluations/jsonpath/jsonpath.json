@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.rfc-editor.org/rfc/rfc9535",
   "mediaType": "`application/jsonpath` — IANA-registered per RFC 9535 §3.1 (intended usage: COMMON).",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "RFC 9535: JSONPath: Query Expressions for JSON", "publisher": "IETF (RFC Editor)", "url": "https://www.rfc-editor.org/rfc/rfc9535", "date": "2024-02" },
     { "title": "JSONPath", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/JSONPath", "date": "2026-08-07" },

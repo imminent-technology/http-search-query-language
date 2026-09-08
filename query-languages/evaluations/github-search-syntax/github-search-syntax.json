@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax",
   "mediaType": "None known — GitHub's REST API accepts search queries as a `q` URL query parameter on `GET` endpoints (e.g. `GET /search/repositories?q=...&sort=...&order=...`), not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Understanding the search syntax", "publisher": "GitHub", "url": "https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax", "date": null },
     { "title": "REST API endpoints for search", "publisher": "GitHub", "url": "https://docs.github.com/en/rest/search/search", "date": null }

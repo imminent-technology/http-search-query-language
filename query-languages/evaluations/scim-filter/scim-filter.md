@@ -6,6 +6,8 @@
 - **Official docs**: [RFC 7644 §3.4.2.2 "Filtering"](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2)
 - **Media type**: `application/scim+json` — IANA-registered per RFC 7644 §8.1 (intended usage: COMMON, with restrictions).
 - **Evaluated**: 2026-09-05
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

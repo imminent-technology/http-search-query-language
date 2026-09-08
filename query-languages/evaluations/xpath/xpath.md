@@ -6,6 +6,8 @@
 - Official docs: [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath)
 - Media type: None known — no IANA-registered media type exists; XPath expressions are normally embedded within another document (XSLT, XQuery, WebDAV SEARCH request bodies) rather than transmitted standalone.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- Support Model: formal-standard-multi-vendor
 
 ## Scores
 

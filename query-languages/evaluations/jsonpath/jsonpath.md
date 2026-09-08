@@ -6,6 +6,8 @@
 - **Official docs**: [RFC 9535 - JSONPath: Query Expressions for JSON](https://www.rfc-editor.org/rfc/rfc9535)
 - **Media type**: `application/jsonpath` — IANA-registered per RFC 9535 §3.1 (intended usage: COMMON).
 - **Evaluated**: 2026-09-05
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

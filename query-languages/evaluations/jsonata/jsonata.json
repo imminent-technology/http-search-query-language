@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.jsonata.org/overview",
   "mediaType": "application/jsonata (an unregistered, community-proposed media type suggested in JSONata discussions; not an IANA-registered type). JSONata expressions themselves are typically embedded as plain strings within a host application's own JSON payload or configuration.",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "partial",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "Path Operators", "publisher": "JSONata.org", "url": "https://docs.jsonata.org/path-operators", "date": null },
     { "title": "Sorting, Grouping, and Reducing", "publisher": "JSONata.org", "url": "https://docs.jsonata.org/sorting-grouping", "date": null },

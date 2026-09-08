@@ -4,6 +4,15 @@
   "officialDocUrl": "https://jqlang.org/manual/",
   "mediaType": "None known — jq programs are plain text filter expressions, typically supplied as a command-line argument or a `.jq` script file; there is no registered media type for jq filter syntax itself (the data it operates on is ordinary `application/json`).",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "partial",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "jq Manual", "publisher": "jqlang / jq project", "url": "https://jqlang.org/manual/", "date": null },
     { "title": "jq", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jq_(programming_language)", "date": null }

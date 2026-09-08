@@ -6,6 +6,8 @@
 - **Official docs**: [EQL (Event Query Language) overview](https://www.elastic.co/guide/en/elasticsearch/reference/current/eql.html)
 - **Media type**: application/json (EQL queries are submitted as a JSON request body's `query` string field to Elasticsearch's `_eql/search` REST endpoint; there is no dedicated media type for EQL syntax itself).
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: mature · JavaScript: partial · Java: mature · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

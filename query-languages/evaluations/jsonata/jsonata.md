@@ -6,6 +6,8 @@
 - **Official docs**: [JSONata Overview](https://docs.jsonata.org/overview)
 - **Media type**: application/jsonata (an unregistered, community-proposed media type suggested in JSONata discussions; not an IANA-registered type). JSONata expressions themselves are typically embedded as plain strings within a host application's own JSON payload or configuration.
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: partial · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

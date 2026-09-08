@@ -4,6 +4,15 @@
   "officialDocUrl": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm",
   "mediaType": "None known — submitted as a URL-encoded `q` query-string parameter on Salesforce's REST API.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Salesforce Object Query Language (SOQL)", "publisher": "Salesforce, Inc.", "url": "https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm", "date": null }
   ],

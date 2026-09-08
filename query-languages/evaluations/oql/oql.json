@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language",
   "mediaType": "None known — no registered or documented media type could be verified.",
   "category": "Niche/misc",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Object Query Language", "publisher": "IBM Corporation", "url": "https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language", "date": "2026-03-30" },
     { "title": "Object Query Language", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Object_Query_Language", "date": "2025-12-27" }
@@ -21,6 +30,7 @@
     "orthogonality": { "score": 3, "rationale": "A basic SQL-like statement structure (SELECT/INSERT/UPDATE/DELETE-style) that is moderately consistent across the documented statement types." }
   },
   "overallScore": 2.0,
+  "designQualityScore": 2.1,
   "summary": "The OQL documented at list.csv's linked URL is IBM's own proprietary, SQL-like configuration-database language for its Network Manager product — a naming discrepancy worth noting, since the name 'Object Query Language' more commonly refers to the ODMG's much more ambitious (but per Wikipedia, never fully implemented) object-database query standard; either way, this is a narrow, low-adoption, single-vendor tool-specific language with no meaningful extensibility or standardization.",
   "example": {
     "scenario": "Retrieve products where category = \"electronics\" and price > 100, sorted by price descending, page 2 of 10 per page.",

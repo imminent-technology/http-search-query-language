@@ -6,6 +6,8 @@
 - **Official docs**: [graphql.org](https://graphql.org/)
 - **Media type**: `application/graphql-response+json` (responses) and `application/json` (requests) per the GraphQL-over-HTTP specification (graphql.github.io/graphql-over-http). Not registered with IANA. (A legacy, non-standard `application/graphql` convention for raw request bodies exists in some older server implementations but is not part of any official spec.)
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: open-source-community
 
 ## Scores
 

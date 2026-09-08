@@ -4,6 +4,15 @@
   "officialDocUrl": "https://jmespath.org/specification.html",
   "mediaType": "None known — no IANA-registered or vendor-documented media type; JMESPath expressions are passed as plain-text CLI arguments (AWS CLI/Azure CLI `--query`) or embedded as string fields in application code, not transmitted as a request body with a dedicated content type.",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "partial",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "JMESPath Specification", "publisher": "JMESPath (James Saryerwinnie)", "url": "https://jmespath.org/specification.html", "date": null },
     { "title": "JMESPath Libraries", "publisher": "JMESPath (James Saryerwinnie)", "url": "https://jmespath.org/libraries.html", "date": null },

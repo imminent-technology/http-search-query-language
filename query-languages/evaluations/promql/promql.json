@@ -4,6 +4,15 @@
   "officialDocUrl": "https://prometheus.io/docs/prometheus/latest/querying/basics/",
   "mediaType": "None known — Prometheus's HTTP API accepts PromQL as a URL query parameter or `application/x-www-form-urlencoded` field, not a dedicated media type.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Querying basics — Prometheus Documentation", "publisher": "Prometheus Authors", "url": "https://prometheus.io/docs/prometheus/latest/querying/basics/", "date": null },
     { "title": "Prometheus (software)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Prometheus_(software)", "date": "2026-08-25" }

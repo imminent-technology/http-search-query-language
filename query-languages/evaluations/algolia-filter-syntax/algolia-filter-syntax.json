@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.algolia.com/doc/api-reference/api-parameters/filters/",
   "mediaType": "None known — Algolia's Search API accepts `filters` as a string field in the JSON body of `POST /1/indexes/{indexName}/query`, not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "filters", "publisher": "Algolia", "url": "https://www.algolia.com/doc/api-reference/api-parameters/filters/", "date": null }
   ],

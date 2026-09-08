@@ -4,6 +4,15 @@
   "officialDocUrl": "https://typesense.org/docs/latest/api/search.html",
   "mediaType": "None known — Typesense's API accepts `filter_by`, `sort_by`, and pagination as query parameters on `GET /collections/{collection}/documents/search`, not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "Search", "publisher": "Typesense", "url": "https://typesense.org/docs/latest/api/search.html", "date": null }
   ],

@@ -6,6 +6,8 @@
 - Official docs: [taxilang/taxilang](https://github.com/taxilang/taxilang)
 - Media type: None known — no registered or documented media type could be verified.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: none · JavaScript: none · Java: partial · Go: none · Rust: none · .NET: none
+- Support Model: single-vendor-small-team
 
 > Note: No independent secondary source (e.g. Wikipedia) exists for this small open-source project, so this evaluation is single-sourced from its GitHub repository/documentation.
 

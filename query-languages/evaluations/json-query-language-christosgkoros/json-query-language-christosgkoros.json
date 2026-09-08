@@ -4,6 +4,15 @@
   "officialDocUrl": "https://github.com/christosgkoros/json-query-language",
   "mediaType": "None known — filter objects are embedded as a JSON Schema-validated field within a generic `application/json` request body (per the project's OpenAPI 3.1/3.2 integration examples); no dedicated media type is registered or documented for the predicate language itself.",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "partial",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "json-query-language (README, v0.3.1)", "publisher": "Christos Gkoros (GitHub)", "url": "https://github.com/christosgkoros/json-query-language", "date": null },
     { "title": "SPEC.md — JSON Query Language Specification (v0.3.0 grammar)", "publisher": "Christos Gkoros (GitHub)", "url": "https://github.com/christosgkoros/json-query-language/blob/main/SPEC.md", "date": null },

@@ -6,6 +6,8 @@
 - Official docs: [Datalog](https://en.m.wikipedia.org/wiki/Datalog) (per list.csv; Datalog has no single official vendor documentation, so Wikipedia is used as the sole source, per the plan's allowance for niche/academic entries)
 - Media type: `application/vnd.datalog` — registered in the IANA Media Types registry (registrant: Simon Johnston).
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: partial · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

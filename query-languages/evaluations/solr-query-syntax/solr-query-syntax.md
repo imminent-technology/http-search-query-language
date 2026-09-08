@@ -6,6 +6,8 @@
 - Official docs: [The Standard Query Parser](https://solr.apache.org/guide/6_6/the-standard-query-parser.html)
 - Media type: None known — Solr accepts query strings as URL parameters or within the JSON Request API's generic `application/json`.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: partial · JavaScript: partial · Java: mature · Go: partial · Rust: partial · .NET: partial
+- Support Model: open-source-community
 
 ## Scores
 

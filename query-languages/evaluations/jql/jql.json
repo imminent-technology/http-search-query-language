@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.atlassian.com/software/jira/guides/jql/overview",
   "mediaType": "None known — Jira's REST API accepts JQL as a `jql` URL query parameter on `GET` search endpoints, or as a JSON string field in the request body on the equivalent `POST` endpoints, not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "The Jira Query Language (JQL) cheat sheet", "publisher": "Atlassian", "url": "https://www.atlassian.com/software/jira/guides/jql/cheat-sheet", "date": null },
     { "title": "JQL functions", "publisher": "Atlassian", "url": "https://support.atlassian.com/jira-software-cloud/docs/jql-functions/", "date": null }

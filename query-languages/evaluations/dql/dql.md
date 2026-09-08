@@ -6,6 +6,8 @@
 - Official docs: [Dynatrace Query Language](https://docs.dynatrace.com/docs/platform/grail/dynatrace-query-language) (list.csv links the equivalent `dynatrace.com/support/help` URL, which redirects here)
 - Media type: None known — Dynatrace's Grail Query REST API accepts DQL as a JSON field within a generic `application/json` body.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- Support Model: single-vendor-commercial
 
 ## Scores
 

@@ -4,6 +4,15 @@
   "officialDocUrl": "https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/",
   "mediaType": "None known — KQL text is submitted as a JSON field inside a generic `application/json` body via the Azure Data Explorer/Log Analytics REST APIs.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Kusto Query Language (KQL) overview", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/", "date": null }
   ],

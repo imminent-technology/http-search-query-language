@@ -6,6 +6,8 @@
 - **Official docs**: [Hibernate - Query Language](https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm)
 - **Media type**: Not applicable — HQL is parsed and translated to SQL inside the JVM by Hibernate; it is not transmitted over HTTP with its own media type.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: mature · Go: none · Rust: none · .NET: none
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

@@ -4,6 +4,15 @@
   "officialDocUrl": "https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2",
   "mediaType": "`application/scim+json` — IANA-registered per RFC 7644 §8.1 (intended usage: COMMON, with restrictions).",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "System for Cross-domain Identity Management: Protocol (RFC 7644), Section 3.4.2.2 \"Filtering\"", "publisher": "IETF (P. Hunt, Ed., K. Grizzle, M. Ansari, E. Wahlstroem, C. Mortimore)", "url": "https://datatracker.ietf.org/doc/html/rfc7644", "date": "2015-09" },
     { "title": "System for Cross-domain Identity Management", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/System_for_Cross-domain_Identity_Management", "date": null }

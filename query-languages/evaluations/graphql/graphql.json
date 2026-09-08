@@ -4,6 +4,15 @@
   "officialDocUrl": "https://graphql.org/",
   "mediaType": "`application/graphql-response+json` (responses) and `application/json` (requests) per the GraphQL-over-HTTP specification (graphql.github.io/graphql-over-http). Not registered with IANA. (A legacy, non-standard `application/graphql` convention for raw request bodies exists in some older server implementations but is not part of any official spec.)",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "The query language for modern APIs", "publisher": "The GraphQL Foundation", "url": "https://graphql.org/", "date": null },
     { "title": "GraphQL", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/GraphQL", "date": "2026-09-01" },

@@ -29,6 +29,36 @@ Every score must be accompanied by a short rationale (1-3 sentences) grounded in
 - **Performance**: 5 = language design enables implementations to optimize (indexes, query planning); 1 = typically forces full scans or has no optimization surface.
 - **Orthogonality**: 5 = features are independent, composable, and consistent (see sub-attributes in [`../evaluation.md`](../evaluation.md)); 1 = features overlap, interfere, or require special-casing to combine.
 
+When a language has more than one independent implementation (e.g. SQL, SPARQL, XPath/XQuery, GraphQL, OData, Cypher/openCypher, CEL, JSONPath), the **Performance** and **Extensibility** rationales must name the concrete implementation/engine the score reflects (e.g. "reference: PostgreSQL's planner") rather than treating the score as a property of the abstract grammar.
+
+## Client Library / Parser Availability scale
+
+Recorded per language as a `clientLibraries` object with one of these 3 states for each of 6 mainstream host languages (Python, JavaScript/TypeScript, Java, Go, Rust, C#/.NET) — not a 1-5 score, since the useful information is *which* languages are covered, not an aggregate number:
+
+| State | Meaning |
+|---|---|
+| `mature` | A widely-used, actively maintained parser/SDK/driver exists for this language/host-language pair. |
+| `partial` | Something exists but is unmaintained, incomplete, or an experimental/community-only project. |
+| `none` | No known library — an adopter must hand-roll a parser or build the syntax as raw strings. |
+
+Never guess: if availability can't be confirmed one way or the other from a citable source, record `partial` and say so in a short accompanying note rather than asserting `mature` or `none`.
+
+## Support Model scale
+
+Recorded per language as a single `supportModel` enum value — the kind of backing an adopter can actually rely on for help, distinct from the numeric **Community and Ecosystem** score:
+
+| Value | Meaning | Example |
+|---|---|---|
+| `formal-standard-multi-vendor` | Governed by a formal spec with multiple independent implementations/vendors. | SQL, SPARQL |
+| `single-vendor-commercial` | Backed by one company you can pay for support; not community-governed. | SOQL (Salesforce), DAX (Microsoft) |
+| `open-source-community` | No single formal owner, but a broad, active multi-contributor open-source community. | GraphQL, Cypher/openCypher |
+| `single-vendor-small-team` | Open source but maintained by a small team/single company with limited bus factor. | Many niche/DSL-style entries |
+| `deprecated` | No longer actively maintained or officially retired. | FQL (Facebook) |
+
+## Migration status
+
+`clientLibraries` and `supportModel` were added to the schema after the first 68 languages in this portfolio were evaluated. They are **required for every new language added from this point forward**. The original 68 have since been retrofitted with both fields (per-language JSON/MD, `summary.json`, and the `Support` column in `summary.md`) in a dedicated follow-up pass, so the whole portfolio is now consistent.
+
 ## Category taxonomy
 
 Assigned per language for grouping in `summary.md` and, later, the article. Adjustable during article writing.
@@ -67,6 +97,15 @@ When a language's own core spec doesn't natively support one of those three ingr
   "slug": "string, kebab-case",
   "officialDocUrl": "string, from list.csv",
   "category": "string, one of the taxonomy above",
+  "clientLibraries": {
+    "python": "mature|partial|none",
+    "javascript": "mature|partial|none",
+    "java": "mature|partial|none",
+    "go": "mature|partial|none",
+    "rust": "mature|partial|none",
+    "dotnet": "mature|partial|none"
+  },
+  "supportModel": "string, one of: formal-standard-multi-vendor | single-vendor-commercial | open-source-community | single-vendor-small-team | deprecated",
   "sources": [
     { "title": "string, the page/article title", "publisher": "string, the site/organization responsible for the source (e.g. Wikipedia, the standards body, the vendor)", "url": "string", "date": "YYYY-MM-DD, YYYY-MM, or null if no fixed publication/revision date exists (e.g. continuously-updated docs)" }
   ],
@@ -100,17 +139,19 @@ When a language's own core spec doesn't natively support one of those three ingr
 
 ## Per-language Markdown (`<slug>/<slug>.md`)
 
-Mirrors the JSON for human reading: title + doc link, category, a scores table (criterion | score | rationale), the summary paragraph, an "Example" section, and a "Sources" list. Sources are cited in APA style so the publisher/organization (provenance) is always visible alongside the title and date, e.g. `- Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).` or `- The PostgreSQL Global Development Group. (n.d.). [*Part II. The SQL Language*](https://www.postgresql.org/docs/current/sql.html).` when no fixed publication/revision date is available (common for continuously-updated docs and marketing pages).
+Mirrors the JSON for human reading: title + doc link, category, a "Client Libraries" line listing the 6 host languages and their state (e.g. `Python: mature · JavaScript: mature · Java: partial · Go: none · Rust: none · .NET: mature`), a "Support Model:" line with the enum value, a scores table (criterion | score | rationale), the summary paragraph, an "Example" section, and a "Sources" list. The Client Libraries and Support Model lines go right after the Category line and before the scores table. Sources are cited in APA style so the publisher/organization (provenance) is always visible alongside the title and date, e.g. `- Wikipedia. (2026, August 23). [*SQL*](https://en.wikipedia.org/wiki/SQL).` or `- The PostgreSQL Global Development Group. (n.d.). [*Part II. The SQL Language*](https://www.postgresql.org/docs/current/sql.html).` when no fixed publication/revision date is available (common for continuously-updated docs and marketing pages).
 
 The "## Example" section goes after "## Summary" and before "## Sources". It contains a one-line **Scenario:** restatement of the canonical scenario (see "Example scenario" above), a fenced code block with the query in the language's own syntax, and — only when needed — a short closing sentence noting any of the three ingredients (filter/sort/pagination) the language's core spec doesn't natively support.
 
 ## Aggregate files
 
-- `summary.json`: array of compact objects `{ title, slug, category, officialDocUrl, mediaType, scores: { <criterion>: number }, overallScore, designQualityScore }` for all evaluated languages — data-viz friendly.
-- `summary.md`: comparison matrix (languages as rows grouped by category, 10 criteria as columns, plus `Avg` (overallScore) and `DQ` (designQualityScore)) plus a short methodology note linking back to this rubric and to `../evaluation.md`.
+- `summary.json`: array of compact objects `{ title, slug, category, officialDocUrl, mediaType, scores: { <criterion>: number }, overallScore, designQualityScore, supportModel }` for all evaluated languages — data-viz friendly. `clientLibraries` is intentionally NOT duplicated here — a 6-key matrix per language is too wide for this compact, chart-friendly shape; readers needing it should consult the per-language file.
+- `summary.md`: comparison matrix (languages as rows grouped by category, 10 criteria as columns, plus `Avg` (overallScore), `DQ` (designQualityScore), and `Support` (supportModel, short enum label)) plus a short methodology note linking back to this rubric and to `../evaluation.md`. Languages evaluated before the `supportModel`/`clientLibraries` schema addition leave the `Support` cell blank rather than guessing a value.
 
 ## Sourcing constraint
 
 No general web-search tool is available for this evaluation — secondary sources must be specific, identifiable URLs (Wikipedia, standards bodies, vendor docs/blogs) rather than search-engine queries. Niche/low-documentation languages may only have one usable source; when that happens it's noted explicitly in `sources` rather than fabricating a second one.
+
+**Exception for `clientLibraries` research**: once a candidate package/library name is already known (from the language's own official docs "SDKs/clients/drivers" page or its GitHub org), fetching that specific package's project page on a registry (PyPI, npm, Maven Central, crates.io, NuGet) to confirm it exists and check its maintenance status is allowed — this is a specific, identifiable URL, not a general search. Still never run an open-ended search query against a registry. If a language/host-language pair can't be confirmed this way, record `partial` with a short note rather than guessing `mature` or `none`.
 
 Each source must record its actual page/article title, its publisher/organization (the entity providing provenance — e.g. "Wikipedia", "International Organization for Standardization (ISO)", "The PostgreSQL Global Development Group") and, where the source exposes one, its publication or last-revised date (fetched from the page itself, e.g. a Wikipedia "last edited" timestamp, a standard's "Publication date", or a copyright/footer notice for the publisher name). Never fabricate a title, publisher, or date — use `null`/`(n.d.)` when the source has no stable date.

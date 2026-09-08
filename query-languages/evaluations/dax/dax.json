@@ -4,6 +4,15 @@
   "officialDocUrl": "https://learn.microsoft.com/en-us/dax/",
   "mediaType": "None known — DAX queries are submitted inside a generic `application/json` body via the Power BI/Analysis Services REST APIs.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Data Analysis Expressions (DAX) Reference", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/dax/", "date": null },
     { "title": "Data Analysis Expressions", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Data_Analysis_Expressions", "date": "2026-05-31" }

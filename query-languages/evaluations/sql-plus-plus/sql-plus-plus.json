@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.couchbase.com/sqlplusplus/",
   "mediaType": "None known — Couchbase's Query REST API accepts SQL++/N1QL as a `\"statement\"` field inside a generic `application/json` body.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "SQL++", "publisher": "Couchbase, Inc.", "url": "https://www.couchbase.com/sqlplusplus/", "date": null }
   ],

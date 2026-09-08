@@ -6,6 +6,8 @@
 - Official docs: [Language Integrated Query (LINQ) - C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)
 - Media type: Not applicable — LINQ is a .NET language-integrated query syntax compiled into expression trees at compile time; it has no independent wire format.
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: none · Go: none · Rust: none · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

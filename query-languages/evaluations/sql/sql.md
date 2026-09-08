@@ -6,6 +6,8 @@
 - **Official docs**: [SQL — Wikipedia](https://en.wikipedia.org/wiki/SQL)
 - **Media type**: `application/sql` — IANA-registered, RFC 6922.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

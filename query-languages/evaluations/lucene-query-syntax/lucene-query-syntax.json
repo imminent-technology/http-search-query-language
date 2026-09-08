@@ -4,6 +4,15 @@
   "officialDocUrl": "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html",
   "mediaType": "None known — Lucene query strings are embedded as plain text inside the `q` parameter of systems (Solr, Elasticsearch) that wrap it in their own generic JSON APIs.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Apache Lucene - Query Parser Syntax", "publisher": "The Apache Software Foundation", "url": "https://lucene.apache.org/core/2_9_4/queryparsersyntax.html", "date": "2013-06-21" },
     { "title": "Apache Lucene", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_Lucene", "date": "2026-08-12" }

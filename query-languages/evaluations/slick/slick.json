@@ -4,6 +4,15 @@
   "officialDocUrl": "https://scala-slick.org/",
   "mediaType": "Not applicable — Slick is an in-process Scala library that compiles queries to SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.",
   "category": "Language-integrated",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "partial",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Functional Relational Mapping for Scala (Slick homepage)", "publisher": "Slick / Lightbend community", "url": "https://scala-slick.org/", "date": null },
     { "title": "Queries", "publisher": "Slick 3.6.1 Documentation", "url": "https://scala-slick.org/doc/stable/queries.html", "date": null }

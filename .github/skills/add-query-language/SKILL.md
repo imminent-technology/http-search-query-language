@@ -1,6 +1,6 @@
 ---
 name: add-query-language
-description: 'Add a new query language to this repository''s portfolio: catalog it in list.csv/list.md, research and score it against the 10-criterion rubric, create its evaluation folder (JSON + Markdown), and update the aggregate summary.json/summary.md — including the Media types table and the Observations section. Use whenever asked to add, catalog, or evaluate a new query language for this project.'
+description: 'Add a new query language to this repository''s portfolio: catalog it in list.csv/list.md, research and score it against the 10-criterion rubric plus the clientLibraries/supportModel fields, create its evaluation folder (JSON + Markdown), and update the aggregate summary.json/summary.md — including the Media types table and the Observations section. Use whenever asked to add, catalog, or evaluate a new query language for this project.'
 argument-hint: 'Name of the query language to add (e.g. "JMESPath")'
 ---
 
@@ -13,8 +13,8 @@ The user wants to add a query language that isn't yet in `query-languages/list.c
 ## Reference files (source of truth — read before acting, don't duplicate their content here)
 
 - [`query-languages/list.csv`](../../../query-languages/list.csv) / [`list.md`](../../../query-languages/list.md) — the catalog table.
-- [`query-languages/evaluation.md`](../../../query-languages/evaluation.md) — the 10 criteria definitions (Expressiveness, Simplicity, Flexibility, Community and Ecosystem, Extensibility, Transport Compatibility, Standardization, Security, Performance, Orthogonality).
-- [`query-languages/evaluations/rubric.md`](../../../query-languages/evaluations/rubric.md) — the 1-5 scoring scale, per-criterion anchors, category taxonomy, slug-naming rule, per-language JSON/Markdown schema, and sourcing constraints.
+- [`query-languages/evaluation.md`](../../../query-languages/evaluation.md) — the 10 criteria definitions (Expressiveness, Simplicity, Flexibility, Community and Ecosystem, Extensibility, Transport Compatibility, Standardization, Security, Performance, Orthogonality) plus the two decision-oriented, non-scored fields (Client Library / Parser Availability, Support Model).
+- [`query-languages/evaluations/rubric.md`](../../../query-languages/evaluations/rubric.md) — the 1-5 scoring scale, per-criterion anchors, the `clientLibraries`/`supportModel` scales, category taxonomy, slug-naming rule, per-language JSON/Markdown schema, and sourcing constraints (including the registry-page exception for `clientLibraries` research).
 - [`query-languages/evaluations/summary.json`](../../../query-languages/evaluations/summary.json) / [`summary.md`](../../../query-languages/evaluations/summary.md) — aggregate outputs to update.
 - Any existing folder under `query-languages/evaluations/` (e.g. `graphql/graphql.json` + `graphql/graphql.md`) as a concrete formatting example.
 
@@ -57,14 +57,16 @@ No general web-search tool is available for this work — only fetch specific, i
 - Fetch the official docs URL and any spec/standard pages it links to.
 - Look for a canonical Wikipedia page.
 - For the media type, check the [IANA Media Types registry](https://www.iana.org/assignments/media-types/media-types.xhtml) and the vendor's/standard's own docs. Don't infer it — if nothing verifiable turns up, record "None known" (or "Not applicable" if the language has no wire format at all, e.g. a language-integrated/in-process API).
+- For `clientLibraries`, check each of the 6 target host languages (Python, JavaScript/TypeScript, Java, Go, Rust, C#/.NET) against the official docs' "SDKs/clients/drivers" page or the language's GitHub org, then confirm any candidate package on its registry project page (PyPI/npm/Maven Central/crates.io/NuGet) per the registry-page exception in `rubric.md`'s sourcing constraint. Record `mature`/`partial`/`none` per language — never guess; use `partial` with a short note when it can't be confirmed either way.
+- For `supportModel`, classify per the enum in `rubric.md` (`formal-standard-multi-vendor`, `single-vendor-commercial`, `open-source-community`, `single-vendor-small-team`, `deprecated`) based on the same sources used for Standardization/Community and Ecosystem.
 
 ### 4. Score the language
 
-Follow `evaluation.md` for what each criterion means and `rubric.md` for the 1-5 scale and per-criterion anchors. For each of the 10 criteria (`expressiveness`, `simplicity`, `flexibility`, `communityAndEcosystem`, `extensibility`, `transportCompatibility`, `standardization`, `security`, `performance`, `orthogonality`) write a 1-3 sentence rationale grounded in a cited source — never an unsupported score. Assign a `category` from the existing taxonomy (propose a new one only if none genuinely fit, and confirm it with the user first). Compute `overallScore` as the unweighted average of the 10 scores, rounded to one decimal, and `designQualityScore` as the unweighted average of the same 10 minus `communityAndEcosystem` and `standardization` (8 scores), also rounded to one decimal — see `rubric.md` for why that second metric exists.
+Follow `evaluation.md` for what each criterion means and `rubric.md` for the 1-5 scale and per-criterion anchors. For each of the 10 criteria (`expressiveness`, `simplicity`, `flexibility`, `communityAndEcosystem`, `extensibility`, `transportCompatibility`, `standardization`, `security`, `performance`, `orthogonality`) write a 1-3 sentence rationale grounded in a cited source — never an unsupported score. For `performance` and `extensibility` on a language with more than one independent implementation, name the concrete implementation/engine the rationale reflects (see `rubric.md`). Assign a `category` from the existing taxonomy (propose a new one only if none genuinely fit, and confirm it with the user first). Also assign `clientLibraries` (6-key `mature`/`partial`/`none` object) and `supportModel` (one enum value), per `rubric.md`'s scales, with a short justification for `supportModel`. Compute `overallScore` as the unweighted average of the 10 scores, rounded to one decimal, and `designQualityScore` as the unweighted average of the same 10 minus `communityAndEcosystem` and `standardization` (8 scores), also rounded to one decimal — see `rubric.md` for why that second metric exists. `clientLibraries`/`supportModel` are never included in either average.
 
 ### 5. Create the per-language files
 
-Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, following the schema documented in `rubric.md` (`title`, `slug`, `officialDocUrl`, `mediaType`, `category`, `sources[]`, `scores{}`, `overallScore`, `designQualityScore`, `summary`, `evaluatedDate` = today's date). Mirror an existing pair (e.g. `graphql/graphql.json` + `graphql/graphql.md`) exactly for formatting. Cite sources in APA style in the Markdown file's "Sources" section.
+Create `query-languages/evaluations/<slug>/<slug>.json` and `<slug>/<slug>.md`, following the schema documented in `rubric.md` (`title`, `slug`, `officialDocUrl`, `mediaType`, `category`, `clientLibraries{}`, `supportModel`, `sources[]`, `scores{}`, `overallScore`, `designQualityScore`, `summary`, `evaluatedDate` = today's date). Mirror an existing pair for formatting (e.g. `graphql/graphql.json` + `graphql/graphql.md`) — all languages in the portfolio, including the original 68, now carry `clientLibraries`/`supportModel`, so any pair works as a formatting example. Cite sources in APA style in the Markdown file's "Sources" section.
 
 Right after the `# Title` heading, add a back-link to the aggregate summary so readers can jump back to the full table: `[↑ Full comparison table](../summary.md)`, on its own line, before the metadata bullets. Right after the scores table's `**Overall score (avg, informational only): X.X**` line, add a matching `**Design quality score (avg of the 8 criteria excluding Community & Ecosystem and Standardization): X.X**` line.
 
@@ -72,9 +74,9 @@ Also add an "## Example" section (after "## Summary", before "## Sources") plus 
 
 ### 6. Update the aggregate summary files
 
-- `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`, `designQualityScore`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct.
+- `summary.json`: append a compact object (`title`, `slug`, `category`, `officialDocUrl`, `mediaType`, `scores`, `overallScore`, `designQualityScore`, `supportModel`), placed near other entries of the same category to mirror `summary.md`'s grouping. `title` stays the plain common name even for a name collision — `slug` is what keeps the two entries distinct. `clientLibraries` is intentionally omitted from this compact aggregate — see `rubric.md`.
 - `summary.md`:
-  - Add a row to the matching `## <Category>` table (create a new category section — placed after the existing ones — only if it's genuinely a new category not in the taxonomy), including a `DQ` value in the column right after `Avg`. If this entry is a name collision (per step 1/2), use the disambiguated label (e.g. `CQL (OGC)`) as the row's link text instead of the bare title.
+  - Add a row to the matching `## <Category>` table (create a new category section — placed after the existing ones — only if it's genuinely a new category not in the taxonomy), including a `DQ` value in the column right after `Avg` and a `Support` value (short `supportModel` label) in the column after `DQ`. If this entry is a name collision (per step 1/2), use the disambiguated label (e.g. `CQL (OGC)`) as the row's link text instead of the bare title.
   - Update the "Status: N of N languages evaluated" line to the new total and mention the addition.
   - Add a row to the "## Media types" table, in the same relative position as its category table above, using the same disambiguated label if applicable.
 - [`README.md`](../../../README.md): update the "whether one of the N query languages analyzed here already fits" sentence near the top to the new total.
@@ -94,6 +96,8 @@ Read the existing "## Observations so far" bullets in `summary.md`. Only touch t
 - Confirm `summary.json` is still valid JSON and `summary.md`'s tables/counts are internally consistent (row counts, "Status: N of N" line).
 - Confirm the new `<slug>.md` file has the `[↑ Full comparison table](../summary.md)` back-link right under its `# Title` heading.
 - Confirm `designQualityScore` is present in the new `<slug>.json`, the new `<slug>.md`, `summary.json`, and the new `summary.md` table row, and re-check its arithmetic (average of the 8 non-excluded criteria).
+- Confirm `clientLibraries` is present in the new `<slug>.json`/`<slug>.md` with all 6 host-language keys and a valid `mature`/`partial`/`none` value each.
+- Confirm `supportModel` is present in the new `<slug>.json`/`<slug>.md`, is a valid enum value, and matches the `Support` column added to `summary.json`/`summary.md`.
 - Confirm the new `<slug>.md` has an "## Example" section (after Summary, before Sources) and the new `<slug>.json` has a matching `example` object, per `rubric.md`'s "Example scenario" section.
 - Confirm `README.md`'s "N query languages analyzed here" count matches the new total.
 - If this was a name collision, confirm the new slug/folder doesn't overwrite the existing one, and that every link to the new entry in `summary.md` uses the disambiguated label consistently.

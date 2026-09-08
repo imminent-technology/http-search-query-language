@@ -6,6 +6,8 @@
 - **Official docs**: [Query - Amazon DynamoDB API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html)
 - **Media type**: None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.0`); no dedicated media type for DynamoDB's KeyConditionExpression syntax.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

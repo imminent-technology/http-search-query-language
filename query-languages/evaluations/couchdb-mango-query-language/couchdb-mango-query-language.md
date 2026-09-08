@@ -6,6 +6,8 @@
 - **Official docs**: [CouchDB Mango Query Language](https://dev.to/yenyih/query-in-apache-couchdb-mango-query-lfd)
 - **Media type**: None known — Mango selectors are POSTed as a JSON document to `/db/_find` using the generic `application/json` media type.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: partial · JavaScript: mature · Java: partial · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

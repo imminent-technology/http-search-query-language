@@ -4,6 +4,15 @@
   "officialDocUrl": "https://redis.io/docs/latest/commands/ft.search/",
   "mediaType": "None known — issued as arguments to the `FT.SEARCH` command over Redis's RESP protocol, not an HTTP/JSON media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "FT.SEARCH", "publisher": "Redis", "url": "https://redis.io/docs/latest/commands/ft.search/", "date": null },
     { "title": "Querying data", "publisher": "Redis", "url": "https://redis.io/docs/latest/develop/ai/search-and-query/query/", "date": null }

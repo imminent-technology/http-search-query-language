@@ -6,6 +6,8 @@
 - **Official docs**: [ArangoDB Query Language](https://www.arangodb.com/docs/stable/aql/)
 - **Media type**: None known — ArangoDB's HTTP API wraps AQL queries in a generic `application/json` request body; no dedicated media type exists.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

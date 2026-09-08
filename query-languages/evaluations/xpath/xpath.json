@@ -4,6 +4,15 @@
   "officialDocUrl": "https://developer.mozilla.org/en-US/docs/Web/XPath",
   "mediaType": "None known — no IANA-registered media type exists; XPath expressions are normally embedded within another document (XSLT, XQuery, WebDAV SEARCH request bodies) rather than transmitted standalone.",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "XPath", "publisher": "MDN Web Docs (Mozilla)", "url": "https://developer.mozilla.org/en-US/docs/Web/XPath", "date": null },
     { "title": "XPath", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/XPath", "date": "2025-11-17" }

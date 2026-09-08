@@ -6,6 +6,8 @@
 - **Official docs**: [Perform simple and compound queries in Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/queries)
 - **Media type**: None known — Firestore queries are structured protobuf/JSON (`StructuredQuery`) sent via gRPC or the REST API's generic `application/json`.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

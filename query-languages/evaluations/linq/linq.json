@@ -4,6 +4,15 @@
   "officialDocUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/",
   "mediaType": "Not applicable — LINQ is a .NET language-integrated query syntax compiled into expression trees at compile time; it has no independent wire format.",
   "category": "Language-integrated",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Language Integrated Query (LINQ) - C#", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/", "date": "2025-12-01" },
     { "title": "Language Integrated Query", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Language_Integrated_Query", "date": "2026-07-03" }

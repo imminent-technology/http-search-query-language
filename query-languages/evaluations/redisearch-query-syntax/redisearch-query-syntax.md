@@ -6,6 +6,8 @@
 - **Official docs**: [FT.SEARCH](https://redis.io/docs/latest/commands/ft.search/)
 - **Media type**: None known — issued as arguments to the `FT.SEARCH` command over Redis's RESP protocol, not an HTTP/JSON media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

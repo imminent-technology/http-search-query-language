@@ -4,6 +4,15 @@
   "officialDocUrl": "https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/",
   "mediaType": "None known — Confluence's REST API accepts CQL as a `cql` URL query parameter on `GET` endpoints (e.g. `GET /wiki/rest/api/content/search?cql=...`), not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Advanced searching using CQL", "publisher": "Atlassian", "url": "https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/", "date": null }
   ],

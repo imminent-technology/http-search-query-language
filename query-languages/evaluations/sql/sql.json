@@ -4,6 +4,15 @@
   "officialDocUrl": "https://en.wikipedia.org/wiki/SQL",
   "mediaType": "`application/sql` — IANA-registered, RFC 6922.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "SQL", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SQL", "date": "2026-08-23" },
     { "title": "ISO/IEC 9075-1:2023 — Information technology — Database languages — SQL — Part 1: Framework (SQL/Framework)", "publisher": "International Organization for Standardization (ISO)", "url": "https://www.iso.org/standard/76583.html", "date": "2023-06" },

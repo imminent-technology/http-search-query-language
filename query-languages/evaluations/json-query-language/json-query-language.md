@@ -6,6 +6,8 @@
 - Official docs: [JSON Query](https://jsonquerylang.org/)
 - Media type: None known — no registered or documented media type found for this specification (jsonquerylang.org).
 - Evaluated: 2026-09-04
+- Client Libraries: Python: none · JavaScript: partial · Java: none · Go: none · Rust: none · .NET: none
+- Support Model: single-vendor-small-team
 
 > Note: No independent secondary source (e.g. Wikipedia) exists for this niche, relatively young project, so this evaluation is single-sourced from the project's own site/documentation.
 

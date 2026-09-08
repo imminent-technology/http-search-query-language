@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.arangodb.com/docs/stable/aql/",
   "mediaType": "None known — ArangoDB's HTTP API wraps AQL queries in a generic `application/json` request body; no dedicated media type exists.",
   "category": "Document/NoSQL",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "ArangoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/ArangoDB", "date": "2026-08-16" }
   ],

@@ -6,6 +6,8 @@
 - **Official docs**: [JMESPath Specification](https://jmespath.org/specification.html)
 - **Media type**: None known — no IANA-registered or vendor-documented media type; JMESPath expressions are passed as plain-text CLI arguments (AWS CLI/Azure CLI `--query`) or embedded as string fields in application code, not transmitted as a request body with a dedicated content type.
 - **Evaluated**: 2026-09-05
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: partial · Go: mature · Rust: mature · .NET: partial
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

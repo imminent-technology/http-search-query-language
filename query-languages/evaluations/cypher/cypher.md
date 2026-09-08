@@ -6,6 +6,8 @@
 - **Official docs**: [Neo4j Cypher Manual](https://neo4j.com/developer/cypher/)
 - **Media type**: None known — openCypher/Neo4j statements travel over the Bolt protocol or are wrapped in generic `application/json` via Neo4j's HTTP query API; no dedicated Cypher media type.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

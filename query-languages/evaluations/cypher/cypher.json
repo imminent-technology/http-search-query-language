@@ -4,6 +4,15 @@
   "officialDocUrl": "https://neo4j.com/developer/cypher/",
   "mediaType": "None known — openCypher/Neo4j statements travel over the Bolt protocol or are wrapped in generic `application/json` via Neo4j's HTTP query API; no dedicated Cypher media type.",
   "category": "Graph",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "Introduction — Cypher Manual", "publisher": "Neo4j, Inc.", "url": "https://neo4j.com/developer/cypher/", "date": null },
     { "title": "openCypher", "publisher": "Neo4j, Inc.", "url": "https://opencypher.org/", "date": null },

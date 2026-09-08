@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.mongodb.com/docs/manual/tutorial/query-documents/",
   "mediaType": "None known — MongoDB's wire protocol uses BSON, and the Atlas Data API wraps queries in generic `application/json`.",
   "category": "Document/NoSQL",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Read Documents", "publisher": "MongoDB, Inc.", "url": "https://www.mongodb.com/docs/manual/tutorial/query-documents/", "date": null },
     { "title": "MongoDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/MongoDB", "date": "2026-08-31" }

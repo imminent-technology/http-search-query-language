@@ -6,6 +6,8 @@
 - Official docs: [Object Query Language](https://www.ibm.com/docs/en/networkmanager/4.2.0?topic=reference-object-query-language)
 - Media type: None known — no registered or documented media type could be verified.
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: none · Go: none · Rust: none · .NET: none
+- **Support Model**: single-vendor-commercial
 
 > Note: list.csv's officialDocUrl documents IBM Tivoli Network Manager's proprietary OQL dialect, a tool-specific SQL-like configuration language. This is a different thing from the ODMG's (Object Data Management Group) "Object Query Language" standard for object-oriented databases that Wikipedia primarily describes — evaluated here for context, but the actual scores below reflect the IBM dialect actually linked, per the project's established pattern of evaluating what list.csv links while noting discrepancies.
 

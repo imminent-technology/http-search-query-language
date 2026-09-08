@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.influxdata.com/products/flux/",
   "mediaType": "`application/vnd.flux` — documented `Content-Type` for Flux query requests to InfluxDB's `/api/v2/query` endpoint (InfluxData documentation). Not registered with IANA.",
   "category": "Scripting",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "InfluxDB 2.x and Flux", "publisher": "InfluxData Inc.", "url": "https://www.influxdata.com/products/flux/", "date": null },
     { "title": "InfluxDB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/InfluxDB", "date": "2026-06-16" }

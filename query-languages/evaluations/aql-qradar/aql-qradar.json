@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.ibm.com/docs/en/qsip/7.5.0?topic=aql-ariel-query-language",
   "mediaType": "None known — AQL statements are submitted as plain text through the QRadar Console's Log Activity/Network Activity search UI or the QRadar REST API's `ariel/searches` resource (a JSON-wrapped query string), not as an independently registered media type.",
   "category": "Log/security search",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "AQL logical and comparison operators", "publisher": "IBM QRadar SIEM 7.5.0 Documentation", "url": "https://www.ibm.com/docs/en/qsip/7.5.0?topic=language-aql-logical-comparison-operators", "date": "2026-03-06" },
     { "title": "Ariel Query Language (AQL)", "publisher": "IBM QRadar SIEM 7.5.0 Documentation", "url": "https://www.ibm.com/docs/en/qsip/7.5.0?topic=aql-ariel-query-language", "date": null }

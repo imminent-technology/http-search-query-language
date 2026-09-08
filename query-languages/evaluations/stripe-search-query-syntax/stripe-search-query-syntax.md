@@ -6,6 +6,8 @@
 - **Official docs**: [Search](https://docs.stripe.com/search)
 - **Media type**: None known — Stripe's Search API accepts the query as a `query` URL/form parameter on `GET` requests (e.g. `GET /v1/charges/search?query=...`), not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

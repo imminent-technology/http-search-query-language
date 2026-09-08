@@ -4,6 +4,15 @@
   "officialDocUrl": "https://jsonquerylang.org/",
   "mediaType": "None known — no registered or documented media type found for this specification (jsonquerylang.org).",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "partial",
+    "java": "none",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "JSON Query", "publisher": "JSON Query project (Jos de Jong)", "url": "https://jsonquerylang.org/", "date": null }
   ],

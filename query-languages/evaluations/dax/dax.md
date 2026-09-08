@@ -6,6 +6,8 @@
 - Official docs: [Data Analysis Expressions (DAX) Reference](https://learn.microsoft.com/en-us/dax/)
 - Media type: None known — DAX queries are submitted inside a generic `application/json` body via the Power BI/Analysis Services REST APIs.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: partial · JavaScript: partial · Java: partial · Go: none · Rust: none · .NET: mature
+- Support Model: single-vendor-commercial
 
 ## Scores
 

@@ -6,6 +6,8 @@
 - **Official docs**: [PartiQL Query Basics (DQL Overview)](https://partiql.org/dql/overview.html)
 - **Media type**: None known — PartiQL statements are submitted as a plain string field within a host service's own JSON API request (e.g., DynamoDB's `ExecuteStatement` API `Statement` parameter), not as a dedicated, independently registered media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

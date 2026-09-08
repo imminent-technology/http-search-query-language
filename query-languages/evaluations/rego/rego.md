@@ -6,6 +6,8 @@
 - **Official docs**: [Policy Language](https://www.openpolicyagent.org/docs/policy-language)
 - **Media type**: application/json (Rego policies are evaluated by the Open Policy Agent (OPA) engine, which is queried over its REST Data/Query APIs using JSON request/response bodies; the Rego source itself is typically loaded as a `.rego` text file rather than transmitted per-request).
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: partial · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

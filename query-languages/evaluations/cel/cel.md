@@ -6,6 +6,8 @@
 - **Official docs**: [CEL Language Definition](https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md)
 - **Media type**: None known — CEL expressions are embedded as a plain string field within a host application's own configuration or API payload (e.g., a Kubernetes `ValidatingAdmissionPolicy` YAML rule, an Envoy proxy config, a Google Cloud IAM Condition, or a Firebase Security Rules file), not transmitted via any dedicated, independently registered media type.
 - **Evaluated**: 2026-09-05
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: mature · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

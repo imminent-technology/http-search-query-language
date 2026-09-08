@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.stripe.com/search",
   "mediaType": "None known — Stripe's Search API accepts the query as a `query` URL/form parameter on `GET` requests (e.g. `GET /v1/charges/search?query=...`), not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Search", "publisher": "Stripe", "url": "https://docs.stripe.com/search", "date": null }
   ],

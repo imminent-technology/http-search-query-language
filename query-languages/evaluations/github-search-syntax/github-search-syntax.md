@@ -6,6 +6,8 @@
 - **Official docs**: [Understanding the search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
 - **Media type**: None known — GitHub's REST API accepts search queries as a `q` URL query parameter on `GET` endpoints (e.g. `GET /search/repositories?q=...&sort=...&order=...`), not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

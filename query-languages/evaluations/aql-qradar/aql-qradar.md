@@ -6,6 +6,8 @@
 - **Official docs**: [Ariel Query Language (AQL)](https://www.ibm.com/docs/en/qsip/7.5.0?topic=aql-ariel-query-language)
 - **Media type**: None known — AQL statements are submitted as plain text through the QRadar Console's Log Activity/Network Activity search UI or the QRadar REST API's `ariel/searches` resource (a JSON-wrapped query string), not as an independently registered media type.
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: none · JavaScript: none · Java: none · Go: none · Rust: none · .NET: none
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

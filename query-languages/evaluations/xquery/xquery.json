@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.w3.org/XML/Query/",
   "mediaType": "None known / not registered — despite XQuery being a mature W3C Recommendation, no `application/xquery` (or similar) media type is registered with IANA.",
   "category": "Path/document navigation",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "mature",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "partial"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "XQuery", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/XQuery", "date": "2026-06-10" }
   ],

@@ -6,6 +6,8 @@
 - **Official docs**: [Salesforce Object Search Language (SOSL)](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm)
 - **Media type**: None known — Salesforce's REST API accepts SOSL as a `q` URL query parameter on the `GET /services/data/vXX.X/search` endpoint, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

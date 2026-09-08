@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.splunk.com/Documentation/SCS/current/SearchReference/Introduction",
   "mediaType": "None known — submitted as a `search` form field via Splunk's REST API (`application/x-www-form-urlencoded`).",
   "category": "Log/security search",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Introduction (SPL2 Search Reference)", "publisher": "Splunk Inc.", "url": "https://help.splunk.com/en?resourceId=SCS_SearchReference_Introduction", "date": null },
     { "title": "Splunk", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Splunk", "date": "2026-07-30" }

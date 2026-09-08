@@ -6,6 +6,8 @@
 - **Official docs**: [Query language for Cosmos DB (in Azure and Fabric) documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started)
 - **Media type**: `application/query+json` — required `Content-Type` for SQL API query requests per Microsoft's Cosmos DB REST API documentation. Not registered with IANA, but officially documented by Microsoft.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

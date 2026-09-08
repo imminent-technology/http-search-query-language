@@ -6,6 +6,8 @@
 - **Official docs**: [Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html) (Elastic) · [Query DSL](https://docs.opensearch.org/latest/query-dsl/) (OpenSearch)
 - **Media type**: None known — both engines accept Query DSL as a JSON `application/json` request body on `POST _search` (or `GET _search` with a body), not a dedicated registered media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: open-source-community
 
 > Note: distinct from the [ESQL](../esql/esql.md) entry, which covers Elasticsearch's separate `query_string` mini-language (a Lucene-derived text syntax embedded as a plain string). This entry covers the full structured, JSON-based Query DSL (`bool`/`term`/`range`/etc.) shared by Elasticsearch and its OpenSearch fork.
 

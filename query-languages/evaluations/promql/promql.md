@@ -6,6 +6,8 @@
 - **Official docs**: [Querying basics — Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 - **Media type**: None known — Prometheus's HTTP API accepts PromQL as a URL query parameter or `application/x-www-form-urlencoded` field, not a dedicated media type.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: open-source-community
 
 ## Scores
 

@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.odata.org/",
   "mediaType": "`application/json` with OData-specific parameters (e.g. `odata.metadata=minimal|full|none`, `odata.streaming=true`, `odata.ieee754compatible=true`) per the OData JSON Format v4.01 spec; older services also supported `application/atom+xml` (Atom), now a deprecated committee-specification-stage format as of OData 4.0. No dedicated `application/odata+json` (or similar) media type is registered in the IANA Media Types registry as of this writing.",
   "category": "API/data-fetching",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "OData - the best way to REST", "publisher": "OData.org (OASIS OData Technical Committee)", "url": "https://www.odata.org/", "date": null },
     { "title": "OData Version 4.01. Part 2: URL Conventions", "publisher": "OASIS", "url": "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html", "date": "2020-04-23" },

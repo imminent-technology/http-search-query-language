@@ -6,6 +6,8 @@
 - Official docs: [Gremlin Query Language](https://tinkerpop.apache.org/gremlin.html)
 - Media type: None known — no documented or registered media type for Gremlin scripts could be verified.
 - Evaluated: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: partial · Rust: partial · .NET: mature
+- **Support Model**: open-source-community
 
 ## Scores
 

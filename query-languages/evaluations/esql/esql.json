@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html",
   "mediaType": "None known — Elasticsearch's Query DSL/ES|QL requests use the generic `application/json` content type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Query string query", "publisher": "Elastic NV", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html", "date": null },
     { "title": "Elasticsearch", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Elasticsearch", "date": "2026-08-10" }

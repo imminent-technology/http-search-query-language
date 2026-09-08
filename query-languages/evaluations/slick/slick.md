@@ -6,6 +6,8 @@
 - **Official docs**: [Functional Relational Mapping for Scala](https://scala-slick.org/)
 - **Media type**: Not applicable — Slick is an in-process Scala library that compiles queries to SQL executed over JDBC; it is not itself transmitted over HTTP and has no wire format of its own.
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: none · JavaScript: none · Java: partial · Go: none · Rust: none · .NET: none
+- **Support Model**: open-source-community
 
 ## Scores
 

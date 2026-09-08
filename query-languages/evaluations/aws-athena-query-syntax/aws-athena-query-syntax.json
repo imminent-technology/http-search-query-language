@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html",
   "mediaType": "None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.1`) for the whole Athena API action, not a dedicated media type for the SQL text.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "SQL reference for Athena", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html", "date": null }
   ],

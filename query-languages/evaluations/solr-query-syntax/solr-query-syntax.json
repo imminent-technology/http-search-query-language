@@ -4,6 +4,15 @@
   "officialDocUrl": "https://solr.apache.org/guide/6_6/the-standard-query-parser.html",
   "mediaType": "None known — Solr accepts query strings as URL parameters or within the JSON Request API's generic `application/json`.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "The Standard Query Parser", "publisher": "The Apache Software Foundation", "url": "https://solr.apache.org/guide/6_6/the-standard-query-parser.html", "date": "2017-06-09" },
     { "title": "Apache Solr", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_Solr", "date": "2026-03-27" }

@@ -4,6 +4,15 @@
   "officialDocUrl": "https://cassandra.apache.org/doc/latest/cassandra/cql/",
   "mediaType": "None known for Cassandra's CQL — statements are normally sent over Cassandra's native binary protocol, not HTTP. Note: IANA's registered `text/cql` media type belongs to HL7's unrelated Clinical Quality Language, and OGC defines a separate, also-unrelated CQL for geospatial filtering; neither refers to Cassandra Query Language.",
   "category": "Document/NoSQL",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "The Cassandra Query Language (CQL)", "publisher": "Apache Software Foundation", "url": "https://cassandra.apache.org/doc/stable/cassandra/developing/cql/index.html", "date": null },
     { "title": "Apache Cassandra", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Apache_Cassandra", "date": "2026-03-17" }

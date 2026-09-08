@@ -4,6 +4,15 @@
   "officialDocUrl": "https://grafana.com/docs/loki/latest/query/",
   "mediaType": "None known — Loki's HTTP API accepts LogQL as a URL query parameter (`query=`) on `GET` endpoints, or as an `application/x-www-form-urlencoded` field on the equivalent `POST` endpoints, not a dedicated media type.",
   "category": "Analytics/Observability",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Query Loki (LogQL)", "publisher": "Grafana Labs", "url": "https://grafana.com/docs/loki/latest/query/", "date": null },
     { "title": "Loki HTTP API", "publisher": "Grafana Labs", "url": "https://grafana.com/docs/loki/latest/reference/loki-http-api/", "date": null },

@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.openpolicyagent.org/docs/policy-language",
   "mediaType": "application/json (Rego policies are evaluated by the Open Policy Agent (OPA) engine, which is queried over its REST Data/Query APIs using JSON request/response bodies; the Rego source itself is typically loaded as a `.rego` text file rather than transmitted per-request).",
   "category": "Scripting",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Policy Language", "publisher": "Open Policy Agent (OPA) / CNCF", "url": "https://www.openpolicyagent.org/docs/policy-language", "date": null },
     { "title": "Policy Reference", "publisher": "Open Policy Agent (OPA) / CNCF", "url": "https://www.openpolicyagent.org/docs/policy-reference", "date": null }

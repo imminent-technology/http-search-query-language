@@ -4,6 +4,15 @@
   "officialDocUrl": "https://developer.crowdstrike.com/api-reference/falcon-query-language/",
   "mediaType": "None known — FQL filter strings are passed as the value of a `filter` query-string parameter on CrowdStrike Falcon REST API requests (transported as ordinary URL-encoded text, not a registered media type of their own).",
   "category": "Log/security search",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "partial",
+    "java": "partial",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Falcon Query Language (FQL)", "publisher": "CrowdStrike Developer Portal", "url": "https://developer.crowdstrike.com/api-reference/falcon-query-language/", "date": null }
   ],

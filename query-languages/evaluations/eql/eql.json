@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.elastic.co/guide/en/elasticsearch/reference/current/eql.html",
   "mediaType": "application/json (EQL queries are submitted as a JSON request body's `query` string field to Elasticsearch's `_eql/search` REST endpoint; there is no dedicated media type for EQL syntax itself).",
   "category": "Log/security search",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "partial",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "EQL (Event Query Language) overview", "publisher": "Elastic", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/eql.html", "date": null },
     { "title": "EQL syntax reference", "publisher": "Elastic", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/eql-syntax.html", "date": null }

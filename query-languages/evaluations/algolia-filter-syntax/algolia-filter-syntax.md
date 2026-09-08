@@ -6,6 +6,8 @@
 - **Official docs**: [filters](https://www.algolia.com/doc/api-reference/api-parameters/filters/)
 - **Media type**: None known — Algolia's Search API accepts `filters` as a string field in the JSON body of `POST /1/indexes/{indexName}/query`, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: mature · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

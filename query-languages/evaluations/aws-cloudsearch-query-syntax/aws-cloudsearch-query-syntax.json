@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html",
   "mediaType": "None known — queries are passed as URL query-string parameters (`q`, `q.parser`) on the CloudSearch search endpoint; no dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Searching Your Data with Amazon CloudSearch", "publisher": "Amazon Web Services (AWS)", "url": "https://docs.aws.amazon.com/cloudsearch/latest/developerguide/searching.html", "date": null }
   ],

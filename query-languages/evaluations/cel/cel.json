@@ -4,6 +4,15 @@
   "officialDocUrl": "https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md",
   "mediaType": "None known \u2014 CEL expressions are embedded as a plain string field within a host application's own configuration or API payload (e.g., a Kubernetes `ValidatingAdmissionPolicy` YAML rule, an Envoy proxy config, a Google Cloud IAM Condition, or a Firebase Security Rules file), not transmitted via any dedicated, independently registered media type.",
   "category": "Scripting",
+  "clientLibraries": {
+    "python": "partial",
+    "javascript": "partial",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "partial"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Common Expression Language (cel-spec README)", "publisher": "CEL project (cel-expr; originated at Google)", "url": "https://github.com/cel-expr/cel-spec", "date": null },
     { "title": "CEL Language Definition", "publisher": "CEL project (cel-expr)", "url": "https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md", "date": null },

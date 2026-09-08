@@ -8,6 +8,8 @@
 - **Official docs**: [Advanced searching using CQL](https://developer.atlassian.com/cloud/confluence/advanced-searching-using-cql/)
 - **Media type**: None known — Confluence's REST API accepts CQL as a `cql` URL query parameter on `GET` endpoints (e.g. `GET /wiki/rest/api/content/search?cql=...`), not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: partial · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

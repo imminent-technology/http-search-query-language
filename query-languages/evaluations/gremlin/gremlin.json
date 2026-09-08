@@ -4,6 +4,15 @@
   "officialDocUrl": "https://tinkerpop.apache.org/gremlin.html",
   "mediaType": "None known — no documented or registered media type for Gremlin scripts could be verified.",
   "category": "Graph",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "open-source-community",
   "sources": [
     { "title": "Gremlin Query Language", "publisher": "Apache TinkerPop / The Apache Software Foundation", "url": "https://tinkerpop.apache.org/gremlin.html", "date": null },
     { "title": "Gremlin (query language)", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Gremlin_(query_language)", "date": "2026-05-30" }

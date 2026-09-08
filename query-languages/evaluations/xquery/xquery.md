@@ -6,6 +6,8 @@
 - Official docs: [XQuery](https://www.w3.org/XML/Query/) (list.csv link; direct fetch returned HTTP 403, so this evaluation is sourced from Wikipedia's citation-backed coverage instead, following the same pattern used for SPARQL in Batch 3)
 - Media type: None known / not registered — despite XQuery being a mature W3C Recommendation, no `application/xquery` (or similar) media type is registered with IANA.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: partial · JavaScript: partial · Java: mature · Go: none · Rust: none · .NET: partial
+- Support Model: formal-standard-multi-vendor
 
 ## Scores
 

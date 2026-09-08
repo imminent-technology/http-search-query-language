@@ -4,6 +4,15 @@
   "officialDocUrl": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started",
   "mediaType": "`application/query+json` — required `Content-Type` for SQL API query requests per Microsoft's Cosmos DB REST API documentation. Not registered with IANA, but officially documented by Microsoft.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Query language for Cosmos DB (in Azure and Fabric) documentation", "publisher": "Microsoft", "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/getting-started", "date": "2025-12-31" },
     { "title": "Cosmos DB", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cosmos_DB", "date": "2026-04-15" }

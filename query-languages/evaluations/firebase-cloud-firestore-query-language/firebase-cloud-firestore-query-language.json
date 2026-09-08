@@ -4,6 +4,15 @@
   "officialDocUrl": "https://firebase.google.com/docs/firestore/query-data/queries",
   "mediaType": "None known — Firestore queries are structured protobuf/JSON (`StructuredQuery`) sent via gRPC or the REST API's generic `application/json`.",
   "category": "Document/NoSQL",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "Perform simple and compound queries in Cloud Firestore", "publisher": "Google", "url": "https://firebase.google.com/docs/firestore/query-data/queries", "date": "2026-09-01" },
     { "title": "Firebase", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Firebase", "date": "2026-07-20" }

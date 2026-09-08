@@ -6,6 +6,8 @@
 - **Official docs**: [Search](https://typesense.org/docs/latest/api/search.html)
 - **Media type**: None known — Typesense's API accepts `filter_by`, `sort_by`, and pagination as query parameters on `GET /collections/{collection}/documents/search`, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-small-team
 
 ## Scores
 

@@ -6,6 +6,8 @@
 - **Official docs**: [Chapter 32: Introduction to the Java Persistence API](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html)
 - **Media type**: Not applicable — the Criteria API is a Java object-graph API for building queries programmatically; it has no serialized wire format.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: mature · Go: none · Rust: none · .NET: none
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

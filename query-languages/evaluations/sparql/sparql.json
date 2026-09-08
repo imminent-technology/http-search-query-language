@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.w3.org/TR/rdf-sparql-protocol/",
   "mediaType": "`application/sparql-query` — IANA-registered per the W3C SPARQL 1.1 Protocol. Query results use the related, also IANA-registered `application/sparql-results+xml` / `application/sparql-results+json`.",
   "category": "Graph",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "SPARQL", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/SPARQL", "date": "2026-07-12" },
     { "title": "SPARQL 1.1 Recommendation", "publisher": "World Wide Web Consortium (W3C)", "url": "https://www.w3.org/TR/sparql11-overview/", "date": "2013-03-21" }

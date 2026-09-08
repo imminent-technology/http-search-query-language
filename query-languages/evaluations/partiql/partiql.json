@@ -4,6 +4,15 @@
   "officialDocUrl": "https://partiql.org/dql/overview.html",
   "mediaType": "None known \u2014 PartiQL statements are submitted as a plain string field within a host service's own JSON API request (e.g., DynamoDB's `ExecuteStatement` API `Statement` parameter), not as a dedicated, independently registered media type.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "mature",
+    "rust": "partial",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-commercial",
   "sources": [
     { "title": "PartiQL \u2014 An expressive, SQL-compatible query language giving access to relational, semi-structured, and nested data", "publisher": "PartiQL (maintained by Amazon; developed by open-source contributors)", "url": "https://partiql.org/", "date": null },
     { "title": "PartiQL Tutorial", "publisher": "PartiQL", "url": "https://partiql.org/tutorial.html", "date": null },

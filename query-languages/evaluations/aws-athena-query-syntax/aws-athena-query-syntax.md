@@ -6,6 +6,8 @@
 - **Official docs**: [SQL reference for Athena](https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html)
 - **Media type**: None known — requests use AWS's generic JSON RPC protocol (`application/x-amz-json-1.1`) for the whole Athena API action, not a dedicated media type for the SQL text.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

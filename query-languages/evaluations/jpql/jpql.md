@@ -6,6 +6,8 @@
 - **Official docs**: [Chapter 34: The Java Persistence Query Language](https://docs.oracle.com/javaee/6/tutorial/doc/bnbtg.html)
 - **Media type**: Not applicable — like HQL, JPQL is used internally by the JPA provider and is not transmitted over HTTP with a dedicated media type.
 - **Evaluated**: 2026-09-04
+- **Client Libraries**: Python: none · JavaScript: none · Java: mature · Go: none · Rust: none · .NET: none
+- **Support Model**: formal-standard-multi-vendor
 
 ## Scores
 

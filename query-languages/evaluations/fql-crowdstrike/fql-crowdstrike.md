@@ -6,6 +6,8 @@
 - **Official docs**: [Falcon Query Language (FQL)](https://developer.crowdstrike.com/api-reference/falcon-query-language/)
 - **Media type**: None known — FQL filter strings are passed as the value of a `filter` query-string parameter on CrowdStrike Falcon REST API requests (transported as ordinary URL-encoded text, not a registered media type of their own).
 - **Evaluated**: 2026-09-15
+- **Client Libraries**: Python: mature · JavaScript: partial · Java: partial · Go: partial · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

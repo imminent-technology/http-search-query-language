@@ -6,6 +6,8 @@
 - Official docs: [Multidimensional Expressions (MDX) Reference](https://learn.microsoft.com/en-us/sql/mdx/multidimensional-expressions-mdx-reference?view=sql-server-ver16)
 - Media type: None known — MDX statements are typically embedded in a SOAP/XML request (`text/xml`/`application/soap+xml`) to an XMLA endpoint; no dedicated MDX media type.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: partial · JavaScript: partial · Java: partial · Go: none · Rust: none · .NET: mature
+- Support Model: single-vendor-commercial
 
 ## Scores
 

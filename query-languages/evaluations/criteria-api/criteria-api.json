@@ -4,6 +4,15 @@
   "officialDocUrl": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html",
   "mediaType": "Not applicable — the Criteria API is a Java object-graph API for building queries programmatically; it has no serialized wire format.",
   "category": "Relational/SQL-family",
+  "clientLibraries": {
+    "python": "none",
+    "javascript": "none",
+    "java": "mature",
+    "go": "none",
+    "rust": "none",
+    "dotnet": "none"
+  },
+  "supportModel": "formal-standard-multi-vendor",
   "sources": [
     { "title": "Chapter 32: Introduction to the Java Persistence API", "publisher": "Oracle", "url": "https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html", "date": null },
     { "title": "Jakarta Persistence", "publisher": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Jakarta_Persistence", "date": "2025-10-30" }

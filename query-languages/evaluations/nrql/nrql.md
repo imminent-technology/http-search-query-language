@@ -6,6 +6,8 @@
 - Official docs: [Get started with NRQL: the language of data](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/introduction-nrql-new-relics-query-language/)
 - Media type: None known — NRQL strings are submitted as a field inside a GraphQL request (`application/json`) to New Relic's NerdGraph API.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- Support Model: single-vendor-commercial
 
 ## Scores
 

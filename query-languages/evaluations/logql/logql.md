@@ -6,6 +6,8 @@
 - **Official docs**: [Query Loki (LogQL)](https://grafana.com/docs/loki/latest/query/)
 - **Media type**: None known — Loki's HTTP API accepts LogQL as a URL query parameter (`query=`) on `GET` endpoints, or as an `application/x-www-form-urlencoded` field on the equivalent `POST` endpoints, not a dedicated media type.
 - **Evaluated**: 2026-09-07
+- **Client Libraries**: Python: partial · JavaScript: partial · Java: partial · Go: mature · Rust: partial · .NET: partial
+- **Support Model**: single-vendor-commercial
 
 ## Scores
 

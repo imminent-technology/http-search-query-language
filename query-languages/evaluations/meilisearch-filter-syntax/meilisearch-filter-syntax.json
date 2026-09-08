@@ -4,6 +4,15 @@
   "officialDocUrl": "https://www.meilisearch.com/docs/reference/api/search",
   "mediaType": "None known — Meilisearch's API accepts `filter`, `sort`, and pagination parameters as fields in the JSON body of `POST /indexes/{index_uid}/search`, not a dedicated media type.",
   "category": "Search/full-text",
+  "clientLibraries": {
+    "python": "mature",
+    "javascript": "mature",
+    "java": "mature",
+    "go": "partial",
+    "rust": "mature",
+    "dotnet": "mature"
+  },
+  "supportModel": "single-vendor-small-team",
   "sources": [
     { "title": "Search with POST", "publisher": "Meilisearch", "url": "https://www.meilisearch.com/docs/reference/api/search", "date": null }
   ],

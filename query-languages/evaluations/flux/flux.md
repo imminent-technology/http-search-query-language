@@ -6,6 +6,8 @@
 - Official docs: [InfluxDB 2.x and Flux](https://www.influxdata.com/products/flux/)
 - Media type: `application/vnd.flux` — documented `Content-Type` for Flux query requests to InfluxDB's `/api/v2/query` endpoint (InfluxData documentation). Not registered with IANA.
 - Evaluated: 2026-09-04
+- Client Libraries: Python: mature · JavaScript: mature · Java: mature · Go: mature · Rust: partial · .NET: mature
+- Support Model: single-vendor-commercial
 
 ## Scores
 

@@ -1,0 +1,14 @@
+.gitignore
+  h_e2c7967ec6cbec 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "838a0024881ec38117f895bc0200b0e9bc21dac6",
+  "prompts": {},
+  "humans": {
+    "h_e2c7967ec6cbec": {
+      "author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}

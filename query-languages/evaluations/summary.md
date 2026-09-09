@@ -82,7 +82,7 @@ Legend: Exp=Expressiveness, Sim=Simplicity, Flex=Flexibility, Comm=Community & E
 | [OData](odata/odata.md) | 4 | 3 | 2 | 4 | 4 | 5 | 5 | 3 | 3 | 4 | 3.7 | 3.5 | Formal std. |
 | [RSQL/FIQL](rsql-fiql/rsql-fiql.md) | 3 | 4 | 4 | 3 | 4 | 4 | 1 | 3 | 3 | 4 | 3.3 | 3.6 | Small team |
 | [JSON Query Language](json-query-language/json-query-language.md) | 3 | 4 | 5 | 1 | 4 | 2 | 1 | 4 | 3 | 4 | 3.1 | 3.6 | Small team |
-| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 3 | 3.0 | 3.5 | Small team |
+| [JSON Query Language (christosgkoros)](json-query-language-christosgkoros/json-query-language-christosgkoros.md) | 4 | 3 | 4 | 1 | 4 | 3 | 1 | 4 | 3 | 4 | 3.1 | 3.6 | Small team |
 | [TaxiQL](taxiql/taxiql.md) | 4 | 3 | 4 | 1 | 4 | 2 | 1 | 2 | 2 | 3 | 2.6 | 3.0 | Small team |
 | [FQL](fql/fql.md) | 2 | 4 | 1 | 1 | 1 | 4 | 1 | 2 | 2 | 3 | 2.1 | 2.4 | Deprecated |
 

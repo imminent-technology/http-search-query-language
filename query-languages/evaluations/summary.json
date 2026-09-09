@@ -587,10 +587,10 @@
       "standardization": 1,
       "security": 4,
       "performance": 3,
-      "orthogonality": 3
+      "orthogonality": 4
     },
-    "overallScore": 3.0,
-    "designQualityScore": 3.5,
+    "overallScore": 3.1,
+    "designQualityScore": 3.6,
     "supportModel": "single-vendor-small-team"
   },
   {

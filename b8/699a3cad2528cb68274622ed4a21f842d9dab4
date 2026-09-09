@@ -1,0 +1,23 @@
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.json
+  s_ca61827e7f11ce::t_e93847a3b55db2 17-20,23-32,34-36,42
+query-languages/evaluations/json-query-language-christosgkoros/json-query-language-christosgkoros.md
+  s_ca61827e7f11ce::t_0f4ed73d0a10f4 8,12,18-27,29,31,35,52-53,55
+query-languages/evaluations/summary.json
+  s_ca61827e7f11ce::t_d07883dfb6e19f 590,592-593
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b8699a3cad2528cb68274622ed4a21f842d9dab4",
+  "prompts": {},
+  "sessions": {
+    "s_ca61827e7f11ce": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "6bbeb995-d069-4f0f-bcf5-1296adcd3dff",
+        "model": "unknown"
+      },
+      "human_author": "Bruno Luis Goncalves Pedro <brunolgp@inditex.com>"
+    }
+  }
+}
